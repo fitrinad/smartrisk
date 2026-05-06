@@ -1,0 +1,233 @@
+/*---------- DESIGN TOKENS ----------*/
+:root {
+    --ink               : #1e2f47;
+    --paper             : #fafafa;
+    --white             : #ffffff;
+    --cream             : #fcf8f0;
+    --accent            : #5abd2c;
+    --accent-hover      : #3d9a1c;
+    /* 
+    --accent            : #5abd2c;
+    --accent-hover      : #3d9a1c;
+    Same hexcode as logo
+    --accent            : #90be21;
+    --accent-hover      : #557113;
+    */
+    --muted             : #6b6560;
+    --rule              : rgba(150,21,21,0.274);
+    --hero-text         : rgba(250,250,250,0.7);
+    --btn-light-color   : rgba(250,250,250,0.8);
+    --btn-light-border  : rgba(250,250,250,0.3);
+    /* Which text? */
+    --footer-text-color : rgba(250, 250, 250, 0.4);
+    --footer-logo-color : rgba(250, 250, 250, 0.6);
+}
+
+/*---------- RESET ----------*/
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+    font-family : 'DM Sans', sans-serif;
+    background  : var(--paper);
+    color       : var(--ink);
+    line-height : 1.6;
+}
+
+/*---------- TYPOGRAPHY ----------*/
+h1, h2, h3, nav .logo {
+    font-family : 'Cal Sans', sans-serif;
+    color       : var(--ink);
+}
+h1  { font-size: 2.5rem; margin-bottom: 1rem; }
+h2  { font-size: 1.8rem; margin-bottom: 1rem; }
+p   { color: var(--muted); margin-bottom: 1rem; }
+
+/*---------- NAV ----------*/
+nav {
+    background      : var(--paper);
+    border-bottom   : 1px solid var(--rule);
+    padding         : 1rem 2rem;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    position        : sticky;
+    top             : 0;
+    z-index         : 100;
+}
+.logo {
+    font-size       : 1.25rem;
+    font-weight     : 600;
+    text-decoration : none;
+    color           : var(--ink);
+    display         : flex;
+    align-items     : center;
+    gap             : 0rem;
+}
+.logo img { height: 36px; width: auto; mix-blend-mode: multiply; }
+.logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+    text-decoration : none;
+    color           : var(--muted);
+    font-size       : 0.9rem;
+    font-weight     : 500;
+    transition      : color 0.2s;
+}
+.nav-links a:hover { color: var(--accent); }
+
+
+/*---------- LAYOUT ----------*/
+.container {
+    max-width   : 1100px;
+    margin      : 0 auto;
+    padding     : 0 2rem;
+}
+
+section { padding: 5rem 0; border-bottom: 1px solid var(--rule); }
+section:last-of-type { border-bottom: none; }
+
+
+/*---------- HERO ----------*/
+.hero {
+    background  : var(--ink);
+    color       : var(--paper);
+    padding     : 6rem 0;
+}
+.hero h1 { color: var(--paper); font-size: 3rem; }
+.hero h1 em { font-style: italic; color: var(--accent); }
+.hero p { color         : var(--hero-text); 
+          font-size     : 1.1rem; 
+          max-width     : 540px;
+          margin-bottom : 2rem; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+
+/*---------- BUTTONS ----------*/
+.btn {
+    display         : inline-block;
+    padding         : 0.8rem 1.8rem;
+    font-size       : 0.85rem;
+    font-weight     : 500;
+    letter-spacing  : 0.06em;
+    text-transform  : uppercase;
+    text-decoration : none;
+    border          : 1.5px solid transparent;
+    cursor          : pointer;
+    transition      : all 0.2s;
+}
+.btn-primary { background: var(--accent); color: var(--white) }
+.btn-primary:hover { background: var(--accent-hover); }
+
+.btn-outline-light {
+    background  : transparent;
+    color       : var(--btn-light-color);
+    border-color: var(--btn-light-border);
+}
+.btn-outline-light:hover { border-color: var(--accent); color: var(--accent)}
+
+.btn-outline {
+    background  : transparent;
+    color       : var(--ink);
+    border-color: var(--ink);
+}
+.btn-outline:hover { border-color: var(--accent); color: var(--accent)}
+
+
+/*---------- SERVICES GRID ----------*/
+.services-grid {
+    display                 : grid;
+    grid-template-columns   : repeat(3, 1fr);
+    gap                     : 1.5rem;
+    margin-top              : 2rem;
+}
+.service-card {
+    background  : var(--cream);
+    padding     : 2rem;
+    border      : 1px solid var(--rule);
+}
+.service-card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+.service-card p  { font-size: 0.85rem; margin: 0; }
+
+
+/*---------- CONTACT ----------*/
+.contact-grid {
+    display                 : grid;
+    grid-template-columns   : 1fr 1fr;
+    gap                     : 4rem;
+    margin-top              : 2rem;
+}
+.contact-info p { margin-bottom: 0.5rem; font-size: 0.95rem; }
+
+.form-group { margin-bottom: 1.25rem; }
+.form-group label {
+    display         : block;
+    font-size       : 0.8rem;
+    font-weight     : 500;
+    margin-bottom   :0.4rem;
+    text-transform  : uppercase;
+    letter-spacing  : 0.06em;
+    color           : var(--muted);
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width       : 100%;
+    padding     : 0.75rem 1rem;
+    border      : 1px solid var(--rule);
+    background  : var(--paper);
+    font-family : 'DM Sans', sans-serif;
+    font-size   : 0.9rem;
+    color       : var(--ink);
+    outline     : none;
+    transition  : border-color 0.2s;
+}
+.form-group textarea { 
+    resize      : vertical; 
+    min-height  : 100px; 
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {border-color: var(--accent); }
+
+.btn-submit{
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+.btn-submit:hover { background: var(--accent-hover); }
+
+
+/*---------- FOOTER ----------*/
+footer {
+    background: var(--ink);
+    /* Which text? */
+    color: var(--footer-text-color);
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+footer .footer-logo {
+    font-family: 'Cal Sans', sans-serif;
+    font-size: 1.1rem;
+    color: var(--footer-logo-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+footer .footer-logo span { color: var(--accent); }
+
+/*---------- RESPONSIVE ----------*/
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero hl { font-size: 2rem; }
+    .services-grid { grid-template-columns: 1fr; }
+    .contact-grid {grid-template-columns: 1fr; gap: 2rem; }
+}

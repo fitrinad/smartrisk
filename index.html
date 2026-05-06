@@ -3,85 +3,184 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-    <title>SmartRisk</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        nav a {
-            margin-right: 1rem;
-            text-decoration: none;
-            color: #333;
-        }
-        section{
-            margin-top: 3rem;
-        }
-        h1, h2 {
-            color: #1e2f47
-        }
-    </style>
+    <title>SmartRisk | Independent Risk Management Consultants</title>
+    <meta name="description" content="SmartRisk is an independent risk management consultancy based in Jakarta, Indonesia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:wght@300;400;500&display=swap" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+    <!---------- NAV ---------->
     <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#" class="logo">
+            <img src="assets/images/logo.png" alt="SmartRisk logo" />
+            Smart<span>Risk</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
     </nav>
 
-    <section id="hero">
-        <h1>SmartRisk</h1>
-        <p>Independent Risk Management Consultants based in Jakarta, Indonesia.</p>
-        <a href="#contact">Get in Touch</a>
+    <!---------- HERO ---------->
+    <section class="hero">
+        <div class="container">
+            <h1>Managing Risk,<br /><em>Globally</em></h1>
+            <p>
+                SmartRisk is an independent risk management consultancy with over a decade of experience helping energy, infrastructure, and industrial clients identify, assess, and mitigate complex risks.
+            </p>
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-primary">Our Services</a>
+                <a href="#contact" class="btn btn-outline-light">Get in Touch</a>
+            </div>
+        </div>
     </section>
 
+    <!---------- ABOUT ---------->
     <section id="about">
-        <h2>About Us</h2>
-        <p>
-            PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in 2020 as a joint venture between YPK PLN and PT Solusi Manajemen Risiko Terpadu. We provide independent risk management consulting free from insurer or broker conflicts of interest.
-        </p>
+        <div class="container">
+            <h2>About SmartRisk</h2>
+            <p>
+                PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting free from insurer or broker conflicts of interest.
+            </p>
+            <p>
+                Headquartered in Jakarta and affiliated with YPK-PLN, we bring deep experience across Indonesia's energy, utilities, mining, and infrastructure sectors; and now extend that expertise to international clients. 
+            </p>
+        </div>
     </section>
 
+    <!---------- SERVICES ---------->
     <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Operational Risk Assessment</li>
-            <li>Project Risk Assessment</li>
-            <li>Asset Valuation</li>
-            <li>Insurance &amp; Risk Planning</li>
-            <li>HSE Management</li>
-            <li>Business Continuity &amp; Resilience</li>
-        </ul>
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Operational Risk Assessment</h3>
+                    <p>
+                        Systematic identification and evaluation of operational hazards including HAZOP studies and technical inspection.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3>Project Risk Assessment</h3>
+                    <p>
+                        End-to-end risk analysis for capital projects from feasibility through construction and commissioning.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3>Asset Valuation</h3>
+                    <p>
+                        Independent technical valuation of industrial assets for insurance, M&amp;A, and regulatory compliance.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3>Insurance &amp; Risk Planning</h3>
+                    <p>
+                        Independent insurance program design, benchmarking, and placement advisory.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3>HSE Management</h3>
+                    <p>
+                        Health, Safety &amp; Environment consulting, including gap analysis and BNSP-certified training programs.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <h3>Business Continuity &amp; Resilience</h3>
+                    <p>
+                        Business impact analysis, continuity planning, and disaster risk reduction strategies.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            <strong>Head Office:</strong><br />
-            Jl. Trunojoyo Blok M/135, Kebayoran Baru, Gedung 1 Lantai 4, Jakarta 12160
-        </p>
-        <p>
-            <strong>Work Office:</strong><br />
-            Gedung Menara Hijau, Jl. MT Haryono Kav 33, Lantai 3 Suite 301, Jakarta 12770
-        </p>
-        <p>
-            <strong>Phone / WhatsApp:</strong> +62-811-8208-123<br />
-            <strong>Email:</strong> admin@smartrisk-pln.com
-        </p>
-        <form action="mailto:admin@smartrisk-pln.com" method="POST">
-            <label for="name">Name</label><br />
-            <input type="text" id="name" name="name" /><br /><br />
-            <label for="email">Email</label><br />
-            <input type="email" id="email" name="email" /><br /><br />
-            <label for="message">Message</label><br />
-            <textarea id="message" name="message" rows="4" cols="40"></textarea><br /><br />
-            <button type="submit">Send</button>
-        </form>
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p> <strong>Head Office</strong><br />
+                        Jl.Trunojoyo Blok M/135, Kebayoran Baru, Gedung 1 Lantai 4, Jakarta 12160
+                    </p>
+                    <p> <strong>Work Office:</strong><br />
+                        Gedung Menara Hijau, Jl. MT Haryono Kav 33, Lantai 3 Suite 301, Jakarta 12770
+                    </p>
+                    <p> <strong>Phone / WhatsApp</strong><br />
+                        +62-811-8208-123
+                    </p>
+                    <p> <strong>Email</strong><br />
+                        admin@smartrisk-pln.com
+                    </p>
+                </div>
+                <div class="contact-form">
+                    <!--
+                        https://formspree.io/f/YOUR_FORM_ID    
+                        Formspree: replace YOUR_FORM_ID with the actual ID from formspree.io
+                    -->
+                    <form id="contact-form" action="https://formspree.io/f/mgodkleb" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+                        </div>
+                        <!-- Honeypot Field
+                        Text input field to prevent spam submissions (invisible to humans) -->
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
 
+    <!---------- FOOTER ---------->
+    <footer>
+        <span class="footer-logo">Smart<span>Risk</span></span>
+        <p>
+            © 2026 PT Solusi Manajemen Risiko Terintegrasi. All rights reserved.
+        </p>
+        <p>
+            <a href="https://smartrisk-pln.com" style="color:inherit">smartrisk-pln.com</a>
+        </p>
+    </footer>
+
+    <script>
+        // AJAX form submission - page doesn't reload on submit
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('btn-submit');
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+            try {
+                const res = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (res.ok) {
+                    btn.textContent = 'Message Sent ✓';
+                    btn.style.background = '#2a7a4b';
+                    form.reset();
+                } else { throw new Error(); }
+            } catch {
+                btn.textContent = 'Something went wrong. Try again.';
+                btn.style.background = '#8b1a1a';
+                btn.disabled = false;
+            }
+        });
+    </script>
 </body>
 </html>
