@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SmartRisk | Independent Risk Management Consultants</title>
     <meta name="description" content="SmartRisk is an independent risk management consultancy based in Jakarta, Indonesia.">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -161,9 +161,10 @@
         const form = document.getElementById('contact-form');
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const btn = form.querySelector('btn-submit');
+            const btn = form.querySelector('.btn-submit');
             btn.textContent = 'Sending...';
             btn.disabled = true;
+            btn.classList.add('state-sending');
             try {
                 const res = await fetch(form.action, {
                     method: 'POST',
@@ -172,12 +173,12 @@
                 });
                 if (res.ok) {
                     btn.textContent = 'Message Sent ✓';
-                    btn.style.background = '#2a7a4b';
+                    btn.classList.replace('state-sending', 'state-success');
                     form.reset();
                 } else { throw new Error(); }
             } catch {
                 btn.textContent = 'Something went wrong. Try again.';
-                btn.style.background = '#8b1a1a';
+                btn.classList.replace('state-sending', 'state-error')
                 btn.disabled = false;
             }
         });
