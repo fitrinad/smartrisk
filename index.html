@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SmartRisk | Independent Risk Management Consultants</title>
+    <title>SmartRisk | Partner in Managing Your Risk</title>
     <meta name="description" content="SmartRisk is an independent risk management consultancy based in Jakarta, Indonesia.">
+    <link rel="icon" href="assets/images/logo_square.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/images/logo_square.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:wght@300;400;500&display=swap" />
@@ -15,7 +17,7 @@
     <!---------- NAV ---------->
     <nav>
         <a href="#" class="logo">
-            <img src="assets/images/logo.png" alt="SmartRisk logo" />
+            <img src="assets/images/logo_square.png" alt="SmartRisk logo" />
             Smart<span>Risk</span>
         </a>
         <ul class="nav-links">
@@ -45,7 +47,7 @@
         <div class="container">
             <h2>About SmartRisk</h2>
             <p>
-                PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting free from insurer or broker conflicts of interest.
+                PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest.
             </p>
             <p>
                 Headquartered in Jakarta and affiliated with YPK-PLN, we bring deep experience across Indonesia's energy, utilities, mining, and infrastructure sectors; and now extend that expertise to international clients. 
@@ -104,7 +106,7 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <p> <strong>Head Office</strong><br />
-                        Jl.Trunojoyo Blok M/135, Kebayoran Baru, Gedung 1 Lantai 4, Jakarta 12160
+                        Jl. Trunojoyo Blok M/135, Kebayoran Baru, Gedung 1 Lantai 4, Jakarta 12160
                     </p>
                     <p> <strong>Work Office:</strong><br />
                         Gedung Menara Hijau, Jl. MT Haryono Kav 33, Lantai 3 Suite 301, Jakarta 12770
@@ -157,6 +159,11 @@
     </footer>
 
     <script>
+        function setButtonState(btn, state) {
+            btn.classList.remove('state-sending', 'state-success', 'state-error');
+            if (state) btn.classList.add(state)
+        }
+
         // AJAX form submission - page doesn't reload on submit
         const form = document.getElementById('contact-form');
         form.addEventListener('submit', async (e) => {
@@ -173,12 +180,18 @@
                 });
                 if (res.ok) {
                     btn.textContent = 'Message Sent ✓';
-                    btn.classList.replace('state-sending', 'state-success');
+                    setButtonState(btn, 'state-success');
                     form.reset();
+                    // Reset button to default state after 4 seconds
+                    setTimeout(() => {
+                        btn.textContent = 'Send Message';
+                        setButtonState(btn, null); // null removes all state classes
+                        btn.disabled = false;
+                    }, 4000);
                 } else { throw new Error(); }
             } catch {
                 btn.textContent = 'Something went wrong. Try again.';
-                btn.classList.replace('state-sending', 'state-error')
+                setButtonState(btn, 'state-error');
                 btn.disabled = false;
             }
         });
