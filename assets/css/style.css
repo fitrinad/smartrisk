@@ -35,7 +35,7 @@ body {
 }
 
 /*---------- TYPOGRAPHY ----------*/
-h1, h2, h3, nav .logo {
+h1, h2, h3 {
     font-family : 'Cal Sans', sans-serif;
     color       : var(--ink);
 }
@@ -56,7 +56,8 @@ nav {
     z-index         : 100;
 }
 .logo {
-    font-size       : 1.25rem;
+    font-family: 'Cal Sans', sans-serif;
+    font-size       : 2.27rem;
     font-weight     : 600;
     text-decoration : none;
     color           : var(--ink);
@@ -64,8 +65,28 @@ nav {
     align-items     : center;
     gap             : 0rem;
 }
+.logo-text {
+    display: flex;
+    flex-direction: column; /* stacks wordmark above tagline */
+    gap: 0;
+    line-height: 1.2;
+}
+.logo-name {
+    white-space: nowrap;
+}
+.logo-accent { color: var(--accent); } /* "Risk" in green */
+.logo-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.55rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
+    color: var(--muted);
+    line-height: 1;
+    margin-top: -6px;
+}
 .logo img { height: 36px; width: auto; mix-blend-mode: multiply; }
-.logo span { color: var(--accent); }
+
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a {
     text-decoration : none;
