@@ -39,9 +39,9 @@ h1, h2, h3 {
     font-family : 'Cal Sans', sans-serif;
     color       : var(--ink);
 }
-h1  { font-size: 2.5rem; margin-bottom: 1rem; }
-h2  { font-size: 1.8rem; margin-bottom: 1rem; }
-p   { color: var(--muted); margin-bottom: 1rem; }
+h1  { font-size : 2.5rem; margin-bottom: 1rem; }
+h2  { font-size : 1.8rem; margin-bottom: 1rem; }
+p   { color     : var(--muted); margin-bottom: 1rem; }
 
 /*---------- NAV ----------*/
 nav {
@@ -55,35 +55,38 @@ nav {
     top             : 0;
     z-index         : 100;
 }
-.logo {
-    font-family: 'Cal Sans', sans-serif;
-    font-size       : 2.27rem;
-    font-weight     : 600;
+.logo { /* handles horizontal layout of image + text */
     text-decoration : none;
-    color           : var(--ink);
     display         : flex;
     align-items     : center;
     gap             : 0rem;
 }
-.logo-text {
-    display: flex;
-    flex-direction: column; /* stacks wordmark above tagline */
-    gap: 0;
-    line-height: 1.2;
+.logo-text { /* styles the text column inside .logo: the wordmark and tagline */
+    display         : flex; 
+    flex-direction  : column; /* stacks wordmark above tagline */
+    gap             : 0;
+    line-height     : 1.2;
+    min-width       : 0;
 }
-.logo-name {
-    white-space: nowrap;
+.logo-name{
+    font-family     : 'Cal Sans', sans-serif;
+    font-size       : 2.2rem;
+    font-weight     : 600;
+    color           : var(--ink);
+    white-space     : nowrap;
 }
 .logo-accent { color: var(--accent); } /* "Risk" in green */
 .logo-tagline {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.55rem;
-    font-weight: 400;
-    letter-spacing: 0.08em;
-    text-transform: lowercase;
-    color: var(--muted);
-    line-height: 1;
-    margin-top: -6px;
+    font-family     : 'DM Sans', sans-serif;
+    font-size       : 0.55rem;
+    font-weight     : 400;
+    letter-spacing  : 0.053em;
+    text-transform  : lowercase;
+    color           : var(--muted);
+    line-height     : 1;
+    margin-top      : -6px;
+    white-space     : nowrap;
+    display         : inline-block;
 }
 .logo img { height: 36px; width: auto; mix-blend-mode: multiply; }
 
@@ -127,7 +130,7 @@ section:last-of-type { border-bottom: none; }
 /*---------- BUTTONS ----------*/
 .btn {
     display         : inline-block;
-    padding         : 0.8rem 1.8rem;
+    padding         : 0.8rem 1rem;
     font-size       : 0.85rem;
     font-weight     : 500;
     letter-spacing  : 0.06em;
@@ -136,6 +139,7 @@ section:last-of-type { border-bottom: none; }
     border          : 1.5px solid transparent;
     cursor          : pointer;
     transition      : all 0.2s;
+    white-space     : nowrap;
 }
 .btn-primary { background: var(--accent); color: var(--white) }
 .btn-primary:hover { background: var(--accent-hover); }
@@ -251,10 +255,11 @@ footer .footer-logo {
 }
 footer .footer-logo span { color: var(--accent); }
 
-/*---------- RESPONSIVE ----------*/
+/*---------- MOBILE ----------*/
 @media (max-width: 768px) {
     .nav-links { display: none; }
-    .hero hl { font-size: 2rem; }
+    .hero h1 { font-size: 2rem; }
     .services-grid { grid-template-columns: 1fr; }
     .contact-grid {grid-template-columns: 1fr; gap: 2rem; }
+    
 }
