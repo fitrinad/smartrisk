@@ -61,13 +61,17 @@ nav {
     align-items     : center;
     gap             : 0rem;
 }
-.logo-text { /* styles the text column inside .logo: the wordmark and tagline */
+/* Rules for rendering logo by text */ 
+/*  styles the text column inside .logo: the wordmark and tagline */
+/*  flex-direction: column; stacks wordmark above tagline */
+/* .logo-text { 
     display         : flex; 
-    flex-direction  : column; /* stacks wordmark above tagline */
+    flex-direction  : column; 
     gap             : 0;
     line-height     : 1.2;
     min-width       : 0;
 }
+
 .logo-name{
     font-family     : 'Cal Sans', sans-serif;
     font-size       : 2.2rem;
@@ -75,7 +79,7 @@ nav {
     color           : var(--ink);
     white-space     : nowrap;
 }
-.logo-accent { color: var(--accent); } /* "Risk" in green */
+.logo-accent { color: var(--accent); }
 .logo-tagline {
     font-family     : 'DM Sans', sans-serif;
     font-size       : 0.55rem;
@@ -88,7 +92,8 @@ nav {
     white-space     : nowrap;
     display         : inline-block;
 }
-.logo img { height: 36px; width: auto; mix-blend-mode: multiply; }
+*/
+.logo img { height: 3rem; width: auto; mix-blend-mode: multiply; }
 
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a {
@@ -245,7 +250,8 @@ footer {
     text-align  : center;
     font-size   : 0.8rem;
 }
-footer p { color: var(--footer-text-color) } /* this overrides the rule applied specifically to <p> in line 44 */
+/* Rendering footer-logo by text */
+/*
 footer .footer-logo {
     font-family     : 'Cal Sans', sans-serif;
     font-size       : 1.1rem;
@@ -254,6 +260,9 @@ footer .footer-logo {
     margin-bottom   : 0.5rem;
 }
 footer .footer-logo span { color: var(--accent); }
+*/
+footer .footer-logo img { height: 1rem; width: auto; }
+footer p { color: var(--footer-text-color) } /* this overrides the rule applied specifically to <p> in line 44 */
 
 /*---------- MOBILE ----------*/
 @media (max-width: 768px) {
