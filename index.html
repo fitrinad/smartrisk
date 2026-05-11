@@ -16,20 +16,9 @@
 <body>
     <!---------- NAV ---------->
     <nav>
-        <!-- Rendering logo by text -->
-        <!--
-        <a href="#" class="logo">
-            <img src="assets/images/logo_square.png" alt="SmartRisk logo" />
-            <span class="logo-text">
-                <span class="logo-name">Smart<span class="logo-accent">Risk</span></span>
-                <span class="logo-tagline">integrated risk management solution</span>
-            </span>
-            
-        </a>
-        -->
         <!-- Rendering logo by image -->
         <a href="#" class="logo">
-            <img src="assets/images/logo_smartrisk.png" alt="SmartRisk logo" />
+            <img src="assets/images/logo_smartrisk.png" alt="Logo of SmartRisk - integrated risk management solution" />
         </a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -146,7 +135,7 @@
                         <!-- Honeypot Field
                         Text input field to prevent spam submissions (invisible to humans) -->
                         <input type="text" name="_gotcha" style="display:none" />
-                        <button type="submit" class="btn-submit">Send Message</button>
+                        <button type="submit" class="btn btn-submit">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -156,10 +145,6 @@
 
     <!---------- FOOTER ---------->
     <footer>
-        <!-- Rendering footer-logo by text -->
-        <!--
-        <span class="footer-logo">Smart<span>Risk</span></span>
-        -->
         <span class="footer-logo">
             <img src="assets/images/smartrisk_white.png" alt="SmartRisk footer logo" />
         </span>
@@ -195,12 +180,12 @@
                     btn.textContent = 'Message Sent ✓';
                     setButtonState(btn, 'state-success');
                     form.reset();
-                    // Reset button to default state after 4 seconds
+                    // Reset button to default state after 5 seconds
                     setTimeout(() => {
                         btn.textContent = 'Send Message';
                         setButtonState(btn, null); // null removes all state classes
                         btn.disabled = false;
-                    }, 4000);
+                    }, 5000);
                 } else { throw new Error(); }
             } catch {
                 btn.textContent = 'Something went wrong. Try again.';

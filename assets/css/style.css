@@ -6,6 +6,7 @@
     --cream             : #fcf8f0;
     --accent            : #5abd2c;
     --accent-hover      : #3d9a1c;
+    --outline-focus     : #c10c19;
     /* 
     --accent            : #5abd2c;
     --accent-hover      : #3d9a1c;
@@ -18,7 +19,7 @@
     --hero-text         : rgba(250,250,250,0.7);
     --btn-light-color   : rgba(250,250,250,0.8);
     --btn-light-border  : rgba(250,250,250,0.3);
-    --footer-text-color : rgba(250, 250, 250, 0.4);
+    --footer-text-color : rgba(250, 250, 250, 0.8);
     --footer-logo-color : rgba(250, 250, 250, 0.6);
     --success           : #2a7a4b;
     --error             : #8b1a1a;
@@ -61,38 +62,6 @@ nav {
     align-items     : center;
     gap             : 0rem;
 }
-/* Rules for rendering logo by text */ 
-/*  styles the text column inside .logo: the wordmark and tagline */
-/*  flex-direction: column; stacks wordmark above tagline */
-/* .logo-text { 
-    display         : flex; 
-    flex-direction  : column; 
-    gap             : 0;
-    line-height     : 1.2;
-    min-width       : 0;
-}
-
-.logo-name{
-    font-family     : 'Cal Sans', sans-serif;
-    font-size       : 2.2rem;
-    font-weight     : 600;
-    color           : var(--ink);
-    white-space     : nowrap;
-}
-.logo-accent { color: var(--accent); }
-.logo-tagline {
-    font-family     : 'DM Sans', sans-serif;
-    font-size       : 0.55rem;
-    font-weight     : 400;
-    letter-spacing  : 0.053em;
-    text-transform  : lowercase;
-    color           : var(--muted);
-    line-height     : 1;
-    margin-top      : -6px;
-    white-space     : nowrap;
-    display         : inline-block;
-}
-*/
 .logo img { height: 3rem; width: auto; mix-blend-mode: multiply; }
 
 .nav-links { display: flex; gap: 2rem; list-style: none; }
@@ -136,7 +105,7 @@ section:last-of-type { border-bottom: none; }
 .btn {
     display         : inline-block;
     padding         : 0.8rem 1rem;
-    font-size       : 0.85rem;
+    font-size       : 1rem;
     font-weight     : 500;
     letter-spacing  : 0.06em;
     text-transform  : uppercase;
@@ -146,6 +115,8 @@ section:last-of-type { border-bottom: none; }
     transition      : all 0.2s;
     white-space     : nowrap;
 }
+.btn:focus { outline-color: var(--outline-focus); outline-width: 3px; outline-style: solid;}
+
 .btn-primary { background: var(--accent); color: var(--white) }
 .btn-primary:hover { background: var(--accent-hover); }
 
@@ -164,6 +135,20 @@ section:last-of-type { border-bottom: none; }
 .btn-outline:hover { border-color: var(--accent); color: var(--accent)}
 
 /* Form Submit Button */
+.btn-submit {
+    background      : var(--accent);
+    color           : var(--white);
+    border          : none;
+    padding         : 0.9rem 2rem;
+    font-size       : 0.85rem;
+    font-weight     : 500;
+    text-transform  : uppercase;
+    letter-spacing  : 0.06em;
+    cursor          : pointer;
+    width           : 100%;
+    transition      : background 0.2s;
+}
+.btn-submit:hover { background: var(--accent-hover); }
 .btn-submit.state-sending { background: var(--muted); cursor: not-allowed; }
 .btn-submit.state-success { background: var(--success); }
 .btn-submit.state-error   { background: var(--error); }
@@ -224,22 +209,7 @@ section:last-of-type { border-bottom: none; }
 
 .form-group input:focus,
 .form-group select:focus,
-.form-group textarea:focus {border-color: var(--accent); }
-
-.btn-submit{
-    background      : var(--accent);
-    color           : var(--white);
-    border          : none;
-    padding         : 0.9rem 2rem;
-    font-size       : 0.85rem;
-    font-weight     : 500;
-    text-transform  : uppercase;
-    letter-spacing  : 0.06em;
-    cursor          : pointer;
-    width           : 100%;
-    transition      : background 0.2s;
-}
-.btn-submit:hover { background: var(--accent-hover); }
+.form-group textarea:focus {border-color: var(--accent); border-width: 3px; }
 
 
 /*---------- FOOTER ----------*/
@@ -250,17 +220,6 @@ footer {
     text-align  : center;
     font-size   : 0.8rem;
 }
-/* Rendering footer-logo by text */
-/*
-footer .footer-logo {
-    font-family     : 'Cal Sans', sans-serif;
-    font-size       : 1.1rem;
-    color           : var(--footer-logo-color);
-    display         : block;
-    margin-bottom   : 0.5rem;
-}
-footer .footer-logo span { color: var(--accent); }
-*/
 footer .footer-logo img { height: 1rem; width: auto; }
 footer p { color: var(--footer-text-color) } /* this overrides the rule applied specifically to <p> in line 44 */
 
