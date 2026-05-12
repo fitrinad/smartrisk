@@ -14,8 +14,10 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!---------- NAV ---------->
-    <nav>
+    <nav aria-label="Main navigation">
         <!-- Rendering logo by image -->
         <a href="#" class="logo">
             <img src="assets/images/logo_smartrisk.png" alt="Logo of SmartRisk - integrated risk management solution" />
@@ -28,119 +30,123 @@
         <a href="#contact" class="btn btn-primary">Get in Touch</a>
     </nav>
 
-    <!---------- HERO ---------->
-    <section class="hero">
-        <div class="container">
-            <h1>Managing Risk,<br /><em>Globally</em></h1>
-            <p>
-                SmartRisk is an independent risk management consultancy with over a decade of experience helping energy, infrastructure, and industrial clients identify, assess, and mitigate complex risks.
-            </p>
-            <div class="hero-actions">
-                <a href="#services" class="btn btn-primary">Our Services</a>
-                <a href="#contact" class="btn btn-outline-light">Get in Touch</a>
-            </div>
-        </div>
-    </section>
-
-    <!---------- ABOUT ---------->
-    <section id="about">
-        <div class="container">
-            <h2>About SmartRisk</h2>
-            <p>
-                PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest.
-            </p>
-            <p>
-                Headquartered in Jakarta and affiliated with YPK-PLN, we bring deep experience across Indonesia's energy, utilities, mining, and infrastructure sectors; and now extend that expertise to international clients. 
-            </p>
-        </div>
-    </section>
-
-    <!---------- SERVICES ---------->
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Operational Risk Assessment</h3>
-                    <p>
-                        Systematic identification and evaluation of operational hazards including HAZOP studies and technical inspection.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <h3>Project Risk Assessment</h3>
-                    <p>
-                        End-to-end risk analysis for capital projects from feasibility through construction and commissioning.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <h3>Asset Valuation</h3>
-                    <p>
-                        Independent technical valuation of industrial assets for insurance, M&amp;A, and regulatory compliance.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <h3>Insurance &amp; Risk Planning</h3>
-                    <p>
-                        Independent insurance program design, benchmarking, and placement advisory.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <h3>HSE Management</h3>
-                    <p>
-                        Health, Safety &amp; Environment consulting, including gap analysis and BNSP-certified training programs.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <h3>Business Continuity &amp; Resilience</h3>
-                    <p>
-                        Business impact analysis, continuity planning, and disaster risk reduction strategies.
-                    </p>
+    <main id="main-content">
+        <!---------- HERO ---------->
+        <section class="hero">
+            <div class="container">
+                <h1>Managing Risk,<br /><em>Globally</em></h1>
+                <p>
+                    SmartRisk is an independent risk management consultancy with over a decade of experience helping energy, infrastructure, and industrial clients identify, assess, and mitigate complex risks.
+                </p>
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="#contact" class="btn btn-outline-light">Get in Touch</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <p> <strong>Head Office</strong><br />
-                        Jl. Trunojoyo Blok M/135, Kebayoran Baru, Gedung 1 Lantai 4, Jakarta 12160
-                    </p>
-                    <p> <strong>Work Office:</strong><br />
-                        Gedung Menara Hijau, Jl. MT Haryono Kav 33, Lantai 3 Suite 301, Jakarta 12770
-                    </p>
-                    <p> <strong>Phone / WhatsApp</strong><br />
-                        +62-811-8208-123
-                    </p>
-                    <p> <strong>Email</strong><br />
-                        admin@smartrisk-pln.com
-                    </p>
-                </div>
-                <div class="contact-form">
-                    <form id="contact-form" action="https://formspree.io/f/mgodkleb" method="POST">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
-                        </div>
-                        <!-- Honeypot Field
-                        Text input field to prevent spam submissions (invisible to humans) -->
-                        <input type="text" name="_gotcha" style="display:none" />
-                        <button type="submit" class="btn btn-submit">Send Message</button>
-                    </form>
+        <!---------- ABOUT ---------->
+        <section id="about">
+            <div class="container">
+                <h2>About SmartRisk</h2>
+                <p>
+                    PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest.
+                </p>
+                <p>
+                    Headquartered in Jakarta and affiliated with YPK-PLN, we bring deep experience across Indonesia's energy, utilities, mining, and infrastructure sectors; and now extend that expertise to international clients. 
+                </p>
+            </div>
+        </section>
+
+        <!---------- SERVICES ---------->
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Operational Risk Assessment</h3>
+                        <p>
+                            Systematic identification and evaluation of operational hazards including HAZOP studies and technical inspection.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Project Risk Assessment</h3>
+                        <p>
+                            End-to-end risk analysis for capital projects from feasibility through construction and commissioning.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Asset Valuation</h3>
+                        <p>
+                            Independent technical valuation of industrial assets for insurance, M&amp;A, and regulatory compliance.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Insurance &amp; Risk Planning</h3>
+                        <p>
+                            Independent insurance program design, benchmarking, and placement advisory.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>HSE Management</h3>
+                        <p>
+                            Health, Safety &amp; Environment consulting, including gap analysis and BNSP-certified training programs.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Business Continuity &amp; Resilience</h3>
+                        <p>
+                            Business impact analysis, continuity planning, and disaster risk reduction strategies.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p> <strong>Head Office</strong><br />
+                            Jl. Trunojoyo Blok M/135, Kebayoran Baru, Gedung 1 Lantai 4, Jakarta 12160
+                        </p>
+                        <p> <strong>Work Office:</strong><br />
+                            Gedung Menara Hijau, Jl. MT Haryono Kav 33, Lantai 3 Suite 301, Jakarta 12770
+                        </p>
+                        <p> <strong>Phone / WhatsApp</strong><br />
+                            +62-811-8208-123
+                        </p>
+                        <p> <strong>Email</strong><br />
+                            admin@smartrisk-pln.com
+                        </p>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contact-form" action="https://formspree.io/f/mgodkleb" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+                            </div>
+                            <!-- Honeypot Field
+                            Text input field to prevent spam submissions (invisible to humans) -->
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <p id="form-status" aria-live="polite" aria-atomic="true"></p>
+                            <button type="submit" class="btn btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
     <!---------- FOOTER ---------->
@@ -156,43 +162,6 @@
         </p>
     </footer>
 
-    <script>
-        function setButtonState(btn, state) {
-            btn.classList.remove('state-sending', 'state-success', 'state-error');
-            if (state) btn.classList.add(state)
-        }
-
-        // AJAX form submission - page doesn't reload on submit
-        const form = document.getElementById('contact-form');
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const btn = form.querySelector('.btn-submit');
-            btn.textContent = 'Sending...';
-            btn.disabled = true;
-            btn.classList.add('state-sending');
-            try {
-                const res = await fetch(form.action, {
-                    method: 'POST',
-                    body: new FormData(form),
-                    headers: { 'Accept': 'application/json' }
-                });
-                if (res.ok) {
-                    btn.textContent = 'Message Sent ✓';
-                    setButtonState(btn, 'state-success');
-                    form.reset();
-                    // Reset button to default state after 5 seconds
-                    setTimeout(() => {
-                        btn.textContent = 'Send Message';
-                        setButtonState(btn, null); // null removes all state classes
-                        btn.disabled = false;
-                    }, 5000);
-                } else { throw new Error(); }
-            } catch {
-                btn.textContent = 'Something went wrong. Try again.';
-                setButtonState(btn, 'state-error');
-                btn.disabled = false;
-            }
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

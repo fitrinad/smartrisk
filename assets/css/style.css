@@ -6,20 +6,18 @@
     --cream             : #fcf8f0;
     --accent            : #5abd2c;
     --accent-hover      : #3d9a1c;
-    --outline-focus     : #c10c19;
-    /* 
-    --accent            : #5abd2c;
-    --accent-hover      : #3d9a1c;
-    Same hex code as logo
+    --btn-focus         : #c10c19;
+    /* Same hex code as logo
     --accent            : #90be21;
     --accent-hover      : #557113;
     */
     --muted             : #6b6560;
+    --nav-background    : rgba(250,250,250,0.9);
     --rule              : rgba(150,21,21,0.274);
     --hero-text         : rgba(250,250,250,0.7);
     --btn-light-color   : rgba(250,250,250,0.8);
     --btn-light-border  : rgba(250,250,250,0.3);
-    --footer-text-color : rgba(250, 250, 250, 0.8);
+    --footer-text-color : rgba(250, 250, 250, 0.5);
     --footer-logo-color : rgba(250, 250, 250, 0.6);
     --success           : #2a7a4b;
     --error             : #8b1a1a;
@@ -33,6 +31,21 @@ body {
     background  : var(--paper);
     color       : var(--ink);
     line-height : 1.6;
+    overflow-x  : hidden;
+}
+
+/*---------- ACCESSIBILITY ----------*/
+:focus-visible { outline: 3px solid var(--accent); outline-offset:2px; }
+:focus:not(:focus-visible) { outline: none; }
+.skip-link{
+    position: absolute; top:-100%; left: 1rem;
+    background: var(--ink); color: var(--paper);
+    padding: 0.75rem 1.5rem; font-size: 0.9rem;
+    font-weight: 500; z-index: 9999; transition: top 0.2s; text-decoration: none;
+}
+.skip-link:focus { top: 1rem; }
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
 
 /*---------- TYPOGRAPHY ----------*/
@@ -43,10 +56,12 @@ h1, h2, h3 {
 h1  { font-size : 2.5rem; margin-bottom: 1rem; }
 h2  { font-size : 1.8rem; margin-bottom: 1rem; }
 p   { color     : var(--muted); margin-bottom: 1rem; }
+h1 em, h2 em { font-style: italic; color: var(--accent); }
 
 /*---------- NAV ----------*/
 nav {
-    background      : var(--paper);
+    background      : var(--nav-background);
+    backdrop-filter : blur(20px);
     border-bottom   : 1px solid var(--rule);
     padding         : 1rem 2rem;
     display         : flex;
@@ -93,7 +108,7 @@ section:last-of-type { border-bottom: none; }
     padding     : 6rem 0;
 }
 .hero h1 { color: var(--paper); font-size: 3rem; }
-.hero h1 em { font-style: italic; color: var(--accent); }
+/* .hero h1 em { font-style: italic; color: var(--accent); } */
 .hero p { color         : var(--hero-text); 
           font-size     : 1.1rem; 
           max-width     : 540px;
@@ -115,7 +130,7 @@ section:last-of-type { border-bottom: none; }
     transition      : all 0.2s;
     white-space     : nowrap;
 }
-.btn:focus { outline-color: var(--outline-focus); outline-width: 3px; outline-style: solid;}
+.btn:focus { outline-color: var(--btn-focus); }
 
 .btn-primary { background: var(--accent); color: var(--white) }
 .btn-primary:hover { background: var(--accent-hover); }
@@ -152,6 +167,7 @@ section:last-of-type { border-bottom: none; }
 .btn-submit.state-sending { background: var(--muted); cursor: not-allowed; }
 .btn-submit.state-success { background: var(--success); }
 .btn-submit.state-error   { background: var(--error); }
+#form-status { font-size: 0.8rem; margin-top: 0.75rem; min-height:1.2em; }
 
 
 /*---------- SERVICES GRID ----------*/
