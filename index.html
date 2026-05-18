@@ -64,17 +64,57 @@
                 </div>
             </div>
         </section>
+        
+        <!---------- MARQUEE ---------->
+        <div class="marquee-wrap" aria-hidden="true">
+            <div class="marquee-track">
+                <span class="marquee-item">Risk Assessment <span class="marquee-sep">&middot;</span> Asset Valuation <span class="marquee-sep">&middot;</span> HSE Consulting <span class="marquee-sep">&middot;</span> Business Continuity <span class="marquee-sep">&middot;</span> Insurance Planning <span class="marquee-sep">&middot;</span> Technical Assessment <span class="marquee-sep">&middot;</span></span>
+                
+                <span class="marquee-item">Risk Assessment <span class="marquee-sep">&middot;</span> Asset Valuation <span class="marquee-sep">&middot;</span> HSE Consulting <span class="marquee-sep">&middot;</span> Business Continuity <span class="marquee-sep">&middot;</span> Insurance Planning <span class="marquee-sep">&middot;</span> Technical Assessment <span class="marquee-sep">&middot;</span></span>
+                
+                <span class="marquee-item">Risk Assessment <span class="marquee-sep">&middot;</span> Asset Valuation <span class="marquee-sep">&middot;</span> HSE Consulting <span class="marquee-sep">&middot;</span> Business Continuity <span class="marquee-sep">&middot;</span> Insurance Planning <span class="marquee-sep">&middot;</span> Technical Assessment <span class="marquee-sep">&middot;</span></span>
+                
+                <span class="marquee-item">Risk Assessment <span class="marquee-sep">&middot;</span> Asset Valuation <span class="marquee-sep">&middot;</span> HSE Consulting <span class="marquee-sep">&middot;</span> Business Continuity <span class="marquee-sep">&middot;</span> Insurance Planning <span class="marquee-sep">&middot;</span> Technical Assessment <span class="marquee-sep">&middot;</span></span>
+                
+            </div>
+        </div>
 
         <!---------- ABOUT ---------->
-        <section id="about">
-            <div class="container">
-                <h2>About SmartRisk</h2>
-                <p>
-                    PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest.
-                </p>
-                <p>
-                    Headquartered in Jakarta and affiliated with YPK-PLN, we bring deep experience across Indonesia's energy, utilities, mining, and infrastructure sectors; and now extend that expertise to international clients. 
-                </p>
+        <section class="about" id="about" area-labelledby="about-heading">
+            <div class="about-text">
+                <div class="section-label">About SmartRisk</div>
+                <h2 id="about-heading">An <em>independent</em> voice in a complex risk landscape</h2>
+                <div class="about-body">
+                    <p>
+                        PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest.
+                    </p>
+                    <p>
+                        Headquartered in Jakarta and affiliated with YPK-PLN, we bring deep experience across Indonesia's energy, utilities, mining, and infrastructure sectors. Our team holds professional certifications across risk management, HSE, insurance, and technical inspection. 
+                    </p>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="cert-item">
+                    <div class="cert-num" aria-hidden="true">01</div>
+                    <div>
+                        <div class="cert-name">Fully Independent</div>
+                        <div class="cert-desc">No insurer affiliations. Our recommendations serve only your risk objectives.</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-num" aria-hidden="true">02</div>
+                    <div>
+                        <div class="cert-name">Award-Winning Performance</div>
+                        <div class="cert-desc">Recognized for best profitability growth, revenue growth, and efficiency improvement among YPK-PLN subsidiaries.</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-num" aria-hidden="true">03</div>
+                    <div>
+                        <div class="cert-name">Certified Professionals</div>
+                        <div class="cert-desc">BNSP-certified specialists in risk management, HSE, insurance, and technical valuation.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -147,11 +187,15 @@
                         <form id="contact-form" action="https://formspree.io/f/mgodkleb" method="POST">
                             <div class="form-group">
                                 <label for="name">Full Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                                <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true" />
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" placeholder="Company Name" required aria-required="true" />
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required aria-required="true" />
                             </div>
                             <div class="form-group">
                                 <label for="message">Message</label>
