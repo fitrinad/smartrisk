@@ -7,10 +7,10 @@ This repository documents the SmartRisk website redesign.
 - Redesign safely without impacting the live website  
 
 ## What this repo contains  
-- `/assets`: Additional files so the site stays consistent over time.
-- `/css`: Code snippets containing rules that control every visual aspect of the site.
-- `/images`: Image files used for the content of the site.
-- `/js`: Enables the site to be interactive and change content dynamically.
+- `/assets/css`: Code snippets containing rules that control every visual aspect of the site.
+- `/assets/fonts`: Self-hosted woff2 font files (Cal Sans, DM Sans) to avoid external network requests.
+- `/assets/images`: Image files used for the content of the site.
+- `/assets/js`: Enables the site to be interactive and change content dynamically.
 
 
 ## Status  

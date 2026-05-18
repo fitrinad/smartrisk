@@ -7,9 +7,15 @@
     <meta name="description" content="SmartRisk is an independent risk management consultancy based in Jakarta, Indonesia.">
     <link rel="icon" href="assets/images/logo_square.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/images/logo_square.png" />
+<!-- Loading fonts from Google Fonts
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:wght@300;400;500&display=swap" />
+    <link rel="preload" 
+          as="style" 
+          href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:wght@300;400;500&display=swap"
+          onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:wght@300;400;500&display=swap" /></noscript>
+-->
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -20,7 +26,10 @@
     <nav aria-label="Main navigation">
         <!-- Rendering logo by image -->
         <a href="#" class="logo">
-            <img src="assets/images/logo_smartrisk.png" alt="Logo of SmartRisk - integrated risk management solution" />
+            <picture>
+                <source srcset="assets/images/logo_smartrisk.webp" type="image/webp" >
+                <img src="assets/images/logo_smartrisk.png" fetchpriority="high" alt="Logo of SmartRisk - integrated risk management solution" />
+            </picture>
         </a>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
@@ -80,7 +89,7 @@
         </div>
 
         <!---------- ABOUT ---------->
-        <section class="about" id="about" area-labelledby="about-heading">
+        <section class="about" id="about" aria-labelledby="about-heading">
             <div class="about-text">
                 <div class="section-label">About SmartRisk</div>
                 <h2 id="about-heading">An <em>independent</em> voice in a complex risk landscape</h2>
@@ -218,7 +227,10 @@
     <!---------- FOOTER ---------->
     <footer>
         <span class="footer-logo">
-            <img src="assets/images/smartrisk_white.png" alt="SmartRisk footer logo" />
+            <picture>
+                <source srcset="assets/images/smartrisk_white.webp" type="image/webp" >
+                <img src="assets/images/smartrisk_white.png" alt="SmartRisk footer logo" />
+            </picture>
         </span>
         <p>
             © 2026 PT Solusi Manajemen Risiko Terintegrasi. All rights reserved.
@@ -228,6 +240,6 @@
         </p>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>

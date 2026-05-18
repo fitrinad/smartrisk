@@ -1,3 +1,30 @@
+/*---------- SELF-HOST FONTS ----------*/
+@font-face {
+    font-family: 'Cal Sans';
+    src: url('../fonts/CalSans-600.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-300.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-400.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-500.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+
 /*---------- DESIGN TOKENS ----------*/
 :root {
     --ink               : #1e2f47;
@@ -41,7 +68,7 @@
     
     --about-border      : var(--rule);
     --about-text-border : var(--rule);
-    --about-body        : var(--rule);
+    --about-body        : var(--muted);
     --about-visual-bg   : var(--cream);
     --cert-item-border  : var(--rule);
     --cert-num          : var(--rule);
@@ -385,7 +412,7 @@ section:last-of-type { border-bottom: none; }
     padding         : 7rem 4rem;
     border-right    : 1px solid var(--about-text-border);
 }
-.about-body {
+.about-body p {
     font-size       : 1rem;
     line-height     : 1.8;
     color           : var(--about-body);
@@ -423,6 +450,7 @@ section:last-of-type { border-bottom: none; }
     color           : var(--cert-num);
     line-height     : 1;
     flex-shrink     : 0;
+    width           : 4rem;
 }
 .cert-name { 
     font-weight     : 500;

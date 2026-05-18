@@ -51,18 +51,3 @@ form.addEventListener('submit', async (e) => {
         btn.disabled = false;
     }
 });
-
-/*
-// ---------- MARQUEE ---------- //
-function setMarqueeWidth() {
-    const track     = document.querySelector('.marquee-track');
-    const firstItem = document.querySelector('.marquee-item');
-    if (!track || !firstItem) return;
-    track.style.setProperty('--marquee-width', `-${firstItem.offsetWidth}px`);
-}
-
-document.fonts.load('600 0.9rem "Cal Sans"').then(() => {
-    setMarqueeWidth();
-});
-window.addEventListener('resize', setMarqueeWidth);
-*/
