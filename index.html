@@ -7,7 +7,8 @@
     <meta name="description" content="SmartRisk is an independent risk management consultancy based in Jakarta, Indonesia.">
     <link rel="icon" href="assets/images/logo_square.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/images/logo_square.png" />
-<!-- Loading fonts from Google Fonts
+<!-- Loading fonts from Google Fonts -->
+<!--
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" 
@@ -24,6 +25,17 @@
 
     <!---------- NAV ---------->
     <nav aria-label="Main navigation">
+        <!-- Rendering logo by text -->
+        <!--
+        <a href="#" class="logo">
+            <img src="assets/images/logo_square.png" alt="SmartRisk logo" />
+            <span class="logo-text">
+                <span class="logo-name">Smart<span class="logo-accent">Risk</span></span>
+                <span class="logo-tagline">integrated risk management solution</span>
+            </span>
+        </a>
+        -->
+        
         <!-- Rendering logo by image -->
         <a href="#" class="logo">
             <picture>
@@ -31,6 +43,7 @@
                 <img src="assets/images/logo_smartrisk.png" fetchpriority="high" alt="Logo of SmartRisk - integrated risk management solution" />
             </picture>
         </a>
+        
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
@@ -98,7 +111,7 @@
                         PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest.
                     </p>
                     <p>
-                        Headquartered in Jakarta and affiliated with YPK-PLN, we bring deep experience across Indonesia's energy, utilities, mining, and infrastructure sectors. Our team holds professional certifications across risk management, HSE, insurance, and technical inspection. 
+                        Headquartered in Jakarta and affiliated with YPK-PLN, we bring deep experience across Indonesia's energy, utilities, mining, and infrastructure sectors. Our team holds professional certifications across risk management, HSE, insurance, and technical valuation. 
                     </p>
                 </div>
             </div>
@@ -128,47 +141,154 @@
         </section>
 
         <!---------- SERVICES ---------->
-        <section id="services">
-            <div class="container">
-                <h2>Our Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>Operational Risk Assessment</h3>
-                        <p>
-                            Systematic identification and evaluation of operational hazards including HAZOP studies and technical inspection.
-                        </p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Project Risk Assessment</h3>
-                        <p>
-                            End-to-end risk analysis for capital projects from feasibility through construction and commissioning.
-                        </p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Asset Valuation</h3>
-                        <p>
-                            Independent technical valuation of industrial assets for insurance, M&amp;A, and regulatory compliance.
-                        </p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Insurance &amp; Risk Planning</h3>
-                        <p>
-                            Independent insurance program design, benchmarking, and placement advisory.
-                        </p>
-                    </div>
-                    <div class="service-card">
-                        <h3>HSE Management</h3>
-                        <p>
-                            Health, Safety &amp; Environment consulting, including gap analysis and BNSP-certified training programs.
-                        </p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Business Continuity &amp; Resilience</h3>
-                        <p>
-                            Business impact analysis, continuity planning, and disaster risk reduction strategies.
-                        </p>
-                    </div>
+        <section class="services" id="services" aria-labelledby="services-heading">
+            <div class="services-header">
+                <div><div class="section-label">What We Do</div>
+                    <h2 id="services-heading">Our <em>Services</em></h2>
                 </div>
+                <a href="#contact" class="btn btn-outline">All Services &rarr;</a>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-num" aria-hidden="true">01</span>
+                    <!-- <div class="service-icon" aria-hidden="true">&#9881;&#65039;</div> -->
+                    <div class="service-title">
+                        Operational Risk Assessment
+                    </div>
+                    <div class="service-desc">
+                        Systematic identification and evaluation of operational hazards including HAZOP studies and technical inspection.
+                    </div>
+                    <span class="service-arrow" aria-hidden="true">&rarr;</span>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-num" aria-hidden="true">02</span>
+                    <!-- <div class="service-icon" aria-hidden="true">&#128208;&#65039;</div> -->
+                    <div class="service-title">
+                        Project Risk Assessment
+                    </div>
+                    <div class="service-desc">
+                        End-to-end risk analysis for capital projects from feasibility through construction and commissioning.
+                    </div>
+                    <span class="service-arrow" aria-hidden="true">&rarr;</span>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-num" aria-hidden="true">03</span>
+                    <!-- <div class="service-icon" aria-hidden="true">&#127959;&#65039;</div> -->
+                    <div class="service-title">
+                        Asset Valuation
+                    </div>
+                    <div class="service-desc">
+                        Independent technical valuation of industrial assets for insurance, M&amp;A, and regulatory compliance.
+                    </div>
+                    <span class="service-arrow" aria-hidden="true">&rarr;</span>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-num" aria-hidden="true">04</span>
+                    <!-- <div class="service-icon" aria-hidden="true">&#128737;&#65039;</div> -->
+                    <div class="service-title">
+                        Insurance &amp; Risk Planning
+                    </div>
+                    <div class="service-desc">
+                        Independent insurance program design, benchmarking, and placement advisory.
+                    </div>
+                    <span class="service-arrow" aria-hidden="true">&rarr;</span>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-num" aria-hidden="true">05</span>
+                    <!-- <div class="service-icon" aria-hidden="true">&#9937;&#65039;</div> -->
+                    <div class="service-title">
+                        HSE Management
+                    </div>
+                    <div class="service-desc">
+                        Health, Safety, and Environment consulting including gap analysis and BNSP-certified training programs.
+                    </div>
+                    <span class="service-arrow" aria-hidden="true">&rarr;</span>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-num" aria-hidden="true">06</span>
+                    <!-- <div class="service-icon" aria-hidden="true">&#128260;</div> -->
+                    <div class="service-title">
+                        Business Continuity &amp; Resilience
+                    </div>
+                    <div class="service-desc">
+                        Business impact analysis, continuity planning, and disaster risk reduction strategies.
+                    </div>
+                    <span class="service-arrow" aria-hidden="true">&rarr;</span>
+                </div>
+            </div>   
+        </section>
+
+
+        <!---------- CLIENTS ---------->
+        <section class="clients" aria-labelledby="clients-label">
+            <div class="clients-label" id="clients-label">Trusted by Leading Organizations</div>
+            <div class="clients-grid">
+                <div class="client-item">PLN Group</div>
+                <div class="client-item">Antam</div>
+                <div class="client-item">Chevron</div>
+                <div class="client-item">Petrokimia Gresik</div>
+                <div class="client-item">PT MRT Jakarta</div>
+                <div class="client-item">Geo Dipa Energi</div>
+                <div class="client-item">Krakatau Steel</div>
+                <div class="client-item">Telkomsel</div>
+            </div>
+        </section>
+
+
+        <!---------- PROJECTS ---------->
+        <section class="projects" id="projects" aria-labelledby="projects-heading">
+            <div>
+                <div class="section-label">Selected Work</div>
+                <h2 id="projects-heading">Recent <em>Projects</em></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <span class="project-tag">Risk &amp; Insurance</span>
+                    <div class="project-title">Risk Management &amp; Insurance Consulting Services</div>
+                    <div class="project-client">PT Pelayaran Bahtera Adhiguna (BAg)</div>
+                    <div class="project-year">2024</div>
+                </div>
+
+                <div class="project-card">
+                    <span class="project-tag">Asset Valuation</span>
+                    <div class="project-title">Risk Assessment &amp; Asset Valuation</div>
+                    <div class="project-client">PT Petrokimia Gresik</div>
+                    <div class="project-year">2023</div>
+                </div>
+
+                <div class="project-card">
+                    <span class="project-tag">Insurance Advisory</span>
+                    <div class="project-title">Asset Insurance Consultant &amp; Risk Advisory Services</div>
+                    <div class="project-client">PT Antam Tbk</div>
+                    <div class="project-year">2023</div>
+                </div>
+                
+                <div class="project-card">
+                    <span class="project-tag">Operational Risk</span>
+                    <div class="project-title">Insurance Risk Assessment &amp; Recommendations</div>
+                    <div class="project-client">PT PLN Batam</div>
+                    <div class="project-year">2022</div>
+                </div>
+
+                <div class="project-card">
+                    <span class="project-tag">Risk Survey</span>
+                    <div class="project-title">Risk Survey PGU &amp; POMU - Generation Units</div>
+                    <div class="project-client">PT Indonesia Piwer</div>
+                    <div class="project-year">2021</div>
+                </div>
+
+                <div class="project-card">
+                    <span class="project-tag">Risk &amp; Insurance</span>
+                    <div class="project-title">Operational Asset Insurance Consulting</div>
+                    <div class="project-client">PT Geo Dipa Energi</div>
+                    <div class="project-year">2021</div>
+                </div>
+
             </div>
         </section>
 
