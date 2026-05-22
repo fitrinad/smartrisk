@@ -1,3 +1,7 @@
+/* -----------------------------------------------
+   ---------- SmartRisk - Shared Styles ----------
+   ----------------------------------------------- */
+
 /*---------- SELF-HOST FONTS ----------*/
 @font-face {
     font-family: 'Cal Sans';
@@ -25,6 +29,38 @@
 }
 
 
+/*---------- ANIMATIONS ----------*/
+@keyframes fadeUp {
+    from { 
+        opacity     : 0; 
+        transform   : translateY(20px); 
+    }
+    to {
+        opacity     : 1; 
+        transform   : translateY(0); 
+    }
+}
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Removing whitespace between sections */
+.about,
+.services,
+.clients,
+.projects,
+.contact {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
 /*---------- DESIGN TOKENS ----------*/
 :root {
     --ink               : #1e2f47;
@@ -40,6 +76,10 @@
     --muted                     : #6b6560;
     --rule                      : rgba(193, 12, 25, 0.275);
     --nav-bg                    : rgba(250,250,250,0.9);
+
+    --page-header-border    : var(--rule);
+    --page-header-text      : var(--muted);
+
     --hero-bg                   : var(--ink);
     --hero-text                 : var(--paper);
     --hero-text-h1              : var(--paper);
@@ -82,6 +122,7 @@
     --service-desc          : var(--muted);
     --service-arrow         : var(--accent);
 
+    --clients-bg            : var(--cream);
     --clients-border        : var(--rule);
     --clients-grid          : var(--rule);
     --clients-label         : var(--ink);
@@ -94,18 +135,19 @@
     --projects-grid-bg      : var(--rule);
     --project-card-bg       : var(--paper);
     --project-card-hover-bg : var(--cream);
-    --project-tag-text      : var(--accent);
+    --project-tag-text      : var(--accent-hover);
     --project-tag-bg        : rgba(90,189,44,0.1);
     --project-client-text   : var(--muted);
     --project-year-text     : var(--muted);
 
     --form-group-label  : var(--muted);
+    --form-status-text  : var(--muted);
 
     --btn-focus         : #c10c19;
-    --btn-light-color   : rgba(250,250,250,0.8);
+    --btn-light-text    : rgba(250,250,250,0.8);
     --btn-light-border  : rgba(250,250,250,0.3);
-    --footer-text-color : rgba(250, 250, 250, 0.5);
-    --footer-logo-color : rgba(250, 250, 250, 0.6);
+    --footer-text       : rgba(250, 250, 250, 0.5);
+    --footer-logo       : rgba(250, 250, 250, 0.6);
     --success           : #2a7a4b;
     --error             : #8b1a1a;
 }
@@ -147,6 +189,17 @@ body {
     *, *::before, *::after { 
         animation-duration  : 0.01ms !important; 
         transition-duration : 0.01ms !important; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+}
+/*---------- SCROLL REVEAL ----------*/
+.reveal {
+    opacity    : 0;
+    transform  : translateY(24px);
+    transition : opacity 0.7s, transform 0.7s;
+}
+.reveal.visible {
+    opacity   : 1;
+    transform : none;
 }
 
 /*---------- TYPOGRAPHY ----------*/
@@ -230,16 +283,18 @@ nav {
     font-weight     : 500;
     transition      : color 0.2s;
 }
-.nav-links a:hover { color: var(--accent); }
+.nav-links a:hover { color: var(--accent-hover); }
+.nav-links a.active { color: var(--accent);}
 
 
 /*---------- LAYOUT ----------*/
+/*
 .container {
     max-width   : 1100px;
     margin      : 0 auto;
     padding     : 0 2rem;
 }
-
+*/
 section { 
     padding         : 5rem 0; 
     border-bottom   : 1px solid var(--rule); 
@@ -265,6 +320,36 @@ section:last-of-type { border-bottom: none; }
     height      : 1px;
     background  : var(--accent);
 }
+
+
+/*---------- PAGE HEADER ----------*/
+.page-header {
+    display               : grid;
+    grid-template-columns : 1fr 1fr;
+    gap                   : 2rem;
+    align-items           : end;
+    padding               : 8rem 4rem 5rem;
+    background            : var(--hero-bg);
+    border-bottom         : 1px solid var(--page-header-border);
+}
+.page-header .section-label {
+    opacity         : 0;
+    animation       : fadeUp 0.5s 0s forwards;
+}
+.page-header h1 {
+    color           : var(--hero-text)  ;
+    opacity         : 0;
+    animation       : fadeUp 0.5s 0.1s forwards;
+}
+.page-header p {
+    font-size   : 1.05rem;
+    line-height : 1.75;
+    color       : var(--hero-text);
+    max-width   : 460px;
+    opacity     : 0;
+    animation   : fadeUp 0.5s 0.2s forwards;
+}
+
 
 
 /*---------- HERO ----------*/
@@ -532,27 +617,6 @@ section:last-of-type { border-bottom: none; }
 }
 
 
-/*---------- ANIMATIONS ----------*/
-@keyframes fadeUp {
-    from { 
-        opacity     : 0; 
-        transform   : translateY(20px); 
-    }
-    to {
-        opacity     : 1; 
-        transform   : translateY(0); 
-    }
-}
-@keyframes marquee {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-
 /*---------- BUTTONS ----------*/
 .btn {
     display         : inline-block;
@@ -578,7 +642,7 @@ section:last-of-type { border-bottom: none; }
 
 .btn-outline-light {
     background  : transparent;
-    color       : var(--btn-light-color);
+    color       : var(--btn-light-text);
     border-color: var(--btn-light-border);
 }
 .btn-outline-light:hover { 
@@ -619,7 +683,8 @@ section:last-of-type { border-bottom: none; }
 #form-status { 
     font-size   : 0.8rem; 
     margin-top  : 0.75rem;
-    min-height  :1.2em; 
+    min-height  : 1.2em; 
+    color   : var(--form-status-text);
 }
 
 
@@ -659,7 +724,7 @@ section:last-of-type { border-bottom: none; }
     opacity         : 1;
     transform       : translateX(15px);
 }
-.service-card:hover .service-icon {
+.service-card:hover /* .service-icon */ {
     filter          : none;
 }
 .service-card h3 { 
@@ -710,7 +775,7 @@ section:last-of-type { border-bottom: none; }
 /*---------- CLIENTS ----------*/
 .clients {
     padding         : 5rem 4rem;
-    background      : var(--cream);
+    background      : var(--clients-bg);
     border-bottom   : 1px solid var(--clients-border);
 }
 .clients-label {
@@ -794,6 +859,7 @@ section:last-of-type { border-bottom: none; }
 
 
 /*---------- CONTACT ----------*/
+/*
 .contact-grid {
     display                 : grid;
     grid-template-columns   : 1fr 1fr;
@@ -804,6 +870,7 @@ section:last-of-type { border-bottom: none; }
     margin-bottom   : 0.5rem; 
     font-size       : 0.95rem; 
 }
+*/
 
 .form-group { margin-bottom: 1.25rem; }
 .form-group label {
@@ -844,13 +911,13 @@ section:last-of-type { border-bottom: none; }
 /*---------- FOOTER ----------*/
 footer {
     background  : var(--ink);
-    color       : var(--footer-text-color); /* only formats text directly inside <footer>, with no element wrapping it (e.g. <p>, <h1>, <h2>) */
+    color       : var(--footer-text); /* only formats text directly inside <footer>, with no element wrapping it (e.g. <p>, <h1>, <h2>) */
     padding     : 2rem;
     text-align  : center;
     font-size   : 0.8rem;
 }
 footer .footer-logo img { height: 1rem; width: auto; }
-footer p { color: var(--footer-text-color) } /* overrides the rule applied specifically to <p> in line 44 */
+footer p { color: var(--footer-text) } /* overrides the rule applied specifically to <p> in line 44 */
 
 /*---------- TABLET ----------*/
 @media (max-width: 1100px) {
@@ -884,7 +951,7 @@ footer p { color: var(--footer-text-color) } /* overrides the rule applied speci
     
 }
 /*---------- MOBILE ----------*/
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .nav-links { display: none; }
     nav { padding: 0.5rem 0.5rem; }
     .services-grid { grid-template-columns: 1fr; }

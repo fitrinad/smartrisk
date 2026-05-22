@@ -1,0 +1,120 @@
+/* -----------------------------------------------------
+   ---------- SmartRisk - Contact Page Styles ----------
+   ----------------------------------------------------- */
+
+.contact-page {
+    display               : grid;
+    grid-template-columns : 1fr 1fr;
+    min-height            : calc(100vh - 80px);
+}
+
+
+/*---------- LEFT PANEL ----------*/
+.contact-info-panel {
+    background      : var(--ink);
+    color           : var(--paper);
+    padding         : 7rem 4rem;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+}
+.contact-info-panel .section-label {
+    opacity   : 0;
+    animation : fadeUp 0.5s 0.1s forwards;
+}
+.contact-info-panel h1 {
+    color     : var(--paper);
+    font-size : clamp(2.5rem, 4vw, 4rem);
+    opacity   : 0;
+    animation : fadeUp 0.5s 0.2s forwards;
+}
+.contact-info-panel h1 em {
+    color     : var(--accent);
+    opacity   : 0;
+    animation : fadeUp 0.5s 0.2s forwards;
+}
+.contact-info-panel p {
+    color      : var(--hero-text-p);
+    margin-top : 1rem;
+    line-height: 1.75;
+    max-width  : 380px;
+    opacity    : 0;
+    animation  : fadeUp 0.5s 0.3s forwards;
+}
+.contact-details {
+    margin-top     : 3rem;
+    display        : flex;
+    flex-direction : column;
+    gap            : 1.75rem;
+    opacity        : 0;
+    animation      : fadeUp 0.5s 0.3s forwards;
+}
+.contact-item {
+    display     : flex;
+    gap         : 1rem;
+    align-items : flex-start;
+}
+.contact-item-icon {
+    font-size  : 1rem;
+    margin-top : 0.2rem;
+    opacity    : 0.4;
+    flex-shrink: 0;
+    width      : 1.25rem;
+    text-align : center;
+}
+.contact-item-text {
+    font-size   : 0.9rem;
+    line-height : 1.6;
+    opacity     : 0.7;
+}
+.contact-item-text strong {
+    display       : block;
+    font-weight   : 500;
+    color         : var(--paper);
+    margin-bottom : 0.15rem;
+}
+.contact-item-text span { display: block; }
+
+
+/*---------- RIGHT PANEL ----------*/
+.contact-form-panel {
+    padding         : 7rem 4rem;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+}
+.contact-form-panel h2 { margin-bottom: 2rem; }
+
+.form-dark label {
+    display        : block;
+    font-size      : 0.68rem;
+    letter-spacing : 0.12em;
+    text-transform : uppercase;
+    color          : var(--muted);
+    margin-bottom  : 0.45rem;
+}
+.form-dark input,
+.form-dark select,
+.form-dark textarea {
+    width       : 100%;
+    background  : var(--cream);
+    border      : 1px solid var(--rule);
+    color       : var(--ink);
+    padding     : 0.85rem 1rem;
+    font-size   : 0.9rem;
+    font-family : 'DM Sans', sans-serif;
+    outline     : none;
+    transition  : border-color 0.2s;
+}
+.form-dark input:focus,
+.form-dark select:focus,
+.form-dark textarea:focus { border-color: var(--accent); }
+.form-dark textarea { resize: vertical; min-height: 90px; }
+
+
+/*---------- MOBILE ----------*/
+@media (max-width: 1100px) {
+    .contact-page { grid-template-columns: 1fr; }
+    .contact-info-panel,
+    .contact-form-panel { padding: 5rem 1.5rem; }
+}
