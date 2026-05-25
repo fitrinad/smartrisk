@@ -5,19 +5,22 @@
 // ---------- ACTIVE NAV ---------- //
 function setActiveNav() {
     // Get the current URL path
-    const currentLocation = window.location.pathname.split('/')[1];
-    
-    // Select all links in your navigation menu
+    const parts = window.location.pathname.split('/').filter(Boolean);
+    const currentLocation = parts[parts.length - 1] || '';
+
+    // Highlights nav links based on currentLocation
     const menuLinks = document.querySelectorAll('.nav-links a');
     menuLinks.forEach(link => {
-        // Check if the link's href matches the current URL
-        const menuLink = link.getAttribute('href').split('/').pop();
-        if ( menuLink === currentLocation) {
+        const href = link.getAttribute('href');
+        const linkPage = href.split('/').filter(Boolean).pop() || '';
+        // currentLocation is '' on homepage
+        // won't match any nav link, so IntersectionObserver handles it
+        if (linkPage && linkPage === currentLocation) {
             link.classList.add('active');
         }
     });
 
-    // Highlight nav links on scroll based on visible section
+    // Highlights nav links on scroll based on visible section
     const navLinks = [...document.querySelectorAll('.nav-links a')];
     const sections = [...document.querySelectorAll('main section[id]')];
 
@@ -26,7 +29,7 @@ function setActiveNav() {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     navLinks.forEach(a => a.classList.remove('active'));
-                    // match by anchor (#services) or by page name (about → #about)
+                    // match by anchor (#services) or by page name (about -> #about)
                     const match = navLinks.find(a => {
                         const href = a.getAttribute('href');
                         return href === '#' + entry.target.id ||
@@ -35,7 +38,7 @@ function setActiveNav() {
                     if (match) match.classList.add('active');
                 }
             });
-        }, { threshold: 0.4 });
+        }, { threshold: 0.2 });
 
         sections.forEach(s => sectionObserver.observe(s));
     }
@@ -52,7 +55,7 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0 });
+}, { threshold: 0.2 });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 

@@ -3,7 +3,7 @@
    --------------------------------------------------- */
 
 :root{
-    --pillar-num-text   : rgba(150,21,21,0.15);
+    --pillar-num-text: rgba(150,21,21,0.15);
 }
 
 /* Removing whitespace between sections */
@@ -43,29 +43,29 @@
     overflow        : hidden;
 }
 .story-aside::before {
-    content        : '';
-    position       : absolute;
-    bottom         : -20%;
-    left           : -20%;
-    width          : 60%;
-    padding-bottom : 60%;
-    border-radius  : 50%;
-    background     : radial-gradient(circle, var(--hero-right-before) 0%, transparent 70%);
+    content         : '';
+    position        : absolute;
+    bottom          : -20%;
+    left            : -20%;
+    width           : 60%;
+    padding-bottom  : 60%;
+    border-radius   : 50%;
+    background      : radial-gradient(circle, var(--hero-right-before) 0%, transparent 70%);
 }
 .vision-block,
 .mission-block {
-    padding       : 3rem 0;
-    border-bottom : 1px solid var(--hero-card-service-border);
-    position      : relative;
-    z-index       : 1;
+    padding         : 3rem 0;
+    border-bottom   : 1px solid var(--hero-card-service-border);
+    position        : relative;
+    z-index         : 1;
 }
 .mission-block { border-bottom: none; }
 .block-label {
-    font-size      : 0.65rem;
-    letter-spacing : 0.18em;
-    text-transform : uppercase;
-    color          : var(--accent);
-    margin-bottom  : 1rem;
+    font-size       : 0.65rem;
+    letter-spacing  : 0.18em;
+    text-transform  : uppercase;
+    color           : var(--accent);
+    margin-bottom   : 1rem;
 }
 .block-text {
     font-family : 'Cal Sans', sans-serif;
@@ -75,54 +75,54 @@
     color       : var(--hero-card-service-text);
 }
 .story-quote {
-    margin-top : auto;
+    margin-top  : auto;
     padding-top : 3rem;
-    position   : relative;
-    z-index    : 1;
+    position    : relative;
+    z-index     : 1;
 }
 .story-quote-text {
-    font-family   : 'Cal Sans', sans-serif;
-    font-size     : 1.05rem;
-    font-style    : italic;
-    line-height   : 1.65;
-    color         : var(--hero-text-p) ;
-    border-left   : 2px solid var(--accent);
-    padding-left  : 1.25rem;
+    font-family     : 'Cal Sans', sans-serif;
+    font-size       : 1.05rem;
+    font-style      : italic;
+    line-height     : 1.65;
+    color           : var(--hero-text-p) ;
+    border-left     : 2px solid var(--accent);
+    padding-left    : 1.25rem;
 }
 
 
 /*---------- SPECIALIZATIONS ----------*/
 .specializations {
-    padding       : 7rem 4rem;
-    border-bottom : 1px solid var(--rule);
-    background    : var(--cream);
+    padding         : 7rem 4rem;
+    border-bottom   : 1px solid var(--rule);
+    background      : var(--cream);
 }
 .spec-grid {
-    display               : grid;
-    grid-template-columns : repeat(4, 1fr);
-    gap                   : 0;
-    border                : 1px solid var(--rule);
-    margin-top            : 4rem;
+    display                 : grid;
+    grid-template-columns   : repeat(4, 1fr);
+    gap                     : 0;
+    border                  : 1px solid var(--rule);
+    margin-top              : 4rem;
 }
 .spec-card {
-    padding       : 2.5rem 2rem;
-    border-right  : 1px solid var(--rule);
-    transition    : background 0.2s;
+    padding         : 2.5rem 2rem;
+    border-right    : 1px solid var(--rule);
+    transition      : background 0.2s;
 }
 .spec-card:last-child { border-right: none; }
 .spec-card:hover { background: var(--paper); }
 /*
 .spec-icon {
-    font-size     : 2rem;
-    margin-bottom : 1.25rem;
-    display       : block;
+    font-size       : 2rem;
+    margin-bottom   : 1.25rem;
+    display         : block;
 }
 */
 .spec-title {
-    font-family   : 'Cal Sans', sans-serif;
-    font-size     : 1.05rem;
-    font-weight   : 700;
-    margin-bottom : 0.5rem;
+    font-family     : 'Cal Sans', sans-serif;
+    font-size       : 1.05rem;
+    font-weight     : 700;
+    margin-bottom   : 0.5rem;
 }
 .spec-sub {
     font-size   : 0.8rem;
@@ -136,14 +136,14 @@
 
 /*---------- METHOD ----------*/
 .method {
-    padding       : 7rem 4rem;
-    border-bottom : 1px solid var(--rule);
+    padding         : 7rem 4rem;
+    border-bottom   : 1px solid var(--rule);
 }
 .method-inner {
-    display               : grid;
-    grid-template-columns : 1fr 1fr;
-    gap                   : 6rem;
-    align-items           : center;
+    display                 : grid;
+    grid-template-columns   : 1fr 1fr;
+    gap                     : 6rem;
+    align-items             : center;
 }
 .method-text h2 { margin-bottom: 1.5rem; }
 .method-text p {
@@ -153,16 +153,16 @@
 }
 .method-text p + p { margin-top: 1em; }
 .method-visual {
-    display        : flex;
-    flex-direction : column;
-    gap            : 0;
+    display         : flex;
+    flex-direction  : column;
+    gap             : 0;
 }
 .method-step {
-    display     : flex;
-    gap         : 1.5rem;
-    padding     : 1.75rem 0;
-    border-bottom : 1px solid var(--rule);
-    align-items : flex-start;
+    display         : flex;
+    gap             : 1.5rem;
+    padding         : 1.75rem 0;
+    border-bottom   : 1px solid var(--rule);
+    align-items     : flex-start;
 }
 .method-step:last-child { border-bottom: none; }
 .method-step-num {
@@ -175,9 +175,9 @@
     width       : 2rem;
 }
 .method-step-title {
-    font-weight   : 500;
-    font-size     : 0.95rem;
-    margin-bottom : 0.3rem;
+    font-weight     : 500;
+    font-size       : 0.95rem;
+    margin-bottom   : 0.3rem;
 }
 .method-step-desc {
     font-size   : 0.82rem;
@@ -188,40 +188,40 @@
 
 /*---------- MISSION PILLARS ----------*/
 .mission-pillars {
-    padding       : 7rem 4rem;
-    background    : var(--cream);
-    border-bottom : 1px solid var(--rule);
+    padding         : 7rem 4rem;
+    background      : var(--cream);
+    border-bottom   : 1px solid var(--rule);
 }
 .pillars-grid {
-    display               : grid;
-    grid-template-columns : repeat(2, 1fr);
-    gap                   : 0;
-    border                : 1px solid var(--rule);
-    margin-top            : 4rem;
+    display                 : grid;
+    grid-template-columns   : repeat(2, 1fr);
+    gap                     : 0;
+    border                  : 1px solid var(--rule);
+    margin-top              : 4rem;
 }
 .pillar-card {
-    padding       : 3rem 2.5rem;
-    border-right  : 1px solid var(--rule);
-    border-bottom : 1px solid var(--rule);
-    transition    : background 0.2s;
+    padding         : 3rem 2.5rem;
+    border-right    : 1px solid var(--rule);
+    border-bottom   : 1px solid var(--rule);
+    transition      : background 0.2s;
 }
 .pillar-card:nth-child(2n) { border-right: none; }
 .pillar-card:nth-child(3),
 .pillar-card:nth-child(4) { border-bottom: none; }
 .pillar-card:hover { background: var(--paper); }
 .pillar-num {
-    font-family   : 'Cal Sans', sans-serif;
-    font-size     : 3rem;
-    font-weight   : 600;
-    color         : var(--pillar-num-text);
-    margin-bottom : 1rem;
-    line-height   : 1;
+    font-family     : 'Cal Sans', sans-serif;
+    font-size       : 3rem;
+    font-weight     : 600;
+    color           : var(--pillar-num-text);
+    margin-bottom   : 1rem;
+    line-height     : 1;
 }
 .pillar-title {
-    font-family   : 'Cal Sans', sans-serif;
-    font-size     : 1.15rem;
-    font-weight   : 700;
-    margin-bottom : 0.75rem;
+    font-family     : 'Cal Sans', sans-serif;
+    font-size       : 1.15rem;
+    font-weight     : 700;
+    margin-bottom   : 0.75rem;
 }
 .pillar-desc {
     font-size   : 0.88rem;
@@ -240,8 +240,8 @@
     gap             : 2rem;
 }
 .cta-strip h2 {
-    color     : var(--paper);
-    max-width : 540px;
+    color       : var(--paper);
+    max-width   : 540px;
 }
 .cta-strip h2 em { color: var(--accent); }
 .cta-actions {
@@ -267,9 +267,9 @@
     .pillar-card:nth-child(4) { border-bottom: 1px solid var(--rule); }
     .pillar-card:last-child { border-bottom: none; }
     .cta-strip { 
-        flex-direction: column; 
-        align-items: flex-start; 
-        padding: 4rem 1.5rem; 
+        flex-direction  : column; 
+        align-items     : flex-start; 
+        padding         : 4rem 1.5rem; 
     }
     .method-inner { gap: 3rem; }
 }

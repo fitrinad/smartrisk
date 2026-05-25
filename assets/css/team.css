@@ -3,51 +3,55 @@
    ----------------------------------------------------- */
 
 /*---------- TEAM SECTION LAYOUT ----------*/
+:root{
+    --team-section-dark-border  : rgba(255,255,255,0.1);
+    --engineer-avatar-bg        :  rgba(250,250,250,0.1)
+}
+
 .team-section {
-    padding       : 5rem 4rem;
-    border-bottom : 1px solid var(--rule);
+    padding         : 5rem 4rem;
+    border-bottom   : 1px solid var(--rule);
 }
 .team-section:last-of-type { border-bottom: none; }
-.team-section-alt  { background: var(--cream); }
+.team-section-alt { background: var(--cream); }
 .team-section-dark { background: var(--ink); }
 
 .team-group-label {
-    font-size      : 0.8rem;
-    letter-spacing : 0.18em;
-    text-transform : uppercase;
-    color          : var(--accent-hover);
-    margin-bottom  : 3rem;
-    display        : flex;
-    align-items    : center;
-    gap            : 0.75rem;
-    padding-bottom : 1.5rem;
-    /* border-bottom  : 1px solid var(--rule); */
+    font-size       : 0.8rem;
+    letter-spacing  : 0.18em;
+    text-transform  : uppercase;
+    color           : var(--accent-hover);
+    margin-bottom   : 3rem;
+    display         : flex;
+    align-items     : center;
+    gap             : 0.75rem;
+    padding-bottom  : 1.5rem;
 }
 .team-group-label::before {
-    content    : '';
-    display    : block;
-    width      : 1.5rem;
-    height     : 1px;
-    background : var(--accent);
+    content     : '';
+    display     : block;
+    width       : 1.5rem;
+    height      : 1px;
+    background  : var(--accent);
 }
-.team-section-dark .team-group-label { border-bottom-color: rgba(255,255,255,0.1); }
+.team-section-dark .team-group-label { border-bottom-color: var(--team-section-dark-border); }
 
 
 /*---------- DIRECTORS ----------*/
 .directors-grid {
-    display               : grid;
-    grid-template-columns : repeat(3, 1fr);
-    gap                   : 0;
-    border                : 1px solid var(--rule);
+    display                 : grid;
+    grid-template-columns   : repeat(3, 1fr);
+    gap                     : 0;
+    border                  : 1px solid var(--rule);
 }
 .director-card {
-    padding        : 3rem 2.5rem;
-    border-right   : 1px solid var(--rule);
-    display        : flex;
-    flex-direction : column;
-    align-items    : center;
-    text-align     : center;
-    transition     : background 0.2s;
+    padding         : 3rem 2.5rem;
+    border-right    : 1px solid var(--rule);
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    text-align      : center;
+    transition      : background 0.2s;
 }
 .director-card:last-child { border-right: none; }
 .director-card:hover { background: var(--cream); }
@@ -63,7 +67,11 @@
     align-items     : center;
     justify-content : center;
 }
-.director-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.director-avatar img { 
+    width       : 100%; 
+    height      : 100%; 
+    object-fit  : cover; 
+}
 .avatar-initials {
     font-family : 'Cal Sans', sans-serif;
     font-size   : 1.5rem;
@@ -71,62 +79,66 @@
     color       : var(--muted);
 }
 .director-name {
-    font-family   : 'Cal Sans', sans-serif;
-    font-size     : 1.15rem;
-    font-weight   : 700;
-    margin-bottom : 0.4rem;
+    font-family     : 'Cal Sans', sans-serif;
+    font-size       : 1.15rem;
+    font-weight     : 700;
+    margin-bottom   : 0.4rem;
 }
 .director-title {
-    font-size      : 0.79rem;
-    color          : var(--accent);
-    letter-spacing : 0.06em;
-    text-transform : uppercase;
+    font-size       : 0.79rem;
+    color           : var(--accent);
+    letter-spacing  : 0.06em;
+    text-transform  : uppercase;
 }
 
 
 /*---------- ENGINEERS ----------*/
 .engineers-grid {
-    display               : grid;
-    grid-template-columns : repeat(5, 1fr);
-    gap                   : 0;
-    border                : 0.5px solid var(--muted);
+    display                 : grid;
+    grid-template-columns   : repeat(5, 1fr);
+    gap                     : 0;
+    border                  : 0.5px solid var(--muted);
 }
 .engineer-card {
-    padding        : 2rem 1.5rem;
-    border-right   : 0.5px solid var(--muted);
-    border-bottom  : 0.5px solid var(--muted);
-    display        : flex;
-    flex-direction : column;
-    align-items    : center;
-    text-align     : center;
-    transition     : background 0.2s;
+    padding         : 2rem 1.5rem;
+    border-right    : 0.5px solid var(--muted);
+    border-bottom   : 0.5px solid var(--muted);
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    text-align      : center;
+    transition      : background 0.2s;
 }
 .engineer-card:nth-child(5n)  { border-right: none; }
 .engineer-card:nth-child(n+6) { border-bottom: none; }
-.engineer-card:hover                       { background: var(--paper); }
-.engineer-card:hover .engineer-name        { color: var(--ink); }
-.engineer-card:hover .engineer-title       { color: var(--muted); }
+.engineer-card:hover                    { background: var(--paper); }
+.engineer-card:hover .engineer-name     { color: var(--ink); }
+.engineer-card:hover .engineer-title    { color: var(--muted); }
 .engineer-avatar {
     width           : 72px;
     height          : 72px;
     border-radius   : 50%;
-    background      : rgba(250,250,250,0.1);
+    background      : var(--engineer-avatar-bg);
     margin-bottom   : 1rem;
     overflow        : hidden;
-    border          : 2px solid rgba(250,250,250,0.1);
+    border          : 2px solid var(--engineer-avatar-bg);
     display         : flex;
     align-items     : center;
     justify-content : center;
     flex-shrink     : 0;
 }
-.engineer-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.engineer-avatar img { 
+    width       : 100%; 
+    height      : 100%; 
+    object-fit  : cover; 
+}
 .engineer-name {
-    font-family   : 'Cal Sans', sans-serif;
-    font-weight   : 600;
-    font-size     : 0.9rem;
-    color         : var(--paper);
-    margin-bottom : 0.35rem;
-    line-height   : 1.3;
+    font-family     : 'Cal Sans', sans-serif;
+    font-weight     : 600;
+    font-size       : 0.9rem;
+    color           : var(--paper);
+    margin-bottom   : 0.35rem;
+    line-height     : 1.3;
 }
 .engineer-title {
     font-size   : 0.75rem;
@@ -137,19 +149,19 @@
 
 /*---------- EXPERT ADVISORS ----------*/
 .experts-grid {
-    display               : grid;
-    grid-template-columns : repeat(3, 1fr);
-    gap                   : 0;
-    border                : 1px solid var(--rule);
+    display                 : grid;
+    grid-template-columns   : repeat(3, 1fr);
+    gap                     : 0;
+    border                  : 1px solid var(--rule);
 }
 .expert-card {
-    padding       : 2.5rem;
-    border-right  : 1px solid var(--rule);
-    border-bottom : 1px solid var(--rule);
-    display       : flex;
-    gap           : 1.25rem;
-    align-items   : flex-start;
-    transition    : background 0.2s;
+    padding         : 2.5rem;
+    border-bottom   : 1px solid var(--rule);
+    border-right    : 1px solid var(--rule);
+    display         : flex;
+    gap             : 1.25rem;
+    align-items     : flex-start;
+    transition      : background 0.2s;
 }
 .expert-card:nth-child(3n)  { border-right: none; }
 .expert-card:nth-child(n+4) { border-bottom: none; }
@@ -166,19 +178,23 @@
     align-items     : center;
     justify-content : center;
 }
-.expert-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.expert-avatar img { 
+    width       : 100%; 
+    height      : 100%; 
+    object-fit  : cover; 
+}
 .expert-name {
-    font-family   : 'Cal Sans', sans-serif;
-    font-size     : 0.95rem;
-    font-weight   : 700;
-    margin-bottom : 0.35rem;
+    font-family     : 'Cal Sans', sans-serif;
+    font-size       : 0.95rem;
+    font-weight     : 700;
+    margin-bottom   : 0.35rem;
 }
 .expert-spec {
-    font-size      : 0.78rem;
-    color          : var(--accent-hover);
-    text-transform : uppercase;
-    letter-spacing : 0.06em;
-    margin-bottom  : 0.5rem;
+    font-size       : 0.78rem;
+    color           : var(--accent-hover);
+    text-transform  : uppercase;
+    letter-spacing  : 0.06em;
+    margin-bottom   : 0.5rem;
 }
 .expert-bio {
     font-size   : 0.8rem;
@@ -188,6 +204,7 @@
 
 
 /*---------- JOIN CTA ----------*/
+/*
 .join-section {
     padding               : 7rem 4rem;
     background            : var(--ink);
@@ -236,19 +253,21 @@
     color          : rgba(250,250,250,0.4);
     margin-top     : 0.4rem;
 }
+*/
 
 
 /*---------- RESPONSIVE ----------*/
 @media (max-width: 900px) {
-    .team-section                          { padding: 4rem 1.5rem; }
-    .directors-grid                        { grid-template-columns: 1fr; }
-    .director-card                         { border-right: none; border-bottom: 1px solid var(--rule); }
-    .director-card:last-child              { border-bottom: none; }
-    .engineers-grid                        { grid-template-columns: repeat(2, 1fr); }
-    .engineer-card:nth-child(2n)           { border-right: none; }
-    .engineer-card:nth-child(2n+1)         { border-right: 1px solid rgba(250,250,250,0.1); }
-    .engineer-card                         { border-bottom: 1px solid rgba(250,250,250,0.08) !important; }
-    .experts-grid                          { grid-template-columns: 1fr; }
-    .expert-card                           { border-right: none !important; }
-    .join-section                          { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 1.5rem; }
+    .team-section { padding: 4rem 1.5rem; }
+    .directors-grid { grid-template-columns: 1fr; }
+    .director-card { border-right: none; border-bottom: 1px solid var(--rule); }
+    .director-card:last-child { border-bottom: none; }
+    .engineers-grid { grid-template-columns: repeat(2, 1fr); }
+    .engineer-card:nth-child(2n) { border-right: none; }
+    .engineer-card:nth-child(2n+1)  { border-right: 1px solid var(--engineer-avatar-bg); }
+    .engineer-card                  { border-bottom: 1px solid var(--engineer-avatar-bg) !important; }
+    .experts-grid                   { grid-template-columns: 1fr; }
+    .expert-card                    { border-right: none !important; border-bottom: 1px solid var(--rule) !important;}
+    .expert-card:last-child         { border-bottom: none !important; }
+    /* .join-section                   { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 1.5rem; } */
 }
