@@ -29,11 +29,21 @@ function setActiveNav() {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     navLinks.forEach(a => a.classList.remove('active'));
-                    // match by anchor (#services) or by page name (about -> #about)
+                    // match by:
+                    // - bare fragment: #services
+                    // - absolute URL with fragment: https://.../#services
+                    // - page name: about -> id="about"
                     const match = navLinks.find(a => {
                         const href = a.getAttribute('href');
-                        return href === '#' + entry.target.id ||
-                            href.replace(/\/$/, '').split('/').pop() === entry.target.id;
+                        // bare fragment: #services
+                        if (href === '#' + entry.target.id) return true;
+                        // absolute URL with fragment: https://.../#services
+                        try {
+                            const url = new URL(href, window.location.href);
+                            if (url.hash === '#' + entry.target.id) return true;
+                        } catch(e) {}
+                        // page name match: about -> id="about"
+                        return href.replace(/\/$/, '').split('/').pop() === entry.target.id;
                     });
                     if (match) match.classList.add('active');
                 }

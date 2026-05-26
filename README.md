@@ -3,7 +3,6 @@ This repository documents the SmartRisk website redesign.
 
 ## Purpose  
 - Prepare a multilingual (EN/ID) website  
-- Improve a global clarity and professionalism  
 - Redesign safely without impacting the live website  
 
 ## What this repo contains  
