@@ -273,8 +273,9 @@ nav {
 
 .nav-links { 
     display     : flex; 
-    gap         : 2rem; 
+    gap         : 1rem; 
     list-style  : none; 
+    align-items : center;
 }
 .nav-links a {
     text-decoration : none;
@@ -282,9 +283,43 @@ nav {
     font-size       : 0.9rem;
     font-weight     : 500;
     transition      : color 0.2s;
+    display         : inline-block;
+    line-height     : 1;
 }
 .nav-links a:hover { color: var(--accent-hover); }
 .nav-links a.active { color: var(--accent);}
+.nav-right {
+    display     : flex;
+    align-items : center;
+    gap         : 1rem;
+}
+
+
+/*---------- LANGUAGE TOGGLE ----------*/
+.lang-toggle {
+    display     : flex;
+    gap         : 0rem;
+    margin      : 0rem;
+}
+.lang-btn {
+    font-size       : 0.75rem;
+    font-weight     : 500;
+    letter-spacing  : 0.08em;
+    padding         : 0.3rem 0.6rem;
+    text-decoration : none;
+    border          : 1px solid transparent;
+    transition      : all 0.2s;
+    color           : var(--ink); 
+    background-color: var(--muted);
+}
+.lang-btn:hover  { 
+    color           : var(--ink);
+    background-color: var(--accent-hover); 
+}
+.lang-btn.active { 
+    color: var(--white); 
+    background-color: var(--accent);
+}
 
 
 /*---------- LAYOUT ----------*/
@@ -951,7 +986,7 @@ footer p { color: var(--footer-text) } /* overrides the rule applied specificall
     
 }
 /*---------- MOBILE ----------*/
-@media (max-width: 800px) {
+@media (max-width: 870px) {
     .nav-links { display: none; }
     nav { padding: 0.5rem 0.5rem; }
     .services-grid { grid-template-columns: 1fr; }

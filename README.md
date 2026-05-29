@@ -10,6 +10,7 @@ This repository documents the SmartRisk website redesign.
 - `/assets/fonts`: Self-hosted woff2 font files (Cal Sans, DM Sans) to avoid external network requests.
 - `/assets/images`: Image files used for the content of the site.
 - `/assets/js`: Enables the site to be interactive and change content dynamically.
+- `/en`: Contains pages of the site, in English.
 
 
 ## Status  
