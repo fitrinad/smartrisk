@@ -986,7 +986,7 @@ footer p { color: var(--footer-text) } /* overrides the rule applied specificall
     
 }
 /*---------- MOBILE ----------*/
-@media (max-width: 870px) {
+@media (max-width: 780px) {
     .nav-links { display: none; }
     nav { padding: 0.5rem 0.5rem; }
     .services-grid { grid-template-columns: 1fr; }
