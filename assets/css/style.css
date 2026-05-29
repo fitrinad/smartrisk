@@ -275,6 +275,7 @@ nav {
     display     : flex; 
     gap         : 1rem; 
     list-style  : none; 
+    align-items : center;
 }
 .nav-links a {
     text-decoration : none;
@@ -282,6 +283,8 @@ nav {
     font-size       : 0.9rem;
     font-weight     : 500;
     transition      : color 0.2s;
+    display         : inline-block;
+    line-height     : 1;
 }
 .nav-links a:hover { color: var(--accent-hover); }
 .nav-links a.active { color: var(--accent);}
