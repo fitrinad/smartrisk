@@ -20,7 +20,7 @@
     font-size       : 0.8rem;
     letter-spacing  : 0.18em;
     text-transform  : uppercase;
-    color           : var(--accent-hover);
+    color           : var(--accent);
     margin-bottom   : 3rem;
     display         : flex;
     align-items     : center;
