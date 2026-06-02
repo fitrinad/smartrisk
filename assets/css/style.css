@@ -829,8 +829,9 @@ section:last-of-type { border-bottom: none; }
     flex            : 1;
     min-width       : 120px;
     padding         : 1.5rem 2rem;
-    border-right    : 1px solid var(--client-item-border);
-    border-bottom   : 1px solid var(--client-item-border);
+    border          : 1px solid var(--client-item-border);
+    /* border-right   : 1px solid var(--client-item-border); 
+    border-bottom   : 1px solid var(--client-item-border);*/
     display         : flex;
     align-items     : center;
     justify-content : center;
