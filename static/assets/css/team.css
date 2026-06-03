@@ -276,3 +276,19 @@
     .expert-card:last-child         { border-bottom: none !important; }
     /* .join-section                   { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 1.5rem; } */
 }
+
+@media (max-width: 800px) {
+    .page-header { grid-template-columns: 1fr; }
+    .team-section { padding: 3rem 2rem; }
+    .director-card { padding: 2rem 1rem; }
+    .director-avatar {
+        width   : 100px;
+        height  : 100px;
+    }
+    .director-name { font-size: 0.97rem; }
+    .director-title { font-size: 0.68rem; }
+    .engineer-avatar {
+        width   : 80px;
+        height  : 80px;
+    }
+}

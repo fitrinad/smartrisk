@@ -278,3 +278,7 @@
     }
     .method-inner { gap: 3rem; }
 }
+
+@media (max-width: 800px) {
+    .page-header { grid-template-columns: 1fr; }
+}
