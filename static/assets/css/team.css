@@ -40,7 +40,7 @@
 /*---------- DIRECTORS ----------*/
 .directors-grid {
     display                 : grid;
-    grid-template-columns   : repeat(3, 1fr);
+    grid-template-columns   : repeat(4, 1fr);
     gap                     : 0;
     border                  : 1px solid var(--rule);
 }
@@ -56,8 +56,8 @@
 .director-card:last-child { border-right: none; }
 .director-card:hover { background: var(--cream); }
 .director-avatar {
-    width           : 100px;
-    height          : 100px;
+    width           : 150px;
+    height          : 150px;
     border-radius   : 50%;
     background      : var(--cream);
     margin-bottom   : 1.5rem;
@@ -115,8 +115,8 @@
 .engineer-card:hover .engineer-name     { color: var(--ink); }
 .engineer-card:hover .engineer-title    { color: var(--muted); }
 .engineer-avatar {
-    width           : 72px;
-    height          : 72px;
+    width           : 100px;
+    height          : 100px;
     border-radius   : 50%;
     background      : var(--engineer-avatar-bg);
     margin-bottom   : 1rem;
@@ -167,8 +167,8 @@
 .expert-card:nth-child(n+4) { border-bottom: none; }
 .expert-card:hover { background: var(--cream); }
 .expert-avatar {
-    width           : 60px;
-    height          : 60px;
+    width           : 80px;
+    height          : 80px;
     border-radius   : 50%;
     flex-shrink     : 0;
     background      : var(--cream);
@@ -256,16 +256,21 @@
 */
 
 
-/*---------- RESPONSIVE ----------*/
-@media (max-width: 900px) {
+/*---------- MOBILE ----------*/
+@media (max-width: 1100px) {
     .team-section { padding: 4rem 1.5rem; }
-    .directors-grid { grid-template-columns: 1fr; }
-    .director-card { border-right: none; border-bottom: 1px solid var(--rule); }
+    
+    .directors-grid { grid-template-columns   : repeat(2, 1fr); }
+    .director-card { border-bottom: 1px solid var(--rule); }
+    .director-card:nth-child(2n) { border-right: none; }
+    .director-card:nth-last-child(2),
     .director-card:last-child { border-bottom: none; }
+    
     .engineers-grid { grid-template-columns: repeat(2, 1fr); }
     .engineer-card:nth-child(2n) { border-right: none; }
     .engineer-card:nth-child(2n+1)  { border-right: 1px solid var(--engineer-avatar-bg); }
     .engineer-card                  { border-bottom: 1px solid var(--engineer-avatar-bg) !important; }
+    
     .experts-grid                   { grid-template-columns: 1fr; }
     .expert-card                    { border-right: none !important; border-bottom: 1px solid var(--rule) !important;}
     .expert-card:last-child         { border-bottom: none !important; }

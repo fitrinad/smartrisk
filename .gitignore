@@ -1,0 +1,3 @@
+*.zip
+.hugo_build.lock
+public/

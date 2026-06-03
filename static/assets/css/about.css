@@ -99,7 +99,7 @@
 }
 .spec-grid {
     display                 : grid;
-    grid-template-columns   : repeat(4, 1fr);
+    grid-template-columns   : repeat(3, 1fr);
     gap                     : 0;
     border                  : 1px solid var(--rule);
     margin-top              : 4rem;
@@ -260,7 +260,8 @@
     .specializations,
     .method,
     .mission-pillars { padding: 4rem 1.5rem; }
-    .spec-grid { grid-template-columns: repeat(2, 1fr); }
+    .spec-grid { grid-template-columns: 1fr; }
+    .spec-card:nth-child(1), 
     .spec-card:nth-child(2n) { border-right: none; }
     .spec-card:nth-child(3), 
     .spec-card:nth-child(4) { border-bottom: none; }

@@ -1,0 +1,601 @@
+#================================#
+#========== NAVIGATION ==========#
+#================================#
+[nav_about]
+other = "About Us"
+[nav_team]
+other = "Our Team"
+[nav_services]
+other = "Services"
+[nav_projects]
+other = "Projects"
+[nav_contact]
+other = "Contact"
+[nav_cta_btn]
+other = "Get in Touch"
+
+[skip_link]
+other = "Skip to main content"
+[nav_aria]
+other = "Main navigation"
+
+
+#============================#
+#========== FOOTER ==========#
+#============================#
+[footer_copyright]
+other = "All rights reserved."
+
+
+
+#===========================#
+#========== INDEX ==========#
+#===========================#
+#==========================#
+#========== HERO ==========#
+#==========================#
+[hero_eyebrow]
+other = "Independent Risk Consultants &middot; Est. Jakarta, Indonesia"
+[hero_h1]
+other = "Managing Risk,<br /><em>Globally</em>"
+[hero_body]
+other = "SmartRisk is an independent risk management consultancy with over a decade of experience helping energy, infrastructure, and industrial clients identify, assess, and mitigate complex risks."
+
+[hero_cta_primary]
+other = "Our Services"
+[hero_cta_secondary]
+other = "Get in Touch"
+
+[hero_stat_01_label]
+other = "Projects Completed"
+[hero_stat_02_label]
+other = "Years of Experience"
+[hero_stat_03_label]
+other = "Award Categories"
+
+[hero_card_label]
+other = "Services"
+[hero_card_service_01]
+other = "Risk Assessment"
+[hero_card_service_02]
+other = "Asset Valuation"
+[hero_card_service_03]
+other = "Risk Management &amp; Insurance Planning"
+[hero_card_service_04]
+other = "HSE Management"
+[hero_card_service_05]
+other = "Business Continuity"
+[hero_card_service_06]
+other = "Technical Assessment"
+
+
+#===========================#
+#========== ABOUT ==========#
+#===========================#
+[about_section_label]
+other = "About SmartRisk"
+[about_h2]
+other = "An <em>independent</em> voice in a complex risk landscape"
+
+[about_body_p01]
+other = "PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest."
+[about_body_p02]
+other = "Headquartered in Jakarta and affiliated with YPK-PLN, we bring deep experience across Indonesia's energy, utilities, mining, and infrastructure sectors. Our team holds professional certifications across risk management, HSE, insurance, and technical valuation."
+
+
+#=================================#
+#========== CREDENTIALS ==========#
+#=================================#
+[cert_01_name]
+other = "Fully Independent"
+[cert_01_desc]
+other = "No insurer affiliations. Our recommendations serve only your risk objectives."
+
+[cert_02_name]
+other = "Award-Winning Performance"
+[cert_02_desc]
+other = "Recognized for best profitability growth, revenue growth, and efficiency improvement among YPK-PLN subsidiaries."
+
+[cert_03_name]
+other = "Certified Professionals"
+[cert_03_desc]
+other = "BNSP-certified specialists in risk management, HSE, insurance, and technical valuation."
+
+
+#==============================#
+#========== SERVICES ==========#
+#==============================#
+[services_section_label]
+other = "What We Do"
+[services_h2]
+other = "Our <em>Services</em>"
+[services_cta]
+other = "All Services &rarr;"
+
+[service_01_title]
+other = "Operational Risk Assessment"
+[service_01_desc]
+other = "Systematic identification and evaluation of operational hazards including HAZOP studies and technical inspection."
+
+[service_02_title]
+other = "Project Risk Assessment"
+[service_02_desc]
+other = "End-to-end risk analysis for capital projects from feasibility through construction and commissioning."
+
+[service_03_title]
+other = "Asset Valuation"
+[service_03_desc]
+other = "Independent technical valuation of industrial assets for insurance, M&amp;A, and regulatory compliance."
+
+[service_04_title]
+other = "Risk Management &amp; Insurance Planning"
+[service_04_desc]
+other = "Independent insurance program design, benchmarking, and placement advisory."
+
+[service_05_title]
+other = "HSE Management"
+[service_05_desc]
+other = "Health, Safety, and Environment consulting including gap analysis and BNSP-certified training programs."
+
+[service_06_title]
+other = "Business Continuity &amp; Resilience"
+[service_06_desc]
+other = "Business impact analysis, continuity planning, and disaster risk reduction strategies."
+
+
+#=============================#
+#========== CLIENTS ==========#
+#=============================#
+[clients_label]
+other = "Trusted by Leading Organizations"
+
+[client_item_01]
+other = "PLN Group"
+
+[client_item_02]
+other = "Antam"
+
+[client_item_03]
+other = "Chevron"
+
+[client_item_04]
+other = "Petrokimia Gresik"
+
+[client_item_05]
+other = "PT MRT Jakarta"
+
+[client_item_06]
+other = "Geo Dipa Energi"
+
+[client_item_07]
+other = "Krakatau Steel"
+
+[client_item_08]
+other = "Telkomsel"
+
+
+#==============================#
+#========== PROJECTS ==========#
+#==============================#
+[projects_section_label]
+other = "Selected Work"
+[projects_h2]
+other = "Recent <em>Projects</em>"
+
+[project_01_tag]
+other = "Risk &amp; Insurance"
+[project_01_title]
+other = "Risk Management &amp; Insurance Consulting Services"
+[project_01_client]
+other = "PT Pelayaran Bahtera Adhiguna (BAg)"
+[project_01_year]
+other = "2024"
+
+[project_02_tag]
+other = "Asset Valuation"
+[project_02_title]
+other = "Risk Assessment &amp; Asset Valuation"
+[project_02_client]
+other = "PT Petrokimia Gresik"
+[project_02_year]
+other = "2023"
+
+[project_03_tag]
+other = "Insurance Advisory"
+[project_03_title]
+other = "Asset Insurance Consultant &amp; Risk Advisory Services"
+[project_03_client]
+other = "PT Antam Tbk"
+[project_03_year]
+other = "2023"
+
+[project_04_tag]
+other = "Operational Risk"
+[project_04_title]
+other = "Insurance Risk Assessment &amp; Recommendations"
+[project_04_client]
+other = "PT PLN Batam"
+[project_04_year]
+other = "2022"
+
+[project_05_tag]
+other = "Risk Survey"
+[project_05_title]
+other = "Risk Survey PGU &amp; POMU - Generation Units"
+[project_05_client]
+other = "PT Indonesia Power"
+[project_05_year]
+other = "2021"
+
+[project_06_tag]
+other = "Risk &amp; Insurance"
+[project_06_title]
+other = "Operational Asset Insurance Consulting"
+[project_06_client]
+other = "PT Geo Dipa Energi"
+[project_06_year]
+other = "2021"
+
+
+
+#==============================#
+#========== ABOUT US ==========#
+#==============================#
+#=================================#
+#========== PAGE HEADER ==========#
+#=================================#
+[about_header_section_label]
+other = "About SmartRisk"
+[about_header_h1]
+other = "Risk expertise,<br /><em>Independently</em> delivered"
+[about_header_p]
+other = "PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in 2020 as a YPK-PLN joint venture to provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest."
+
+
+#=============================#
+#========== MARQUEE ==========#
+#=============================#
+[about_marquee_01]
+other = "Independent"
+[about_marquee_02]
+other = "Multi-Disciplinary"
+[about_marquee_03]
+other = "BNSP-Certified"
+[about_marquee_04]
+other = "Award-Winning"
+[about_marquee_05]
+other = "YPK-PLN Affiliated"
+[about_marquee_06]
+other = "100+ Projects"
+[about_marquee_07]
+other = "10+ Years"
+[about_marquee_08]
+other = "Jakarta, Indonesia"
+
+
+#===========================#
+#========== STORY ==========#
+#===========================#
+[story_section_label]
+other = "About SmartRisk"
+[story_h2]
+other = "An <em>independent</em> voice in a complex risk landscape"
+
+[story_body_p01]
+other = "PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest."
+[story_body_p02]
+other = "Headquartered in Jakarta and affiliated with YPK-PLN, we bring deep experience across Indonesia's energy, utilities, mining, and infrastructure sectors. Our team holds professional certifications across risk management, HSE, insurance, and technical valuation."
+
+[story_vision_label]
+other = "Our Vision"
+[story_vision_text]
+other = "To be the leading independent risk management consultancy trusted by energy and industrial clients across Indonesia and beyond."
+
+[story_mission_label]
+other = "Our Mission"
+[story_mission_text]
+other = "To deliver rigorous, independent, and actionable risk assessments that protect people, assets, and the environment."
+
+[story_quote_text]
+other = "SmartRisk recognizes the fundamental value of testing forecasts and anticipating every possible scenario in your business operations."
+
+
+#=====================================#
+#========== SPECIALIZATIONS ==========#
+#=====================================#
+[spec_section_label]
+other = "Where We Work"
+[spec_h2]
+other = "Sector Expertise"
+
+[spec_01_title]
+other = "Energy"
+[spec_01_sub]
+other = "Power generation, oil &amp; gas, renewable energy"
+[spec_02_title]
+other = "Insurance"
+[spec_02_sub]
+other = "Program design, placement, claims advisory"
+[spec_03_title]
+other = "Ports &amp; Marine Cargo"
+[spec_03_sub]
+other = "Container terminals, bulk cargo, logistics"
+
+[spec_04_title]
+other = "Mining"
+[spec_04_sub]
+other = "Coal, nickel, bauxite, precious metals"
+[spec_05_title]
+other = "Construction Projects"
+[spec_05_sub]
+other = "Capital projects, EPC, infrastructure"
+[spec_06_title]
+other = "High-Rise Buildings"
+[spec_06_sub]
+other = "Commercial, residential, mixed-use"
+
+
+#============================#
+#========== METHOD ==========#
+#============================#
+[method_section_label]
+other = "How We Work"
+[method_h2]
+other = "The <em>Interwoven</em> Method"
+[method_p01]
+other = "Our methodology integrates technical inspection, quantitative risk modeling, and insurance market knowledge into a seamless risk management process."
+[method_p02]
+other = "Each engagement is led by a certified risk professional and draws on a multidisciplinary team of engineers, HSE specialists, and insurance advisors."
+
+[method_step_01_title]
+other = "Risk Identification"
+[method_step_01_desc]
+other = "Systematic identification of hazards through site visits, document reviews, and stakeholder interviews."
+
+[method_step_02_title]
+other = "Risk Analysis"
+[method_step_02_desc]
+other = "Qualitative and quantitative assessment of likelihood and consequence for each identified risk."
+
+[method_step_03_title]
+other = "Risk Evaluation"
+[method_step_03_desc]
+other = "Prioritization against client risk appetite and regulatory thresholds."
+
+[method_step_04_title]
+other = "Risk Treatment"
+[method_step_04_desc]
+other = "Development of actionable mitigation recommendations and implementation roadmap."
+
+[method_step_05_title]
+other = "Monitoring &amp; Review"
+[method_step_05_desc]
+other = "Ongoing review and reporting to track risk posture over time."
+
+
+#=====================================#
+#========== MISSION PILLARS ==========#
+#=====================================#
+[pillars_section_label]
+other = "What Drives Us"
+[pillars_h2]
+other = "Our Commitments"
+
+[pillar_01_title]
+other = "Independence"
+[pillar_01_desc]
+other = "No affiliations with insurers, brokers, or equipment vendors. Our advice serves only your interests."
+
+[pillar_02_title]
+other = "Technical Rigor"
+[pillar_02_desc]
+other = "Every assessment is backed by certified engineers and follows internationally recognized risk frameworks."
+
+[pillar_03_title]
+other = "Practical Output"
+[pillar_03_desc]
+other = "We deliver actionable recommendations, not just reports. Our work is designed to be implemented."
+
+[pillar_04_title]
+other = "Long-term Partnership"
+[pillar_04_desc]
+other = "We build lasting relationships with clients, supporting them through multiple project cycles and risk reviews."
+
+
+#=====================================#
+#========== ABOUT CTA STRIP ==========#
+#=====================================#
+[about_cta_h2]
+other = "Ready to work with an <em>independent</em> risk partner?"
+[about_cta_btn_01]
+other = "Get in Touch"
+[about_cta_btn_02]
+other = "Meet the Team"
+
+
+
+#==============================#
+#========== OUR TEAM ==========#
+#==============================#
+#=================================#
+#========== PAGE HEADER ==========#
+#=================================#
+[team_section_label]
+other = "Our Team"
+[team_h1]
+other = "The people behind <br /><em>SmartRisk</em>"
+[team_p]
+other = "Our multidisciplinary team brings together certified risk professionals, engineers, HSE specialists, and expert advisors with decades of combined experience across Indonesia's key industries."
+
+
+#=============================#
+#========== MARQUEE ==========#
+#=============================#
+[team_marquee_01]
+other = "Risk Engineers"
+[team_marquee_02]
+other = "BNSP-Certified"
+[team_marquee_03]
+other = "Petroleum Engineers"
+[team_marquee_04]
+other = "Electrical Engineers"
+[team_marquee_05]
+other = "Mining Engineers"
+[team_marquee_06]
+other = "HSE Practitioners"
+[team_marquee_07]
+other = "Finance &amp; Tax Specialists"
+
+
+#===============================#
+#========== DIRECTORS ==========#
+#===============================#
+[directors_group_label]
+other = "Directors"
+
+[director_01_name]
+other = "Adi Supriono"
+[director_01_title]
+other = "Executive Director"
+
+[director_02_name]
+other = "Ikhwan Fahri"
+[director_02_title]
+other = "Director of Finance and Risk Management"
+
+[director_03_name]
+other = "Rifky Assamady"
+[director_03_title]
+other = "Commissioner"
+
+[director_04_name]
+other = "Rustamadji"
+[director_04_title]
+other = "Commissioner"
+
+
+#===============================#
+#========== ENGINEERS ==========#
+#===============================#
+[engineers_group_label]
+other = "Engineer Team"
+
+[engineer_01_name]
+other = "Muhammad Fazriansyah"
+[engineer_01_title]
+other = "General Manager &middot; Certified Risk Management Professional"
+
+[engineer_02_name]
+other = "Rissa"
+[engineer_02_title]
+other = "Risk Engineer &middot; Corrosion Engineer"
+
+[engineer_03_name]
+other = "Dwaya Putranti Sekarwening"
+[engineer_03_title]
+other = "Risk Engineer &middot; Petroleum Engineer"
+
+[engineer_04_name]
+other = "Audi Karina Choirunisa"
+[engineer_04_title]
+other = "Risk Analyst &middot; Disaster Management Specialist"
+
+[engineer_05_name]
+other = "Ronny Syahlani"
+[engineer_05_title]
+other = "IT Support &middot; System Information"
+
+[engineer_06_name]
+other = "Maulana Arba Aryadi"
+[engineer_06_title]
+other = "Finance, Accounting &amp; Tax &middot; Master of Accounting"
+
+[engineer_07_name]
+other = "Luthfi Adhyaksadiputra"
+[engineer_07_title]
+other = "Risk Engineer &middot; Mining Engineer"
+
+[engineer_08_name]
+other = "Salsa Maharani Hapsari"
+[engineer_08_title]
+other = "Risk Engineer &middot; Electrical Engineer"
+
+[engineer_09_name]
+other = "Silvia Damayanti"
+[engineer_09_title]
+other = "Risk Engineer &middot; Electrical Engineer"
+
+[engineer_10_name]
+other = "Delia Intan Pratiwi"
+[engineer_10_title]
+other = "Management Officer &middot; Public Relations"
+
+
+#=====================================#
+#========== EXPERT ADVISORS ==========#
+#=====================================#
+[experts_group_label]
+other = "Expert Advisors"
+
+[expert_01_name]
+other = "Adrianus Pangaribuan"
+[expert_01_spec]
+other = "Fire Safety Specialist"
+[expert_01_bio]
+other = "Doctor specializing in fire safety. Technical advisor and professional at SmartRisk."
+
+[expert_02_name]
+other = "Djoko Mulyadi"
+[expert_02_spec]
+other = "Electrical Power Expert"
+[expert_02_bio]
+other = "Practitioner and professional trainer in electrical power engineering at SmartRisk."
+
+[expert_03_name]
+other = "Winardi Sani"
+[expert_03_spec]
+other = "Industrial Engineering"
+[expert_03_bio]
+other = "Academic and industrial engineer serving as a professional technical expert at SmartRisk."
+
+[expert_04_name]
+other = "Joga Prakasa Subroto"
+[expert_04_spec]
+other = "Oil &amp; Gas Valuation"
+[expert_04_bio]
+other = "Extensive experience in asset valuation and risk assessment in oil and gas. Consultant at SmartRisk."
+
+[expert_05_name]
+other = "Tri Harso Harijadi"
+[expert_05_spec]
+other = "HSE Practitioner"
+[expert_05_bio]
+other = "HSE practitioner and instructor at Pertamina; BNSP Competency Assessor. Technical HSE professional at SmartRisk."
+
+[expert_06_name]
+other = "Sumyartono"
+[expert_06_spec]
+other = "Technical Insurance"
+[expert_06_bio]
+other = "Experienced in technical and business insurance. Professional technical expert at SmartRisk."
+
+
+#==============================#
+#========== JOIN CTA ==========#
+#==============================#
+[join_section_h2]
+other = "Bergabung dengan tim yang dapat menangani <em>risiko</em>"
+[join_section_text]
+other = "Kami selalu mencari para ahli risiko bersertifikat, insinyur, dan spesialis K3 yang memiliki komitmen yang sama dengan kami terhadap independensi, ketelitian, dan dampak bagi klien."
+
+[join_cta_btn]
+other = "Hubungi Kami"
+
+[join_stat_01_label]
+other = "Proyek Selesai"
+[join_stat_02_label]
+other = "Tahun Pengalaman"
+[join_stat_03_label]
+other = "Sektor"
+[join_stat_04_label]
+other = "Kategori Penghargaan"

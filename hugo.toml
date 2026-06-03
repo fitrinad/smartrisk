@@ -1,0 +1,22 @@
+baseURL = 'https://fitrinad.github.io/smartrisk/'
+title = 'SmartRisk'
+
+disableKinds = ['taxonomy', 'term']
+
+defaultContentLanguage = 'id'
+defaultContentLanguageInSubdir = false
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[languages]
+    [languages.id]
+        languageCode = 'id'
+        languageName = 'Bahasa Indonesia'
+        weight       = 1
+    [languages.en]
+        languageCode = 'en'
+        languageName = 'English'
+        weight       = 2
+        contentDir   = 'content/en'

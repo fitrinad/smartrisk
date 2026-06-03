@@ -1,0 +1,235 @@
+{{ define "main" }}
+    <!---------- PAGE HEADER ---------->
+    <header class="page-header" aria-labelledby="page-heading">
+        <div>
+            <div class="section-label">{{ i18n "about_header_section_label" | safeHTML }}</div>
+            <h1 id="page-heading">{{ i18n "about_header_h1" | safeHTML }}</h1>
+        </div>
+        <div>
+            <p>
+                {{ i18n "about_header_p" | safeHTML }}
+            </p>
+        </div>
+    </header>
+    
+    <!---------- MARQUEE ---------->
+    <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="marquee-item">
+                {{ i18n "about_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_08" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+            
+            <span class="marquee-item">
+                {{ i18n "about_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_08" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+            
+            <span class="marquee-item">
+                {{ i18n "about_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_08" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+            
+            <span class="marquee-item">
+                {{ i18n "about_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "about_marquee_08" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+        </div>
+    </div>
+
+    <!---------- STORY ---------->
+    <section class="story" aria-labelledby="story-heading">
+        <div class="story-text reveal">
+            <div class="section-label">{{ i18n "story_section_label" | safeHTML }}</div>
+            <h2 id="story-heading">{{ i18n "story_h2" | safeHTML }}</h2>
+            <div class="story-body">
+                <p>
+                    {{ i18n "story_body_p01" | safeHTML }}
+                </p>
+                <p>
+                    {{ i18n "story_body_p02" | safeHTML }}
+                </p>
+            </div>
+        </div>
+        <div class="story-aside reveal">
+            <div class="vision-block">
+                <div class="block-label">{{ i18n "story_vision_label" | safeHTML }}</div>
+                <div class="block-text">{{ i18n "story_vision_text" | safeHTML }}</div>        
+            </div>
+            <div class="mission-block">
+                <div class="block-label">{{ i18n "story_mission_label" | safeHTML }}</div>
+                <div class="block-text">{{ i18n "story_mission_text" | safeHTML }}</div>        
+            </div>
+            <div class="story-quote">
+                <div class="story-quote-text">
+                    "{{ i18n "story_quote_text" | safeHTML }}"
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------- SPECIALIZATIONS ---------->
+    <section class="specializations" aria-labelledby="specializations-heading">
+        <div class="reveal">
+            <div class="section-label">{{ i18n "spec_section_label" | safeHTML }}</div>
+            <h2 id="specializations-heading">{{ i18n "spec_h2" | safeHTML }}</h2>
+        </div>
+        <div class="spec-grid reveal">
+            <div class="spec-card">
+                <!-- <span class="spec-icon" aria-hidden="true">&#9889;&#65039;</span> -->
+                <div class="spec-title">{{ i18n "spec_01_title" | safeHTML }}</div>
+                <div class="spec-sub">{{ i18n "spec_01_sub" | safeHTML }}</div>
+            </div>
+            <div class="spec-card">
+                <!-- <span class="spec-icon" aria-hidden="true">&#128737;&#65039;</span> -->
+                <div class="spec-title">{{ i18n "spec_02_title" | safeHTML }}</div>
+                <div class="spec-sub">{{ i18n "spec_02_sub" | safeHTML }}</div>
+            </div>
+            <div class="spec-card">
+                <!-- <span class="spec-icon" aria-hidden="true">&#128674;&#65039;</span> -->
+                <div class="spec-title">{{ i18n "spec_03_title" | safeHTML }}</div>
+                <div class="spec-sub">{{ i18n "spec_03_sub" | safeHTML }}</div>
+            </div>
+            
+        </div>
+        
+        <div class="spec-grid spec-grid-row2 reveal">
+            <div class="spec-card">
+                <!-- <span class="spec-icon" aria-hidden="true">&#9935;&#65039;</span> -->
+                <div class="spec-title">{{ i18n "spec_04_title" | safeHTML }}</div>
+                <div class="spec-sub">{{ i18n "spec_04_sub" | safeHTML }}</div>
+            </div>
+            
+            <div class="spec-card">
+                <!-- <span class="spec-icon" aria-hidden="true">&#127959;&#65039;</span> -->
+                <div class="spec-title">{{ i18n "spec_05_title" | safeHTML }}</div>
+                <div class="spec-sub">{{ i18n "spec_05_sub" | safeHTML }}</div>
+            </div>
+            <div class="spec-card">
+                <!-- <span class="spec-icon" aria-hidden="true">&#127970;&#65039;</span> -->
+                <div class="spec-title">{{ i18n "spec_06_title" | safeHTML }}</div>
+                <div class="spec-sub">{{ i18n "spec_06_sub" | safeHTML }}</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------- METHOD ---------->
+    <section class="method" aria-labelledby="method-heading">
+        <div class="method-inner">
+            <div class="method-text reveal">
+                <div class="section-label">{{ i18n "method_section_label" | safeHTML }}</div>
+                <h2 id="method-heading">{{ i18n "method_h2" | safeHTML }}</h2>
+                <p>
+                    {{ i18n "method_p01" | safeHTML }}
+                </p>
+                <p>
+                    {{ i18n "method_p02" | safeHTML }}
+                </p>
+            </div>
+            <div class="method-visual reveal">
+                <div class="method-step">
+                    <div class="method-step-num">1</div>
+                    <div>
+                        <div class="method-step-title">{{ i18n "method_step_01_title" | safeHTML }}</div>
+                        <div class="method-step-desc">{{ i18n "method_step_01_desc" | safeHTML }}</div>
+                    </div>
+                </div>
+                <div class="method-step">
+                    <div class="method-step-num">2</div>
+                    <div>
+                        <div class="method-step-title">{{ i18n "method_step_02_title" | safeHTML }}</div>
+                        <div class="method-step-desc">{{ i18n "method_step_02_desc" | safeHTML }}</div>
+                    </div>
+                </div>
+                <div class="method-step">
+                    <div class="method-step-num">3</div>
+                    <div>
+                        <div class="method-step-title">{{ i18n "method_step_03_title" | safeHTML }}</div>
+                        <div class="method-step-desc">{{ i18n "method_step_03_desc" | safeHTML }}</div>
+                    </div>
+                </div>
+                <div class="method-step">
+                    <div class="method-step-num">4</div>
+                    <div>
+                        <div class="method-step-title">{{ i18n "method_step_04_title" | safeHTML }}</div>
+                        <div class="method-step-desc">{{ i18n "method_step_04_desc" | safeHTML }}</div>
+                    </div>
+                </div>
+                <div class="method-step">
+                    <div class="method-step-num">5</div>
+                    <div>
+                        <div class="method-step-title">{{ i18n "method_step_05_title" | safeHTML }}</div>
+                        <div class="method-step-desc">{{ i18n "method_step_05_desc" | safeHTML }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------- MISSION PILLARS ---------->
+    <section class="mission-pillars" aria-labelledby="mission-pillars-heading">
+        <div class="reveal">
+            <div class="section-label">{{ i18n "pillars_section_label" | safeHTML }}</div>
+            <h2 id="mission-pillars-heading">{{ i18n "pillars_h2" | safeHTML }}</h2>
+        </div>
+        <div class="pillars-grid">
+            <div class="pillar-card reveal">
+                <div class="pillar-num">01</div>
+                <div class="pillar-title">{{ i18n "pillar_01_title" | safeHTML }}</div>
+                <div class="pillar-desc">{{ i18n "pillar_01_desc" | safeHTML }}</div>
+            </div>
+            <div class="pillar-card reveal">
+                <div class="pillar-num">02</div>
+                <div class="pillar-title">{{ i18n "pillar_02_title" | safeHTML }}</div>
+                <div class="pillar-desc">{{ i18n "pillar_02_desc" | safeHTML }}</div>
+            </div>
+            <div class="pillar-card reveal">
+                <div class="pillar-num">03</div>
+                <div class="pillar-title">{{ i18n "pillar_03_title" | safeHTML }}</div>
+                <div class="pillar-desc">{{ i18n "pillar_03_desc" | safeHTML }}</div>
+            </div>
+            <div class="pillar-card reveal">
+                <div class="pillar-num">04</div>
+                <div class="pillar-title">{{ i18n "pillar_04_title" | safeHTML }}</div>
+                <div class="pillar-desc">{{ i18n "pillar_04_desc" | safeHTML }}</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------- CTA STRIP ---------->
+    <section class="cta-strip reveal">
+        <h2>{{ i18n "about_cta_h2" | safeHTML }}</h2>
+        <div class="cta-actions">
+            <a href="{{ "contact/" | relLangURL }}" class="btn btn-outline-light">{{ i18n "about_cta_btn_01" | safeHTML }}</a>
+            <a href="{{ "team/" | relLangURL }}" class="btn btn-outline-light">{{ i18n "about_cta_btn_02" | safeHTML }}</a>
+        </div>
+    </section>
+
+{{ end }}
