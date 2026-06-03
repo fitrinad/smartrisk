@@ -1,0 +1,53 @@
+<a href="#main-content" class="skip-link">
+    {{ i18n "skip_link" | safeHTML }}
+</a>
+
+<!---------- NAV ---------->
+<nav aria-label=
+    "{{ i18n "nav_aria" }}" >
+    <!-- Rendering logo by text -->
+    <!--
+    <a href="{{ .Site.Home.Permalink }}" class="logo">
+        <img src="assets/images/logo_square.png" alt="SmartRisk logo" />
+        <span class="logo-text">
+            <span class="logo-name">Smart<span class="logo-accent">Risk</span></span>
+            <span class="logo-tagline">integrated risk management solution</span>
+        </span>
+    </a>
+    -->
+    
+    <!-- Rendering logo by image -->
+    <a href="{{ .Site.Home.Permalink }}" class="logo">
+        <picture>
+            <source srcset="{{ "assets/images/logo_smartrisk.webp" | absURL }}" type="image/webp" />
+            <img src="{{ "assets/images/logo_smartrisk.png" | absURL }}" fetchpriority="high" alt="Logo SmartRisk - integrated risk management solution" />
+        </picture>
+    </a>
+    
+    <ul class="nav-links">
+        <li><a href="{{ "about/" | relLangURL }}">{{ i18n "nav_about" | safeHTML }}</a></li>
+        <li><a href="{{ "team/" | relLangURL }}">{{ i18n "nav_team" | safeHTML }}</a></li>
+        <li><a href="{{ .Site.Home.Permalink }}#services">{{ i18n "nav_services" | safeHTML }}</a></li>
+        <li><a href="{{ .Site.Home.Permalink }}#projects">{{ i18n "nav_projects" | safeHTML }}</a></li>
+        <li><a href="{{ "contact/" | relLangURL }}">{{ i18n "nav_contact" | safeHTML }}</a></li>
+    </ul>
+    
+    <div class="nav-right">
+        <div class="lang-toggle">
+            {{ if eq .Site.Language.Lang "id" }}
+                <span class="lang-btn active">ID</span>
+                {{ range .Translations }}
+                <a href="{{ .RelPermalink }}" class="lang-btn">EN</a>
+                {{ end }}
+            {{ else }}
+                {{ range .Translations }}
+                <a href="{{ .RelPermalink }}" class="lang-btn">ID</a>
+                {{ end }}
+                <span class="lang-btn active">EN</span>
+            {{ end }}
+        </div>
+        <!-- <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">
+            {{ i18n "nav_cta_btn" }}
+        </a> -->
+    </div>
+</nav>

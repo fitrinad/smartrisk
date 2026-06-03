@@ -1,0 +1,318 @@
+{{ define "main" }}
+    <!---------- PAGE HEADER ---------->
+    <header class="page-header" aria-labelledby="page-heading">
+        <div>
+            <div class="section-label">{{ i18n "team_section_label" | safeHTML }}</div>
+            <h1 id="page-heading">{{ i18n "team_h1" | safeHTML }}</h1>
+        </div>
+        <div>
+            <p>
+                {{ i18n "team_p" | safeHTML }}
+            </p>
+        </div>
+    </header>
+    
+    <!---------- MARQUEE ---------->
+    <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="marquee-item">
+                 {{ i18n "team_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+            
+            <span class="marquee-item">
+                 {{ i18n "team_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+
+            <span class="marquee-item">
+                 {{ i18n "team_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+
+            <span class="marquee-item">
+                 {{ i18n "team_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                 {{ i18n "team_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+        </div>
+    </div>
+
+    <!---------- DIRECTORS ---------->
+    <section class="team-section">
+        <div class="team-group-label">{{ i18n "directors_group_label" | safeHTML }}</div>
+            
+        <div class="directors-grid">
+            <div class="director-card reveal">
+                <div class="director-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/elementor/thumbs/Komisaris-Adi-Supriono-p1mts3k6nhsigduvod2d3uozwxhxguhzw4zfrlw9a8.jpg" 
+                            alt="Adi Supriono"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <div class="avatar-initials" style="display:none">AS</div>
+                </div>
+                <div class="director-name">{{ i18n "director_01_name" | safeHTML }}</div>
+                <div class="director-title">{{ i18n "director_01_title" | safeHTML }}</div>
+            </div>
+            <div class="director-card reveal">
+                <div class="director-avatar">
+                    <img src="{{ "assets/images/team/ikhwan_fahri.png" | absURL }}" 
+                            alt="Ikhwan Fahri"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <div class="avatar-initials" style="display:none">IF</div>
+                </div>
+                <div class="director-name">{{ i18n "director_02_name" | safeHTML }}</div>
+                <div class="director-title">{{ i18n "director_02_title" | safeHTML }}</div>
+            </div>
+            <div class="director-card reveal">
+                <div class="director-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2021/01/Pak-Roy-dir.operasional.jpg" 
+                            alt="Rifky Assamady"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <div class="avatar-initials" style="display:none">RA</div>
+                </div>
+                <div class="director-name">{{ i18n "director_03_name" | safeHTML }}</div>
+                <div class="director-title">{{ i18n "director_03_title" | safeHTML }}</div>
+            </div>
+            <div class="director-card reveal">
+                <div class="director-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/elementor/thumbs/website-1-scaled-pp8byq3ykf30uftwg3fpcpbdtli643avyzs3slxrao.jpg" 
+                            alt="Rustamadji"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <div class="avatar-initials" style="display:none">R</div>
+                </div>
+                <div class="director-name">{{ i18n "director_04_name" | safeHTML }}</div>
+                <div class="director-title">{{ i18n "director_04_title" | safeHTML }}</div>
+            </div>
+        </div>
+    </section>
+
+    <!---------- ENGINEERS ---------->
+    <section class="team-section team-section-dark">
+        <div class="team-group-label">{{ i18n "engineers_group_label" | safeHTML }}</div>
+        <div class="engineers-grid">
+            <div class="engineer-card reveal">
+                <div class="engineer-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2020/07/Fazriansyah-new.jpg"
+                            alt="Muhammad Fazriansyah"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:rgba(250,250,250,0.3);font-size:1.5rem;\'>MF</span>'" />
+                </div>
+                <div class="engineer-name">{{ i18n "engineer_01_name" | safeHTML }}</div>
+                <div class="engineer-title">{{ i18n "engineer_01_title" | safeHTML }}</div>
+            </div>
+            <div class="engineer-card reveal">
+                <div class="engineer-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2020/07/Rissa-new.jpg"
+                            alt="Rissa"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:rgba(250,250,250,0.3);font-size:1.5rem;\'>R</span>'" />
+                </div>
+                <div class="engineer-name">{{ i18n "engineer_02_name" | safeHTML }}</div>
+                <div class="engineer-title">{{ i18n "engineer_02_title" | safeHTML }}</div>
+            </div>
+            <div class="engineer-card reveal">
+                <div class="engineer-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2020/07/Dwaya-new.jpg"
+                            alt="Dwaya Putranti Sekarwening"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:rgba(250,250,250,0.3);font-size:1.5rem;\'>DS</span>'" />
+                </div>
+                <div class="engineer-name">{{ i18n "engineer_03_name" | safeHTML }}</div>
+                <div class="engineer-title">{{ i18n "engineer_03_title" | safeHTML }}</div>
+            </div>
+            <div class="engineer-card reveal">
+                <div class="engineer-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2020/07/Audi-new.jpg"
+                            alt="Audi Karina Choirunisa"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:rgba(250,250,250,0.3);font-size:1.5rem;\'>AK</span>'" />
+                </div>
+                <div class="engineer-name">{{ i18n "engineer_04_name" | safeHTML }}</div>
+                <div class="engineer-title">{{ i18n "engineer_04_title" | safeHTML }}</div>
+            </div>
+            <div class="engineer-card reveal">
+                <div class="engineer-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2020/07/Ronny.jpg"
+                            alt="Ronny Syahlani"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:rgba(250,250,250,0.3);font-size:1.5rem;\'>RS</span>'" />
+                </div>
+                <div class="engineer-name">{{ i18n "engineer_05_name" | safeHTML }}</div>
+                <div class="engineer-title">{{ i18n "engineer_05_title" | safeHTML }}</div>
+            </div>
+            <div class="engineer-card reveal">
+                <div class="engineer-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2025/12/6.png"
+                            alt="Maulana Arba Aryadi"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:rgba(250,250,250,0.3);font-size:1.5rem;\'>MA</span>'" />
+                </div>
+                <div class="engineer-name">{{ i18n "engineer_06_name" | safeHTML }}</div>
+                <div class="engineer-title">{{ i18n "engineer_06_title" | safeHTML }}</div>
+            </div>
+            <div class="engineer-card reveal">
+                <div class="engineer-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2025/12/5-2.png"
+                            alt="Luthfi Adhyaksadiputra"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:rgba(250,250,250,0.3);font-size:1.5rem;\'>LA</span>'" />
+                </div>
+                <div class="engineer-name">{{ i18n "engineer_07_name" | safeHTML }}</div>
+                <div class="engineer-title">{{ i18n "engineer_07_title" | safeHTML }}</div>
+            </div>
+            <div class="engineer-card reveal">
+                <div class="engineer-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2025/12/3.png"
+                            alt="Salsa Maharani Hapsari"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:rgba(250,250,250,0.3);font-size:1.5rem;\'>SH</span>'" />
+                </div>
+                <div class="engineer-name">{{ i18n "engineer_08_name" | safeHTML }}</div>
+                <div class="engineer-title">{{ i18n "engineer_08_title" | safeHTML }}</div>
+            </div>
+            <div class="engineer-card reveal">
+                <div class="engineer-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2025/12/2.png"
+                            alt="Silvia Damayanti"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:rgba(250,250,250,0.3);font-size:1.5rem;\'>SD</span>'" />
+                </div>
+                <div class="engineer-name">{{ i18n "engineer_09_name" | safeHTML }}</div>
+                <div class="engineer-title">{{ i18n "engineer_09_title" | safeHTML }}</div>
+            </div>
+            <div class="engineer-card reveal">
+                <div class="engineer-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2025/12/4.png"
+                            alt="Delia Intan Pratiwi"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:rgba(250,250,250,0.3);font-size:1.5rem;\'>DP</span>'" />
+                </div>
+                <div class="engineer-name">{{ i18n "engineer_10_name" | safeHTML }}</div>
+                <div class="engineer-title">{{ i18n "engineer_10_title" | safeHTML }}</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------- EXPERT ADVISORS ---------->
+    <section class="team-section team-section-alt">
+        <div class="team-group-label">{{ i18n "experts_group_label" | safeHTML }}</div>
+        <div class="experts-grid">
+            <div class="expert-card reveal">
+                <div class="expert-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2026/04/andrianus.jpg"
+                            alt="Adrianus Pangaribuan"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>AP</span>'" />
+                </div>
+                <div>
+                    <div class="expert-name">{{ i18n "expert_01_name" | safeHTML }}</div>
+                    <div class="expert-spec">{{ i18n "expert_01_spec" | safeHTML }}</div>
+                    <div class="expert-bio">{{ i18n "expert_01_bio" | safeHTML }}</div>
+                </div>
+            </div>
+            <div class="expert-card reveal">
+                <div class="expert-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2026/04/Djoko-Mulyadi.jpg"
+                            alt="Djoko Mulyadi"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>DM</span>'" />
+                </div>
+                <div>
+                    <div class="expert-name">{{ i18n "expert_02_name" | safeHTML }}</div>
+                    <div class="expert-spec">{{ i18n "expert_02_spec" | safeHTML }}</div>
+                    <div class="expert-bio">{{ i18n "expert_02_bio" | safeHTML }}</div>
+                </div>
+            </div>
+            <div class="expert-card reveal">
+                <div class="expert-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2025/03/winardi-sani.jpg"
+                        alt="Winardi Sani"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>WS</span>'" />
+                </div>
+                <div>
+                    <div class="expert-name">{{ i18n "expert_03_name" | safeHTML }}</div>
+                    <div class="expert-spec">{{ i18n "expert_03_spec" | safeHTML }}</div>
+                    <div class="expert-bio">{{ i18n "expert_03_bio" | safeHTML }}</div>
+                </div>
+            </div>
+            <div class="expert-card reveal">
+                <div class="expert-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2026/04/joga-prakoso-tenaga-ahli.jpg"
+                            alt="Joga Prakasa Subroto"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>JP</span>'" />
+                </div>
+                <div>
+                    <div class="expert-name">{{ i18n "expert_04_name" | safeHTML }}</div>
+                    <div class="expert-spec">{{ i18n "expert_04_spec" | safeHTML }}</div>
+                    <div class="expert-bio">{{ i18n "expert_04_bio" | safeHTML }}</div>
+                </div>
+            </div>
+            <div class="expert-card reveal">
+                <div class="expert-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2026/04/Tri-Harso-Harijadi.jpg"
+                            alt="Tri Harso Harijadi"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>TH</span>'" />
+                </div>
+                <div>
+                    <div class="expert-name">{{ i18n "expert_05_name" | safeHTML }}</div>
+                    <div class="expert-spec">{{ i18n "expert_05_spec" | safeHTML }}</div>
+                    <div class="expert-bio">{{ i18n "expert_05_bio" | safeHTML }}</div>
+                </div>
+            </div>
+            <div class="expert-card reveal">
+                <div class="expert-avatar">
+                    <img src="https://smartrisk-pln.com/wp-content/uploads/2026/04/sumyartono.jpg"
+                            alt="Sumyartono"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>S</span>'" />
+                </div>
+                <div>
+                    <div class="expert-name">{{ i18n "expert_06_name" | safeHTML }}</div>
+                    <div class="expert-spec">{{ i18n "expert_06_spec" | safeHTML }}</div>
+                    <div class="expert-bio">{{ i18n "expert_06_bio" | safeHTML }}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------- JOIN CTA ---------->
+    <!--
+    <section class="join-section">
+        <div class="reveal">
+            <h2>{{ i18n "join_section_h2" | safeHTML }}</h2>
+            <p class="join-text">
+                {{ i18n "join_section_text" | safeHTML }}
+            </p>
+            <div class="join-actions">
+                <a href="{{ "contact/" | relLangURL }}" class="btn btn-outline-light">{{ i18n "join_cta_btn" | safeHTML }}</a>
+            </div>
+        </div>
+        <div class="join-stats reveal">
+            <div class="join-stat">
+                <div class="join-stat-num">100+</div>
+                <div class="join-stat-label">{{ i18n "join_stat_01_label" | safeHTML }}</div>
+            </div>
+            <div class="join-stat">
+                <div class="join-stat-num">10+</div>
+                <div class="join-stat-label">{{ i18n "join_stat_02_label" | safeHTML }}</div>
+            </div>
+            <div class="join-stat">
+                <div class="join-stat-num">8+</div>
+                <div class="join-stat-label">{{ i18n "join_stat_03_label" | safeHTML }}</div>
+            </div>
+            <div class="join-stat">
+                <div class="join-stat-num">3</div>
+                <div class="join-stat-label">{{ i18n "join_stat_04_label" | safeHTML }}</div>
+            </div>
+        </div>
+    </section>
+    -->
+{{ end }}

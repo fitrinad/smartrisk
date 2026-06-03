@@ -1,0 +1,278 @@
+{{ define "main" }}
+    <!---------- HERO ---------->
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-left">
+            <span class="hero-eyebrow">{{ i18n "hero_eyebrow" | safeHTML }}</span>
+            <h1 id="hero-heading">{{ i18n "hero_h1" | safeHTML }}</h1>
+            <p class="hero-body">
+                {{ i18n "hero_body" | safeHTML }}
+            </p>
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-primary">{{ i18n "hero_cta_primary" | safeHTML }}</a>
+                <a href="contact/" class="btn btn-outline-light">{{ i18n "hero_cta_secondary" | safeHTML }}</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat"><div class="stat-num">100+</div><div class="stat-label">{{ i18n "hero_stat_label_1" | safeHTML }}</div></div>
+                <div class="hero-stat"><div class="stat-num">10+</div><div class="stat-label">{{ i18n "hero_stat_label_2" | safeHTML }}</div></div>
+                <div class="hero-stat"><div class="stat-num">3</div><div class="stat-label">{{ i18n "hero_stat_label_3" | safeHTML }}</div></div>
+            </div>    
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+            <div class="hero-card">
+                <div class="hero-card-label">{{ i18n "hero_card_label" | safeHTML }}</div>
+                <div class="hero-card-services">
+                    <div class="hero-card-service"><span>{{ i18n "hero_card_service_01" | safeHTML }}</span><span class="service-dot"></span></div>
+                    <div class="hero-card-service"><span>{{ i18n "hero_card_service_02" | safeHTML }}</span><span class="service-dot"></span></div>
+                    <div class="hero-card-service"><span>{{ i18n "hero_card_service_03" | safeHTML }}</span><span class="service-dot"></span></div>
+                    <div class="hero-card-service"><span>{{ i18n "hero_card_service_04" | safeHTML }}</span><span class="service-dot"></span></div>
+                    <div class="hero-card-service"><span>{{ i18n "hero_card_service_05" | safeHTML }}</span><span class="service-dot"></span></div>
+                    <div class="hero-card-service"><span>{{ i18n "hero_card_service_06" | safeHTML }}</span><span class="service-dot"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!---------- MARQUEE ---------->
+    <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="marquee-item">
+                {{ i18n "hero_card_service_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_06" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+            <span class="marquee-item">
+                {{ i18n "hero_card_service_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_06" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+            <span class="marquee-item">
+                {{ i18n "hero_card_service_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_06" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+            <span class="marquee-item">
+                {{ i18n "hero_card_service_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_06" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+        </div>
+    </div>
+
+    <!---------- ABOUT ---------->
+    <section class="about" id="about" aria-labelledby="about-heading">
+        <div class="about-text">
+            <div class="section-label">{{ i18n "about_section_label" | safeHTML }}</div>
+            <h2 id="about-heading">{{ i18n "about_h2" | safeHTML }}</h2>
+            <div class="about-body">
+                <p>
+                    {{ i18n "about_body_p01" | safeHTML }}
+                </p>
+                <p>
+                    {{ i18n "about_body_p02" | safeHTML }} 
+                </p>
+            </div>
+        </div>
+        <div class="about-visual">
+            <div class="cert-item">
+                <div class="cert-num" aria-hidden="true">01</div>
+                <div>
+                    <div class="cert-name">{{ i18n "cert_01_name" | safeHTML }}</div>
+                    <div class="cert-desc">{{ i18n "cert_01_desc" | safeHTML }}</div>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-num" aria-hidden="true">02</div>
+                <div>
+                    <div class="cert-name">{{ i18n "cert_02_name" | safeHTML }}</div>
+                    <div class="cert-desc">{{ i18n "cert_02_desc" | safeHTML }}</div>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-num" aria-hidden="true">03</div>
+                <div>
+                    <div class="cert-name">{{ i18n "cert_03_name" | safeHTML }}</div>
+                    <div class="cert-desc">{{ i18n "cert_03_desc" | safeHTML }}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------- SERVICES ---------->
+    <section class="services" id="services" aria-labelledby="services-heading">
+        <div class="services-header">
+            <div>
+                <div class="section-label">{{ i18n "services_section_label" | safeHTML }}</div>
+                <h2 id="services-heading">{{ i18n "services_h2" | safeHTML }}</h2>
+            </div>
+            <!-- <a href="contact/" class="btn btn-outline">{{ i18n "services_cta" | safeHTML }}Semua Layanan &rarr;</a> -->
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-num" aria-hidden="true">01</span>
+                <!-- <div class="service-icon" aria-hidden="true">&#9881;&#65039;</div> -->
+                <div class="service-title">
+                    {{ i18n "service_01_title" | safeHTML }}
+                </div>
+                <div class="service-desc">
+                    {{ i18n "service_01_desc" | safeHTML }}
+                </div>
+                <span class="service-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num" aria-hidden="true">02</span>
+                <!-- <div class="service-icon" aria-hidden="true">&#128208;&#65039;</div> -->
+                <div class="service-title">
+                    {{ i18n "service_02_title" | safeHTML }}
+                </div>
+                <div class="service-desc">
+                    {{ i18n "service_02_desc" | safeHTML }}
+                </div>
+                <span class="service-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num" aria-hidden="true">03</span>
+                <!-- <div class="service-icon" aria-hidden="true">&#127959;&#65039;</div> -->
+                <div class="service-title">
+                    {{ i18n "service_03_title" | safeHTML }}
+                </div>
+                <div class="service-desc">
+                    {{ i18n "service_03_desc" | safeHTML }}
+                </div>
+                <span class="service-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num" aria-hidden="true">04</span>
+                <!-- <div class="service-icon" aria-hidden="true">&#128737;&#65039;</div> -->
+                <div class="service-title">
+                    {{ i18n "service_04_title" | safeHTML }}
+                </div>
+                <div class="service-desc">
+                    {{ i18n "service_04_desc" | safeHTML }}
+                </div>
+                <span class="service-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num" aria-hidden="true">05</span>
+                <!-- <div class="service-icon" aria-hidden="true">&#9937;&#65039;</div> -->
+                <div class="service-title">
+                    {{ i18n "service_05_title" | safeHTML }}
+                </div>
+                <div class="service-desc">
+                    {{ i18n "service_05_desc" | safeHTML }}
+                </div>
+                <span class="service-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+
+            <div class="service-card">
+                <span class="service-num" aria-hidden="true">06</span>
+                <!-- <div class="service-icon" aria-hidden="true">&#128260;</div> -->
+                <div class="service-title">
+                    {{ i18n "service_06_title" | safeHTML }}
+                </div>
+                <div class="service-desc">
+                    {{ i18n "service_06_desc" | safeHTML }}
+                </div>
+                <span class="service-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+        </div>   
+    </section>
+
+
+    <!---------- CLIENTS ---------->
+    <section class="clients" aria-labelledby="clients-label">
+        <div class="clients-label" id="clients-label">{{ i18n "clients_label" | safeHTML }}</div>
+        <div class="clients-grid">
+            <div class="client-item">{{ i18n "client_item_01" | safeHTML }}</div>
+            <div class="client-item">{{ i18n "client_item_02" | safeHTML }}</div>
+            <div class="client-item">{{ i18n "client_item_03" | safeHTML }}</div>
+            <div class="client-item">{{ i18n "client_item_04" | safeHTML }}</div>
+            <div class="client-item">{{ i18n "client_item_05" | safeHTML }}</div>
+            <div class="client-item">{{ i18n "client_item_06" | safeHTML }}</div>
+            <div class="client-item">{{ i18n "client_item_07" | safeHTML }}</div>
+            <div class="client-item">{{ i18n "client_item_08" | safeHTML }}</div>
+        </div>
+    </section>
+
+
+    <!---------- PROJECTS ---------->
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+        <div>
+            <div class="section-label">{{ i18n "projects_section_label" | safeHTML }}</div>
+            <h2 id="projects-heading">{{ i18n "projects_h2" | safeHTML }}</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <span class="project-tag">{{ i18n "project_01_tag" | safeHTML }}</span>
+                <div class="project-title">{{ i18n "project_01_title" | safeHTML }}</div>
+                <div class="project-client">{{ i18n "project_01_client" | safeHTML }}</div>
+                <div class="project-year">{{ i18n "project_01_year" | safeHTML }}</div>
+            </div>
+
+            <div class="project-card">
+                <span class="project-tag">{{ i18n "project_02_tag" | safeHTML }}</span>
+                <div class="project-title">{{ i18n "project_02_title" | safeHTML }}</div>
+                <div class="project-client">{{ i18n "project_02_client" | safeHTML }}</div>
+                <div class="project-year">{{ i18n "project_02_year" | safeHTML }}</div>
+            </div>
+
+            <div class="project-card">
+                <span class="project-tag">{{ i18n "project_03_tag" | safeHTML }}</span>
+                <div class="project-title">{{ i18n "project_03_title" | safeHTML }}</div>
+                <div class="project-client">{{ i18n "project_03_client" | safeHTML }}</div>
+                <div class="project-year">{{ i18n "project_03_year" | safeHTML }}</div>
+            </div>
+            
+            <div class="project-card">
+                <span class="project-tag">{{ i18n "project_04_tag" | safeHTML }}</span>
+                <div class="project-title">{{ i18n "project_04_title" | safeHTML }}</div>
+                <div class="project-client">{{ i18n "project_04_client" | safeHTML }}</div>
+                <div class="project-year">{{ i18n "project_04_year" | safeHTML }}</div>
+            </div>
+
+            <div class="project-card">
+                <span class="project-tag">{{ i18n "project_05_tag" | safeHTML }}</span>
+                <div class="project-title">{{ i18n "project_05_title" | safeHTML }}</div>
+                <div class="project-client">{{ i18n "project_05_client" | safeHTML }}</div>
+                <div class="project-year">{{ i18n "project_05_year" | safeHTML }}</div>
+            </div>
+
+            <div class="project-card">
+                <span class="project-tag">{{ i18n "project_06_tag" | safeHTML }}</span>
+                <div class="project-title">{{ i18n "project_06_title" | safeHTML }}</div>
+                <div class="project-client">{{ i18n "project_06_client" | safeHTML }}</div>
+                <div class="project-year">{{ i18n "project_06_year" | safeHTML }}</div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!---------- CONTACT ---------->
+    <section id="contact" class="contact">
+        <div class="contact-page">
+            <!---------- LEFT: Contact Info ---------->
+            {{ partial "contact-info.html" . }}
+        
+            <!---------- RIGHT: Form ---------->
+            {{ partial "contact-form.html" . }}
+        </div>
+    </section>
+
+{{ end }}

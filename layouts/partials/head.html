@@ -1,0 +1,26 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- content= " ... , viewport-fit=cover" for immersive fullscreen experience -->
+<title>{{ .Title }}</title>
+<meta name="description" content="{{ .Description }}" />
+<link rel="icon" href="{{ "assets/images/logo_square.png" | relURL }}" type="image/png" />
+<link rel="apple-touch-icon" href="{{ "assets/images/logo_square.png" | relURL }}" />
+{{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Site.Language.Lang }}" href="{{ .Permalink }}" />
+{{ end }}
+<link rel="alternate" hreflang="{{ .Site.Language.Lang }}" href="{{ .Permalink }}" />
+{{ $root := index .Site.Sites 0 }}
+<link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}" />
+<!-- Loading fonts from Google Fonts -->
+<!--
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" 
+        as="style" 
+        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:wght@300;400;500&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:wght@300;400;500&display=swap" /></noscript>
+-->
+<link rel="stylesheet" href="{{"assets/css/style.css" | relURL }}" />
+{{ with .Params.pageCSS }}
+<link rel="stylesheet" href="{{ printf "assets/css/%s" . | relURL }}" />
+{{ end }}
