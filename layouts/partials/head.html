@@ -8,8 +8,11 @@
 <link rel="alternate" hreflang="{{ .Site.Language.Lang }}" href="{{ .Permalink }}" />
 {{ end }}
 <link rel="alternate" hreflang="{{ .Site.Language.Lang }}" href="{{ .Permalink }}" />
-{{ $root := index .Site.Sites 0 }}
-<link rel="alternate" hreflang="x-default" href="{{ .Site.Home.Permalink }}" />
+{{ if eq .Site.Language.Lang "id" }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+{{ else }}
+<link rel="alternate" hreflang="x-default" href="{{ (index .Translations 0).Permalink }}" />
+{{ end }}
 <!-- Loading fonts from Google Fonts -->
 <!--
 <link rel="preconnect" href="https://fonts.googleapis.com" />
