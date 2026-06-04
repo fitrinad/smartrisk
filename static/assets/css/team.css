@@ -45,7 +45,7 @@
     border                  : 1px solid var(--rule);
 }
 .director-card {
-    padding         : 3rem 2.5rem;
+    padding         : 2rem 1rem;
     border-right    : 1px solid var(--rule);
     display         : flex;
     flex-direction  : column;
