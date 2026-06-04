@@ -363,7 +363,7 @@ section:last-of-type { border-bottom: none; }
     grid-template-columns : 1fr 1fr;
     gap                   : 2rem;
     align-items           : end;
-    padding               : 8rem 4rem 5rem;
+    padding               : 3rem 4rem 3rem;
     background            : var(--hero-bg);
     border-bottom         : 1px solid var(--page-header-border);
 }

@@ -13,7 +13,7 @@
 .contact-info-panel {
     background      : var(--ink);
     color           : var(--paper);
-    padding         : 7rem 4rem;
+    padding         : 3rem 3rem;
     display         : flex;
     flex-direction  : column;
     justify-content : center;
@@ -78,7 +78,7 @@
 
 /*---------- RIGHT PANEL ----------*/
 .contact-form-panel {
-    padding         : 7rem 4rem;
+    padding         : 3rem 3rem;
     display         : flex;
     flex-direction  : column;
     justify-content : center;
