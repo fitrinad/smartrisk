@@ -52,7 +52,6 @@ function setActiveNav() {
 
         sections.forEach(s => sectionObserver.observe(s));
     }
-
 }
 setActiveNav();
 
@@ -68,6 +67,59 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+
+// ---------- HAMBURGER MENU ---------- //
+const hamburger  = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (hamburger && mobileMenu) {
+    // Flag to prevent outside-click handler firing on the same click that opens the menu
+    let menuJustOpened = false;
+    
+    // Toggle menu open/closed on hamburger click
+    hamburger.addEventListener('click', () => {
+        menuJustOpened = true;
+        setTimeout(() => { menuJustOpened = false; }, 10)
+
+        const navHeight = document.querySelector('nav').offsetHeight;
+        mobileMenu.style.top = navHeight + 'px';
+        const open = mobileMenu.classList.toggle('open');
+        hamburger.classList.toggle('open', open);
+        hamburger.setAttribute('aria-expanded', open);
+        // Prevent page scrolling behind the open menu
+        document.body.style.overflow = open ? 'hidden' : '';
+    });
+
+    // Close menu when any link inside is clicked
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.stopPropagation();
+            closeMenu();
+        });
+    });
+    
+    // Close menu when clicking outside the mobile menu
+    document.addEventListener('click', e => {
+        if (menuJustOpened) return;
+        if (
+            mobileMenu.classList.contains('open') &&
+            !mobileMenu.contains(e.target) &&
+            !hamburger.contains(e.target)
+        ) {
+            closeMenu();
+        }
+    });
+
+    // Close menu on Escape key and return focus to hamburger
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+            closeMenu();
+            hamburger.focus();
+        }
+    });
+}
+
 
 // ---------- CONTACT FORM ---------- //
 document.addEventListener('DOMContentLoaded', () => {
@@ -123,4 +175,14 @@ document.addEventListener('DOMContentLoaded', () => {
 function setButtonState(btn, state) {
     btn.classList.remove('state-sending', 'state-success', 'state-error');
     if (state) btn.classList.add(state);
+}
+
+function closeMenu() {
+    setTimeout(() => {
+        mobileMenu.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        // Re-enable page scrolling
+        document.body.style.overflow = '';
+    }, 250);
 }

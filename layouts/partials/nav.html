@@ -25,11 +25,7 @@
     </a>
     
     <ul class="nav-links">
-        <li><a href="{{ "about/" | relLangURL }}">{{ i18n "nav_about" | safeHTML }}</a></li>
-        <li><a href="{{ "team/" | relLangURL }}">{{ i18n "nav_team" | safeHTML }}</a></li>
-        <li><a href="{{ .Site.Home.Permalink }}#services">{{ i18n "nav_services" | safeHTML }}</a></li>
-        <li><a href="{{ .Site.Home.Permalink }}#projects">{{ i18n "nav_projects" | safeHTML }}</a></li>
-        <li><a href="{{ "contact/" | relLangURL }}">{{ i18n "nav_contact" | safeHTML }}</a></li>
+        {{ partial "nav-links.html" . }}
     </ul>
     
     <div class="nav-right">
@@ -49,5 +45,20 @@
         <!-- <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">
             {{ i18n "nav_cta_btn" }}
         </a> -->
+
+        <!---------- HAMBURGER BUTTON ---------->
+        <button class="hamburger" id="hamburger"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </nav>
+
+<!---------- MOBILE MENU ---------->
+<ul class="mobile-menu" id="mobile-menu" role="navigation" aria-label="{{ i18n "nav_aria" }}">
+    {{ partial "nav-links.html" . }}
+</ul>
