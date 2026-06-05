@@ -351,11 +351,13 @@ nav {
 
 /*---------- MOBILE MENU ----------*/
 .mobile-menu {
+    display         : flex;
     flex-direction  : column;
     position        : fixed;
     /* top             : 60px; */         /* matches nav height, adjust if needed. removed since js sets it dynamically */
     max-height      : 0;
     opacity         : 0;
+    pointer-events  : none;     /* Prevents interaction when closed */
     overflow        : hidden;   /* Prevents content spillover while closed */
     visibility      : hidden;   
 
@@ -366,22 +368,24 @@ nav {
     -webkit-backdrop-filter : blur(12px);  /* Safari support */
     padding         : 1.5rem 2rem;
     z-index         : 101;         /* must be higher than nav's z-index */
-    overflow-y      : auto;
     border-radius   : 0 0 1rem 1rem;
     box-shadow      : 0 8px 24px var(--muted);
-
-    transition      : max-height 0.4s ease-in-out,
-                      opacity 0.2s ease-in-out;
+    /* Closing transition */
+    transition      : max-height 0.4s,
+                      opacity 0.7s,
+                      visibility 0.4s;
 }
 .mobile-menu.open { 
-    display     : flex;
-    max-height  : 500px;
-    opacity     : 1;
-    visibility  : visible;
+    max-height      : 500px;
+    opacity         : 1;
+    visibility      : visible;
+    pointer-events  : auto;
+    overflow-y      : auto;
+    /* Opening transition */
+    transition      : max-height 0.4s,
+                      opacity 0.2s,
+                      visibility 0.4s;
 }
-
-
-
 
 .mobile-menu li { 
     list-style-type : none;
