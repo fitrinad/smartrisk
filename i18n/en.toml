@@ -28,6 +28,21 @@ other = "All rights reserved."
 
 
 
+#==============================#
+#========== 404 PAGE ==========#
+#==============================#
+[404_title]
+other = "Page Not Found"
+[404_message_h1]
+other = "Page <em>not found.</em>"
+[404_message_text]
+other = "The page you're looking for doesn't exist or has been moved. Let's get you back on track."
+[404_btn_home]
+other = "Back to Home"
+[404_btn_contact]
+other = "Contact Us"
+
+
 #===========================#
 #========== INDEX ==========#
 #===========================#

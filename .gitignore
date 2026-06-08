@@ -1,4 +1,5 @@
 *.zip
 *.bat
 .hugo_build.lock
+URL_CHANGES.md
 public/

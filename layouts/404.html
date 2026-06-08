@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title id="404-title">{{ i18n "404_title" | safeHTML }} | SmartRisk</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="icon" href="{{ "assets/images/logo_square.png" | absURL }}" type="image/png" />
+        <link rel="apple-touch-icon" href="{{ "assets/images/logo_square.png" | absURL }}" />
+        <link rel="stylesheet" href="{{"assets/css/style.css" | absURL }}" />
+        <link rel="stylesheet" href="{{"assets/css/404.css" | absURL }}" />
+    </head>
+    <body>
+        <div class="not-found">
+            <div class="not-found-num" aria-hidden="true">404</div>
+            <h1 id="404-message-h1">{{ i18n "404_message_h1" | safeHTML }}</h1>
+            <p id="404-message-text">
+                {{ i18n "404_message_text" | safeHTML }}
+            </p>
+            <div class="not-found-actions">
+                <a id="404-btn-home" href="{{ .Site.Home.RelPermalink | relLangURL }}" class="btn btn-light">{{ i18n "404_btn_home" | safeHTML }}</a>
+                <a id="404-btn-contact" href="{{ "contact/" | relLangURL }}" class="btn btn-outline-light">{{ i18n "404_btn_contact" | safeHTML }}</a>
+            </div>
+        </div>
+        <script src="{{ "assets/js/404.js" | absURL }}"></script>
+    </body>
+</html>

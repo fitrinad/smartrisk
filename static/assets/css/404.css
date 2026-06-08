@@ -1,0 +1,36 @@
+.not-found {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background: var(--ink);
+    color: var(--paper);
+}
+.not-found-num {
+    font-family: 'Cal Sans', sans-serif;
+    font-size: clamp(6rem, 20vw, 16rem);
+    font-weight: 600;
+    line-height: 1;
+    color: rgba(250,250,250,0.06);
+    letter-spacing: -0.1em;
+    user-select: none;
+}
+.not-found h1 {
+    font-family: 'Cal Sans', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: var(--paper);
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+}
+.not-found h1 em { color: var(--accent); }
+.not-found p {
+    font-size: 1rem;
+    color: var(--footer-text);
+    max-width: 400px;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+.not-found-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }

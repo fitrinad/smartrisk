@@ -778,6 +778,14 @@ section:last-of-type { border-bottom: none; }
     border-color    : var(--accent); 
     color           : var(--accent)
 }
+.btn-light {
+    background  : var(--paper);
+    color       : var(--ink);
+}
+.btn-light:hover { 
+    background  : var(--accent); 
+    color       : var(--white); 
+}
 
 /* Form Submit Button */
 .btn-submit {
