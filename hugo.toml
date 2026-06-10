@@ -53,4 +53,4 @@ enableGitInfo   = true
         precision = 0
     [minify.tdewolff.xml]
         keepWhitespace = true
-        keepComments = false
+        keepComments = true
