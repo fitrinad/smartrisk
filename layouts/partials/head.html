@@ -23,7 +23,16 @@
         onload="this.onload=null;this.rel='stylesheet'" />
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:wght@300;400;500&display=swap" /></noscript>
 -->
+<!-- css files in static/assets/css/
 <link rel="stylesheet" href="{{"assets/css/style.css" | relURL }}" />
 {{ with .Params.pageCSS }}
 <link rel="stylesheet" href="{{ printf "assets/css/%s" . | relURL }}" />
+{{ end }}
+-->
+<!-- css files in assets/assets/ -->
+{{ $style := resources.Get "assets/css/style.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+{{ with .Params.pageCSS }}
+    {{ $pagestyle := resources.Get (printf "assets/css/%s" .) | resources.Minify }}
+    <link rel="stylesheet" href="{{ $pagestyle.RelPermalink }}" />
 {{ end }}

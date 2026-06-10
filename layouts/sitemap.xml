@@ -1,0 +1,67 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    {{/* 
+    When iterating over all pages using site.Pages, each page object in the loop might not have its translation relationship fully resolved since the sitemap doesn't render each page.
+    Use permalink string manipulation to list all pages and alternate links.
+    */}}
+
+    {{ $base    := .Site.BaseURL }}
+    {{ $allPages:= site.Pages }}
+    {{/* Group pages by language based on permalink */}}
+    {{ $idPages := slice }}
+    {{ $enPages := slice }}
+
+    {{ range $allPages }}
+        {{ if strings.Contains .Permalink "/en/" }}
+            {{ $enPages = $enPages | append . }}
+        {{ else }}
+            {{ $idPages = $idPages | append . }}
+        {{ end }}
+    {{ end }}
+    
+    {{ $idPages := sort $idPages "Permalink" "asc" }}
+    {{ $enPages := sort $enPages "Permalink" "asc" }}
+    {{ $sortedPages := $idPages | append $enPages }}
+    
+    {{/* For a third language e.g. de:
+    {{ $dePages := slice }}
+    {{ range $allPages }}
+        {{ if strings.Contains .Permalink "/en/" }}
+            {{ $enPages = $enPages | append . }}
+        {{ else if strings.Contains .Permalink "/de/" }}
+            {{ $dePages = $dePages | append . }}
+        {{ else }}
+            {{ $idPages = $idPages | append . }}
+        {{ end }}
+    {{ end }}
+
+    {{ $dePages := sort $dePages "Permalink" "asc" }}
+    {{ $sortedPages := $idPages | append $enPages | append $dePages }}
+
+    {{ $deURL := cond (strings.Contains $permalink "/de/") $permalink (replace $permalink $base (print $base "de/")) }}
+    <xhtml:link rel="alternate" hreflang="de" href="{{ $deURL }}" />
+    */}}
+
+    {{ range $sortedPages }}
+        {{ $permalink := .Permalink }}
+        {{ $isEN := strings.Contains $permalink "/en/" }}
+
+        {{/* Compute ID and EN URLs from permalink */}}
+        {{ $idURL := cond $isEN (replace $permalink "/en/" "/") $permalink }}
+        {{ $enURL := cond $isEN $permalink (replace $permalink $base (print $base "en/")) }}
+
+        <url>
+            <loc>{{ $permalink }}</loc>
+            {{ if .Lastmod }}
+                <lastmod>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
+            {{ end }}
+            {{ with .Sitemap.ChangeFreq }}
+                <changefreq>{{ . }}</changefreq>
+            {{ end }}
+            <xhtml:link rel="alternate" hreflang="id" href="{{ $idURL }}" />
+            <xhtml:link rel="alternate" hreflang="en" href="{{ $enURL }}" />
+            <xhtml:link rel="alternate" hreflang="x-default" href="{{ $idURL }}" />
+        </url>
+    {{ end }}
+</urlset>

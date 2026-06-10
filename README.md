@@ -13,6 +13,10 @@ smartrisk/
 ├── .github/
 │   └── workflows/
 │       └── hugo.yaml   ← GitHub Actions workflow for automated build and deploy
+├── assets/
+│   └── assets/     ← Assets needing processing in assets/assets/
+│       ├── css/        ← Stylesheets (style.css, about.css, contact.css, team.css, 404.css)
+│       └── js/         ← main.js (nav highlighting, scroll reveal, contact form)
 ├── content/            ← Page metadata (title, description, CSS) per page and language
 │   ├── _index.md       ← Indonesian homepage
 │   ├── about/
@@ -29,11 +33,12 @@ smartrisk/
 │   ├── contact/
 │   ├── team/
 │   ├── partials/       ← Shared components: nav, footer, head, contact form
-│   └── index.html      ← Homepage layout (uses i18n strings)
+│   ├── index.html      ← Homepage layout (uses i18n strings)
+│   ├── 404.html        ← Custom 404 error page
+│   ├── robots.txt      ← robots.txt with sitemap reference
+│   └── sitemap.xml     ← Custom sitemap template with hreflang alternates
 ├── static/
-│   └── assets/
-│       ├── css/        ← Stylesheets (style.css, about.css, contact.css, team.css)
-│       ├── js/         ← main.js (nav highlighting, scroll reveal, contact form)
+│   └── assets/     ← Assets not needing processing in static/assets/
 │       ├── fonts/      ← Self-hosted Cal Sans and DM Sans woff2 files
 │       └── images/     ← Logo and image assets
 ├── .gitignore
@@ -46,7 +51,7 @@ smartrisk/
 - **Indonesian** (default): served at `fitrinad.github.io/smartrisk/`
 - **English**: served at `fitrinad.github.io/smartrisk/en/`
 
-All translatable strings are in `i18n/id.toml` and `i18n/en.toml`. Page structure is shared via single layout files — no duplicate HTML per language.
+All translatable strings are in `i18n/id.toml` and `i18n/en.toml`. Page structure is shared via single layout files, no duplicate HTML per language.
 
 ## Local development
 

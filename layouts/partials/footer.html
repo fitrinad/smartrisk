@@ -14,4 +14,9 @@
     </p>
 </footer>
 
+<!-- js files in static/assets/js/
 <script src="{{ "assets/js/main.js" | relURL }}" defer></script>
+-->
+<!-- js files in assets/assets/js -->
+{{ $js := resources.Get "assets/js/main.js" | resources.Minify }}
+<script src="{{ $js.RelPermalink }}"></script>

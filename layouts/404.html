@@ -7,8 +7,15 @@
         <meta name="robots" content="noindex, nofollow" />
         <link rel="icon" href="{{ "assets/images/logo_square.png" | absURL }}" type="image/png" />
         <link rel="apple-touch-icon" href="{{ "assets/images/logo_square.png" | absURL }}" />
+        <!-- css files in static/assets/css 
         <link rel="stylesheet" href="{{"assets/css/style.css" | absURL }}" />
         <link rel="stylesheet" href="{{"assets/css/404.css" | absURL }}" />
+        -->
+        <!-- css files in assets/assets/css -->
+        {{ $style := resources.Get "assets/css/style.css" | resources.Minify }}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+        {{ $pagestyle := resources.Get "assets/css/404.css" | resources.Minify }}
+        <link rel="stylesheet" href="{{ $pagestyle.RelPermalink }}" />
     </head>
     <body>
         <div class="not-found">
@@ -22,6 +29,11 @@
                 <a id="404-btn-contact" href="{{ "contact/" | relLangURL }}" class="btn btn-outline-light">{{ i18n "404_btn_contact" | safeHTML }}</a>
             </div>
         </div>
+        <!-- js files in static/assets/js/
         <script src="{{ "assets/js/404.js" | absURL }}"></script>
+        -->
+        <!-- js files in assets/assets/js/ -->
+        {{ $js := resources.Get "assets/js/404.js" | resources.Minify }}
+        <script src="{{ $js.RelPermalink }}"></script>
     </body>
 </html>

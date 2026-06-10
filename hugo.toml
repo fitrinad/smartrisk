@@ -6,9 +6,12 @@ disableKinds = ['taxonomy', 'term']
 defaultContentLanguage = 'id'
 defaultContentLanguageInSubdir = false
 
+enableRobotsTXT = true
+enableGitInfo   = true
+
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+    [caches.images]
+        dir = ':cacheDir/images'
 
 [languages]
     [languages.id]
@@ -20,3 +23,34 @@ defaultContentLanguageInSubdir = false
         languageName = 'English'
         weight       = 2
         contentDir   = 'content/en'
+
+[frontmatter]
+    lastmod = [":git", "lastmod", ":fileModTime"]
+
+[outputs]
+    home    = ["HTML", "sitemap"]
+    section = ["HTML"]
+    page    = ["HTML"]
+[outputFormats.sitemap]
+    mediaType       = "application/xml"
+    baseName        = "sitemap"
+    isPlainText     = true
+    notAlternative  = true
+    rel             = "sitemap"
+
+[minify]
+    minifyOutput = true
+    disableHTML = false
+    disableCSS = false
+    disableJS = false
+    disableXML = false
+    [minify.tdewolff.html]
+        keepComments    = false
+        keepWhitespace  = false
+    [minify.tdewolff.css]
+        keepComments = false
+    [minify.tdewolff.js]
+        precision = 0
+    [minify.tdewolff.xml]
+        keepWhitespace = true
+        keepComments = false
