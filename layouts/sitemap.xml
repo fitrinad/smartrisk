@@ -1,4 +1,4 @@
-{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML -}}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     {{/* 
@@ -20,8 +20,8 @@
         {{ end }}
     {{ end }}
     
-    {{ $idPages := sort $idPages "Permalink" "asc" }}
-    {{ $enPages := sort $enPages "Permalink" "asc" }}
+    {{ $idPages = sort $idPages "Permalink" "asc" }}
+    {{ $enPages = sort $enPages "Permalink" "asc" }}
     {{ $sortedPages := $idPages | append $enPages }}
     
     {{/* For a third language e.g. de:
@@ -58,6 +58,9 @@
             {{ end }}
             {{ with .Sitemap.ChangeFreq }}
                 <changefreq>{{ . }}</changefreq>
+            {{ end }}
+            {{ with .Sitemap.Priority }}
+                <priority>{{ . }}</priority>
             {{ end }}
             <xhtml:link rel="alternate" hreflang="id" href="{{ $idURL }}" />
             <xhtml:link rel="alternate" hreflang="en" href="{{ $enURL }}" />
