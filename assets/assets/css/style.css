@@ -1049,7 +1049,7 @@ footer {
 footer .footer-logo img { height: 1rem; width: auto; }
 footer p { color: var(--footer-text) } /* overrides the rule applied specifically to <p> in line 44 */
 footer .contact-details {
-    margin-bottom: 2rem;
+    gap: 1rem;
 }
 
 

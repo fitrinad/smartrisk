@@ -16,7 +16,6 @@
     padding         : 3rem 3rem;
     display         : flex;
     flex-direction  : column;
-    justify-content : center;
 }
 .contact-info-panel .section-label {
     opacity     : 0;
@@ -42,8 +41,9 @@
     animation   : fadeUp 0.5s 0.3s forwards;
 }
 .contact-details {
-    margin-top      : 0rem;
-    margin-bottom   : 2rem;
+    padding-top     : 4rem;
+    padding-bottom  : 2rem;
+    padding-left    : 0rem;
     display         : flex;
     flex-direction  : column;
     gap             : 1.75rem;
