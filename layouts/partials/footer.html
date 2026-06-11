@@ -1,5 +1,12 @@
 <!---------- FOOTER ---------->
 <footer>
+    {{ if not .Params.hasContactSection }}
+        {{ if eq .Lang "en" }}
+            {{ partial "contact-details-en.html" . }}    
+        {{ else }}    
+            {{ partial "contact-details-id.html" . }}
+        {{ end }}
+    {{ end }}
     <span class="footer-logo">
         <picture>
             <source srcset="{{ "assets/images/smartrisk_white.webp" | relURL }}" type="image/webp" />

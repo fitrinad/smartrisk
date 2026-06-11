@@ -39,6 +39,8 @@
 <!-- css files in assets/assets/ -->
 {{ $style := resources.Get "assets/css/style.css" | resources.Minify }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+{{ $contact := resources.Get "assets/css/contact.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ $contact.RelPermalink }}" />
 {{ with .Params.pageCSS }}
     {{ $pagestyle := resources.Get (printf "assets/css/%s" .) | resources.Minify }}
     <link rel="stylesheet" href="{{ $pagestyle.RelPermalink }}" />

@@ -75,7 +75,7 @@
     */
     --muted                     : #6b6560;
     --rule                      : rgba(193, 12, 25, 0.275);
-    --rule-dark                 : rgba(255,255,255,0.1);
+    --rule-dark                 : rgba(255,255,255,0.2);
     --nav-bg                    : rgba(250,250,250,0.85);
     --mobile-menu-bg            : rgba(30, 47, 71, 0.85);
 
@@ -1048,7 +1048,9 @@ footer {
 }
 footer .footer-logo img { height: 1rem; width: auto; }
 footer p { color: var(--footer-text) } /* overrides the rule applied specifically to <p> in line 44 */
-
+footer .contact-details {
+    margin-bottom: 2rem;
+}
 
 
 /*---------- TABLET ----------*/
