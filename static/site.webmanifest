@@ -1,0 +1,16 @@
+{
+    "name": "SmartRisk - Integrated Risk Management Solution",
+    "short_name": "SmartRisk",
+    "description": "Partner in Managing you Risks",
+    "start_url": "/",
+    "display": "browser",
+    "background_color": "#fafafa",
+    "theme_color": "#1e2f47",
+    "icons": [
+        {
+            "src": "/assets/images/logo_square.png",
+            "sizes": "1000x1000",
+            "type": "image/png"
+        }
+    ]
+}

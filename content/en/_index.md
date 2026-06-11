@@ -1,5 +1,5 @@
 ---
-title: "SmartRisk | Partner in Managing Your Risk"
+title: "SmartRisk | Partner in Managing Your Risks"
 description: "SmartRisk is an independent risk management consultancy based in Jakarta, Indonesia. Provides risk assessment, asset valuation, HSE management, and insurance consulting services."
 pageCSS: "contact.css"
 robotsdisallow: false
