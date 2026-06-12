@@ -4,7 +4,7 @@
 
 <!---------- NAV ---------->
 <nav aria-label=
-    "{{ i18n "nav_aria" }}" >
+    '{{ i18n "nav_aria" }}' >
     <!-- Rendering logo by text -->
     <!--
     <a href="{{ .Site.Home.Permalink }}" class="logo">
@@ -59,6 +59,6 @@
 </nav>
 
 <!---------- MOBILE MENU ---------->
-<ul class="mobile-menu" id="mobile-menu" role="navigation" aria-label="{{ i18n "nav_aria" }}">
+<ul class="mobile-menu" id="mobile-menu" role="navigation" aria-label='{{ i18n "nav_aria" }}'>
     {{ partial "nav-links.html" . }}
 </ul>

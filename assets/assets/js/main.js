@@ -88,7 +88,7 @@ if (hamburger && mobileMenu) {
         hamburger.classList.toggle('open', open);
         hamburger.setAttribute('aria-expanded', open);
         // Prevent page scrolling behind the open menu
-        document.body.style.overflow = open ? 'hidden' : '';
+        // document.body.style.overflow = open ? 'hidden' : '';
     });
 
     // Close menu when any link inside is clicked
