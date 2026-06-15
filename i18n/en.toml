@@ -1,6 +1,8 @@
 #================================#
 #========== NAVIGATION ==========#
 #================================#
+[nav_home]
+other = "Home"
 [nav_about]
 other = "About Us"
 [nav_team]

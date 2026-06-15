@@ -24,8 +24,8 @@ smartrisk/
 │   ├── team/
 │   └── id/             ← Indonesian content (contentDir for ID language)
 ├── i18n/
-│   ├── id.toml         ← Indonesian UI strings
-│   └── en.toml         ← English UI strings
+│   ├── en.toml         ← English UI strings
+│   └── id.toml         ← Indonesian UI strings
 ├── layouts/
 │   ├── _default/
 │   │   └── baseof.html ← HTML shell (head, nav, main, footer)
