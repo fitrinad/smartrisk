@@ -1,19 +1,18 @@
 <div class="contact-info-panel">
-    {{ if eq .Site.Language.Lang "id" }}
-    <div class="section-label">Hubungi SmartRisk</div>
-    <h1>Mari diskusikan tantangan <em>risiko</em> Anda.</h1>
-    <p>
-        Hubungi tim kami di Jakarta. Kami siap mendiskusikan proyek Anda.
-    </p>
-    {{ partial "contact-details-id.html" . }}
-
-    {{ else }}
+    {{ if eq .Site.Language.Lang "en" }}
     <div class="section-label">Contact SmartRisk</div>
     <h1>Let's discuss your <em>risk</em> challenges.</h1>
     <p>
         Reach out to our team in Jakarta. We are happy to discuss your project.
     </p>
     {{ partial "contact-details-en.html" . }}
-    
+
+    {{ else }}
+    <div class="section-label">Hubungi SmartRisk</div>
+    <h1>Mari diskusikan tantangan <em>risiko</em> Anda.</h1>
+    <p>
+        Hubungi tim kami di Jakarta. Kami siap mendiskusikan proyek Anda.
+    </p>
+    {{ partial "contact-details-id.html" . }}
     {{ end }}
 </div>

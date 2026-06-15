@@ -9,35 +9,35 @@
     {{ $base    := .Site.BaseURL }}
     {{ $allPages:= where site.Pages "Params.sitemap_exclude" "!=" true }}
     {{/* Group pages by language based on permalink */}}
-    {{ $idPages := slice }}
     {{ $enPages := slice }}
+    {{ $idPages := slice }}
 
     {{ range $allPages }}
-        {{ if strings.Contains .Permalink "/en/" }}
-            {{ $enPages = $enPages | append . }}
-        {{ else }}
+        {{ if strings.Contains .Permalink "/id/" }}
             {{ $idPages = $idPages | append . }}
+        {{ else }}
+            {{ $enPages = $enPages | append . }}
         {{ end }}
     {{ end }}
     
-    {{ $idPages = sort $idPages "Permalink" "asc" }}
     {{ $enPages = sort $enPages "Permalink" "asc" }}
-    {{ $sortedPages := $idPages | append $enPages }}
+    {{ $idPages = sort $idPages "Permalink" "asc" }}
+    {{ $sortedPages := $enPages | append $idPages }}
     
     {{/* For a third language e.g. de:
     {{ $dePages := slice }}
     {{ range $allPages }}
-        {{ if strings.Contains .Permalink "/en/" }}
-            {{ $enPages = $enPages | append . }}
+        {{ if strings.Contains .Permalink "/id/" }}
+            {{ $idPages = $idPages | append . }}
         {{ else if strings.Contains .Permalink "/de/" }}
             {{ $dePages = $dePages | append . }}
         {{ else }}
-            {{ $idPages = $idPages | append . }}
+            {{ $enPages = $enPages | append . }}
         {{ end }}
     {{ end }}
 
     {{ $dePages := sort $dePages "Permalink" "asc" }}
-    {{ $sortedPages := $idPages | append $enPages | append $dePages }}
+    {{ $sortedPages := $enPages | append $idPages | append $dePages }}
 
     {{ $deURL := cond (strings.Contains $permalink "/de/") $permalink (replace $permalink $base (print $base "de/")) }}
 
@@ -46,11 +46,14 @@
 
     {{ range $sortedPages }}
         {{ $permalink := .Permalink }}
-        {{ $isEN := strings.Contains $permalink "/en/" }}
+        {{ $isID := strings.Contains $permalink "/id/" }}
 
         {{/* Compute ID and EN URLs from permalink */}}
-        {{ $idURL := cond $isEN (replace $permalink "/en/" "/") $permalink }}
-        {{ $enURL := cond $isEN $permalink (replace $permalink $base (print $base "en/")) }}
+        {{ $enURL := cond $isID (replace $permalink "/id/" "/") $permalink }}
+        {{ $idURL := cond $isID $permalink (replace $permalink $base (print $base "id/")) }}
+
+        {{/* EN URL as x-default */}}
+        {{ $xdefault := cond (eq $isID false) $permalink $enURL }}
 
         <url>
             <loc>{{ $permalink }}</loc>
@@ -66,9 +69,9 @@
                 <priority>{{ . }}</priority>
             {{ end }}
 
-            <xhtml:link rel="alternate" hreflang="id" href="{{ $idURL }}" />
             <xhtml:link rel="alternate" hreflang="en" href="{{ $enURL }}" />
-            <xhtml:link rel="alternate" hreflang="x-default" href="{{ $idURL }}" />
+            <xhtml:link rel="alternate" hreflang="id" href="{{ $idURL }}" />
+            <xhtml:link rel="alternate" hreflang="x-default" href="{{ $xdefault }}" />
         </url>
     {{ end }}
 </urlset>

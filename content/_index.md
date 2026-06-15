@@ -1,6 +1,6 @@
 ---
-title: "SmartRisk | Mitra dalam Pengelolaan Risiko Anda"
-description: "SmartRisk adalah konsultan manajemen risiko independen di Jakarta. Menyediakan layanan penilaian risiko, valuasi aset, manajemen K3, dan konsultasi asuransi."
+title: "SmartRisk | Partner in Managing Your Risks"
+description: "SmartRisk is an independent risk management consultancy based in Jakarta, Indonesia. Provides risk assessment, asset valuation, HSE management, and insurance consulting services."
 pageCSS: "contact.css"
 hasContactSection: true
 robotsdisallow: false
