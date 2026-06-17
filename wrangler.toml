@@ -5,8 +5,8 @@ compatibility_date  = '2026-06-17'
 HUGO_VERSION = '0.161.1'
 
 [build]
-command = 'hugo --gc --minify'
-# command = 'hugo --gc --minify --baseURL $HUGO_BASEURL'
+# command = 'hugo --gc --minify'
+command = 'hugo --gc --minify --baseURL $HUGO_BASEURL'
 
 [assets]
 directory           = './public/'
