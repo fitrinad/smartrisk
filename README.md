@@ -1,10 +1,10 @@
 # SmartRisk Website
 
-This repository documents the redesign of the SmartRisk website, a bilingual (English / Indonesian) static site built with Hugo and deployed to GitHub Pages.
+This repository documents the redesign of the SmartRisk website, a bilingual (English / Indonesian) static site built with Hugo, deployed to GitHub Pages and Cloudflare Pages.
 
 ## Purpose
 
-- Prepare a multilingual (EN/ID) website
+- Prepare a multilingual (EN/ID) website, with English as the default language
 - Redesign safely without impacting the live website
 
 ## Structure
@@ -40,16 +40,23 @@ smartrisk/
 ├── static/
 │   └── assets/     ← Assets not needing processing in static/assets/
 │       ├── fonts/      ← Self-hosted Cal Sans and DM Sans woff2 files
+│       ├── icons/      ← Icon assets
 │       └── images/     ← Logo and image assets
 ├── .gitignore
 ├── hugo.toml           ← Hugo config (baseURL, languages, build settings)
+├── wrangler.toml       ← Cloudflare Pages config (baseURL, output directory)
 └── README.md
 ```
 
 ## Languages
 
+**Github Pages**
 - **English** (default): served at `fitrinad.github.io/smartrisk/`
 - **Indonesian**: served at `fitrinad.github.io/smartrisk/id/`
+
+**Cloudflare Pages**
+- **English** (default): served at `smartrisk-pln.pages.dev/`
+- **Indonesian**: served at `smartrisk-pln.pages.dev/id/`
 
 All translatable strings are in `i18n/en.toml` and `i18n/id.toml`. Page structure is shared via single layout files, no duplicate HTML per language.
 
@@ -69,4 +76,8 @@ Preview at `http://localhost:1313/smartrisk/`
 
 ## Deployment
 
-Pushing to `main` triggers the GitHub Actions workflow which builds the site with `hugo` and deploys the `public/` folder to GitHub Pages automatically. The `public/` folder is not committed to the repo.
+The `public/` folder is not committed to the repo, it is built on deploy.
+
+**Github Pages**: Pushing to `main` triggers the GitHub Actions workflow which builds the site with `hugo` and deploys the `public/` folder to GitHub Pages. 
+
+**Cloudflare Pages**: Cloudflare watches the repo directly and triggers its own build pipeline on every push to `main`. Build settings are defined in `wrangler.toml`
