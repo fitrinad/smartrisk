@@ -222,7 +222,7 @@ nav {
     backdrop-filter         : blur(20px);
     -webkit-backdrop-filter : blur(20px);/* Safari support */
     border-bottom           : 1px solid var(--rule);
-    padding                 : 1rem 2rem;
+    padding                 : 1rem 1rem;
     display                 : flex;
     align-items             : center;
     justify-content         : space-between;
@@ -294,7 +294,7 @@ nav {
 .nav-right {
     display     : flex;
     align-items : center;
-    gap         : 1rem;
+    gap         : 0.3rem;
 }
 
 
@@ -792,7 +792,6 @@ section:last-of-type { border-bottom: none; }
 .btn-download {
     display     : inline-flex;
     align-items : center;
-    gap         : 0;
     padding     : 0.25rem 0.8rem 0.25rem 0.8rem;
 }
 .btn-download::before {
@@ -1115,8 +1114,19 @@ footer .contact-details {
 }
 /*---------- MOBILE ----------*/
 @media (max-width: 780px) {
-
+    .logo img { 
+        height          : 2.25rem; 
+    }
     nav { padding: 0.5rem 0.5rem; }
+    .btn-download { padding: 0.2rem 0.3rem 0.2rem 0.3rem; }
+    .btn-download::before { margin-right: 0.3rem; }
+    .download-text { font-size: 0.6rem; }
+    .lang-btn {
+        font-size       : 0.7rem;
+        padding         : 0.2rem 0.4rem;
+    }
+    .hamburger { margin-left: 0; }
+
     .services-grid { grid-template-columns: 1fr; }
     .contact-grid { 
         grid-template-columns   : 1fr; 
