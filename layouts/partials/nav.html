@@ -29,6 +29,20 @@
     </ul>
     
     <div class="nav-right">
+        <!-- Company Profile Download -->
+        {{ $comproPath := "assets/pdf/Company Profile SmartRisk 2026_EN_rev-1.pdf" }}
+        {{ $comproName := "Company Profile SmartRisk 2026_EN.pdf" }}
+        {{ if eq .Site.Language.Lang "id" }}
+            {{ $comproPath = "assets/pdf/Company Profile SmartRisk 2026_ID_rev-1.pdf" }}
+            {{ $comproName = "Company Profile SmartRisk 2026_ID.pdf" }}
+        {{ end }}
+        <a href="{{ relURL $comproPath }}" download="{{ $comproName }}" class="btn btn-primary btn-download">
+            <span class="download-text">
+                {{ i18n "nav_compro_btn" | safeHTML }}
+            </span>
+        </a>
+
+        <!-- Language Toggle -->
         <div class="lang-toggle">
             {{ if eq .Site.Language.Lang "en" }}
                 <span class="lang-btn active">EN</span>
@@ -42,9 +56,7 @@
                 <span class="lang-btn active">ID</span>
             {{ end }}
         </div>
-        <!-- <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">
-            {{ i18n "nav_cta_btn" }}
-        </a> -->
+        
 
         <!---------- HAMBURGER BUTTON ---------->
         <button class="hamburger" id="hamburger"

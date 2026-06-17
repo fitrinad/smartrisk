@@ -779,6 +779,7 @@ section:last-of-type { border-bottom: none; }
     border-color    : var(--accent); 
     color           : var(--accent)
 }
+
 .btn-light {
     background  : var(--paper);
     color       : var(--ink);
@@ -786,6 +787,33 @@ section:last-of-type { border-bottom: none; }
 .btn-light:hover { 
     background  : var(--accent); 
     color       : var(--white); 
+}
+
+.btn-download {
+    display     : inline-flex;
+    align-items : center;
+    gap     : 0;
+    padding: 0.1rem 0.8rem 0.1rem 0.2rem;
+}
+.btn-download::before {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0;
+    padding: 0;
+    
+    background-image: url('../icons/download-icon-white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.download-text {
+    display: block;
+    text-align: center;
+
+    font-size: 0.75rem;
+    line-height: 1;
+    white-space: normal;
 }
 
 /* Form Submit Button */

@@ -16,6 +16,9 @@ other = "Contact"
 [nav_cta_btn]
 other = "Get in Touch"
 
+[nav_compro_btn]
+other = "Company<br>Profile"
+
 [skip_link]
 other = "Skip to main content"
 [nav_aria]

@@ -16,6 +16,9 @@ other = "Kontak"
 [nav_cta_btn]
 other = "Hubungi Kami"
 
+[nav_compro_btn]
+other = "Profil<br>Perusahaan"
+
 [skip_link]
 other = "Lewati ke konten utama"
 [nav_aria]
