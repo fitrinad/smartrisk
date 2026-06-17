@@ -1,0 +1,10 @@
+name                = 'smartrisk'
+compatibility_date  = '2026-06-17'
+
+[build]
+command = 'hugo --gc --minify'
+# command = 'hugo --gc --minify --baseURL $HUGO_BASEURL'
+
+[assets]
+directory           = './public/'
+not_found_handling  = '404-page'
