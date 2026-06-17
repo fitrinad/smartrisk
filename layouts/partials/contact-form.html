@@ -2,7 +2,17 @@
     {{ if eq .Site.Language.Lang "en" }}
     <div class="section-label">Get in Touch</div>
     <h2>Send a <em>Message</em></h2>
+    <!-- Formspree handling 
     <form id="contact-form" class="form-dark" action="https://formspree.io/f/mgodkleb" method="POST">
+    -->
+    <!-- StaticForms handling -->
+    <form id="contact-form" class="form-dark" action="https://api.staticforms.dev/submit" method="POST">
+        <input  type="hidden" 
+                name="apiKey" 
+                value="sf_86c03cde70d237ccc43d0880" />
+        <input  type="hidden" 
+                name="subject" 
+                value="SmartRisk submission" />
         <div class="form-group">
             <label for="field-name">Full Name</label>
             <input type="text" id="field-name" name="name" placeholder="Your Name" required aria-required="true" />
