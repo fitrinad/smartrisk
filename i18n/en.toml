@@ -657,70 +657,70 @@ other = "Business Continuity &amp; Resilience"
 
 [services_sidebar_aria]
 other = "Service categories"
-[services_cat_consulting]
-other = "Consulting"
+[services_cat_consultation]
+other = "Consultation"
 [services_cat_learning]
 other = "Learning Center"
 [services_cat_it]
 other = "IT Solution"
 
 
-#================================#
-#========== CONSULTING ==========#
-#================================#
-[svc_consulting_01_title]
+#==================================#
+#========== CONSULTATION ==========#
+#==================================#
+[svc_consultation_01_title]
 other = "Operational Risk Assessment"
-[svc_consulting_01_desc]
+[svc_consultation_01_desc]
 other = "Systematic identification and assessment of operational hazards; including EML/PML analysis, business interruption scenarios, and GIS-based risk evaluation; tailored to each facility's scope of work."
 
-[svc_consulting_02_title]
+[svc_consultation_02_title]
 other = "Project Risk Assessment"
-[svc_consulting_02_desc]
+[svc_consultation_02_desc]
 other = "Supporting clients in understanding construction-phase risks, applying mitigation and prevention plans to reduce insurance premium costs during project execution."
 
-[svc_consulting_03_title]
+[svc_consultation_03_title]
 other = "Asset Valuation"
-[svc_consulting_03_desc]
+[svc_consultation_03_desc]
 other = "Independent technical valuation of industrial assets using a comprehensive industry database; including RAN, market value, and forced sale value; to optimize insurance premiums and ensure adequate coverage."
 
-[svc_consulting_04_title]
+[svc_consultation_04_title]
 other = "Technical Valuation"
-[svc_consulting_04_desc]
+[svc_consultation_04_desc]
 other = "A systematic value-engineering approach to improve project construction efficiency by analyzing component functions and replacing high-cost, low-value elements without compromising safety."
 
-[svc_consulting_05_title]
+[svc_consultation_05_title]
 other = "Risk Management &amp; Insurance Planning"
-[svc_consulting_05_desc]
+[svc_consultation_05_desc]
 other = "Reviewing risk management strategies and risk-transfer measures with independent, expert-led analysis that bridges technical and finance departments for effective insurance program design."
 
-[svc_consulting_06_title]
+[svc_consultation_06_title]
 other = "HSE Consultation"
-[svc_consulting_06_desc]
+[svc_consultation_06_desc]
 other = "Developing and improving integrated HSE management systems, contractor safety management procedures, fire-protection planning, emergency response plans, and incident investigation support."
 
-[svc_consulting_07_title]
+[svc_consultation_07_title]
 other = "Business Continuity &amp; Sustainability Study"
-[svc_consulting_07_desc]
+[svc_consultation_07_desc]
 other = "Implementing Business Continuity Management (BCM) systems and standards to keep operations running through natural hazards or disasters, incorporating cost-saving sustainability measures."
 
-[svc_consulting_08_title]
+[svc_consultation_08_title]
 other = "Disaster Risk Reduction"
-[svc_consulting_08_desc]
+[svc_consultation_08_desc]
 other = "Providing end-to-end disaster risk reduction solutions, from administrative management to operational capacity-building, to ensure appropriate emergency response across all stakeholders."
 
-[svc_consulting_09_title]
+[svc_consultation_09_title]
 other = "Third-Party Risks &amp; Loss Control Consultation"
-[svc_consulting_09_desc]
+[svc_consultation_09_desc]
 other = "Broad analysis of surrounding areas and effective mitigation measures to reduce the impact of third-party hazards arising from industrial incidents or accidents."
 
-[svc_consulting_10_title]
+[svc_consultation_10_title]
 other = "Business Analysis"
-[svc_consulting_10_desc]
+[svc_consultation_10_desc]
 other = "Comprehensive research and studies; including customer loyalty surveys, employee engagement surveys, and field observations; forming the foundation for tailored recommendations aligned with your organization's goals."
 
-[svc_consulting_11_title]
-other = "Other Consulting Services"
-[svc_consulting_11_desc]
+[svc_consultation_11_title]
+other = "Other Consultation Services"
+[svc_consultation_11_desc]
 other = "Additional services including fire and explosion risk assessment, forensic engineering investigation, HAZOP/SIL/LOPA analysis, human capital maturity assessment, and integrated performance management."
 
 
