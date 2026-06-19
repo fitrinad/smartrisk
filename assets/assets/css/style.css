@@ -1162,6 +1162,10 @@ footer .contact-details {
     }
     .hamburger { margin-left: 0; }
 
+    .page-header {
+        grid-template-columns : 1fr;
+    }
+
     .services-grid { grid-template-columns: 1fr; }
     .contact-grid { 
         grid-template-columns   : 1fr; 
