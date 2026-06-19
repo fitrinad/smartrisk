@@ -26,7 +26,7 @@
 .projects-sidebar {
     position        : sticky;
     background-color: var(--sidebar-bg);
-    top             : calc(var(--nav-h, 64px) + 1rem);
+    top             : calc(var(--nav-h, 60px) + 1.5rem);
     padding         : 0rem 0 100vh 0rem;
     border-right    : 1px solid var(--rule-dark);
     align-self      : start;
@@ -83,8 +83,8 @@
     letter-spacing  : 0.12em;
     text-transform  : uppercase;
     color           : var(--accent);
-    margin-bottom   : 2.5rem;
-    padding-bottom  : 0.75rem;
+    margin-bottom   : 1rem;
+    padding-bottom  : 0.7rem;
     border-bottom   : 2px solid var(--rule);
 }
 
@@ -100,7 +100,7 @@
     grid-template-columns: 1fr 280px;
     gap             : 3rem;
     align-items     : center;
-    padding         : 2.5rem 0;
+    padding         : 2rem 0;
     text-decoration : none;
     color           : inherit;
     transition      : background 0.2s ease;
@@ -272,8 +272,8 @@
     letter-spacing  : 0.12em;
     text-transform  : uppercase;
     color           : var(--accent);
-    margin-bottom   : 2.5rem;
-    padding-bottom  : 0.75rem;
+    margin-bottom   : 1rem;
+    padding-bottom  : 0.7rem;
     border-bottom   : 1px solid var(--rule);
 }
 
@@ -289,7 +289,7 @@
     grid-template-columns: 1fr 280px;
     gap             : 3rem;
     align-items     : center;
-    padding         : 2.5rem 0;
+    padding         : 2rem 0;
     text-decoration : none;
     color           : inherit;
 }
@@ -448,7 +448,7 @@
 
 
 /*---------- TABLET ----------*/
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
     .service-entry-link,
     .project-entry-link {
         grid-template-columns: 1fr 220px;
@@ -459,7 +459,7 @@
 
 
 /*---------- MOBILE ----------*/
-@media (max-width: 860px) {
+@media (max-width: 780px) {
     .services-page-inner,
     .projects-page-inner {
         grid-template-columns: 1fr;
@@ -467,15 +467,13 @@
 
     .services-sidebar,
     .projects-sidebar {
-        top             : calc(var(--nav-h, 64px) + 1rem);
+        top             : var(--nav-h, 60px);
         z-index         : 10;
         padding         : 0rem 1rem 0;
         border-right    : none;
         border-bottom   : 1px solid var(--rule-dark);
         align-self      : start;
     }
-
-
 
     .services-sidebar nav,
     .projects-sidebar nav {
@@ -510,9 +508,12 @@
     .service-entry-img,
     .project-entry-img {
         aspect-ratio: 16 / 8;
+        height      : 10rem;
+        width       : auto;
     }
 }
 
+/*
 @media (max-width: 600px) {
     .services-entries,
     .projects-entries {
@@ -529,3 +530,4 @@
         flex-direction: column;
     }
 }
+*/
