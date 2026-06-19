@@ -121,6 +121,51 @@ if (hamburger && mobileMenu) {
 }
 
 
+
+// ---------- SIDEBAR ---------- //
+// Active highlight on scroll //
+(function () {
+    // Works for both services and projects pages
+    const sidebar = document.querySelector('.services-sidebar, .projects-sidebar');
+    if (!sidebar) return;
+
+    const links    = sidebar.querySelectorAll('.sidebar-link');
+    const sections = [];
+
+    links.forEach(link => {
+        const href = link.getAttribute('href');
+        const id   = href && href.startsWith('#') ? href.slice(1) : null;
+        if (id) {
+            const el = document.getElementById(id);
+            if (el) sections.push({ el, link });
+        }
+    });
+
+    if (!sections.length) return;
+
+    const setActive = (link) => {
+        links.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+    };
+
+    // IntersectionObserver: highlight the section that occupies the most viewport
+    const sidebarObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const match = sections.find(s => s.el === entry.target);
+                    if (match) setActive(match.link);
+                }
+            });
+        },
+        { rootMargin: '-20% 0px -60% 0px', threshold: 0 }
+    );
+
+    sections.forEach(s => sidebarObserver.observe(s.el));
+})();
+
+
+
 // ---------- CONTACT FORM ---------- //
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');

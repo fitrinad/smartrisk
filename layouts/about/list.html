@@ -15,49 +15,18 @@
     <!---------- MARQUEE ---------->
     <div class="marquee-wrap" aria-hidden="true">
         <div class="marquee-track">
+            {{ range seq 4 }}
             <span class="marquee-item">
                 {{ i18n "about_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
                 {{ i18n "about_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
                 {{ i18n "about_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                <!-- {{ i18n "about_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> -->
                 {{ i18n "about_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
                 {{ i18n "about_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
                 {{ i18n "about_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span> 
                 {{ i18n "about_marquee_08" | safeHTML }} <span class="marquee-sep">&middot;</span>
             </span>
-            
-            <span class="marquee-item">
-                {{ i18n "about_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_08" | safeHTML }} <span class="marquee-sep">&middot;</span>
-            </span>
-            
-            <span class="marquee-item">
-                {{ i18n "about_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_08" | safeHTML }} <span class="marquee-sep">&middot;</span>
-            </span>
-            
-            <span class="marquee-item">
-                {{ i18n "about_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_07" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "about_marquee_08" | safeHTML }} <span class="marquee-sep">&middot;</span>
-            </span>
+            {{ end }}
         </div>
     </div>
 

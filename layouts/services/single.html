@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+    <!---------- SERVICE SINGLE HEADER ---------->
+    <header class="page-header page-header--service" aria-labelledby="page-heading">
+        <div>
+            <div class="section-label">
+                <a href="{{ "services/" | relLangURL }}">{{ i18n "services_header_section_label" | safeHTML }}</a>
+            </div>
+            <h1 id="page-heading">{{ .Title }}</h1>
+        </div>
+        <div>
+            {{ with .Params.category }}
+            <p class="service-single-category">{{ . }}</p>
+            {{ end }}
+            {{ with .Params.summary }}
+            <p>{{ . | safeHTML }}</p>
+            {{ end }}
+        </div>
+    </header>
+
+    <!---------- SERVICE SINGLE BODY ---------->
+    <section class="service-single">
+        <div class="service-single-inner">
+
+            {{ with .Params.image }}
+            <div class="service-single-hero-img">
+                <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="eager" />
+            </div>
+            {{ end }}
+
+            <div class="service-single-content">
+                {{ .Content }}
+            </div>
+
+            <div class="service-single-cta">
+                <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">{{ i18n "service_single_cta" | safeHTML }}</a>
+                <a href="{{ "services/" | relLangURL }}" class="btn btn-outline">{{ i18n "service_single_back" | safeHTML }}</a>
+            </div>
+
+        </div>
+    </section>
+
+{{ end }}
