@@ -1,0 +1,302 @@
+{{ define "main" }}
+
+    <!---------- PAGE HEADER ---------->
+    <header class="page-header" aria-labelledby="page-heading">
+        <div>
+            <div class="section-label">{{ i18n "services_header_section_label" | safeHTML }}</div>
+            <h1 id="page-heading">{{ i18n "services_header_h1" | safeHTML }}</h1>
+        </div>
+        <div>
+            <p>{{ i18n "services_header_p" | safeHTML }}</p>
+        </div>
+    </header>
+
+    <!---------- MARQUEE ---------->
+    <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee-track">
+            {{ range seq 4 }}
+            <span class="marquee-item">
+                {{ i18n "services_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "services_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "services_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "services_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "services_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "services_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+            {{ end }}
+        </div>
+    </div>
+
+    <!---------- SERVICES BODY ---------->
+    <section class="services-page" aria-labelledby="services-page-heading">
+        <div class="services-page-inner">
+
+            <!---------- SIDEBAR ---------->
+            <aside class="services-sidebar" aria-label="{{ i18n "services_sidebar_aria" | safeHTML }}">
+                <nav>
+                    <a href="#consulting" class="sidebar-link" data-category="consulting">
+                        {{ i18n "services_cat_consulting" | safeHTML }}
+                    </a>
+                    <a href="#learning-center" class="sidebar-link" data-category="learning-center">
+                        {{ i18n "services_cat_learning" | safeHTML }}
+                    </a>
+                    <a href="#it-solution" class="sidebar-link" data-category="it-solution">
+                        {{ i18n "services_cat_it" | safeHTML }}
+                    </a>
+                </nav>
+            </aside>
+
+            <!---------- SERVICE ENTRIES ---------->
+            <div class="services-entries">
+
+                <!---------- CONSULTING ---------->
+                <div class="services-category" id="consulting">
+                    <h2 class="services-category-title">{{ i18n "services_cat_consulting" | safeHTML }}</h2>
+
+                    <div class="service-entry">
+                        <a href="{{ "services/operational-risk-assessment/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_consulting_01_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_consulting_01_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w1-1024x512.jpg" | relURL }}" alt="{{ i18n "svc_consulting_01_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/project-risk-assessment/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_consulting_02_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_consulting_02_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w2-1024x512.jpg" | relURL }}" alt="{{ i18n "svc_consulting_02_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/asset-valuation/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_consulting_03_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_consulting_03_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/G2.jpg" | relURL }}" alt="{{ i18n "svc_consulting_03_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/technical-valuation/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_consulting_04_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_consulting_04_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w4-768x384.jpg" | relURL }}" alt="{{ i18n "svc_consulting_04_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/risk-management-and-insurance-planning/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_consulting_05_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_consulting_05_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w5-1024x512.jpg" | relURL }}" alt="{{ i18n "svc_consulting_05_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/hse-consultation/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_consulting_06_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_consulting_06_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w13-1024x774.jpg" | relURL }}" alt="{{ i18n "svc_consulting_06_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/business-continuity-study/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_consulting_07_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_consulting_07_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w6-1024x512.jpg" | relURL }}" alt="{{ i18n "svc_consulting_07_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/disaster-risk-reduction/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_consulting_08_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_consulting_08_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w7-1024x512.jpg" | relURL }}" alt="{{ i18n "svc_consulting_08_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/loss-control-consultation/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_consulting_09_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_consulting_09_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w8-min-1024x683.jpg" | relURL }}" alt="{{ i18n "svc_consulting_09_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/business-analysis/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_consulting_10_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_consulting_10_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w12-min-1024x774.jpg" | relURL }}" alt="{{ i18n "svc_consulting_10_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+                    
+                    <div class="service-entry">
+                        <a href="{{ "services/other-consulting-services/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_consulting_11_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_consulting_11_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w14-min-768x580.jpg" | relURL }}" alt="{{ i18n "svc_consulting_11_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!---------- PUSAT PEMBELAJARAN ---------->
+                <div class="services-category" id="learning-center">
+                    <h2 class="services-category-title">{{ i18n "services_cat_learning" | safeHTML }}</h2>
+
+                    <div class="service-entry">
+                        <a href="{{ "services/hse-training/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_learning_01_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_learning_01_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w15-min-1024x774.jpg" | relURL }}" alt="{{ i18n "svc_learning_01_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/risk-management-training/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_learning_02_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_learning_02_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w16-min-1024x774.jpg" | relURL }}" alt="{{ i18n "svc_learning_02_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/insurance-training/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_learning_03_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_learning_03_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w17-min-1024x774.jpg" | relURL }}" alt="{{ i18n "svc_learning_03_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/other-training-programs/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_learning_04_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_learning_04_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/Training-HSE.png" | relURL }}" alt="{{ i18n "svc_learning_04_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!---------- IT SOLUTION ---------->
+                <div class="services-category" id="it-solution">
+                    <h2 class="services-category-title">{{ i18n "services_cat_it" | safeHTML }}</h2>
+
+                    <div class="service-entry">
+                        <a href="{{ "services/it-project-management/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_it_01_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_it_01_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w18-min-1-1024x774.jpg" | relURL }}" alt="{{ i18n "svc_it_01_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/production-house/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_it_02_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_it_02_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/w19-min-1024x774.jpg" | relURL }}" alt="{{ i18n "svc_it_02_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                    <hr class="service-divider" />
+
+                    <div class="service-entry">
+                        <a href="{{ "services/big-data/" | relLangURL }}" class="service-entry-link">
+                            <div class="service-entry-content">
+                                <h3 class="service-entry-title">{{ i18n "svc_it_03_title" | safeHTML }}</h3>
+                                <p class="service-entry-desc">{{ i18n "svc_it_03_desc" | safeHTML }}</p>
+                            </div>
+                            <div class="service-entry-img">
+                                <img src="{{ "assets/images/services/cloud-1018x1024.jpg" | relURL }}" alt="{{ i18n "svc_it_03_title" | safeHTML }}" loading="lazy" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div><!-- /.services-entries -->
+        </div><!-- /.services-page-inner -->
+    </section>
+
+{{ end }}

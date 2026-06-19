@@ -36,38 +36,16 @@
     <!---------- MARQUEE ---------->
     <div class="marquee-wrap" aria-hidden="true">
         <div class="marquee-track">
+            {{ range seq 4 }}
             <span class="marquee-item">
-                {{ i18n "hero_card_service_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
+                {{ i18n "hero_card_service_01" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "hero_card_service_02" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "hero_card_service_03" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "hero_card_service_04" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "hero_card_service_05" | safeHTML }} <span class="marquee-sep">&middot;</span>
                 {{ i18n "hero_card_service_06" | safeHTML }} <span class="marquee-sep">&middot;</span>
             </span>
-            <span class="marquee-item">
-                {{ i18n "hero_card_service_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_06" | safeHTML }} <span class="marquee-sep">&middot;</span>
-            </span>
-            <span class="marquee-item">
-                {{ i18n "hero_card_service_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_06" | safeHTML }} <span class="marquee-sep">&middot;</span>
-            </span>
-            <span class="marquee-item">
-                {{ i18n "hero_card_service_01" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_02" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_03" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_04" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_05" | safeHTML }} <span class="marquee-sep">&middot;</span> 
-                {{ i18n "hero_card_service_06" | safeHTML }} <span class="marquee-sep">&middot;</span>
-            </span>
+            {{ end }}
         </div>
     </div>
 
@@ -117,7 +95,7 @@
                 <div class="section-label">{{ i18n "services_section_label" | safeHTML }}</div>
                 <h2 id="services-heading">{{ i18n "services_h2" | safeHTML }}</h2>
             </div>
-            <!-- <a href="contact/" class="btn btn-outline">{{ i18n "services_cta" | safeHTML }}Semua Layanan &rarr;</a> -->
+            <a href="services/" class="btn btn-outline btn-right-arrow-ink">{{ i18n "services_cta" | safeHTML }}</a>
         </div>
         <div class="services-grid">
             <div class="service-card">
@@ -213,10 +191,14 @@
 
     <!---------- PROJECTS ---------->
     <section class="projects" id="projects" aria-labelledby="projects-heading">
-        <div>
-            <div class="section-label">{{ i18n "projects_section_label" | safeHTML }}</div>
-            <h2 id="projects-heading">{{ i18n "projects_h2" | safeHTML }}</h2>
+        <div class="projects-header">
+            <div>
+                <div class="section-label">{{ i18n "projects_section_label" | safeHTML }}</div>
+                <h2 id="projects-heading">{{ i18n "projects_h2" | safeHTML }}</h2>
+            </div>
+            <!-- <a href="projects/" class="btn btn-outline btn-right-arrow-ink">{{ i18n "projects_cta" | safeHTML }}</a> -->
         </div>
+
         <div class="projects-grid">
             <div class="project-card">
                 <span class="project-tag">{{ i18n "project_01_tag" | safeHTML }}</span>

@@ -224,7 +224,7 @@ nav {
     border-bottom           : 1px solid var(--rule);
     padding                 : 1rem 1rem;
     display                 : flex;
-    align-items             : center;
+    align-items             : left;
     justify-content         : space-between;
     position                : sticky;
     top                     : 0;
@@ -814,6 +814,34 @@ section:last-of-type { border-bottom: none; }
     white-space : normal;
 }
 
+.btn-right-arrow-ink {
+    display     : inline-flex !important;
+    align-items : center;
+}
+.btn-right-arrow-ink::after {
+    content     : "";
+    width       : 1.3rem;
+    height      : 1.3rem;
+    margin-left : 0.6rem;
+    padding     : 0;
+    
+    -webkit-mask-image      : url('../icons/right-arrow-icon.svg');
+    -webkit-mask-size       : contain;
+    -webkit-mask-repeat     : no-repeat;
+    -webkit-mask-position   : center;
+
+    mask-image      : url('../icons/right-arrow-icon.svg');
+    mask-size       : contain;
+    mask-repeat     : no-repeat;
+    mask-position   : center;
+    
+    background-color: var(--ink);
+    transition      : background-color 0.2s ease;
+}
+.btn-right-arrow-ink:hover::after {
+    background-color: var(--accent);
+}
+
 /* Form Submit Button */
 .btn-submit {
     background      : var(--accent);
@@ -972,6 +1000,12 @@ section:last-of-type { border-bottom: none; }
     padding         : 7rem 4rem;
     border-bottom   : 1px solid var(--projects-border);
 }
+.projects-header {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : flex-end;
+    margin-bottom   : 4rem;
+}
 .projects-grid { 
     display                 : grid; 
     grid-template-columns   : repeat(2, 1fr); 
@@ -988,7 +1022,7 @@ section:last-of-type { border-bottom: none; }
     transition      : background 0.2s; }
 .project-card:hover { background: var(--project-card-hover-bg); }
 .project-tag { 
-    font-size       : 0.65rem; 
+    font-size       : 0.75rem; 
     letter-spacing  : 0.15em; 
     text-transform  : uppercase; 
     color           : var(--project-tag-text); 
@@ -1075,7 +1109,8 @@ footer {
 footer .footer-logo img { height: 1rem; width: auto; }
 footer p { color: var(--footer-text) } /* overrides the rule applied specifically to <p> in line 44 */
 footer .contact-details {
-    gap: 1rem;
+    gap     : 1rem;
+    padding : 0;
 }
 
 
