@@ -231,3 +231,14 @@ function closeMenu() {
         document.body.style.overflow = '';
     }, 250);
 }
+
+/* ---------- SET --nav-h DYNAMICALLY ---------- */
+function setNavHeightVar() {
+    const nav = document.querySelector('nav'); // adjust selector if your nav has a specific class/id
+    if (nav) {
+        document.documentElement.style.setProperty('--nav-h', `${nav.offsetHeight}px`);
+    }
+}
+setNavHeightVar();
+window.addEventListener('resize', setNavHeightVar);
+window.addEventListener('load', setNavHeightVar);

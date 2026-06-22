@@ -24,16 +24,18 @@
 /*---------- SIDEBAR ----------*/
 .services-sidebar,
 .projects-sidebar {
-    position        : sticky;
     background-color: var(--sidebar-bg);
-    top             : calc(var(--nav-h, 60px) + 1.5rem);
-    padding         : 0rem 0 100vh 0rem;
+    padding         : 0;
     border-right    : 1px solid var(--rule-dark);
-    align-self      : start;
+    align-self      : stretch;
+    /* height          : 100%; */
 }
 
 .services-sidebar nav,
 .projects-sidebar nav {
+    position        : sticky;
+    position        : -webkit-sticky;
+    top             : calc(var(--nav-h, 60px) + 0rem);
     background-color: transparent;
     border          : none;
     display         : flex;
