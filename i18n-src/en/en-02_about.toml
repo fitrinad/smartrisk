@@ -1,0 +1,175 @@
+#==============================#
+#========== ABOUT US ==========#
+#==============================#
+#=================================#
+#========== PAGE HEADER ==========#
+#=================================#
+[about_header_section_label]
+other = "About SmartRisk"
+[about_header_h1]
+other = "Risk expertise,<br /><em>Independently</em> delivered"
+[about_header_p]
+other = "PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in 2020 as a YPK-PLN joint venture to provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest."
+
+
+#=============================#
+#========== MARQUEE ==========#
+#=============================#
+[about_marquee_01]
+other = "Independent"
+[about_marquee_02]
+other = "Multi-Disciplinary"
+[about_marquee_03]
+other = "BNSP-Certified"
+# [about_marquee_04]
+# other = "Award-Winning"
+[about_marquee_05]
+other = "YPK-PLN Affiliated"
+[about_marquee_06]
+other = "100+ Projects"
+[about_marquee_07]
+other = "10+ Years"
+[about_marquee_08]
+other = "Jakarta, Indonesia"
+
+
+#===========================#
+#========== STORY ==========#
+#===========================#
+[story_section_label]
+other = "About SmartRisk"
+[story_h2]
+other = "An <em>independent</em> voice in a complex risk landscape"
+
+[story_body_p01]
+other = "PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest. Our team holds professional certifications across risk management, HSE, insurance, and technical valuation."
+[story_body_p02]
+other = "Headquartered in Jakarta and affiliated with YPK-PLN, SmartRisk brings in-depth expertise in risk management, asset management, and operations within Indonesia's strategic industries. Our experience spans the energy, utilities, mining, and infrastructure sectors, as well as various organizations with complex risk management needs. We help organizations understand, assess, and prioritize risks to support better-informed business decisions through integrated risk management, technical valuation, and business analysis."
+
+[story_vision_label]
+other = "Our Vision"
+[story_vision_text]
+other = "To be the leading independent risk management consultancy trusted by energy and industrial clients across Indonesia and beyond."
+
+[story_mission_label]
+other = "Our Mission"
+[story_mission_text]
+other = "To deliver rigorous, independent, and actionable risk assessments that protect people, assets, and the environment."
+
+[story_quote_text]
+other = "SmartRisk recognizes the fundamental value of testing forecasts and anticipating every possible scenario in your business operations."
+
+
+#=====================================#
+#========== SPECIALIZATIONS ==========#
+#=====================================#
+[spec_section_label]
+other = "Where We Work"
+[spec_h2]
+other = "Sector Expertise"
+
+[spec_01_title]
+other = "Energy"
+[spec_01_sub]
+other = "Power generation, oil &amp; gas, renewable energy"
+[spec_02_title]
+other = "Insurance"
+[spec_02_sub]
+other = "Program design, placement, claims advisory"
+[spec_03_title]
+other = "Ports &amp; Marine Cargo"
+[spec_03_sub]
+other = "Container terminals, bulk cargo, logistics"
+
+[spec_04_title]
+other = "Mining"
+[spec_04_sub]
+other = "Coal, nickel, bauxite, precious metals"
+[spec_05_title]
+other = "Construction Projects"
+[spec_05_sub]
+other = "Capital projects, EPC, infrastructure"
+[spec_06_title]
+other = "High-Rise Buildings"
+[spec_06_sub]
+other = "Commercial, residential, mixed-use"
+
+
+#============================#
+#========== METHOD ==========#
+#============================#
+[method_section_label]
+other = "How We Work"
+[method_h2]
+other = "The <em>Interwoven</em> Method"
+[method_p01]
+other = "Our methodology integrates technical inspection, quantitative risk modeling, and insurance market knowledge into a seamless risk management process."
+[method_p02]
+other = "Each engagement is led by a certified risk professional and draws on a multidisciplinary team of engineers, HSE specialists, and insurance advisors."
+
+[method_step_01_title]
+other = "Risk Identification"
+[method_step_01_desc]
+other = "Systematic identification of hazards through site visits, document reviews, and stakeholder interviews."
+
+[method_step_02_title]
+other = "Risk Analysis"
+[method_step_02_desc]
+other = "Qualitative and quantitative assessment of likelihood and consequence for each identified risk."
+
+[method_step_03_title]
+other = "Risk Evaluation"
+[method_step_03_desc]
+other = "Prioritization against client risk appetite and regulatory thresholds."
+
+[method_step_04_title]
+other = "Risk Treatment"
+[method_step_04_desc]
+other = "Development of actionable mitigation recommendations and implementation roadmap."
+
+[method_step_05_title]
+other = "Monitoring &amp; Review"
+[method_step_05_desc]
+other = "Ongoing review and reporting to track risk posture over time."
+
+
+#=====================================#
+#========== MISSION PILLARS ==========#
+#=====================================#
+[pillars_section_label]
+other = "What Drives Us"
+[pillars_h2]
+other = "Our Commitments"
+
+[pillar_01_title]
+other = "Independence"
+[pillar_01_desc]
+other = "No affiliations with insurers, brokers, or equipment vendors. Our advice serves only your interests."
+
+[pillar_02_title]
+other = "Technical Rigor"
+[pillar_02_desc]
+other = "Every assessment is backed by certified engineers and follows internationally recognized risk frameworks."
+
+[pillar_03_title]
+other = "Practical Output"
+[pillar_03_desc]
+other = "We deliver actionable recommendations, not just reports. Our work is designed to be implemented."
+
+[pillar_04_title]
+other = "Long-term Partnership"
+[pillar_04_desc]
+other = "We build lasting relationships with clients, supporting them through multiple project cycles and risk reviews."
+
+
+#=====================================#
+#========== ABOUT CTA STRIP ==========#
+#=====================================#
+[about_cta_h2]
+other = "Ready to work with an <em>independent</em> risk partner?"
+[about_cta_btn_01]
+other = "Get in Touch"
+[about_cta_btn_02]
+other = "Meet the Team"
+
+

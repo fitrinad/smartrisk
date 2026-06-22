@@ -1,7 +1,6 @@
 <div class="contact-form-panel">
-    {{ if eq .Site.Language.Lang "en" }}
-    <div class="section-label">Get in Touch</div>
-    <h2>Send a <em>Message</em></h2>
+    <div class="section-label">{{ i18n "contact_form_section_label" | safeHTML }}</div>
+    <h2>{{ i18n "contact_form_text_h2" | safeHTML }}</h2>
     <!-- Formspree handling 
     <form id="contact-form" class="form-dark" action="https://formspree.io/f/mgodkleb" method="POST">
     -->
@@ -14,75 +13,36 @@
                 name="subject" 
                 value="SmartRisk submission" />
         <div class="form-group">
-            <label for="field-name">Full Name</label>
-            <input type="text" id="field-name" name="name" placeholder="Your Name" required aria-required="true" />
+            <label for="field-name">{{ i18n "contact_form_name_01" | safeHTML }}</label>
+            <input type="text" id="field-name" name="name" placeholder='{{ i18n "contact_form_placeholder_01" | safeHTML }}' required aria-required="true" />
         </div>
         <div class="form-group">
-            <label for="field-company">Company / Organization</label>
-            <input type="text" id="field-company" name="company" placeholder="Company / Organization Name" required aria-required="true" />
+            <label for="field-company">{{ i18n "contact_form_name_02" | safeHTML }}</label>
+            <input type="text" id="field-company" name="company" placeholder='{{ i18n "contact_form_placeholder_02" | safeHTML }}' required aria-required="true" />
         </div>
         <div class="form-group">
-            <label for="field-email">Email Address</label>
-            <input type="email" id="field-email" name="email" placeholder="your@email.com" required aria-required="true" />
+            <label for="field-email">{{ i18n "contact_form_name_03" | safeHTML }}</label>
+            <input type="email" id="field-email" name="email" placeholder='{{ i18n "contact_form_placeholder_03" | safeHTML }}' required aria-required="true" />
         </div>
         <div class="form-group">
-            <label for="field-service">Service of Interest</label>
+            <label for="field-service">{{ i18n "contact_form_name_04" | safeHTML }}</label>
             <select id="field-service" name="service">
-                <option value="">Select a service...</option>
-                <option>Operational Risk Assessment</option>
-                <option>Project Risk Assessment</option>
-                <option>Asset Valuation</option>
-                <option>Insurance &amp; Risk Planning</option>
-                <option>HSE Management</option>
-                <option>Business Continuity &amp; Resilience</option>
-                <option>Other / General Inquiry</option>
+                <option value="">{{ i18n "contact_form_options_title" | safeHTML }}</option>
+                <option>{{ i18n "contact_form_option_01" | safeHTML }}</option>
+                <option>{{ i18n "contact_form_option_02" | safeHTML }}</option>
+                <option>{{ i18n "contact_form_option_03" | safeHTML }}</option>
+                <option>{{ i18n "contact_form_option_04" | safeHTML }}</option>
+                <option>{{ i18n "contact_form_option_05" | safeHTML }}</option>
+                <option>{{ i18n "contact_form_option_06" | safeHTML }}</option>
+                <option>{{ i18n "contact_form_option_07" | safeHTML }}</option>
             </select>
         </div>
         <div class="form-group">
-            <label for="field-message">Message</label>
-            <textarea id="field-message" name="message" placeholder="Briefly describe your project or inquiry"></textarea>
+            <label for="field-message">{{ i18n "contact_form_name_05" | safeHTML }}</label>
+            <textarea id="field-message" name="message" placeholder='{{ i18n "contact_form_placeholder_05" | safeHTML }}'></textarea>
         </div>
         <input type="text" name="_gotcha" style="display:none" />
         <p id="form-status" aria-live="polite" aria-atomic="true"></p>
-        <button type="submit" id="submit-btn" class="btn btn-submit">Send Inquiry</button>
+        <button type="submit" id="submit-btn" class="btn btn-submit">{{ i18n "contact_form_submit" | safeHTML }}</button>
     </form>
-    
-    {{ else }}
-    <div class="section-label">Hubungi Kami</div>
-    <h2>Kirim <em>Pesan</em></h2>
-    <form id="contact-form" class="form-dark" action="https://formspree.io/f/mgodkleb" method="POST">
-        <div class="form-group">
-            <label for="field-name">Nama Lengkap</label>
-            <input type="text" id="field-name" name="name" placeholder="Nama Anda" required aria-required="true" />
-        </div>
-        <div class="form-group">
-            <label for="field-company">Perusahaan / Organisasi</label>
-            <input type="text" id="field-company" name="company" placeholder="Nama Perusahaan / Organisasi" required aria-required="true" />
-        </div>
-        <div class="form-group">
-            <label for="field-email">Alamat Email</label>
-            <input type="email" id="field-email" name="email" placeholder="email@anda.com" required aria-required="true" />
-        </div>
-        <div class="form-group">
-            <label for="field-service">Layanan yang Diminati</label>
-            <select id="field-service" name="service">
-                <option value="">Pilih layanan...</option>
-                <option>Penilaian Risiko Operasional</option>
-                <option>Penilaian Risiko Proyek</option>
-                <option>Valuasi Aset</option>
-                <option>Manajemen Risiko &amp; Perencanaan Asuransi</option>
-                <option>Manajemen K3</option>
-                <option>Kelangsungan &amp; Ketahanan Bisnis</option>
-                <option>Lainnya / Pertanyaan Umum</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="field-message">Pesan</label>
-            <textarea id="field-message" name="message" placeholder="Jelaskan secara singkat proyek atau pertanyaan Anda"></textarea>
-        </div>
-        <input type="text" name="_gotcha" style="display:none" />
-        <p id="form-status" aria-live="polite" aria-atomic="true"></p>
-        <button type="submit" id="submit-btn" class="btn btn-submit">Kirim Pesan</button>
-    </form>
-    {{ end }}
 </div>

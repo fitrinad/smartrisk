@@ -1,0 +1,211 @@
+#===========================#
+#========== INDEX ==========#
+#===========================#
+#==========================#
+#========== HERO ==========#
+#==========================#
+[hero_eyebrow]
+other = "Independent Risk Consultants &middot; Est. Jakarta, Indonesia"
+[hero_h1]
+other = "Managing Risk, <em>Globally</em>"
+[hero_body]
+other = "SmartRisk is an independent risk management consultancy with over a decade of experience helping energy, infrastructure, and industrial clients identify, assess, and mitigate complex risks."
+
+[hero_cta_primary]
+other = "Our Services"
+[hero_cta_secondary]
+other = "Get in Touch"
+
+[hero_stat_01_label]
+other = "Projects Completed"
+[hero_stat_02_label]
+other = "Years of Experience"
+[hero_stat_03_label]
+other = "Award Categories"
+
+[hero_card_label]
+other = "Services"
+[hero_card_service_01]
+other = "Risk Assessment"
+[hero_card_service_02]
+other = "Risk Rating"
+[hero_card_service_03]
+other = "Risk Management &amp; Insurance Planning"
+[hero_card_service_04]
+other = "HSE Management"
+[hero_card_service_05]
+other = "Asset Valuation"
+[hero_card_service_06]
+other = "Technical Valuation"
+
+
+#===========================#
+#========== ABOUT ==========#
+#===========================#
+[about_section_label]
+other = "About SmartRisk"
+[about_h2]
+other = "An <em>independent</em> voice in a complex risk landscape"
+
+[about_body_p01]
+other = "PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) was established in March 2020 as a joint venture, 90% owned by YPK PLN and 10% by PT Solusi Manajemen Risiko Terpadu. We provide unbiased, expert-led risk consulting, free from insurer or broker conflicts of interest. Our team holds professional certifications across risk management, HSE, insurance, and technical valuation."
+[about_body_p02]
+other = "Headquartered in Jakarta and affiliated with YPK-PLN, SmartRisk brings in-depth expertise in risk management, asset management, and operations within Indonesia's strategic industries. Our experience spans the energy, utilities, mining, and infrastructure sectors, as well as various organizations with complex risk management needs. We help organizations understand, assess, and prioritize risks to support better-informed business decisions through integrated risk management, technical valuation, and business analysis."
+
+
+#=================================#
+#========== CREDENTIALS ==========#
+#=================================#
+[cert_01_name]
+other = "Independent and Objective"
+[cert_01_desc]
+other = "SmartRisk provides recommendations tailored to our clients' risk objectives and asset protection, free from insurance or broker conflicts of interest."
+
+[cert_02_name]
+other = "Corporate Credibility and Industry Services"
+[cert_02_desc]
+other = "Recognized for its strong performance within the YPK-PLN Group, SmartRisk continues to expand its risk consulting capabilities to support clients across various industrial sectors."
+
+[cert_03_name]
+other = "Certified Multidisciplinary Team"
+[cert_03_desc]
+other = "SmartRisk's multidisciplinary team consists of BNSP-certified specialists in risk management, HSE, insurance, and technical valuation."
+
+
+#==============================#
+#========== SERVICES ==========#
+#==============================#
+[services_section_label]
+other = "What We Do"
+[services_h2]
+other = "Our <em>Services</em>"
+[services_cta]
+other = "All Services"
+
+[service_01_title]
+other = "Operational Risk Assessment"
+[service_01_desc]
+other = "Systematic identification and evaluation of operational hazards including HAZOP studies and technical inspection."
+
+[service_02_title]
+other = "Project Risk Assessment"
+[service_02_desc]
+other = "End-to-end risk analysis for capital projects from feasibility through construction and commissioning."
+
+[service_03_title]
+other = "Asset Valuation"
+[service_03_desc]
+other = "Independent technical valuation of industrial assets for insurance, M&amp;A, and regulatory compliance."
+
+[service_04_title]
+other = "Risk Management &amp; Insurance Planning"
+[service_04_desc]
+other = "Independent insurance program design, benchmarking, and placement advisory."
+
+[service_05_title]
+other = "HSE Management"
+[service_05_desc]
+other = "Health, Safety, and Environment consulting including gap analysis and BNSP-certified training programs."
+
+[service_06_title]
+other = "Business Continuity &amp; Resilience"
+[service_06_desc]
+other = "Business impact analysis, continuity planning, and disaster risk reduction strategies."
+
+
+#=============================#
+#========== CLIENTS ==========#
+#=============================#
+[clients_label]
+other = "Trusted by Leading Organizations"
+
+[client_item_01]
+other = "PLN Group"
+
+[client_item_02]
+other = "Antam"
+
+[client_item_03]
+other = "Chevron"
+
+[client_item_04]
+other = "Petrokimia Gresik"
+
+[client_item_05]
+other = "PT MRT Jakarta"
+
+[client_item_06]
+other = "Geo Dipa Energi"
+
+[client_item_07]
+other = "Krakatau Steel"
+
+[client_item_08]
+other = "Telkomsel"
+
+
+#==============================#
+#========== PROJECTS ==========#
+#==============================#
+[projects_section_label]
+other = "Selected Work"
+[projects_h2]
+other = "Recent <em>Projects</em>"
+[projects_cta]
+other = "All Projects"
+
+[project_01_tag]
+other = "Risk &amp; Insurance"
+[project_01_title]
+other = "Risk Management &amp; Insurance Consulting Services"
+[project_01_client]
+other = "PT Pelayaran Bahtera Adhiguna (BAg)"
+[project_01_year]
+other = "2024"
+
+[project_02_tag]
+other = "Asset Valuation"
+[project_02_title]
+other = "Risk Assessment &amp; Asset Valuation"
+[project_02_client]
+other = "PT Petrokimia Gresik"
+[project_02_year]
+other = "2023"
+
+[project_03_tag]
+other = "Insurance Advisory"
+[project_03_title]
+other = "Asset Insurance Consultant &amp; Risk Advisory Services"
+[project_03_client]
+other = "PT Antam Tbk"
+[project_03_year]
+other = "2023"
+
+[project_04_tag]
+other = "Operational Risk"
+[project_04_title]
+other = "Insurance Risk Assessment &amp; Recommendations"
+[project_04_client]
+other = "PT PLN Batam"
+[project_04_year]
+other = "2022"
+
+[project_05_tag]
+other = "Risk Survey"
+[project_05_title]
+other = "Risk Survey PGU &amp; POMU - Generation Units"
+[project_05_client]
+other = "PT Indonesia Power"
+[project_05_year]
+other = "2021"
+
+[project_06_tag]
+other = "Risk &amp; Insurance"
+[project_06_title]
+other = "Operational Asset Insurance Consulting"
+[project_06_client]
+other = "PT Geo Dipa Energi"
+[project_06_year]
+other = "2021"
+
+

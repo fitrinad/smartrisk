@@ -1,11 +1,7 @@
 <!---------- FOOTER ---------->
 <footer>
     {{ if not .Params.hasContactSection }}
-        {{ if eq .Lang "en" }}
-            {{ partial "contact-details-en.html" . }}    
-        {{ else }}    
-            {{ partial "contact-details-id.html" . }}
-        {{ end }}
+        {{ partial "contact-details.html" . }}
     {{ end }}
     <span class="footer-logo">
         <picture>
