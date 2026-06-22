@@ -1,0 +1,89 @@
+#=============================#
+#========== CONTACT ==========#
+#=============================#
+#========================================#
+#========== CONTACT INFO PANEL ==========#
+#========================================#
+[contact_info_section_label]
+other = "Hubungi SmartRisk"
+[contact_info_text_h1]
+other = "Mari diskusikan tantangan <em>risiko</em> Anda."
+[contact_info_text_p]
+other = "Hubungi tim kami di Jakarta. Kami siap mendiskusikan proyek Anda."
+
+
+#=====================================#
+#========== CONTACT DETAILS ==========#
+#=====================================#
+[contact_item_title_01]
+other = "Kantor Pusat"
+[contact_item_details_01]
+other = "Jl. Trunojoyo Blok M/135, Kebayoran Baru, Gedung 1 Lantai 4, Jakarta 12160"
+
+[contact_item_title_02]
+other = "Kantor Kerja"
+[contact_item_details_02]
+other = "Gedung Menara Hijau, Jl. MT Haryono Kav 33, Lantai 3 Suite 301, Jakarta 12770"
+
+[contact_item_title_03]
+other = "Telepon / Whatsapp"
+[contact_item_details_03]
+other = "<a href='tel:+628118208123' style='color: rgba(250, 250, 250, 0.5);'>+62-811-8208-123</a>"
+
+[contact_item_title_04]
+other = "Email"
+[contact_item_details_04]
+other = "<a href='mailto:admin@smartrisk-pln.com' style='color: rgba(250, 250, 250, 0.5);'>admin@smartrisk-pln.com</a>"
+
+
+#==================================#
+#========== CONTACT FORM ==========#
+#==================================#
+[contact_form_section_label]
+other = "Hubungi Kami"
+[contact_form_text_h2]
+other = "Kirim <em>Pesan</em>"
+
+[contact_form_name_01]
+other = "Nama Lengkap"
+[contact_form_placeholder_01]
+other = "Nama Anda"
+
+[contact_form_name_02]
+other = "Perusahaan / Organisasi"
+[contact_form_placeholder_02]
+other = "Nama Perusahaan / Organisasi"
+
+[contact_form_name_03]
+other = "Alamat Email"
+[contact_form_placeholder_03]
+other = "email@anda.com"
+
+[contact_form_name_04]
+other = "Layanan yang Diminati"
+[contact_form_options_title]
+other = "Pilih Layanan..."
+[contact_form_option_01]
+other = "Penilaian Risiko Operasional"
+[contact_form_option_02]
+other = "Penilaian Risiko Proyek"
+[contact_form_option_03]
+other = "Valuasi Aset"
+[contact_form_option_04]
+other = "Manajemen Risiko &amp; Perencanaan Asuransi"
+[contact_form_option_05]
+other = "Manajemen K3"
+[contact_form_option_06]
+other = "Kelangsungan &amp; Ketahanan Bisnis"
+[contact_form_option_07]
+other = "Lainnya / Pertanyaan Umum"
+
+[contact_form_name_05]
+other = "Pesan"
+[contact_form_placeholder_05]
+other = "Jelaskan secara singkat proyek atau pertanyaan Anda"
+
+[contact_form_submit]
+other = "Kirim Pesan"
+
+

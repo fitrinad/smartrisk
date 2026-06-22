@@ -1,0 +1,187 @@
+#==============================#
+#========== OUR TEAM ==========#
+#==============================#
+#=================================#
+#========== PAGE HEADER ==========#
+#=================================#
+[team_section_label]
+other = "Tim Kami"
+[team_h1]
+other = "Orang-orang di balik <br /><em>SmartRisk</em>"
+[team_p]
+other = "Tim multidisiplin kami menyatukan ahli risiko bersertifikat, insinyur, spesialis K3, dan tenaga ahli dengan pengalaman gabungan puluhan tahun di industri-industri utama Indonesia."
+
+
+#=============================#
+#========== MARQUEE ==========#
+#=============================#
+[team_marquee_01]
+other = "Risk Engineers"
+[team_marquee_02]
+other = "BNSP-Certified"
+[team_marquee_03]
+other = "Petroleum Engineers"
+[team_marquee_04]
+other = "Electrical Engineers"
+[team_marquee_05]
+other = "Mining Engineers"
+[team_marquee_06]
+other = "HSE Practitioners"
+[team_marquee_07]
+other = "Finance &amp; Tax Specialists"
+
+
+#===============================#
+#========== DIRECTORS ==========#
+#===============================#
+[directors_group_label]
+other = "Direktur"
+
+[director_01_name]
+other = "Adi Supriono"
+[director_01_title]
+other = "Direktur Utama"
+
+[director_02_name]
+other = "Ikhwan Fahri"
+[director_02_title]
+other = "Direktur Keuangan dan Manajemen Risiko"
+
+[director_03_name]
+other = "Rifky Assamady"
+[director_03_title]
+other = "Komisaris"
+
+[director_04_name]
+other = "Rustamadji"
+[director_04_title]
+other = "Komisaris"
+
+
+#===============================#
+#========== ENGINEERS ==========#
+#===============================#
+[engineers_group_label]
+other = "Tim Engineer"
+
+[engineer_01_name]
+other = "Muhammad Fazriansyah"
+[engineer_01_title]
+other = "General Manager &middot; Certified Risk Management Professional"
+
+[engineer_02_name]
+other = "Rissa"
+[engineer_02_title]
+other = "Risk Engineer &middot; Corrosion Engineer"
+
+[engineer_03_name]
+other = "Dwaya Putranti Sekarwening"
+[engineer_03_title]
+other = "Risk Engineer &middot; Petroleum Engineer"
+
+[engineer_04_name]
+other = "Audi Karina Choirunisa"
+[engineer_04_title]
+other = "Risk Analyst &middot; Disaster Management Specialist"
+
+[engineer_05_name]
+other = "Ronny Syahlani"
+[engineer_05_title]
+other = "IT Support &middot; System Information"
+
+[engineer_06_name]
+other = "Maulana Arba Aryadi"
+[engineer_06_title]
+other = "Finance, Accounting &amp; Tax &middot; Master of Accounting"
+
+[engineer_07_name]
+other = "Luthfi Adhyaksadiputra"
+[engineer_07_title]
+other = "Risk Engineer &middot; Mining Engineer"
+
+[engineer_08_name]
+other = "Salsa Maharani Hapsari"
+[engineer_08_title]
+other = "Risk Engineer &middot; Electrical Engineer"
+
+[engineer_09_name]
+other = "Silvia Damayanti"
+[engineer_09_title]
+other = "Risk Engineer &middot; Electrical Engineer"
+
+[engineer_10_name]
+other = "Delia Intan Pratiwi"
+[engineer_10_title]
+other = "Management Officer &middot; Public Relations"
+
+
+#=====================================#
+#========== EXPERT ADVISORS ==========#
+#=====================================#
+[experts_group_label]
+other = "Tim Ahli"
+
+[expert_01_name]
+other = "Adrianus Pangaribuan"
+[expert_01_spec]
+other = "Spesialis Keselamatan Kebakaran"
+[expert_01_bio]
+other = "Doktor Spesialis Keselamatan Kebakaran, penasihat dan profesional teknis di SmartRisk."
+
+[expert_02_name]
+other = "Djoko Mulyadi"
+[expert_02_spec]
+other = "Ahli Ketenagalistrikan"
+[expert_02_bio]
+other = "Praktisi dan pelatih profesional teknis dalam bidang ketenagalistrikan di SmartRisk."
+
+[expert_03_name]
+other = "Winardi Sani"
+[expert_03_spec]
+other = "Engineer Industri"
+[expert_03_bio]
+other = "Akademisi dan Engineer Industri sebagai tenaga ahli profesional teknis di SmartRisk."
+
+[expert_04_name]
+other = "Joga Prakasa Subroto"
+[expert_04_spec]
+other = "Valuasi Perminyakan &amp; Gas"
+[expert_04_bio]
+other = "Memiliki pengalaman yang luas di bidang valuasi dan penilaian risiko di bidang perminyakan dan gas, sebagai salah satu konsultan di SmartRisk."
+
+[expert_05_name]
+other = "Tri Harso Harijadi"
+[expert_05_spec]
+other = "Praktisi K3"
+[expert_05_bio]
+other = "Praktisi dan instruktur K3 di Pertamina serta Asesor Kompetensi BNSP, saat ini sebagai profesional teknis K3 di SmartRisk."
+
+[expert_06_name]
+other = "Sumyartono"
+[expert_06_spec]
+other = "Asuransi Teknis"
+[expert_06_bio]
+other = "Berpengalaman di bidang asuransi teknis dan bisnis, sebagai tenaga ahli profesional teknis di SmartRisk."
+
+
+#==============================#
+#========== JOIN CTA ==========#
+#==============================#
+[join_section_h2]
+other = "Bergabung dengan tim yang dapat menangani <em>risiko</em>"
+[join_section_text]
+other = "Kami selalu mencari para ahli risiko bersertifikat, insinyur, dan spesialis K3 yang memiliki komitmen yang sama dengan kami terhadap independensi, ketelitian, dan dampak bagi klien."
+
+[join_cta_btn]
+other = "Hubungi Kami"
+
+[join_stat_01_label]
+other = "Proyek Selesai"
+[join_stat_02_label]
+other = "Tahun Pengalaman"
+[join_stat_03_label]
+other = "Sektor"
+[join_stat_04_label]
+other = "Kategori Penghargaan"
+
+

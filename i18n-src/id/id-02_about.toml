@@ -1,0 +1,175 @@
+#==============================#
+#========== ABOUT US ==========#
+#==============================#
+#=================================#
+#========== PAGE HEADER ==========#
+#=================================#
+[about_header_section_label]
+other = "Tentang Smartrisk"
+[about_header_h1]
+other = "Keahlian risiko, disampaikan<br /> secara <em>independen</em>"
+[about_header_p]
+other = "PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) didirikan pada tahun 2020 sebagai perusahaan <i lang='EN'>joint venture</i> YPK-PLN untuk memberikan konsultasi risiko yang bebas dari konflik kepentingan asuransi atau broker."
+
+
+#=============================#
+#========== MARQUEE ==========#
+#=============================#
+[about_marquee_01]
+other = "Independen"
+[about_marquee_02]
+other = "Multidisiplin"
+[about_marquee_03]
+other = "Bersertifikat BNSP"
+# [about_marquee_04]
+# other = "Pemenang Penghargaan"
+[about_marquee_05]
+other = "Berafiliasi YPK-PLN"
+[about_marquee_06]
+other = "100+ Proyek"
+[about_marquee_07]
+other = "10+ Tahun"
+[about_marquee_08]
+other = "Jakarta, Indonesia"
+
+
+#===========================#
+#========== STORY ==========#
+#===========================#
+[story_section_label]
+other = "Tentang SmartRisk"
+[story_h2]
+other = "Suara <em>independen</em> dalam ranah risiko yang kompleks"
+
+[story_body_p01]
+other = "PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) didirikan pada Maret 2020 sebagai perusahaan <i lang='EN'>joint venture</i>, dimiliki 90% oleh YPK PLN dan 10% oleh PT Solusi Manajemen Risiko Terpadu (Smart). Kami menyediakan layanan konsultasi risiko yang objektif, bebas dari konflik kepentingan asuransi atau broker. Tim kami memiliki sertifikasi profesional di bidang manajemen risiko, K3, asuransi, dan penilaian teknis."
+[story_body_p02]
+other = "Berkantor pusat di Jakarta dan berafiliasi dengan YPK-PLN, SmartRisk membawa pemahaman mendalam di bidang manajemen risiko, aset, dan operasional industri strategis di Indonesia. Pengalaman kami mencakup sektor energi, utilitas, pertambangan, infrastruktur, dan berbagai organisasi dengan kebutuhan pengelolaan risiko yang kompleks. Kami membantu organisasi memahami, mengevaluasi, dan memprioritaskan risiko guna mendukung pengambilan keputusan bisnis yang tepat melalui manajemen risiko terintegrasi, penilaian teknis, dan analisis bisnis."
+
+[story_vision_label]
+other = "Visi Kami"
+[story_vision_text]
+other = "Menjadi konsultan manajemen risiko independen terkemuka yang dipercaya oleh klien energi dan industri di seluruh Indonesia."
+
+[story_mission_label]
+other = "Misi Kami"
+[story_mission_text]
+other = "Memberikan penilaian risiko yang tepat, independen, dan dapat ditindaklanjuti untuk melindungi manusia, aset, dan lingkungan."
+
+[story_quote_text]
+other = "SmartRisk menyadari nilai mendasar dari percobaan terhadap perkiraan dan antisipasi setiap kemungkinan yang ada di dalam operasi bisnis Anda."
+
+
+#=====================================#
+#========== SPECIALIZATIONS ==========#
+#=====================================#
+[spec_section_label]
+other = "Area Kerja Kami"
+[spec_h2]
+other = "Bidang Keahlian"
+
+[spec_01_title]
+other = "Energi"
+[spec_01_sub]
+other = "Pembangkit listrik, minyak &amp; gas, energi terbarukan"
+[spec_02_title]
+other = "Asuransi"
+[spec_02_sub]
+other = "Desain program, penempatan, <i lang='EN'>advisory</i> klaim"
+[spec_03_title]
+other = "Pelabuhan &amp; Kargo Laut"
+[spec_03_sub]
+other = "Terminal kontainer, kargo curah, logistik"
+
+[spec_04_title]
+other = "Pertambangan"
+[spec_04_sub]
+other = "Batu bara, nikel, bauksit, logam mulia"
+[spec_05_title]
+other = "Proyek Konstruksi"
+[spec_05_sub]
+other = "Proyek modal, EPC, infrastruktur"
+[spec_06_title]
+other = "Gedung Bertingkat"
+[spec_06_sub]
+other = "Komersial, residensial, <i lang='EN'>mixed-use</i>"
+
+
+#============================#
+#========== METHOD ==========#
+#============================#
+[method_section_label]
+other = "Cara Kerja Kami"
+[method_h2]
+other = "Metode <em>Interwoven</em>"
+[method_p01]
+other = "Metodologi kami mengintegrasikan inspeksi teknis, pemodelan risiko kuantitatif, dan pengetahuan pasar asuransi ke dalam proses manajemen risiko yang terpadu."
+[method_p02]
+other = "Setiap keterlibatan dipimpin oleh ahli risiko bersertifikat dan didukung tim multidisiplin insinyur, spesialis K3, dan <i lang='EN'>advisor</i> asuransi."
+
+[method_step_01_title]
+other = "Identifikasi Risiko"
+[method_step_01_desc]
+other = "Identifikasi bahaya secara sistematis melalui kunjungan lapangan, tinjauan dokumen, dan wawancara <i lang='EN'>stakeholder</i>."
+
+[method_step_02_title]
+other = "Analisis Risiko"
+[method_step_02_desc]
+other = "Penilaian kualitatif dan kuantitatif atas kemungkinan dan konsekuensi setiap risiko yang teridentifikasi."
+
+[method_step_03_title]
+other = "Evaluasi Risiko"
+[method_step_03_desc]
+other = "Penetapan prioritas berdasarkan <i lang='EN'>risk appetite</i> klien dan ambang batas regulasi."
+
+[method_step_04_title]
+other = "Penanganan Risiko"
+[method_step_04_desc]
+other = "Pengembangan rekomendasi mitigasi yang dapat ditindaklanjuti dan <i lang='EN'>roadmap</i> implementasi."
+
+[method_step_05_title]
+other = "Pemantauan &amp; Peninjauan"
+[method_step_05_desc]
+other = "Peninjauan dan pelaporan berkelanjutan untuk memantau <i lang='EN'>risk posture</i>."
+
+
+#=====================================#
+#========== MISSION PILLARS ==========#
+#=====================================#
+[pillars_section_label]
+other = "Yang Menggerakkan Kami"
+[pillars_h2]
+other = "Komitmen Kami"
+
+[pillar_01_title]
+other = "Independensi"
+[pillar_01_desc]
+other = "Tanpa afiliasi dengan asuransi, broker, atau vendor peralatan. Saran kami hanya untuk kepentingan Anda."
+
+[pillar_02_title]
+other = "Ketelitian Teknis"
+[pillar_02_desc]
+other = "Setiap penilaian didukung insinyur bersertifikat dan mengikuti <i lang='EN'>risk framework</i> yang diakui secara internasional."
+
+[pillar_03_title]
+other = "Output Praktis"
+[pillar_03_desc]
+other = "Kami memberikan rekomendasi yang dapat ditindaklanjuti, bukan sekadar laporan. Pekerjaan kami dirancang untuk diimplementasikan."
+
+[pillar_04_title]
+other = "Kemitraan Jangka Panjang"
+[pillar_04_desc]
+other = "Kami membangun hubungan jangka panjang dengan klien, mendukung mereka melalui berbagai siklus proyek dan tinjauan risiko."
+
+
+#=====================================#
+#========== ABOUT CTA STRIP ==========#
+#=====================================#
+[about_cta_h2]
+other = "Siap bekerja sama dengan mitra risiko <em>independen</em>?"
+[about_cta_btn_01]
+other = "Hubungi Kami"
+[about_cta_btn_02]
+other = "Kenali Tim Kami"
+
+

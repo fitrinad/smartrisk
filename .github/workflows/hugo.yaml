@@ -79,6 +79,12 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
+      # Merging translation files in i18n-src/<lang>/*.toml -> i18n-src/<lang>.toml
+      - name: Merge i18n source files
+        run: |
+          chmod +x scripts/merge-i18n.sh
+          ./scripts/merge-i18n.sh
+          
       - name: Build the site
         run: |
           hugo build \

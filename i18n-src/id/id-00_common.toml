@@ -1,0 +1,50 @@
+#================================#
+#========== NAVIGATION ==========#
+#================================#
+[nav_home]
+other = "Beranda"
+[nav_about]
+other = "Tentang Kami"
+[nav_team]
+other = "Tim Kami"
+[nav_services]
+other = "Layanan"
+[nav_projects]
+other = "Proyek"
+[nav_contact]
+other = "Kontak"
+[nav_cta_btn]
+other = "Hubungi Kami"
+
+[nav_compro_btn]
+other = "Profil<br>Perusahaan"
+
+[skip_link]
+other = "Lewati ke konten utama"
+[nav_aria]
+other = "Navigasi utama"
+
+
+#============================#
+#========== FOOTER ==========#
+#============================#
+[footer_copyright]
+other = "All rights reserved."
+
+
+
+#==============================#
+#========== 404 PAGE ==========#
+#==============================#
+[404_title]
+other = "Halaman Tidak Ditemukan | SmartRisk"
+[404_message_h1]
+other = "Halaman <em>tidak ditemukan.</em>"
+[404_message_text]
+other = "Halaman yang Anda cari tidak ada atau telah dipindahkan. Silakan kembali ke halaman yang tepat."
+[404_btn_home]
+other = "Kembali ke Beranda"
+[404_btn_contact]
+other = "Hubungi Kami"
+
+

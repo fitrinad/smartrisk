@@ -1,0 +1,211 @@
+#===========================#
+#========== INDEX ==========#
+#===========================#
+#==========================#
+#========== HERO ==========#
+#==========================#
+[hero_eyebrow]
+other = "Konsultan Risiko Independen &middot; Didirikan di Jakarta, Indonesia"
+[hero_h1]
+other = "Mengelola Risiko secara <em>Global</em>"
+[hero_body]
+other = "SmartRisk adalah konsultan manajemen risiko independen dengan pengalaman lebih dari satu dekade membantu klien di sektor energi, infrastruktur, dan industri dalam mengidentifikasi, menilai, dan memitigasi risiko kompleks."
+
+[hero_cta_primary]
+other = "Layanan Kami"
+[hero_cta_secondary]
+other = "Hubungi Kami"
+
+[hero_stat_01_label]
+other = "Proyek Selesai"
+[hero_stat_02_label]
+other = "Tahun Pengalaman"
+[hero_stat_03_label]
+other = "Kategori Penghargaan"
+
+[hero_card_label]
+other = "Layanan"
+[hero_card_service_01]
+other = "<i>Risk Assessment</i>"
+[hero_card_service_02]
+other = "<i>Risk Rating</i>"
+[hero_card_service_03]
+other = "Manajemen Risiko &amp; Perencanaan Asuransi"
+[hero_card_service_04]
+other = "Manajemen K3"
+[hero_card_service_05]
+other = "Valuasi Aset"
+[hero_card_service_06]
+other = "Penilaian Teknis"
+
+
+#===========================#
+#========== ABOUT ==========#
+#===========================#
+[about_section_label]
+other = "Tentang SmartRisk"
+[about_h2]
+other = "Suara <em>independen</em> dalam ranah risiko yang kompleks"
+
+[about_body_p01]
+other = "PT Solusi Manajemen Risiko Terintegrasi (SmartRisk) didirikan pada Maret 2020 sebagai perusahaan <i lang='EN'>joint venture</i>, dimiliki 90% oleh YPK PLN dan 10% oleh PT Solusi Manajemen Risiko Terpadu (Smart). Kami menyediakan layanan konsultasi risiko yang objektif, bebas dari konflik kepentingan asuransi atau broker. Tim kami memiliki sertifikasi profesional di bidang manajemen risiko, K3, asuransi, dan penilaian teknis."
+[about_body_p02]
+other = "Berkantor pusat di Jakarta dan berafiliasi dengan YPK-PLN, SmartRisk membawa pemahaman mendalam di bidang manajemen risiko, aset, dan operasional industri strategis di Indonesia. Pengalaman kami mencakup sektor energi, utilitas, pertambangan, infrastruktur, dan berbagai organisasi dengan kebutuhan pengelolaan risiko yang kompleks. Kami membantu organisasi memahami, mengevaluasi, dan memprioritaskan risiko guna mendukung pengambilan keputusan bisnis yang tepat melalui manajemen risiko terintegrasi, penilaian teknis, dan analisis bisnis."
+
+
+#=================================#
+#========== CREDENTIALS ==========#
+#=================================#
+[cert_01_name]
+other = "Independen dan Objektif"
+[cert_01_desc]
+other = "SmartRisk memberikan rekomendasi berfokus pada kebutuhan risiko dan perlindungan aset klien, bebas dari konflik kepentingan asuransi dan broker."
+
+[cert_02_name]
+other = "Kredibilitas Korporat dan Layanan Industri"
+[cert_02_desc]
+other = "Diakui atas kinerja perusahaan yang tinggi di lingkungan YPK-PLN, SmartRisk terus mengembangkan kapasitas layanan konsultasi risiko untuk mendukung klien di berbagai sektor industri."
+
+[cert_03_name]
+other = "Tim Multidisiplin Bersertifikat"
+[cert_03_desc]
+other = "Tim multidisiplin SmartRisk beranggotakan spesialis bersertifikat BNSP di bidang manajemen risiko, K3, asuransi, dan valuasi teknis."
+
+
+#==============================#
+#========== SERVICES ==========#
+#==============================#
+[services_section_label]
+other = "Yang Kami Kerjakan"
+[services_h2]
+other = "<em>Layanan</em> Kami"
+[services_cta]
+other = "Semua Layanan"
+
+[service_01_title]
+other = "Penilaian Risiko Operasional"
+[service_01_desc]
+other = "Identifikasi dan evaluasi sistematis bahaya operasional, termasuk studi HAZOP dan inspeksi teknis."
+
+[service_02_title]
+other = "Penilaian Risiko Proyek"
+[service_02_desc]
+other = "Analisis risiko menyeluruh untuk proyek modal, dari studi kelayakan hingga konstruksi dan <i lang='EN'>commissioning</i>."
+
+[service_03_title]
+other = "Valuasi Aset"
+[service_03_desc]
+other = "Valuasi teknis independen atas aset industri untuk asuransi, M&amp;A, dan kepatuhan regulasi."
+
+[service_04_title]
+other = "Manajemen Risiko &amp; Perencanaan Asuransi"
+[service_04_desc]
+other = "Desain program asuransi independen, <i lang='EN'>benchmarking</i>, dan <i lang='EN'>advisory</i> penempatan."
+
+[service_05_title]
+other = "Manajemen K3"
+[service_05_desc]
+other = "Konsultasi Keselamatan dan Kesehatan Kerja, termasuk analisis kesenjangan dan program pelatihan bersertifikat BNSP."
+
+[service_06_title]
+other = "Keberlanjutan &amp; Ketahanan Bisnis"
+[service_06_desc]
+other = "Analisis dampak bisnis, perencanaan kelangsungan, dan strategi pengurangan risiko bencana."
+
+
+#=============================#
+#========== CLIENTS ==========#
+#=============================#
+[clients_label]
+other = "Dipercaya oleh Organisasi Terkemuka"
+
+[client_item_01]
+other = "PLN Group"
+
+[client_item_02]
+other = "Antam"
+
+[client_item_03]
+other = "Chevron"
+
+[client_item_04]
+other = "Petrokimia Gresik"
+
+[client_item_05]
+other = "PT MRT Jakarta"
+
+[client_item_06]
+other = "Geo Dipa Energi"
+
+[client_item_07]
+other = "Krakatau Steel"
+
+[client_item_08]
+other = "Telkomsel"
+
+
+#==============================#
+#========== PROJECTS ==========#
+#==============================#
+[projects_section_label]
+other = "Proyek Pilihan"
+[projects_h2]
+other = "Proyek <em>Terkini</em>"
+[projects_cta]
+other = "Semua Proyek"
+
+[project_01_tag]
+other = "Risiko &amp; Asuransi"
+[project_01_title]
+other = "Layanan Konsultasi Manajemen Risiko &amp; Asuransi"
+[project_01_client]
+other = "PT Pelayaran Bahtera Adhiguna (BAg)"
+[project_01_year]
+other = "2024"
+
+[project_02_tag]
+other = "Valuasi Aset"
+[project_02_title]
+other = "Penilaian Risiko &amp; Valuasi Aset"
+[project_02_client]
+other = "PT Petrokimia Gresik"
+[project_02_year]
+other = "2023"
+
+[project_03_tag]
+other = "Konsultasi Asuransi"
+[project_03_title]
+other = "Konsultan Asuransi Aset &amp; Layanan Konsultasi Risiko"
+[project_03_client]
+other = "PT Antam Tbk"
+[project_03_year]
+other = "2023"
+
+[project_04_tag]
+other = "Risiko Operasional"
+[project_04_title]
+other = "Penilaian Risiko Asuransi &amp; Rekomendasi"
+[project_04_client]
+other = "PT PLN Batam"
+[project_04_year]
+other = "2022"
+
+[project_05_tag]
+other = "Survei Risiko"
+[project_05_title]
+other = "Survei Risiko PGU &amp; POMU - Unit Pembangkitan"
+[project_05_client]
+other = "PT Indonesia Power"
+[project_05_year]
+other = "2021"
+
+[project_06_tag]
+other = "Risiko &amp; Asuransi"
+[project_06_title]
+other = "Konsultasi Asuransi Aset Operasional"
+[project_06_client]
+other = "PT Geo Dipa Energi"
+[project_06_year]
+other = "2021"
+
+

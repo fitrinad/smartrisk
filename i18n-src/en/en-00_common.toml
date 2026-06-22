@@ -1,0 +1,50 @@
+#================================#
+#========== NAVIGATION ==========#
+#================================#
+[nav_home]
+other = "Home"
+[nav_about]
+other = "About Us"
+[nav_team]
+other = "Our Team"
+[nav_services]
+other = "Services"
+[nav_projects]
+other = "Projects"
+[nav_contact]
+other = "Contact"
+[nav_cta_btn]
+other = "Get in Touch"
+
+[nav_compro_btn]
+other = "Company<br>Profile"
+
+[skip_link]
+other = "Skip to main content"
+[nav_aria]
+other = "Main navigation"
+
+
+#============================#
+#========== FOOTER ==========#
+#============================#
+[footer_copyright]
+other = "All rights reserved."
+
+
+
+#==============================#
+#========== 404 PAGE ==========#
+#==============================#
+[404_title]
+other = "Page Not Found | SmartRisk"
+[404_message_h1]
+other = "Page <em>not found.</em>"
+[404_message_text]
+other = "The page you're looking for doesn't exist or has been moved. Let's get you back on track."
+[404_btn_home]
+other = "Back to Home"
+[404_btn_contact]
+other = "Contact Us"
+
+
