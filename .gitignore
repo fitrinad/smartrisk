@@ -1,9 +1,15 @@
 *.zip
 *.bat
+URL_CHANGES.md
+CONTRIBUTING.md
+static/sitemap_xml.md
+
 .hugo_build.lock
 netlify.toml
-URL_CHANGES.md
+
 static/_headers
-static/sitemap_xml.md
+
 public/
 resources/_gen/
+
+i18n/*.toml
