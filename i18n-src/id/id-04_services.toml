@@ -80,7 +80,7 @@ other = "Penerapan sistem dan standar <i>Business Continuity Management</i> (BCM
 [svc_consultation_08_title]
 other = "Pengurangan Risiko Bencana"
 [svc_consultation_08_desc]
-other = "Solusi lengkap pengurangan risiko bencana — dari manajemen administratif hingga pembangunan kapasitas operasional — guna memastikan tanggap darurat yang tepat dari seluruh pemangku kepentingan."
+other = "Solusi lengkap pengurangan risiko bencana, dari manajemen administratif hingga pembangunan kapasitas operasional, guna memastikan tanggap darurat yang tepat dari seluruh pemangku kepentingan."
 
 [svc_consultation_09_title]
 other = "Bahaya Pihak Ketiga &amp; Konsultasi Kontrol Kerugian"
@@ -120,7 +120,7 @@ other = "Pelatihan asuransi mencakup properti &amp; interupsi bisnis, CAR, liabi
 [svc_learning_04_title]
 other = "Pelatihan Lainnya"
 [svc_learning_04_desc]
-other = "Program pelatihan khusus yang disesuaikan dengan kebutuhan klien, termasuk <i>HSE leadership</i>, <i>behavioural-based safety</i>, CSMS, dan teknis penanggulangan kebakaran."
+other = "Program pelatihan khusus yang disesuaikan dengan kebutuhan klien, termasuk <i>HSE leadership</i>, <i>behavioral-based safety</i>, CSMS, dan teknis penanggulangan kebakaran."
 
 
 #=================================#
@@ -139,7 +139,7 @@ other = "Solusi perangkat lunak <i>in-house</i> termasuk platform HAZOP's dan Ri
 [svc_it_03_title]
 other = "<i>Big Data</i>"
 [svc_it_03_desc]
-other = "Memanfaatkan kumpulan data besar dari penggunaan internet, perangkat pintar, media sosial, dan digitalisasi media untuk mengatasi tantangan bisnis yang sebelumnya tidak dapat ditangani."
+other = "Memanfaatkan kumpulan data besar dari penggunaan internet, <i>smart device</i>, media sosial, dan digitalisasi media untuk mengatasi tantangan bisnis yang sebelumnya tidak dapat ditangani."
 
 
 #==========================================#
@@ -149,6 +149,6 @@ other = "Memanfaatkan kumpulan data besar dari penggunaan internet, perangkat pi
 other = "Tanyakan Layanan Ini"
 
 [service_single_back]
-other = "&larr; Semua Layanan"
+other = "Semua Layanan"
 
 

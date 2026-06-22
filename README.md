@@ -21,8 +21,9 @@ smartrisk/
 ├── content/            ← Page metadata (title, description, CSS) per page and language
 │   ├── _index.md       ← English homepage
 │   ├── about/
-│   ├── contact/
 │   ├── team/
+│   ├── services/
+│   ├── contact/
 │   └── id/             ← Indonesian content (contentDir for ID language)
 ├── i18n-src/       ← Translation files to be merged into i18n/ for Hugo build
 │   ├── en/*.toml         ← Contains English UI strings, separated by page
