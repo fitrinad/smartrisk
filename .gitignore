@@ -1,7 +1,6 @@
 *.zip
 *.bat
 URL_CHANGES.md
-CONTRIBUTING.md
 static/sitemap_xml.md
 
 .hugo_build.lock
