@@ -29,6 +29,9 @@ other = "Manajemen K3"
 other = "Keberlanjutan &amp; Ketahanan Bisnis"
 
 
+#======================================#
+#========== SERVICES SIDEBAR ==========#
+#======================================#
 [services_sidebar_aria]
 other = "Kategori layanan"
 [services_cat_consultation]
@@ -39,107 +42,16 @@ other = "Pusat Pembelajaran"
 other = "IT Solution"
 
 
-#================================#
-#========== CONSULTATION ==========#
-#================================#
-[svc_consultation_01_title]
-other = "Penilaian Risiko Operasional"
-[svc_consultation_01_desc]
-other = "Identifikasi dan penilaian bahaya operasional secara sistematis; termasuk analisis EML/PML, skenario interupsi bisnis, dan evaluasi risiko berbasis GIS; yang disesuaikan dengan ruang lingkup setiap fasilitas."
-
-[svc_consultation_02_title]
-other = "Penilaian Risiko Proyek"
-[svc_consultation_02_desc]
-other = "Membantu klien memahami potensi risiko selama fase konstruksi, menerapkan mitigasi dan rencana pencegahan untuk menekan biaya premi asuransi selama pelaksanaan proyek."
-
-[svc_consultation_03_title]
-other = "Valuasi Aset"
-[svc_consultation_03_desc]
-other = "Valuasi teknis independen atas aset industri menggunakan <i>database</i> industri yang komprehensif; mencakup RAN, nilai pasar, dan <i>forced sale value</i>; untuk mengoptimalkan premi asuransi dan memastikan perlindungan yang memadai."
-
-[svc_consultation_04_title]
-other = "Penilaian Teknikal"
-[svc_consultation_04_desc]
-other = "Pendekatan rekayasa nilai yang sistematis untuk meningkatkan efisiensi konstruksi proyek dengan menganalisis fungsi komponen dan mengganti elemen berbiaya tinggi namun bernilai rendah tanpa mengorbankan keselamatan."
-
-[svc_consultation_05_title]
-other = "Manajemen Risiko &amp; Perencanaan Asuransi"
-[svc_consultation_05_desc]
-other = "Meninjau strategi manajemen risiko dan langkah-langkah transfer risiko dengan analisis independen berbasis keahlian yang menjembatani departemen teknis dan keuangan untuk desain program asuransi yang efektif."
-
-[svc_consultation_06_title]
-other = "Konsultasi K3"
-[svc_consultation_06_desc]
-other = "Pengembangan dan peningkatan sistem manajemen K3 terpadu, prosedur CSMS, perencanaan proteksi kebakaran, rencana tanggap darurat, dan pendampingan investigasi insiden."
-
-[svc_consultation_07_title]
-other = "Studi Kontinuitas &amp; Keberlanjutan Bisnis"
-[svc_consultation_07_desc]
-other = "Penerapan sistem dan standar <i>Business Continuity Management</i> (BCM) untuk menjaga kelangsungan operasi saat menghadapi bencana alam, dengan mengintegrasikan langkah keberlanjutan yang hemat biaya."
-
-[svc_consultation_08_title]
-other = "Pengurangan Risiko Bencana"
-[svc_consultation_08_desc]
-other = "Solusi lengkap pengurangan risiko bencana, dari manajemen administratif hingga pembangunan kapasitas operasional, guna memastikan tanggap darurat yang tepat dari seluruh pemangku kepentingan."
-
-[svc_consultation_09_title]
-other = "Bahaya Pihak Ketiga &amp; Konsultasi Kontrol Kerugian"
-[svc_consultation_09_desc]
-other = "Analisis luas terhadap wilayah sekitar dan langkah mitigasi efektif untuk mengurangi dampak bahaya pihak ketiga akibat insiden atau kecelakaan industri."
-
-[svc_consultation_10_title]
-other = "Penelitian Bisnis"
-[svc_consultation_10_desc]
-other = "Penelitian dan studi menyeluruh; termasuk survei loyalitas pelanggan, survei keterlibatan karyawan, dan observasi lapangan; sebagai fondasi rekomendasi yang disesuaikan dengan tujuan organisasi Anda."
-
-[svc_consultation_11_title]
-other = "Jasa Konsultasi Lainnya"
-[svc_consultation_11_desc]
-other = "Layanan tambahan meliputi penilaian risiko kebakaran dan ledakan, investigasi forensik teknikal, analisis HAZOP/SIL/LOPA, penilaian kematangan human capital, dan manajemen performa terintegrasi."
-
-
-
-#=====================================#
-#========== LEARNING CENTER ==========#
-#=====================================#
-[svc_learning_01_title]
-other = "Pelatihan K3"
-[svc_learning_01_desc]
-other = "Pelatihan dan uji kompetensi bersertifikat BNSP mencakup K3 umum, K3 migas, <i>authorized gas tester</i>, inspektur keselamatan, audit SMK3, dan investigasi insiden."
-
-[svc_learning_02_title]
-other = "Pelatihan Manajemen Risiko"
-[svc_learning_02_desc]
-other = "Program pelatihan meliputi manajemen risiko perusahaan berdasarkan ISO 31000, risk-based audit, manajemen risiko proyek, dan kelangsungan bisnis berdasarkan ISO 22301; dengan sertifikasi BNSP (CRMP &amp; CRMO)."
-
-[svc_learning_03_title]
-other = "Pelatihan Asuransi"
-[svc_learning_03_desc]
-other = "Pelatihan asuransi mencakup properti &amp; interupsi bisnis, CAR, liability, personal accident, asuransi kapal, dan asuransi pengangkutan; membekali personil manajemen risiko dengan pengetahuan teknis industri."
-
-[svc_learning_04_title]
-other = "Pelatihan Lainnya"
-[svc_learning_04_desc]
-other = "Program pelatihan khusus yang disesuaikan dengan kebutuhan klien, termasuk <i>HSE leadership</i>, <i>behavioral-based safety</i>, CSMS, dan teknis penanggulangan kebakaran."
-
-
-#=================================#
-#========== IT SOLUTION ==========#
-#=================================#
-[svc_it_01_title]
-other = "<i>IT Project Management</i>"
-[svc_it_01_desc]
-other = "Manajemen proyek IT <i>end-to-end</i> dan <i>quality assurance</i>, termasuk solusi <i>green &amp; smart building</i>, pengembangan <i>green port</i>, dan sistem manajemen dokumen."
-
-[svc_it_02_title]
-other = "<i>Production House</i>"
-[svc_it_02_desc]
-other = "Solusi perangkat lunak <i>in-house</i> termasuk platform HAZOP's dan RiskGra, dengan alat mendatang untuk penilaian <i>maturity level</i> dan manajemen risiko siber."
-
-[svc_it_03_title]
-other = "<i>Big Data</i>"
-[svc_it_03_desc]
-other = "Memanfaatkan kumpulan data besar dari penggunaan internet, <i>smart device</i>, media sosial, dan digitalisasi media untuk mengatasi tantangan bisnis yang sebelumnya tidak dapat ditangani."
+#======================================#
+#========== SERVICES ENTRIES ==========#
+#======================================#
+# Service entry titles and descriptions are not defined here.
+# They are sourced from the front matter of each service page:
+#   - Title     : content/id/services/<slug>.md → title
+#   - Summary   : content/id/services/<slug>.md → summary
+#   - Image     : content/id/services/<slug>.md → image
+# English equivalents are in content/services/<slug>.md
+# See layouts/services/list.html for how these are rendered.
 
 
 #==========================================#
