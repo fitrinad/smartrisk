@@ -8,50 +8,29 @@ function setActiveNav() {
     const parts = window.location.pathname.split('/').filter(Boolean);
     const currentLocation = parts[parts.length - 1] || '';
 
+    // Highlights home link when on the homepage
+    // currentLocation is '' on homepage (no path segment after root)
+    if (currentLocation === '') {
+        const homeLink = [...document.querySelectorAll('.nav-links a')].find(a => {
+            const href = a.getAttribute('href');
+            try {
+                const url = new URL(href);
+                return url.pathname === window.location.pathname;
+            } catch(e) { return false; }
+        });
+        if (homeLink) homeLink.classList.add('active');
+    }
+
     // Highlights nav links based on currentLocation
     const menuLinks = document.querySelectorAll('.nav-links a');
     menuLinks.forEach(link => {
         const href = link.getAttribute('href');
         const linkPage = href.split('/').filter(Boolean).pop() || '';
-        // currentLocation is '' on homepage
-        // won't match any nav link, so IntersectionObserver handles it
         if (linkPage && linkPage === currentLocation) {
             link.classList.add('active');
         }
     });
 
-    // Highlights nav links on scroll based on visible section
-    const navLinks = [...document.querySelectorAll('.nav-links a')];
-    const sections = [...document.querySelectorAll('main section[id]')];
-
-    if (sections.length) {
-        const sectionObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    navLinks.forEach(a => a.classList.remove('active'));
-                    // match by:
-                    // - bare fragment: #services
-                    // - absolute URL with fragment: https://.../#services
-                    // - page name: about -> id="about"
-                    const match = navLinks.find(a => {
-                        const href = a.getAttribute('href');
-                        // bare fragment: #services
-                        if (href === '#' + entry.target.id) return true;
-                        // absolute URL with fragment: https://.../#services
-                        try {
-                            const url = new URL(href, window.location.href);
-                            if (url.hash === '#' + entry.target.id) return true;
-                        } catch(e) {}
-                        // page name match: about -> id="about"
-                        return href.replace(/\/$/, '').split('/').pop() === entry.target.id;
-                    });
-                    if (match) match.classList.add('active');
-                }
-            });
-        }, { threshold: 0.2 });
-
-        sections.forEach(s => sectionObserver.observe(s));
-    }
 }
 setActiveNav();
 
