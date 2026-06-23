@@ -1,6 +1,6 @@
 ---
 title: "Penilaian Teknikal"
-description: "SmartRisk menyediakan layanan penilaian teknikal menggunakan pendekatan <i>value engineering</i> untuk meningkatkan efisiensi proyek konstruksi."
+description: "SmartRisk menyediakan layanan penilaian teknikal menggunakan pendekatan value engineering untuk meningkatkan efisiensi proyek konstruksi."
 category: "Konsultasi"
 category_code: "consultation"
 service_code: "C04"

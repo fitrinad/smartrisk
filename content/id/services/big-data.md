@@ -1,6 +1,6 @@
 ---
-title: "<i>Big Data</i>"
-description: "SmartRisk memanfaatkan kumpulan data besar untuk mengatasi tantangan bisnis yang kompleks."
+title: "Big Data"
+description: "SmartRisk memanfaatkan dataset besar untuk mengatasi tantangan bisnis yang kompleks."
 category: "IT Solution"
 category_code: "it-solution"
 service_code: "IS03"
