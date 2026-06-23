@@ -2,7 +2,9 @@
 title: "Penilaian Risiko Operasional"
 description: "SmartRisk menyediakan jasa penilaian risiko operasional untuk berbagai fasilitas industri."
 category: "Konsultasi"
-summary: "Identifikasi dan evaluasi sistematis bahaya operasional, disesuaikan dengan ruang lingkup kerja yang disepakati; berguna untuk rencana asuransi yang sudah ada maupun yang baru diusulkan."
+category_code: "consultation"
+service_code: "C01"
+summary: "Identifikasi dan penilaian bahaya operasional secara sistematis; termasuk analisis EML/PML, skenario interupsi bisnis, dan evaluasi risiko berbasis GIS; yang disesuaikan dengan ruang lingkup yang telah disepakati"
 image: "assets/images/services/w1-1024x512.jpg"
 pageCSS: "services-projects.css"
 ---
