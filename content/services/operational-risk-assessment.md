@@ -1,8 +1,10 @@
 ---
 title: "Operational Risk Assessment"
 description: "SmartRisk provides operational risk assessment services for various industrial facilities."
-category: Consultation
-summary: "Systematic identification and evaluation of operational hazards, tailored to the agreed-upon scope of work; beneficial for both existing and newly proposed insurance plans."
+category: "Consultation"
+category_code: "consultation"
+service_code: "C01"
+summary: "Systematic identification and assessment of operational hazards; including EML/PML analysis, business interruption scenarios, and GIS-based risk evaluation; tailored to the agreed-upon scope of work."
 image: "assets/images/services/w1-1024x512.jpg"
 pageCSS: "services-projects.css"
 ---
