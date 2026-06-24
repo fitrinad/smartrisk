@@ -176,17 +176,39 @@
     <!---------- CLIENTS ---------->
     <section class="clients" aria-labelledby="clients-label">
         <div class="clients-label" id="clients-label">{{ i18n "clients_label" | safeHTML }}</div>
-        <div class="clients-grid">
-            <div class="client-item">{{ i18n "client_item_01" | safeHTML }}</div>
-            <div class="client-item">{{ i18n "client_item_02" | safeHTML }}</div>
-            <div class="client-item">{{ i18n "client_item_03" | safeHTML }}</div>
-            <div class="client-item">{{ i18n "client_item_04" | safeHTML }}</div>
-            <div class="client-item">{{ i18n "client_item_05" | safeHTML }}</div>
-            <div class="client-item">{{ i18n "client_item_06" | safeHTML }}</div>
-            <div class="client-item">{{ i18n "client_item_07" | safeHTML }}</div>
-            <div class="client-item">{{ i18n "client_item_08" | safeHTML }}</div>
-        </div>
     </section>
+
+    <div class="logo-marquee-wrap" aria-label="{{ i18n "clients_label" | safeHTML }}">
+        {{ $clients := slice
+            (dict "name" (i18n "client_item_00") "logo" "pln-group.png")
+            (dict "name" (i18n "client_item_01") "logo" "bright-pln-batam.png")
+            (dict "name" (i18n "client_item_02") "logo" "bag.png")
+            (dict "name" (i18n "client_item_03") "logo" "antam.png")
+            (dict "name" (i18n "client_item_04") "logo" "chevron.png")
+            (dict "name" (i18n "client_item_05") "logo" "petrokimia-gresik.png")
+            (dict "name" (i18n "client_item_06") "logo" "mrt-jakarta.png")
+            (dict "name" (i18n "client_item_07") "logo" "geo-dipa.png")
+            (dict "name" (i18n "client_item_08") "logo" "krakatau-steel.png")
+            (dict "name" (i18n "client_item_09") "logo" "telkom-indonesia.png")
+            (dict "name" (i18n "client_item_10") "logo" "pertamina.png")
+            (dict "name" (i18n "client_item_11") "logo" "hcml.png")
+        }}
+
+        <div class="logo-marquee-track">
+            {{ range seq 4 }}
+            <div class="logo-marquee-set">
+                {{ range $clients }}
+                    {{ $logoPath := printf "assets/images/clients/%s" .logo }}
+                    {{ if fileExists (printf "static/%s" $logoPath) }}
+                        <img src="{{ $logoPath | relURL }}" alt="{{ .name | safeHTML }}" class="logo-marquee-item" loading="lazy" />
+                    {{ else }}
+                        <span class="logo-marquee-fallback">{{ .name | safeHTML }}</span>
+                    {{ end }}
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
 
 
     <!---------- PROJECTS ---------->

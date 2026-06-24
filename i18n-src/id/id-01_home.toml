@@ -119,29 +119,41 @@ other = "Analisis dampak bisnis, perencanaan kelangsungan, dan strategi penguran
 [clients_label]
 other = "Dipercaya oleh Organisasi Terkemuka"
 
-[client_item_01]
+[client_item_00]
 other = "PLN Group"
 
+[client_item_01]
+other = "PLN Batam"
+
 [client_item_02]
-other = "Antam"
+other = "PT Pelayaran Bahtera Adhiguna"
 
 [client_item_03]
-other = "Chevron"
+other = "Antam"
 
 [client_item_04]
-other = "Petrokimia Gresik"
+other = "Chevron"
 
 [client_item_05]
-other = "PT MRT Jakarta"
+other = "Petrokimia Gresik"
 
 [client_item_06]
-other = "Geo Dipa Energi"
+other = "PT MRT Jakarta"
 
 [client_item_07]
-other = "Krakatau Steel"
+other = "Geo Dipa Energi"
 
 [client_item_08]
-other = "Telkomsel"
+other = "Krakatau Steel"
+
+[client_item_09]
+other = "Telkom Indonesia"
+
+[client_item_10]
+other = "Pertamina"
+
+[client_item_11]
+other = "HCML"
 
 
 #==============================#
