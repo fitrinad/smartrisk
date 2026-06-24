@@ -1,5 +1,5 @@
 ---
-title: "Pelatihan K3"
+title: "Pelatihan K3 | SmartRisk"
 description: "SmartRisk menyediakan pelatihan K3 bersertifikat BNSP dan uji kompetensi."
 category: "Pusat Pembelajaran"
 category_code: "learning-center"

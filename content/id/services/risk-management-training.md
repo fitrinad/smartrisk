@@ -1,5 +1,5 @@
 ---
-title: "Pelatihan Manajemen Risiko"
+title: "Pelatihan Manajemen Risiko | SmartRisk"
 description: "SmartRisk menyediakan program pelatihan manajemen risiko dengan sertifikasi BNSP."
 category: "Pusat Pembelajaran"
 category_code: "learning-center"

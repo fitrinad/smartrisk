@@ -1,5 +1,5 @@
 ---
-title: "HSE Consultation"
+title: "HSE Consultation | SmartRisk"
 description: "SmartRisk provides integrated HSE management system development and consulting services."
 category: "Consultation"
 category_code: "consultation"

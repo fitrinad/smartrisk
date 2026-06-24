@@ -1,5 +1,5 @@
 ---
-title: "Business Analysis"
+title: "Business Analysis | SmartRisk"
 description: "SmartRisk provides comprehensive research and studies to support strategic decision-making."
 category: "Consultation"
 category_code: "consultation"

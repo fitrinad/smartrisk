@@ -1,5 +1,5 @@
 ---
-title: "Penilaian Risiko Proyek"
+title: "Penilaian Risiko Proyek | SmartRisk"
 description: "SmartRisk menyediakan layanan penilaian risiko proyek selama proses konstruksi."
 category: "Konsultasi"
 category_code: "consultation"

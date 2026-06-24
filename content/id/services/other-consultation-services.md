@@ -1,5 +1,5 @@
 ---
-title: "Jasa Konsultasi Lainnya"
+title: "Layanan Konsultasi Lainnya | SmartRisk"
 description: "SmartRisk menyediakan layanan konsultasi spesialis tambahan termasuk HAZOP, SIL/LOPA, forensik teknikal, dan manajemen performa terintegrasi."
 category: "Konsultasi"
 category_code: "consultation"

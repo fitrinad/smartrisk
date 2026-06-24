@@ -1,6 +1,6 @@
 ---
-title: "Production House"
-description: "SmartRisk mengembangkan solusi software lunak in-house untuk aplikasi manajemen risiko dan K3."
+title: "Production House | SmartRisk"
+description: "SmartRisk mengembangkan solusi in-house software untuk aplikasi manajemen risiko dan K3."
 category: "IT Solution"
 category_code: "it-solution"
 service_code: "IS02"

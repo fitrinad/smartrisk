@@ -1,5 +1,5 @@
 ---
-title: "IT Project Management"
+title: "IT Project Management | SmartRisk"
 description: "SmartRisk menyediakan layanan manajemen proyek IT end-to-end dan quality assurance."
 category: "IT Solution"
 category_code: "it-solution"

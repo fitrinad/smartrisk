@@ -1,5 +1,5 @@
 ---
-title: "Pelatihan Lainnya"
+title: "Pelatihan Lainnya | SmartRisk"
 description: "SmartRisk menyediakan program pelatihan khusus yang disesuaikan dengan kebutuhan klien."
 category: "Pusat Pembelajaran"
 category_code: "learning-center"

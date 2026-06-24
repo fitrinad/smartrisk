@@ -1,5 +1,5 @@
 ---
-title: "Insurance Training"
+title: "Insurance Training | SmartRisk"
 description: "SmartRisk provides insurance training covering property, liability, marine, and other lines for risk management personnel."
 category: "Learning Center"
 category_code: "learning-center"

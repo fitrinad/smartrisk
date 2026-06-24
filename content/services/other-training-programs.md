@@ -1,5 +1,5 @@
 ---
-title: "Other Training Programs"
+title: "Other Training Programs | SmartRisk"
 description: "SmartRisk provides customized training programs tailored to client needs."
 category: "Learning Center"
 category_code: "learning-center"

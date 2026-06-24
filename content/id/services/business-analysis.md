@@ -1,6 +1,6 @@
 ---
-title: "Penelitian Bisnis"
-description: "SmartRisk menyediakan jasa penelitian dan studi bisnis yang komprehensif untuk mendukung pengambilan keputusan strategis."
+title: "Penelitian Bisnis | SmartRisk"
+description: "SmartRisk menyediakan layanan penelitian dan studi bisnis yang komprehensif untuk mendukung pengambilan keputusan strategis."
 category: "Konsultasi"
 category_code: "consultation"
 service_code: "C10"

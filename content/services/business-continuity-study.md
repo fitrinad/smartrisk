@@ -1,5 +1,5 @@
 ---
-title: "Business Continuity & Sustainability Study"
+title: "Business Continuity & Sustainability Study | SmartRisk"
 description: "SmartRisk implements Business Continuity Management systems to keep operations running through natural hazards or disasters."
 category: "Consultation"
 category_code: "consultation"

@@ -1,5 +1,5 @@
 ---
-title: "Risk Management & Insurance Planning"
+title: "Risk Management & Insurance Planning | SmartRisk"
 description: "SmartRisk provides independent risk management and insurance planning services."
 category: "Consultation"
 category_code: "consultation"

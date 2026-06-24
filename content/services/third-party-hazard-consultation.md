@@ -1,5 +1,5 @@
 ---
-title: "Third-Party Hazard & Loss Control Consultation"
+title: "Third-Party Hazard & Loss Control Consultation | SmartRisk"
 description: "SmartRisk provides analysis of third-party hazards and loss control consultation for industrial facilities."
 category: "Consultation"
 category_code: "consultation"

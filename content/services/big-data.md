@@ -1,5 +1,5 @@
 ---
-title: "Big Data"
+title: "Big Data | SmartRisk"
 description: "SmartRisk leverages large datasets to solve complex business challenges."
 category: "IT Solution"
 category_code: "it-solution"

@@ -1,6 +1,6 @@
 ---
-title: "Konsultansi K3"
-description: "SmartRisk menyediakan jasa pengembangan sistem manajemen K3 terpadu dan layanan konsultasi."
+title: "Konsultansi K3 | SmartRisk"
+description: "SmartRisk menyediakan layanan pengembangan sistem manajemen K3 terpadu dan layanan konsultasi."
 category: "Konsultasi"
 category_code: "consultation"
 service_code: "C06"
