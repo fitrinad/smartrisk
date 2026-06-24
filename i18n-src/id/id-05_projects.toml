@@ -1,0 +1,61 @@
+#===================================#
+#========== PROJECTS PAGE ==========#
+#===================================#
+#=================================#
+#========== PAGE HEADER ==========#
+#=================================#
+[projects_header_section_label]
+other = "Proyek Pilihan"
+
+[projects_header_h1]
+other = "<em>Proyek</em> Kami"
+
+[projects_header_p]
+other = "Serangkaian proyek manajemen risiko, konsultasi asuransi, valuasi aset, dan pelatihan K3 yang telah kami selesaikan untuk klien di sektor energi, utilitas, dan industri di seluruh Indonesia."
+
+[projects_sidebar_aria]
+other = "Filter proyek berdasarkan tahun"
+
+
+#=============================#
+#========== MARQUEE ==========#
+#=============================#
+[proj_marquee_01]
+other = "Risiko &amp; Asuransi"
+
+[proj_marquee_02]
+other = "Valuasi Aset"
+
+[proj_marquee_03]
+other = "Pelatihan K3"
+
+[proj_marquee_04]
+other = "Risiko Operasional"
+
+[proj_marquee_05]
+other = "Kelangsungan Bisnis"
+
+[proj_marquee_06]
+other = "Risiko Proyek"
+
+
+#======================================#
+#========== PROJECTS ENTRIES ==========#
+#======================================#
+# Project entry titles, tags, and descriptions are not defined here.
+# They are sourced from the front matter of each project page:
+#   - Title     : content/id/projects/<year>/<slug>.md → project_title
+#   - Summary   : content/id/projects/<year>/<slug>.md → summary
+#   - Image     : content/id/projects/<year>/<slug>.md → image
+# English equivalents are in content/projects/<slug>.md
+# See layouts/projects/list.html for how these are rendered.
+
+
+#==========================================#
+#========== PROJECTS SINGLE PAGE ==========#
+#==========================================#
+[project_single_cta]
+other = "Diskusikan Proyek Serupa"
+
+[project_single_back]
+other = "Semua Proyek"

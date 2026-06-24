@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+    <!---------- PROJECT SINGLE HEADER ---------->
+    <header class="page-header page-header--project" aria-labelledby="page-heading">
+        <div>
+            <div class="section-label">
+                <a href="{{ "projects/" | relLangURL }}">{{ i18n "projects_header_h1" | safeHTML }}</a>
+            </div>
+            <h1 id="page-heading">{{ .Params.project_title }}</h1>
+        </div>
+        <div class="project-single-meta">
+            {{ with .Params.client }}
+            <span class="project-single-client">{{ . }}</span>
+            {{ end }}
+            {{ with .Params.year }}
+            <span class="project-single-year">{{ . }}</span>
+            {{ end }}
+            {{ with .Params.tag }}
+            <span class="project-single-tag">{{ . }}</span>
+            {{ end }}
+        </div>
+    </header>
+
+    <!---------- PROJECT SINGLE BODY ---------->
+    <section class="project-single">
+        <div class="project-single-inner">
+
+            {{ with .Params.image }}
+            <div class="project-single-hero-img">
+                <img src="{{ . | relURL }}" alt="{{ $.Title  }}" loading="eager" />
+            </div>
+            {{ end }}
+
+            <div class="project-single-content">
+                {{ .Content }}
+            </div>
+
+            <div class="project-single-cta">
+                <a href="{{ "projects/" | relLangURL }}" class="btn btn-outline btn-left-arrow-ink">{{ i18n "project_single_back" | safeHTML }}</a>
+                <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">{{ i18n "project_single_cta" | safeHTML }}</a>
+            </div>
+
+        </div>
+    </section>
+
+{{ end }}
