@@ -1,5 +1,6 @@
 ---
 title: "Penilaian Risiko Operasional | SmartRisk"
+service_title: "Penilaian Risiko Operasional"
 description: "SmartRisk menyediakan layanan penilaian risiko operasional untuk berbagai fasilitas industri."
 category: "Konsultasi"
 category_code: "consultation"

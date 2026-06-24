@@ -1,5 +1,6 @@
 ---
 title: "Pelatihan Asuransi | SmartRisk"
+service_title: "Pelatihan Asuransi"
 description: "SmartRisk menyediakan pelatihan asuransi mencakup properti, liability, marine, dan lini lainnya untuk personil manajemen risiko."
 category: "Pusat Pembelajaran"
 category_code: "learning-center"

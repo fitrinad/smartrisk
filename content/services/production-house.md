@@ -1,5 +1,6 @@
 ---
 title: "Production House | SmartRisk"
+service_title: "Production House"
 description: "SmartRisk develops in-house software solutions for risk management and HSE applications."
 category: "IT Solution"
 category_code: "it-solution"

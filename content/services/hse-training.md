@@ -1,5 +1,6 @@
 ---
 title: "HSE Training | SmartRisk"
+service_title: "HSE Training"
 description: "SmartRisk provides BNSP-certified HSE training and competency assessments."
 category: "Learning Center"
 category_code: "learning-center"

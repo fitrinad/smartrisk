@@ -1,5 +1,6 @@
 ---
 title: "Disaster Risk Reduction | SmartRisk"
+service_title: "Disaster Risk Reduction"
 description: "SmartRisk provides end-to-end disaster risk reduction solutions from administrative management to operational capacity-building."
 category: "Consultation"
 category_code: "consultation"

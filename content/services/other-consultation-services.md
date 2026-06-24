@@ -1,5 +1,6 @@
 ---
 title: "Other Consultation Services | SmartRisk"
+service_title: "Other Consultation Services"
 description: "SmartRisk provides additional specialist consultation services including HAZOP, SIL/LOPA, forensic engineering, and integrated performance management."
 category: "Consultation"
 category_code: "consultation"

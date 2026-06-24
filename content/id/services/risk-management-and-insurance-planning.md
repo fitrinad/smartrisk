@@ -1,5 +1,6 @@
 ---
 title: "Manajemen Risiko & Perencanaan Asuransi | SmartRisk"
+service_title: "Manajemen Risiko & Perencanaan Asuransi"
 description: "SmartRisk menyediakan layanan manajemen risiko dan perencanaan asuransi yang independen."
 category: "Konsultasi"
 category_code: "consultation"

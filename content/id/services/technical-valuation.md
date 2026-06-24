@@ -1,5 +1,6 @@
 ---
 title: "Penilaian Teknikal | SmartRisk"
+service_title: "Penilaian Teknikal"
 description: "SmartRisk menyediakan layanan penilaian teknikal menggunakan pendekatan value engineering untuk meningkatkan efisiensi proyek konstruksi."
 category: "Konsultasi"
 category_code: "consultation"

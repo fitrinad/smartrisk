@@ -1,5 +1,6 @@
 ---
 title: "Big Data | SmartRisk"
+service_title: "Big Data"
 description: "SmartRisk memanfaatkan dataset besar untuk mengatasi tantangan bisnis yang kompleks."
 category: "IT Solution"
 category_code: "it-solution"

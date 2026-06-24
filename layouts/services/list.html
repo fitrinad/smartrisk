@@ -65,7 +65,7 @@
                         <div class="service-entry">
                             <a href="{{ $page.RelPermalink }}" class="service-entry-link">
                                 <div class="service-entry-content">
-                                    <h3 class="service-entry-title">{{ $page.Title | safeHTML }}</h3>
+                                    <h3 class="service-entry-title">{{ $page.Params.service_title | safeHTML }}</h3>
                                     <p class="service-entry-desc">{{ $page.Params.summary | safeHTML }}</p>
                                 </div>
                                 <div class="service-entry-img">

@@ -1,5 +1,6 @@
 ---
 title: "Asset Valuation | SmartRisk"
+service_title: "Asset Valuation"
 description: "SmartRisk provides independent technical asset valuation services for industrial facilities."
 category: "Consultation"
 category_code: "consultation"

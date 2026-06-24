@@ -1,5 +1,6 @@
 ---
 title: "Operational Risk Assessment | SmartRisk"
+service_title: "Operational Risk Assessment"
 description: "SmartRisk provides operational risk assessment services for various industrial facilities."
 category: "Consultation"
 category_code: "consultation"

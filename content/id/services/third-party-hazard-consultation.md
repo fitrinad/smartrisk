@@ -1,5 +1,6 @@
 ---
 title: "Bahaya Pihak Ketiga & Konsultasi Kontrol Kerugian | SmartRisk"
+service_title: "Bahaya Pihak Ketiga & Konsultasi Kontrol Kerugian"
 description: "SmartRisk menyediakan analisis bahaya pihak ketiga dan konsultasi kontrol kerugian untuk fasilitas industri."
 category: "Konsultasi"
 category_code: "consultation"

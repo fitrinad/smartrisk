@@ -1,5 +1,6 @@
 ---
 title: "Pengurangan Risiko Bencana | SmartRisk"
+service_title: "Pengurangan Risiko Bencana"
 description: "SmartRisk menyediakan solusi pengurangan risiko bencana secara menyeluruh dari manajemen administratif hingga pembangunan kapasitas operasional."
 category: "Konsultasi"
 category_code: "consultation"

@@ -1,5 +1,6 @@
 ---
 title: "Technical Valuation | SmartRisk"
+service_title: "Technical Valuation"
 description: "SmartRisk provides technical valuation services using a value engineering approach to improve project construction efficiency."
 category: "Consultation"
 category_code: "consultation"

@@ -1,5 +1,6 @@
 ---
 title: "Valuasi Aset | SmartRisk"
+service_title: "Valuasi Aset"
 description: "SmartRisk menyediakan layanan valuasi teknis aset industri secara independen."
 category: "Konsultasi"
 category_code: "consultation"

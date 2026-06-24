@@ -1,5 +1,6 @@
 ---
 title: "Studi Kontinuitas & Keberlanjutan Bisnis | SmartRisk"
+service_title: "Studi Kontinuitas & Keberlanjutan Bisnis"
 description: "SmartRisk mengimplementasikan sistem Business Continuity Management untuk menjaga kelangsungan operasi saat menghadapi bencana."
 category: "Konsultasi"
 category_code: "consultation"

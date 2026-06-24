@@ -1,5 +1,6 @@
 ---
 title: "Risk Management Training | SmartRisk"
+service_title: "Risk Management Training"
 description: "SmartRisk provides risk management training programs with BNSP certification."
 category: "Learning Center"
 category_code: "learning-center"

@@ -1,5 +1,6 @@
 ---
 title: "Project Risk Assessment | SmartRisk"
+service_title: "Project Risk Assessment"
 description: "SmartRisk provides project risk assessment services to support clients in understanding construction-phase risks."
 category: "Consultation"
 category_code: "consultation"

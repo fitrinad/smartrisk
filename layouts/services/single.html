@@ -6,7 +6,7 @@
             <div class="section-label">
                 <a href="{{ "services/" | relLangURL }}">{{ i18n "services_header_h1" | safeHTML }}</a>
             </div>
-            <h1 id="page-heading">{{ .Title | safeHTML }}</h1>
+            <h1 id="page-heading">{{ .Params.service_title | safeHTML }}</h1>
         </div>
         <div>
             {{ with .Params.summary }}
