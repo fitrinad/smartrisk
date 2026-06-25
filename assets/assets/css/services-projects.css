@@ -211,7 +211,6 @@
     gap             : 1rem;
     margin-top      : 3.5rem;
     padding-top     : 2.5rem;
-    /* border-top      : 1px solid var(--rule); */
     flex-wrap       : wrap;
 }
 
@@ -288,13 +287,13 @@
 
 /*---------- PROJECT ENTRY ----------*/
 .project-entry-link {
-    display         : grid;
-    grid-template-columns: 1fr 280px;
-    gap             : 3rem;
-    align-items     : center;
-    padding         : 2rem 0;
-    text-decoration : none;
-    color           : inherit;
+    display                 : grid;
+    grid-template-columns   : 1fr 280px;
+    gap                     : 3rem;
+    align-items             : center;
+    padding                 : 2rem 0;
+    text-decoration         : none;
+    color                   : inherit;
 }
 
 .project-entry-link:hover .project-entry-title {
@@ -380,13 +379,17 @@
     border-radius   : 8px;
     overflow        : hidden;
     margin-bottom   : 3rem;
-    aspect-ratio    : 16 / 7;
-    background      : var(--cream);
+    /* aspect-ratio    : 16 / 7;
+    background      : var(--cream); */
 }
 
 .project-single-hero-img img {
+    /*
     width       : 100%;
     height      : 100%;
+    */
+    height      : 30rem;
+    width       : auto;
     object-fit  : cover;
     display     : block;
 }
@@ -411,20 +414,20 @@
     gap             : 0.5rem;
 }
 
-.project-single-client {
+.project-single-meta .project-single-client {
     font-size       : 1.05rem;
     font-weight     : 500;
-    color           : var(--ink);
+    color           : var(--footer-text);
     margin          : 0;
 }
 
-.project-single-year {
+.project-single-meta .project-single-year {
     font-size       : 0.9rem;
-    color           : var(--muted);
+    color           : var(--footer-text);
     margin          : 0;
 }
 
-.project-single-tag {
+.project-single-meta .project-single-tag {
     display         : inline-block;
     font-size       : 0.75rem;
     font-weight     : 600;
@@ -439,7 +442,6 @@
     gap             : 1rem;
     margin-top      : 3.5rem;
     padding-top     : 2.5rem;
-    border-top      : 1px solid var(--rule);
     flex-wrap       : wrap;
 }
 
@@ -512,7 +514,8 @@
 
     .service-entry-img,
     .project-entry-img {
-        aspect-ratio: 16 / 8;
+        /* aspect-ratio: 16 / 8; */
+        aspect-ratio: 4 / 3;
         height      : 10rem;
         width       : auto;
     }

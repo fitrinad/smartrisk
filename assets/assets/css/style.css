@@ -1044,7 +1044,7 @@ section:last-of-type { border-bottom: none; }
     letter-spacing  : 0.18em;
     text-align      : center;
     color           : var(--clients-label);
-    padding         : 3rem 0 0.75rem;
+    padding         : 1.5rem 0;
 }
 
 
@@ -1074,16 +1074,23 @@ section:last-of-type { border-bottom: none; }
     gap             : 1rem; 
     transition      : background 0.2s; }
 .project-card:hover { background: var(--project-card-hover-bg); }
+
+.project-tags {
+    display     : flex;
+    flex-wrap   : wrap;
+    gap         : 1rem;
+}
 .project-tag { 
-    font-size       : 0.75rem; 
+    font-size       : 0.6rem; 
     letter-spacing  : 0.15em; 
     text-transform  : uppercase; 
     color           : var(--project-tag-text); 
     background      : var(--project-tag-bg); 
     padding         : 0.3rem 0.75rem; 
     display         : inline-block; 
-    align-self      : flex-start; 
+    align-self      : start; 
 }
+
 .project-title { 
     font-family : 'Cal Sans',sans-serif; 
     font-size   : 1.1rem; 

@@ -15,8 +15,17 @@
             {{ with .Params.year }}
             <span class="project-single-year">{{ . }}</span>
             {{ end }}
+            
             {{ with .Params.tag }}
-            <span class="project-single-tag">{{ . }}</span>
+            <div class="project-tags">
+                {{ $tags := . }}
+                {{ if not (reflect.IsSlice .) }}
+                    {{ $tags = slice . }}
+                {{ end }}
+                {{ range sort $tags }}
+                    <span class="project-single-tag">{{ . }}</span>
+                {{ end }}
+            </div>
             {{ end }}
         </div>
     </header>

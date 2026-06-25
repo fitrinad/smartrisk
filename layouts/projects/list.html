@@ -71,9 +71,19 @@
                     <div class="project-entry">
                         <a href="{{ $project.RelPermalink }}" class="project-entry-link">
                             <div class="project-entry-content">
-                                {{ with $project.Params.tag }}
-                                <span class="project-tag">{{ . }}</span>
+                                
+                                {{ with .Params.tag }}
+                                <div class="project-tags">
+                                    {{ $tags := . }}
+                                    {{ if not (reflect.IsSlice .) }}
+                                        {{ $tags = slice . }}
+                                    {{ end }}
+                                    {{ range sort $tags }}
+                                        <span class="project-tag">{{ . }}</span>
+                                    {{ end }}
+                                </div>
                                 {{ end }}
+                                
                                 <h3 class="project-entry-title">{{ $project.Params.project_title }}</h3>
                                 {{ with $project.Params.summary }}
                                 <p class="project-entry-desc">{{ . }}</p>
