@@ -9,6 +9,9 @@ weight: 3
 image: "assets/images/projects/bisnis-case-750x465.jpg"
 pageCSS: "services-projects.css"
 summary: "Development of 10 Business Case Studies book covering strategic, financial, project, operational, and compliance risk management; within and beyond the PLN environment."
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 Development of 10 Business Case Studies book covering strategic, financial, project, operational, and compliance risk management; both within and beyond the PT PLN (Persero) environment. The case studies were designed to serve as practical reference material for risk management practitioners across PLN's group entities.

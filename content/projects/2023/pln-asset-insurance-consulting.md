@@ -9,6 +9,9 @@ weight: 1
 image: "assets/images/projects/antam-2.jpg"
 pageCSS: "services-projects.css"
 summary: "Procurement of insurance and risk consulting advisory services for asset insurance at PT PLN in 2023."
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 Procurement of insurance risk consulting services for asset insurance at PT PLN (Persero) in 2023. SmartRisk provided independent analysis and recommendations on insurance coverage for PLN's operational assets.

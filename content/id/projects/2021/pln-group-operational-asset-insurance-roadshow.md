@@ -9,6 +9,9 @@ weight: 4
 image: "assets/images/projects/roadshow.jpg"
 pageCSS: "services-projects.css"
 summary: "Program roadshow asuransi untuk aset operasional di seluruh PT PLN Group."
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 Program roadshow asuransi untuk aset operasional di seluruh PT PLN Group. SmartRisk memfasilitasi presentasi dan diskusi dengan entitas-entitas PLN Group mengenai strategi manajemen risiko dan optimalisasi cakupan asuransi untuk portofolio aset operasional mereka.
