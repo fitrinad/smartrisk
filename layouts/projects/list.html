@@ -1,0 +1,118 @@
+{{ define "main" }}
+
+    <!---------- PAGE HEADER ---------->
+    <header class="page-header" aria-labelledby="page-heading">
+        <div>
+            <div class="section-label">{{ i18n "projects_header_section_label" | safeHTML }}</div>
+            <h1 id="page-heading">{{ i18n "projects_header_h1" | safeHTML }}</h1>
+        </div>
+        <div>
+            <p>{{ i18n "projects_header_p" | safeHTML }}</p>
+        </div>
+    </header>
+
+    <!---------- MARQUEE ---------->
+    <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee-track">
+            {{ range seq 4 }}
+            <span class="marquee-item">
+                {{ i18n "proj_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "proj_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "proj_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "proj_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "proj_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "proj_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+            {{ end }}
+        </div>
+    </div>
+
+    <!---------- PROJECTS BODY ---------->
+    <section class="projects-page" aria-labelledby="projects-page-heading">
+        <div class="projects-page-inner">
+
+            <!---------- SIDEBAR ---------->
+            {{/*
+                Builds the year list dynamically from subsections.
+                - .Sections returns the direct child sections (2024, 2023, etc.) sorted by Hugo's default order. 
+                - We sort by title descending so newest year appears first in the sidebar.
+            */}}
+            {{ $years := .Sections }}
+            {{ $years = sort $years "Title" "desc" }}
+
+            <aside class="projects-sidebar" aria-label="{{ i18n "projects_sidebar_aria" | safeHTML }}">
+                <nav>
+                    {{ range $years }}
+                    <a href="#y{{ .Title }}" class="sidebar-link">{{ .Title }}</a>
+                    {{ end }}
+                </nav>
+            </aside>
+
+            <!---------- PROJECT ENTRIES ---------->
+            <div class="projects-entries">
+
+                {{ range $years }}
+                {{ $year := .Title }}
+
+                <div class="projects-year-group" id="y{{ $year }}">
+                    <h2 class="projects-year-title">{{ $year }}</h2>
+
+                    {{/*
+                        .Pages returns all regular pages in this year section,
+                        sorted by `weight` front matter (ascending) so you can
+                        control order within a year by setting weight: 1, 2, 3…
+                        Falls back to title order if weight is not set.
+                    */}}
+                    {{ $projects := .Pages }}
+                    {{ $projects = sort $projects "Weight" "asc" }}
+
+                    {{ range $i, $project := $projects }}
+
+                    <div class="project-entry">
+                        <a href="{{ $project.RelPermalink }}" class="project-entry-link">
+                            <div class="project-entry-content">
+                                
+                                {{ with .Params.tag }}
+                                <div class="project-tags">
+                                    {{ $tags := . }}
+                                    {{ if not (reflect.IsSlice .) }}
+                                        {{ $tags = slice . }}
+                                    {{ end }}
+                                    {{ range sort $tags }}
+                                        <span class="project-tag">{{ . }}</span>
+                                    {{ end }}
+                                </div>
+                                {{ end }}
+                                
+                                <h3 class="project-entry-title">{{ $project.Params.project_title }}</h3>
+                                {{ with $project.Params.summary }}
+                                <p class="project-entry-desc">{{ . }}</p>
+                                {{ end }}
+                                {{ with $project.Params.client }}
+                                <div class="project-entry-client">{{ . }}</div>
+                                {{ end }}
+                            </div>
+                            {{ with $project.Params.image }}
+                            <div class="project-entry-img">
+                                <img src="{{ . | relURL }}" alt="{{ $project.Title }}" loading="lazy" />
+                            </div>
+                            {{ end }}
+                        </a>
+                    </div>
+
+                    {{/* Divider between entries but not after the last one */}}
+                    {{ if lt $i (sub (len $projects) 1) }}
+                    <hr class="project-divider" />
+                    {{ end }}
+
+                    {{ end }}{{/* end range $projects */}}
+
+                </div>{{/* /.projects-year-group */}}
+
+                {{ end }}{{/* end range $years */}}
+
+            </div><!-- /.projects-entries -->
+        </div><!-- /.projects-page-inner -->
+    </section>
+
+{{ end }}
