@@ -221,3 +221,17 @@ function setNavHeightVar() {
 setNavHeightVar();
 window.addEventListener('resize', setNavHeightVar);
 window.addEventListener('load', setNavHeightVar);
+
+/* ---------- SET --sidebar-h DYNAMICALLY ---------- */
+function setSidebarHeightVar() {
+    // Only applies on mobile where sidebar is horizontal and stacked above content
+    const sidebar = document.querySelector('.services-sidebar nav, .projects-sidebar nav');
+    if (sidebar && window.innerWidth <= 780) {
+        document.documentElement.style.setProperty('--sidebar-h', `${sidebar.offsetHeight}px`);
+    } else {
+        document.documentElement.style.setProperty('--sidebar-h', '0px');
+    }
+}
+setSidebarHeightVar();
+window.addEventListener('resize', setSidebarHeightVar);
+window.addEventListener('load', setSidebarHeightVar);

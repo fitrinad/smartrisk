@@ -73,7 +73,8 @@
 }
 
 .services-category {
-    margin-bottom   : 4rem;
+    scroll-margin-top   : calc(var(--nav-h, 60px) + 1.5rem);
+    margin-bottom       : 4rem;
 }
 .services-category:last-child {
     margin-bottom   : 0;
@@ -262,7 +263,8 @@
 }
 
 .projects-year-group {
-    margin-bottom   : 4rem;
+    scroll-margin-top   : calc(var(--nav-h, 60px) + 1.5rem);
+    margin-bottom       : 4rem;
 }
 .projects-year-group:last-child {
     margin-bottom   : 0;
@@ -276,7 +278,7 @@
     color           : var(--accent);
     margin-bottom   : 1rem;
     padding-bottom  : 0.7rem;
-    border-bottom   : 1px solid var(--rule);
+    border-bottom   : 2px solid var(--rule);
 }
 
 .project-divider {
@@ -498,6 +500,10 @@
         border-bottom-color : var(--accent);
     }
 
+    .services-category,
+    .projects-year-group {
+        scroll-margin-top: calc(var(--nav-h, 60px) + var(--sidebar-h, 48px) + 1.5rem);
+    }
     .services-entries,
     .projects-entries {
         padding: 3rem 2rem;
