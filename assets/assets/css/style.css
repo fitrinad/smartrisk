@@ -689,13 +689,19 @@ section:last-of-type { border-bottom: none; }
     padding         : 1rem 0;
 }
 .logo-marquee-track {
+    cursor      : grab;
     display     : flex;
     width       : max-content;
     animation   : marquee 80s linear infinite;
 }
+.logo-marquee-track:active {
+    cursor: grabbing;
+}
+/*
 .logo-marquee-track:hover {
     animation-play-state: paused;
 }
+*/
 .logo-marquee-set {
     display     : flex;
     align-items : center;

@@ -235,3 +235,95 @@ function setSidebarHeightVar() {
 setSidebarHeightVar();
 window.addEventListener('resize', setSidebarHeightVar);
 window.addEventListener('load', setSidebarHeightVar);
+
+
+/* ---------- DRAG-TO-SCROLL LOGO MARQUEE ---------- */
+(function () {
+    const wrap  = document.querySelector('.logo-marquee-wrap');
+    const track = document.querySelector('.logo-marquee-track');
+    if (!wrap || !track) return;
+
+    // Speed in px/frame (~60fps). Matches feel of CSS 80s animation.
+    const SPEED       = 1;
+    const RESUME_DELAY = 500; // ms after drag release before auto-scroll resumes
+
+    let offset        = 0;
+    let isDragging    = false;
+    let startX        = 0;
+    let dragOffset    = 0;
+    let rafId         = null;
+    let resumeTimer   = null;
+    let isPaused      = false;
+
+    // Get the width of one set (half the track) for seamless looping
+    function getSetWidth() {
+        const set = track.querySelector('.logo-marquee-set');
+        return set ? set.offsetWidth : track.scrollWidth / 4;
+    }
+
+    // Cancel the CSS animation entirely; JS drives it from now on
+    track.style.animation = 'none';
+    track.style.willChange = 'transform';
+
+    function tick() {
+        if (!isDragging && !isPaused) {
+            offset -= SPEED;
+            // Seamless loop: when we've scrolled one full set width, reset
+            const setWidth = getSetWidth();
+            if (Math.abs(offset) >= setWidth) {
+                offset += setWidth;
+            }
+        }
+        track.style.transform = `translateX(${offset}px)`;
+        rafId = requestAnimationFrame(tick);
+    }
+
+    // Start the loop
+    rafId = requestAnimationFrame(tick);
+
+    // --- Drag handlers ---
+    function onDragStart(x) {
+        isDragging  = true;
+        startX      = x;
+        dragOffset  = offset;
+        clearTimeout(resumeTimer);
+        track.style.cursor = 'grabbing';
+    }
+
+    function onDragMove(x) {
+        if (!isDragging) return;
+        offset = dragOffset + (x - startX);
+    }
+
+    function onDragEnd() {
+        if (!isDragging) return;
+        isDragging = false;
+        track.style.cursor = '';
+        // Brief pause after release so it doesn't immediately scroll away
+        isPaused = true;
+        resumeTimer = setTimeout(() => { isPaused = false; }, RESUME_DELAY);
+    }
+
+    // Mouse
+    track.addEventListener('mousedown', e => {
+        e.preventDefault();
+        onDragStart(e.clientX);
+    });
+    window.addEventListener('mousemove', e => onDragMove(e.clientX));
+    window.addEventListener('mouseup', onDragEnd);
+
+    // Touch
+    track.addEventListener('touchstart', e => {
+        onDragStart(e.touches[0].clientX);
+    }, { passive: true });
+    track.addEventListener('touchmove', e => {
+        onDragMove(e.touches[0].clientX);
+    }, { passive: true });
+    track.addEventListener('touchend', onDragEnd);
+
+    // Pause on hover, resume on leave (replaces the CSS hover rule)
+    wrap.addEventListener('mouseenter', () => { isPaused = true; });
+    wrap.addEventListener('mouseleave', () => {
+        if (!isDragging) isPaused = false;
+    });
+})();
