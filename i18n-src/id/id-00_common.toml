@@ -37,7 +37,7 @@ other = "All rights reserved."
 #========== 404 PAGE ==========#
 #==============================#
 [404_title]
-other = "Halaman Tidak Ditemukan | SmartRisk"
+other = "Halaman Tidak Ditemukan"
 [404_message_h1]
 other = "Halaman <em>tidak ditemukan.</em>"
 [404_message_text]

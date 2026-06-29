@@ -47,7 +47,7 @@ other = "IT Solution"
 #======================================#
 # Service entry titles and descriptions are not defined here.
 # They are sourced from the front matter of each service page:
-#   - Title     : content/id/services/<slug>.md → title
+#   - Title     : content/id/services/<slug>.md → service_title
 #   - Summary   : content/id/services/<slug>.md → summary
 #   - Image     : content/id/services/<slug>.md → image
 # English equivalents are in content/services/<slug>.md
