@@ -109,10 +109,12 @@
     transition      : background 0.2s ease;
 }
 
+.service-entry-link:hover {
+    background-color: var(--cream);
+}
 .service-entry-link:hover .service-entry-title {
     color: var(--accent-hover);
 }
-
 .service-entry-link:hover .service-entry-img img {
     transform: scale(1.03);
 }
@@ -298,6 +300,9 @@
     color                   : inherit;
 }
 
+.project-entry-link:hover {
+    background-color: var(--cream);
+}
 .project-entry-link:hover .project-entry-title {
     color: var(--accent-hover);
 }
