@@ -8,6 +8,9 @@ service_code: "C02"
 summary: "Supporting clients in understanding construction-phase risks, applying mitigation and prevention plans to reduce insurance premium costs during project execution."
 image: "assets/images/services/w2-1024x512.jpg"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 **SmartRisk** supports clients in understanding the potential risks during the construction process and implementing risk mitigation and prevention plans, enabling a reduction in insurance premium costs during the construction phase.

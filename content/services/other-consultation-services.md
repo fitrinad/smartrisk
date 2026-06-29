@@ -8,6 +8,9 @@ service_code: "C11"
 summary: "Additional services including fire and explosion risk assessment, forensic engineering investigation, HAZOP/SIL/LOPA analysis, human capital maturity assessment, and integrated performance management."
 image: "assets/images/services/w14-min-768x580.jpg"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 **SmartRisk** offers a range of additional specialist consultation services to address specific technical and organizational risk challenges beyond our core service catalogue. These services include:

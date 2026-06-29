@@ -8,6 +8,9 @@ service_code: "LC04"
 summary: "Program pelatihan khusus yang disesuaikan dengan kebutuhan klien, termasuk <i>HSE leadership</i>, <i>behavioral-based safety</i>, CSMS, dan teknis penanggulangan kebakaran."
 image: "assets/images/services/Training-HSE.png"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 **SmartRisk** merancang dan menyelenggarakan program pelatihan khusus yang disesuaikan dengan konteks operasional dan kebutuhan pengembangan tenaga kerja klien.

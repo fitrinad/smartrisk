@@ -8,6 +8,9 @@ service_code: "C11"
 summary: "Layanan tambahan meliputi penilaian risiko kebakaran dan ledakan, investigasi forensik teknikal, analisis HAZOP/SIL/LOPA, penilaian <i>human capital maturity</i>, dan manajemen performa terintegrasi."
 image: "assets/images/services/w14-min-768x580.jpg"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 **SmartRisk** menawarkan berbagai layanan konsultasi spesialis tambahan untuk mengatasi tantangan risiko teknis dan organisasional yang berada di luar katalog layanan utama kami. Layanan kami termasuk:

@@ -8,6 +8,9 @@ service_code: "LC01"
 summary: "Pelatihan dan uji kompetensi bersertifikat BNSP mencakup K3 umum, K3 migas, <i>authorized gas tester</i>, inspektur keselamatan, audit SMK3, dan investigasi insiden."
 image: "assets/images/services/w15-min-1024x774.jpg"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 **SmartRisk** menyelenggarakan pelatihan dan uji kompetensi Kesehatan dan Keselamatan Kerja (K3) bersertifikat BNSP. Program kami dirancang untuk praktisi keselamatan di berbagai sektor industri Indonesia.

@@ -8,6 +8,9 @@ service_code: "LC01"
 summary: "BNSP-certified training and competency assessments covering general HSE (K3), oil & gas safety, authorized gas testing, safety inspection, HSE management system (SMK3) auditing, and incident investigation."
 image: "assets/images/services/w15-min-1024x774.jpg"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 **SmartRisk** delivers BNSP-certified occupational Health, Safety, and Environment (HSE) training and competency assessment programs. Our courses are designed for safety practitioners across Indonesia's industrial sectors.

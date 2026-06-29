@@ -8,6 +8,9 @@ service_code: "LC03"
 summary: "Insurance training covering property & business interruption, CAR, liability, personal accident, marine hull, and marine cargo; equipping risk management personnel with industry-specific technical knowledge."
 image: "assets/images/services/w17-min-1024x774.jpg"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 Personnel responsible for risk management need to understand the aspects and technical details related to the insurance industry. **SmartRisk** delivers insurance training programs designed specifically for risk management personnel who need technical knowledge of insurance products across industrial sectors.

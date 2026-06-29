@@ -8,6 +8,9 @@ service_code: "C09"
 summary: "Analisis wilayah sekitar dan langkah mitigasi efektif untuk mengurangi dampak bahaya pihak ketiga akibat insiden atau kecelakaan industri."
 image: "assets/images/services/w8-min-1024x683.jpg"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 Insiden atau kecelakaan besar dapat membuat masyarakat sekitar mengalami situasi berbahaya. Jika tidak ditangani secara menyeluruh, tanggung jawab pihak ketiga dapat timbul dari situasi tersebut. 

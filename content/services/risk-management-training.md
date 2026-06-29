@@ -8,6 +8,9 @@ service_code: "LC02"
 summary: "Training programs include enterprise risk management per ISO 31000, risk-based audit, project risk management, and business continuity per ISO 22301; with BNSP certification (CRMP & CRMO)."
 image: "assets/images/services/w16-min-1024x774.jpg"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 **SmartRisk** delivers comprehensive risk management training equipping participants with the knowledge and skills to implement and audit risk management systems across their organizations, with pathways to BNSP certification.

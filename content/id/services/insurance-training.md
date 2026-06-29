@@ -8,6 +8,9 @@ service_code: "LC03"
 summary: "Pelatihan asuransi mencakup properti & interupsi bisnis, CAR, <i>liability</i>, <i>personal accident</i>, asuransi kapal, dan asuransi pengangkutan; membekali personil manajemen risiko dengan pengetahuan teknis industri."
 image: "assets/images/services/w17-min-1024x774.jpg"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 Personil yang bertanggung jawab atas manajemen risiko perlu memahami aspek dan teknis terkait dengan industri asuransi. **SmartRisk** menyelenggarakan program pelatihan asuransi yang dirancang khusus untuk personil manajemen risiko yang membutuhkan pengetahuan teknis produk asuransi di sektor industri.

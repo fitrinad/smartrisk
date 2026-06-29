@@ -8,6 +8,9 @@ service_code: "C02"
 summary: "Membantu klien memahami potensi risiko selama fase konstruksi, menerapkan rencana mitigasi dan pencegahan untuk mengurangi biaya premi asuransi selama pelaksanaan proyek."
 image: "assets/images/services/w2-1024x512.jpg"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 **SmartRisk** membantu klien memahami potensi risiko selama proses konstruksi dan menerapkan rencana mitigasi serta pencegahan risiko, sehingga memungkinkan pengurangan biaya premi asuransi selama fase konstruksi.

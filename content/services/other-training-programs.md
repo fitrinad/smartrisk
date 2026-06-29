@@ -8,6 +8,9 @@ service_code: "LC04"
 summary: "Customized training programs tailored to client needs, including HSE leadership, behavioral-based safety, contractor safety management system (CSMS), and basic firefighting."
 image: "assets/images/services/Training-HSE.png"
 pageCSS: "services-projects.css"
+sitemap:
+    changefreq: monthly
+    priority: 0.7
 ---
 
 **SmartRisk** designs and delivers customized training programs tailored to specific client operational contexts and workforce development needs.
