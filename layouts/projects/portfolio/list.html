@@ -1,0 +1,76 @@
+{{ define "main" }}
+
+    <!---------- PAGE HEADER ---------->
+    <header class="page-header" aria-labelledby="page-heading">
+        <div>
+            <div class="section-label">{{ i18n "portfolio_header_section_label" | safeHTML }}</div>
+            <h1 id="page-heading">{{ i18n "portfolio_header_h1" | safeHTML }}</h1>
+        </div>
+        <div>
+            <p>{{ i18n "portfolio_header_p" | safeHTML }}</p>
+        </div>
+    </header>
+
+    <!---------- MARQUEE ---------->
+    <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee-track">
+            {{ range seq 4 }}
+            <span class="marquee-item">
+                {{ i18n "proj_marquee_01" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "proj_marquee_02" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "proj_marquee_03" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "proj_marquee_04" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "proj_marquee_05" | safeHTML }} <span class="marquee-sep">&middot;</span>
+                {{ i18n "proj_marquee_06" | safeHTML }} <span class="marquee-sep">&middot;</span>
+            </span>
+            {{ end }}
+        </div>
+    </div>
+
+    <!---------- PORTFOLIO BODY ---------->
+    <section class="projects-page portfolio-page" aria-labelledby="portfolio-heading">
+        <!---------- PORTFOLIO MAP ---------->
+        <div class="portfolio-map-section">
+            <div class="portfolio-inner">
+                <aside class="timeline" aria-label="{{ i18n "projects_years_label" | safeHTML }}">
+                    <nav>
+                        {{ range $.Site.Data.projects.years }}
+                        <button class="timeline-year"
+                                data-year="{{ .year }}"
+                                aria-pressed="false"
+                                aria-label="{{ .year }}">
+                            <span>{{ .year }}</span>
+                        </button>
+                        {{ end }}
+                    </nav>
+                </aside>
+
+                <div class="project-panel-bg">
+                    <div class="project-panel" id="project-panel" aria-live="polite"></div>
+                </div>
+
+                <div class="portfolio-map-wrap">
+                    <div id="portfolio-map"></div>
+                    <div class="map-attribution">
+                        {{ i18n "map_attribution" | safeHTML }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{- $mapCSS := resources.Get "assets/css/maplibre-gl.css" }}
+<link rel="stylesheet" href="{{ $mapCSS.RelPermalink }}" />
+{{- $portCSS := resources.Get "assets/css/portfolio.css"  }}
+<link rel="stylesheet" href="{{ $portCSS.RelPermalink }}" />
+
+<script>
+    const PROJECT_DATA = JSON.parse({{ $.Site.Data.projects.years | jsonify }});
+     const GEOJSON_PATH = `{{ "assets/data/sea-provinces.geojson" | relURL }}`;
+</script>
+{{- $mapJS := resources.Get "assets/js/maplibre-gl.js" }}
+<script src="{{ $mapJS.RelPermalink }}"></script>
+{{- $portJS := resources.Get "assets/js/portfolio.js" }}
+<script src="{{ $portJS.RelPermalink }}"></script>
+
+{{ end }}
