@@ -37,7 +37,7 @@
                 - .Sections returns the direct child sections (2024, 2023, etc.) sorted by Hugo's default order. 
                 - We sort by title descending so newest year appears first in the sidebar.
             */}}
-            {{ $years := .Sections }}
+            {{ $years := where .Sections "Params.is_year" true }}
             {{ $years = sort $years "Title" "desc" }}
 
             <aside class="projects-sidebar" aria-label="{{ i18n "projects_sidebar_aria" | safeHTML }}">
@@ -45,6 +45,9 @@
                     {{ range $years }}
                     <a href="#y{{ .Title }}" class="sidebar-link">{{ .Title }}</a>
                     {{ end }}
+                    <a href="{{ "projects/portfolio/" | relLangURL }}" class="sidebar-link">
+                        {{ i18n "projects_title" | safeHTML }}
+                    </a>
                 </nav>
             </aside>
 

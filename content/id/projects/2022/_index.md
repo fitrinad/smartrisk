@@ -1,5 +1,6 @@
 ---
 title: "2022"
+is_year: true
 description: "Proyek-proyek SmartRisk di tahun 2022."
 pageCSS: "services-projects.css"
 robotsdisallow: true
