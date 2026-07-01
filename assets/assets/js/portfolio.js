@@ -7,8 +7,11 @@ let map;
 let geojsonData;
 let activeYear        = null;
 let focusedProvinceId = null;
-let activeMarker      = null;
-let activePopup       = null;
+
+// For array-based showPin/hidePin
+let activeMarkers = [];
+let activePopups  = [];
+
 let hoveredProvinceId = null;
 let tooltip           = null;
 
@@ -18,12 +21,12 @@ function initMap() {
         container         : 'portfolio-map',
         style             : 'https://tiles.openfreemap.org/styles/positron',
         center            : [115, 5],
-        zoom              : 3.5,
+        zoom              : 1,
         minZoom           : 1,
         maxZoom           : 8,
         maxBounds : [
-        [88, -15],   // southwest: [lng, lat] — west of Myanmar, south of Australia
-        [145, 28]    // northeast: [lng, lat] — east of Philippines, north of Myanmar
+        [88, -15],   // southwest: [lng, lat] - west of Myanmar, south of Australia
+        [145, 28]    // northeast: [lng, lat] - east of Philippines, north of Myanmar
         ],
         scrollZoom        : true,
         attributionControl: false,
@@ -118,31 +121,30 @@ function setupMapInteraction() {
             map.getCanvas().style.cursor = '';
             hideTooltip();
             unfocusProvince();
-            hidePin();
+            hidePins();
             unhighlightPanelItem();
             return;
         }
 
         map.getCanvas().style.cursor = 'pointer';
 
-        // Finds first project with coords in this province
+        // Collects all projects in the province for the active year
         const yearData = PROJECT_DATA.find(d => String(d.year) === activeYear);
-        let firstItem  = null;
+        let matchingItems = [];
         if (yearData) {
-            outer: for (const group of yearData.projects) {
-                for (const item of group.items) {
+            yearData.projects.forEach(group => {
+                group.items.forEach(item => {
                     if (item.province === iso && item.coords) {
-                        firstItem = item;
-                        break outer;
+                        matchingItems.push(item);
                     }
-                }
-            }
+                });
+            });
         }
 
         focusProvince(iso);
-        if (firstItem) {
-            showPin(firstItem);
-            highlightPanelItem(firstItem.name);
+        if (matchingItems.length) {
+            showPins(matchingItems);
+            highlightPanelItem(matchingItems.map(i => i.name));
         }
 
         showTooltip(e.point, name, projects);
@@ -152,7 +154,8 @@ function setupMapInteraction() {
         map.getCanvas().style.cursor = '';
         hideTooltip();
         unfocusProvince();
-        hidePin();
+        // hidePin();
+        hidePins();
         unhighlightPanelItem();
     });
 }
@@ -225,10 +228,51 @@ function showPin(item) {
     activePopup.addTo(map);
 }
 
+function showPins(items) {
+    hidePins();
+
+    items.forEach(item => {
+        if (!item.coords) return;
+        const [lat, lng] = item.coords;
+
+        const el = document.createElement('div');
+        el.className = 'map-marker active';
+        el.innerHTML = '<div class="marker-pin"></div>';
+
+        const popup = new maplibregl.Popup({
+            closeButton  : false,
+            closeOnClick : false,
+            offset       : 20,
+            className    : 'marker-popup',
+        }).setHTML(`
+            <div class="tooltip-province">${item.name}</div>
+            <div class="tooltip-project">${item.location}</div>
+        `);
+
+        const marker = new maplibregl.Marker({ element: el, anchor: 'bottom' })
+            .setLngLat([lng, lat])
+            .setPopup(popup)
+            .addTo(map);
+
+        popup.addTo(map);
+
+        activeMarkers.push(marker);
+        activePopups.push(popup);
+    });
+}
+
 function hidePin() {
     if (activePopup)  { activePopup.remove();  activePopup  = null; }
     if (activeMarker) { activeMarker.remove(); activeMarker = null; }
 }
+
+function hidePins() {
+    activePopups.forEach(p => p.remove());
+    activeMarkers.forEach(m => m.remove());
+    activePopups  = [];
+    activeMarkers = [];
+}
+
 
 // ---------- TOOLTIP HELPERS ---------- //
 function showTooltip(point, provinceName, projects) {
@@ -246,9 +290,10 @@ function hideTooltip() {
 }
 
 // ---------- PANEL HELPERS ---------- //
-function highlightPanelItem(name) {
+function highlightPanelItem(names) {
+    const nameSet = new Set(Array.isArray(names) ? names : [names]);
     document.querySelectorAll('.panel-item').forEach(el => {
-        el.classList.toggle('highlighted', el.dataset.name === name);
+        el.classList.toggle('highlighted', nameSet.has(el.dataset.name));
     });
 }
 
@@ -257,6 +302,7 @@ function unhighlightPanelItem() {
         el.classList.remove('highlighted');
     });
 }
+
 
 // ---------- GET PROJECTS FOR PROVINCE ---------- //
 function getProjectsForProvince(iso, shapeName) {
@@ -267,14 +313,14 @@ function getProjectsForProvince(iso, shapeName) {
     const results = [];
     yearData.projects.forEach(group => {
         group.items.forEach(item => {
-            if (item.province === iso ||
-                (shapeName && item.location.includes(shapeName))) {
+            if (item.province === iso) {
                 results.push(item.name);
             }
         });
     });
     return results;
 }
+
 
 // ---------- RENDER PROJECT PANEL ---------- //
 function renderPanel(yearData) {
@@ -294,15 +340,14 @@ function renderPanel(yearData) {
                 <span class="panel-bullet">—</span>${item.name}
                 <span class="panel-location">${item.location}</span>
             `;
-
             el.addEventListener('mouseenter', () => {
                 if (item.province) focusProvince(item.province);
-                showPin(item);
-                highlightPanelItem(item.name);
+                showPins([item]);              // wrap in array
+                highlightPanelItem([item.name]); // wrap in array
             });
             el.addEventListener('mouseleave', () => {
                 unfocusProvince();
-                hidePin();
+                hidePins();                    // was: hidePin();
                 unhighlightPanelItem();
             });
 
