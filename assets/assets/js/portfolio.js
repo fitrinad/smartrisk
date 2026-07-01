@@ -8,7 +8,7 @@ let geojsonData;
 let activeYear        = null;
 let focusedProvinceId = null;
 
-// For array-based showPin/hidePin
+// For array-based showPins/hidePins
 let activeMarkers = [];
 let activePopups  = [];
 
@@ -154,7 +154,6 @@ function setupMapInteraction() {
         map.getCanvas().style.cursor = '';
         hideTooltip();
         unfocusProvince();
-        // hidePin();
         hidePins();
         unhighlightPanelItem();
     });
@@ -200,34 +199,6 @@ function unfocusProvince() {
 }
 
 // ---------- PIN HELPERS ---------- //
-function showPin(item) {
-    hidePin();
-    if (!item.coords) return;
-
-    const [lat, lng] = item.coords;
-
-    const el = document.createElement('div');
-    el.className = 'map-marker active';
-    el.innerHTML = '<div class="marker-pin"></div>';
-
-    activePopup = new maplibregl.Popup({
-        closeButton  : false,
-        closeOnClick : false,
-        offset       : 20,
-        className    : 'marker-popup',
-    }).setHTML(`
-        <div class="tooltip-province">${item.name}</div>
-        <div class="tooltip-project">${item.location}</div>
-    `);
-
-    activeMarker = new maplibregl.Marker({ element: el, anchor: 'bottom' })
-        .setLngLat([lng, lat])
-        .setPopup(activePopup)
-        .addTo(map);
-
-    activePopup.addTo(map);
-}
-
 function showPins(items) {
     hidePins();
 
@@ -259,11 +230,6 @@ function showPins(items) {
         activeMarkers.push(marker);
         activePopups.push(popup);
     });
-}
-
-function hidePin() {
-    if (activePopup)  { activePopup.remove();  activePopup  = null; }
-    if (activeMarker) { activeMarker.remove(); activeMarker = null; }
 }
 
 function hidePins() {
@@ -372,7 +338,7 @@ function selectYear(yearStr) {
     renderPanel(yearData);
     highlightProvinces(yearData);
     unfocusProvince();
-    hidePin();
+    hidePins();
 }
 
 // ---------- TIMELINE CLICK ---------- //
@@ -380,6 +346,36 @@ document.querySelectorAll('.timeline-year').forEach(btn => {
     btn.addEventListener('click', () => selectYear(btn.dataset.year));
 });
 
+// ---------- LAZY LOAD MAPLIBRE ---------- //
+let maplibreLoadPromise = null;
+function loadMapLibre() {
+    if (maplibreLoadPromise) return maplibreLoadPromise;
+    maplibreLoadPromise = new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = MAPLIBRE_JS_PATH;
+        if ('fetchPriority' in script) script.fetchPriority = 'low';
+        script.onload  = resolve;
+        script.onerror = reject;
+        document.body.appendChild(script);
+    });
+    return maplibreLoadPromise;
+}
+
+function scheduleMapLoad() {
+    const start = () => loadMapLibre().then(initMap);
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(start, { timeout: 2000 });
+    } else {
+        setTimeout(start, 200);
+    }
+}
 
 // ---------- START ---------- //
-initMap();
+const mapEl = document.getElementById('portfolio-map');
+const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+        observer.disconnect();
+        scheduleMapLoad();
+    }
+}, { rootMargin: '200px' });
+observer.observe(mapEl);

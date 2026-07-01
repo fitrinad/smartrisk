@@ -59,18 +59,12 @@
         </div>
     </section>
 
-{{- $mapCSS := resources.Get "assets/css/maplibre-gl.css" }}
-<link rel="stylesheet" href="{{ $mapCSS.RelPermalink }}" />
-{{- $portCSS := resources.Get "assets/css/portfolio.css"  }}
-<link rel="stylesheet" href="{{ $portCSS.RelPermalink }}" />
-
 <script>
     const PROJECT_DATA = JSON.parse({{ $.Site.Data.projects.years | jsonify }});
-     const GEOJSON_PATH = `{{ "assets/data/sea-provinces.geojson" | relURL }}`;
+    const GEOJSON_PATH = `{{ "assets/data/sea-provinces.geojson" | relURL }}`;
+    const MAPLIBRE_JS_PATH = `{{ (resources.Get "assets/js/maplibre-gl.js").RelPermalink }}`;
 </script>
-{{- $mapJS := resources.Get "assets/js/maplibre-gl.js" }}
-<script src="{{ $mapJS.RelPermalink }}"></script>
 {{- $portJS := resources.Get "assets/js/portfolio.js" }}
-<script src="{{ $portJS.RelPermalink }}"></script>
+<script src="{{ $portJS.RelPermalink }}" defer></script>
 
 {{ end }}
