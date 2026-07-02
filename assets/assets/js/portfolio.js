@@ -200,6 +200,7 @@ function unfocusProvince() {
 
 // ---------- PIN HELPERS ---------- //
 function showPins(items) {
+    if (!map) return;
     hidePins();
 
     items.forEach(item => {
@@ -324,6 +325,37 @@ function renderPanel(yearData) {
     });
 }
 
+// ---------- RENDER ALL-YEARS PANEL (pre-load: map placeholder state) ---------- //
+function renderAllYearsPanel() {
+    const panel = document.getElementById('project-panel');
+    panel.innerHTML = '';
+
+    PROJECT_DATA.forEach(yearData => {
+        const yearEl = document.createElement('div');
+        yearEl.className   = 'panel-year panel-year--compact';
+        yearEl.textContent = yearData.year;
+        panel.appendChild(yearEl);
+
+        yearData.projects.forEach(group => {
+            const catEl = document.createElement('div');
+            catEl.className = 'panel-category';
+            catEl.innerHTML = `<div class="panel-cat-title">${group.category}</div>`;
+
+            group.items.forEach(item => {
+                const el = document.createElement('div');
+                el.className = 'panel-item';
+                el.innerHTML = `
+                    <span class="panel-bullet">—</span>${item.name}
+                    <span class="panel-location">${item.location}</span>
+                `;
+                catEl.appendChild(el);
+            });
+
+            panel.appendChild(catEl);
+        });
+    });
+}
+
 // ---------- SELECT YEAR ---------- //
 function selectYear(yearStr) {
     activeYear = yearStr;
@@ -364,6 +396,8 @@ function loadMapLibre() {
 // ---------- START (click-to-load) ---------- //
 const mapPlaceholder = document.getElementById('map-placeholder');
 const mapLoadBtn      = document.getElementById('map-load-btn');
+
+renderAllYearsPanel();
 
 function activateMap() {
     mapLoadBtn.disabled = true;
