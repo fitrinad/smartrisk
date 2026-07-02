@@ -8,7 +8,7 @@ let geojsonData;
 let activeYear        = null;
 let focusedProvinceId = null;
 
-// For array-based showPins/hidePins
+// For array-based showPin/hidePin
 let activeMarkers = [];
 let activePopups  = [];
 
@@ -346,6 +346,7 @@ document.querySelectorAll('.timeline-year').forEach(btn => {
     btn.addEventListener('click', () => selectYear(btn.dataset.year));
 });
 
+
 // ---------- LAZY LOAD MAPLIBRE ---------- //
 let maplibreLoadPromise = null;
 function loadMapLibre() {
@@ -353,7 +354,6 @@ function loadMapLibre() {
     maplibreLoadPromise = new Promise((resolve, reject) => {
         const script = document.createElement('script');
         script.src = MAPLIBRE_JS_PATH;
-        if ('fetchPriority' in script) script.fetchPriority = 'low';
         script.onload  = resolve;
         script.onerror = reject;
         document.body.appendChild(script);
@@ -361,21 +361,18 @@ function loadMapLibre() {
     return maplibreLoadPromise;
 }
 
-function scheduleMapLoad() {
-    const start = () => loadMapLibre().then(initMap);
-    if ('requestIdleCallback' in window) {
-        requestIdleCallback(start, { timeout: 2000 });
-    } else {
-        setTimeout(start, 200);
-    }
+// ---------- START (click-to-load) ---------- //
+const mapPlaceholder = document.getElementById('map-placeholder');
+const mapLoadBtn      = document.getElementById('map-load-btn');
+
+function activateMap() {
+    mapLoadBtn.disabled = true;
+    const label = document.getElementById('map-load-label');
+    if (label) label.textContent = mapLoadBtn.dataset.loadingText || label.textContent;
+    loadMapLibre().then(() => {
+        initMap();
+        mapPlaceholder.classList.add('is-hidden');
+    });
 }
 
-// ---------- START ---------- //
-const mapEl = document.getElementById('portfolio-map');
-const observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-        observer.disconnect();
-        scheduleMapLoad();
-    }
-}, { rootMargin: '200px' });
-observer.observe(mapEl);
+mapLoadBtn.addEventListener('click', activateMap);

@@ -82,3 +82,9 @@ other = "Project years"
 
 [map_attribution]
 other = 'Regional boundaries: <a href="https://www.geoboundaries.org" target="_blank" rel="noopener">geoBoundaries</a> (CC BY 4.0)'
+
+[map_load_cta]
+other = "Load interactive map"
+
+[map_loading]
+other = "Loading map..."

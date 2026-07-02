@@ -51,6 +51,16 @@
 
                 <div class="portfolio-map-wrap">
                     <div id="portfolio-map"></div>
+                    <div class="map-placeholder" id="map-placeholder">
+                        <img class="map-placeholder-art"
+                             src="{{ "assets/images/portfolio/geoBoundaries_sea.svg" | absURL }}"
+                             alt="" aria-hidden="true" loading="eager">
+                        <button type="button" class="map-load-btn" id="map-load-btn"
+                                data-loading-text="{{ i18n "map_loading" | safeHTML }}">
+                            <span class="map-load-icon" aria-hidden="true">+</span>
+                            <span id="map-load-label">{{ i18n "map_load_cta" | safeHTML }}</span>
+                        </button>
+                    </div>
                     <div class="map-attribution">
                         {{ i18n "map_attribution" | safeHTML }}
                     </div>
@@ -61,8 +71,8 @@
 
 <script>
     const PROJECT_DATA = JSON.parse({{ $.Site.Data.projects.years | jsonify }});
-    const GEOJSON_PATH = `{{ "assets/data/sea-provinces.geojson" | relURL }}`;
-    const MAPLIBRE_JS_PATH = `{{ (resources.Get "assets/js/maplibre-gl.js").RelPermalink }}`;
+     const GEOJSON_PATH = `{{ "assets/data/sea-provinces.geojson" | relURL }}`;
+     const MAPLIBRE_JS_PATH = `{{ (resources.Get "assets/js/maplibre-gl.js").RelPermalink }}`;
 </script>
 {{- $portJS := resources.Get "assets/js/portfolio.js" }}
 <script src="{{ $portJS.RelPermalink }}" defer></script>
