@@ -7,7 +7,7 @@
     '{{ i18n "nav_aria" }}' >
     <!-- Rendering logo by text -->
     <!--
-    <a href="{{ .Site.Home.Permalink }}" class="logo">
+    <a href="{{ .Site.Home.RelPermalink }}" class="logo">
         <img src="assets/images/logo_square.png" alt="SmartRisk logo" />
         <span class="logo-text">
             <span class="logo-name">Smart<span class="logo-accent">Risk</span></span>
@@ -17,10 +17,10 @@
     -->
     
     <!-- Rendering logo by image -->
-    <a href="{{ .Site.Home.Permalink }}" class="logo">
+    <a href="{{ .Site.Home.RelPermalink }}" class="logo">
         <picture>
-            <source srcset="{{ "assets/images/logo_smartrisk.webp" | absURL }}" type="image/webp" />
-            <img src="{{ "assets/images/logo_smartrisk.png" | absURL }}" fetchpriority="high" alt="Logo SmartRisk - integrated risk management solution" />
+            <source srcset="{{ "assets/images/logo_smartrisk.webp" | relURL }}" type="image/webp" />
+            <img src="{{ "assets/images/logo_smartrisk.png" | relURL }}" fetchpriority="high" alt="Logo SmartRisk - integrated risk management solution" />
         </picture>
     </a>
     
