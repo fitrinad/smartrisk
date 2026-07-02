@@ -1,33 +1,28 @@
 years:
   - year: 2020
     projects:
-      - category: Power Plants
+      - category: Oil & Gas
         items:
-          - name: PT Indonesia Power - PLTGU Grati
-            location: Pasuruan, East Java
-            province: ID-JI
-            country: Indonesia
-            coords: [-7.648899591469045, 113.02554165232709]
-          - name: PT Indonesia Power - PLTDG Pesanggaran
-            location: Bali
-            province: ID-BA
-            country: Indonesia
-            coords: [-8.717559774039415, 115.21182611185897]
           - name: PT Pertamina MOR VIII
             location: Makassar, South Sulawesi
             province: ID-SN
             country: Indonesia
             coords: [-5.0443566845890295, 119.53912969528398]
+      - category: Power Plants
+        items:
+          - name: PT PLN Indonesia Power - PLTGU Grati
+            location: Pasuruan, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.648899591469045, 113.02554165232709]
+          - name: PT PLN Indonesia Power - PLTDG Pesanggaran
+            location: Bali
+            province: ID-BA
+            country: Indonesia
+            coords: [-8.717559774039415, 115.21182611185897]
 
   - year: 2019
     projects:
-      - category: Transportation
-        items:
-          - name: PT MRT Jakarta
-            location: Jakarta
-            province: ID-JK
-            country: Indonesia
-            coords: [-6.193763506240954, 106.8237865983467]
       - category: Mining
         items:
           - name: PT Antam Tbk.
@@ -35,53 +30,47 @@ years:
             province: ID-SG
             country: Indonesia
             coords: [-4.191404835965604, 121.59814761952047]
-      - category: Power Plants
+      - category: Petrochemical
         items:
-          - name: PT Indonesia Power - PLTGU Tambak Lorok
-            location: Semarang, Central Java
-            province: ID-JT
+          - name: PT Pupuk Kalimantan Timur - Ammonia & Urea Plant 5
+            location: Bontang, East Kalimantan
+            province: ID-KI
             country: Indonesia
-            coords: [-6.9501749445714855, 110.43127929573953]
-          - name: PT Indonesia Power - PLTGU Priok
+            coords: [0.18529816644229039, 117.48259692397224]
+      - category: Transportation
+        items:
+          - name: PT MRT Jakarta
             location: Jakarta
             province: ID-JK
             country: Indonesia
-            coords: [-6.109970136118222, 106.86714752348001]
-          - name: PT Indonesia Power - PLTU Suralaya
+            coords: [-6.193763506240954, 106.8237865983467]
+      - category: Power Plants
+        items:
+          - name: PT PLN Indonesia Power - PLTU Suralaya
             location: Cilegon, Banten
             province: ID-BT
             country: Indonesia
             coords: [-5.892173460384025, 106.0295838591351]
+          - name: PT PLN Indonesia Power - PLTGU Priok
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.109970136118222, 106.86714752348001]
+          - name: PT PLN Indonesia Power - PLTGU Tambak Lorok
+            location: Semarang, Central Java
+            province: ID-JT
+            country: Indonesia
+            coords: [-6.9501749445714855, 110.43127929573953]
 
   - year: 2018
     projects:
-      - category: Power Plants
+      - category: Petrochemical
         items:
-          - name: PLTMG Arun
-            location: Lhokseumawe, Aceh
-            province: ID-AC
-            country: Indonesia
-            coords: [5.2158079830295225, 97.09041608114644]
           - name: PT Pupuk Kalimantan Timur - Ammonia & Urea Plant 1A
             location: Bontang, East Kalimantan
             province: ID-KI
             country: Indonesia
             coords: [0.1859610542238235, 117.48924339159494]
-          - name: PLTU Kaltim
-            location: Balikpapan, East Kalimantan
-            province: ID-KI
-            country: Indonesia
-            coords: [-1.168741830316203, 116.78852021991885]
-          - name: PLTA Singkarak
-            location: Padang, West Sumatra
-            province: ID-SB
-            country: Indonesia
-            coords: [-0.6198040267598011, 100.34757794496036]
-          - name: PLTG Maleo
-            location: Pohuwato, Gorontalo
-            province: ID-GO
-            country: Indonesia
-            coords: [0.47347116538129247, 122.00213558484225]
       - category: Transmission & Distribution
         items:
           - name: GITET Ngimbang
@@ -89,6 +78,28 @@ years:
             province: ID-JI
             country: Indonesia
             coords: [-7.286450780119697, 112.18887046396577]
+      - category: Power Plants
+        items:
+          - name: PLTG Maleo
+            location: Pohuwato, Gorontalo
+            province: ID-GO
+            country: Indonesia
+            coords: [0.47347116538129247, 122.00213558484225]
+          - name: PLTA Singkarak
+            location: Padang, West Sumatra
+            province: ID-SB
+            country: Indonesia
+            coords: [-0.6198040267598011, 100.34757794496036]
+          - name: PLTU Kaltim
+            location: Balikpapan, East Kalimantan
+            province: ID-KI
+            country: Indonesia
+            coords: [-1.168741830316203, 116.78852021991885]
+          - name: PLTMG Arun
+            location: Lhokseumawe, Aceh
+            province: ID-AC
+            country: Indonesia
+            coords: [5.2158079830295225, 97.09041608114644]
 
   - year: 2017
     projects:
@@ -99,140 +110,80 @@ years:
             province: ID-SN
             country: Indonesia
             coords: [-5.157731216179764, 119.41875780813109]
-      - category: Power Plants
-        items:
-          - name: PT Indonesia Power - PLTP Ulumbu
-            location: Manggarai, East Nusa Tenggara
-            province: ID-NT
-            country: Indonesia
-            coords: [-8.726120733475481, 120.43476058592141]
-          - name: PT PLN (Persero) - PLTA Koto Panjang
-            location: Kampar, Riau
-            province: ID-RI
-            country: Indonesia
-            coords: [0.29585458918396357, 100.88540780996794]
-          - name: PT Indonesia Power - PLTA Saguling
-            location: Bandung, West Java
-            province: ID-JB
-            country: Indonesia
-            coords: [-6.8640583574434535, 107.34999017116415]
-          - name: PT PLN (Persero) - PLTU Jeranjang
-            location: Lombok, West Nusa Tenggara
-            province: ID-NB
-            country: Indonesia
-            coords: [-8.659255241046226, 116.0726168811717]
-          - name: PT PLN (Persero) - PLTU Nagan Raya
-            location: Nagan Raya, Aceh
-            province: ID-AC
-            country: Indonesia
-            coords: [4.109405545263137, 96.1995035854441]
-          - name: PetroVietnam - Vũng Áng 1 TPP
-            location: Vũng Áng, Hà Tĩnh Province
-            province: VN-23
-            country: Vietnam
-            coords: [18.0976906732312, 106.38086606596065]
-          - name: PetroVietnam - Cà Mau 1 & 2 CCPP
-            location: Khánh An, Cà Mau Province
-            province: VN-59
-            country: Vietnam
-            coords: [9.23800401238043, 105.06082456586545]
-          - name: PetroVietnam - Nhơn Trạch 1 & 2 CCPP
-            location: Nhơn Trạch, Đồng Nai Province
-            province: VN-39
-            country: Vietnam
-            coords: [10.738400705057375, 106.91965595970828]
       - category: Petrochemical
         items:
-          - name: PT Pupuk Kujang - NPK 1 & 2 Plants
-            location: Cikampek, West Java
-            province: ID-JB
-            country: Indonesia
-            coords: [-6.401449272054318, 107.42825787522553]
           - name: PT Pupuk Kujang - Ammonia & Urea Plant Kujang 1B
             location: Cikampek, West Java
             province: ID-JB
             country: Indonesia
             coords: [-6.4065854527373824, 107.42797819615548]
+          - name: PT Pupuk Kujang - NPK 1 & 2 Plants
+            location: Cikampek, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.401449272054318, 107.42825787522553]
       - category: Manufacturing
         items:
-          - name: PT Zinkpower Austrindo
-            location: Tangerang, Banten
-            province: ID-BT
-            country: Indonesia
-            coords: [-6.201802472907945, 106.33420246765985]
-          - name: PT Zinkpower Batamindo
-            location: Batam, Riau Islands
-            province: ID-KR
-            country: Indonesia
-            coords: [1.07032152695881, 103.91248849832688]
           - name: PT Integra Indocabinet
             location: Surabaya, East Java
             province: ID-JI
             country: Indonesia
             coords: [-7.390122539528874, 112.7565412253401]
+          - name: PT Zinkpower Batamindo
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.07032152695881, 103.91248849832688]
+          - name: PT Zinkpower Austrindo
+            location: Banten
+            province: ID-BT
+            country: Indonesia
+            coords: [-6.201802472907945, 106.33420246765985]
+      - category: Power Plants
+        items:
+          - name: Nho'n Trach 1 & 2 CCPP (PetroVietnam)
+            location: Đồng Nai Province, Vietnam
+            province: VN-39
+            country: Vietnam
+            coords: [10.738400705057375, 106.91965595970828]
+          - name: Ca Mau 1 & 2 CCPP (PetroVietnam)
+            location: Cà Mau Province, Vietnam
+            province: VN-59
+            country: Vietnam
+            coords: [9.23800401238043, 105.06082456586545]
+          - name: Vung Ang 1 TPP (PetroVietnam)
+            location: Hà Tĩnh Province, Vietnam
+            province: VN-23
+            country: Vietnam
+            coords: [18.0976906732312, 106.38086606596065]
+          - name: PT PLN (Persero) - PLTU Nagan Raya
+            location: Nagan Raya, Aceh
+            province: ID-AC
+            country: Indonesia
+            coords: [4.109405545263137, 96.1995035854441]
+          - name: PT PLN (Persero) - PLTU Jeranjang
+            location: Lombok, West Nusa Tenggara
+            province: ID-NB
+            country: Indonesia
+            coords: [-8.659255241046226, 116.0726168811717]
+          - name: PT PLN Indonesia Power - PLTA Saguling
+            location: Bandung, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.8640583574434535, 107.34999017116415]
+          - name: PT PLN (Persero) - PLTA Koto Panjang
+            location: Kampar, Riau
+            province: ID-RI
+            country: Indonesia
+            coords: [0.29585458918396357, 100.88540780996794]
+          - name: PT PLN Indonesia Power - PLTP Ulumbu
+            location: Manggarai, East Nusa Tenggara
+            province: ID-NT
+            country: Indonesia
+            coords: [-8.726120733475481, 120.43476058592141]
 
   - year: 2016
     projects:
-      - category: Information & Communication Technology
-        items:
-          - name: PT Telkom Indonesia, Tbk
-            location: Jakarta
-            province: ID-JK
-            country: Indonesia
-            coords: [-6.232162067399585, 106.79844323761071]
-      - category: Oil & Gas
-        items:
-          - name: PT PLN (Persero) - CNG Plant Gresik
-            location: Gresik, East Java
-            province: ID-JI
-            country: Indonesia
-            coords: [-7.162451090597054, 112.66688718115901]
-          - name: PT ARSynergy, Resources
-            location: Gresik, East Java
-            province: ID-JI
-            country: Indonesia
-            coords: [-7.116450699795728, 112.62053413883037]
-      - category: Geothermal
-        items:
-          - name: PT Chevron Geothermal Indonesia, Darajat
-            location: Garut, West Java
-            province: ID-JB
-            country: Indonesia
-            coords: [-7.198410934009379, 107.72598768474045]
-          - name: PT Chevron Geothermal Salak
-            location: Sukabumi, West Java
-            province: ID-JB
-            country: Indonesia
-            coords: [-6.7408733173198865, 106.67349473433804]
-      - category: Maritime Ports
-        items:
-          - name: PT Terminal Teluk Lamong
-            location: Surabaya, East Java
-            province: ID-JI
-            country: Indonesia
-            coords: [-7.203895834642449, 112.66922728851894]
-      - category: Power Plants
-        items:
-          - name: PT Lombok Energy Dynamic (PLTU)
-            location: Lombok, West Nusa Tenggara
-            province: ID-NB
-            country: Indonesia
-            coords: [-8.433164660254528, 116.70506059000371]
-          - name: PLTA Asahan-1
-            location: Toba Samosir, North Sumatra
-            province: ID-SU
-            country: Indonesia
-            coords: [2.5124949902174936, 99.26230168298629]
-          - name: PLTM Segara 2
-            location: Lombok, West Nusa Tenggara
-            province: ID-NB
-            country: Indonesia
-            coords: [-8.395116808709753, 116.19022397116414]
-          - name: PLTA Poso Energy
-            location: Poso, Central Sulawesi
-            province: ID-ST
-            country: Indonesia
-            coords: [-1.6291912619975253, 120.66199149493573]
       - category: Petrochemical
         items:
           - name: PT Petrokimia Gresik
@@ -240,129 +191,170 @@ years:
             province: ID-JI
             country: Indonesia
             coords: [-7.143540886173528, 112.63894108711997]
-          - name: PT Pupuk Kujang
-            location: Cikampek, West Java
+      - category: Maritime Ports
+        items:
+          - name: PT Terminal Teluk Lamong
+            location: Surabaya, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.203895834642449, 112.66922728851894]
+      - category: Information & Communication Technology
+        items:
+          - name: PT Telkom Indonesia, Tbk
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.232162067399585, 106.79844323761071]
+      - category: Geothermal
+        items:
+          - name: PT Chevron Geothermal Salak
+            location: Sukabumi, West Java
             province: ID-JB
             country: Indonesia
-            coords: [-6.41250439768321, 107.42956549649716]
+            coords: [-6.7408733173198865, 106.67349473433804]
+          - name: PT Chevron Geothermal Indonesia, Darajat
+            location: Garut,  West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-7.198410934009379, 107.72598768474045]
+      - category: Oil & Gas
+        items:
+          - name: PT ARSynergy, Resources
+            location: Gresik, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.116450699795728, 112.62053413883037]
+          - name: PT PLN (Persero) - CNG Gresik
+            location: Gresik, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.162451090597054, 112.66688718115901]
+      - category: Power Plants
+        items:
+          - name: PLTA Poso Energy
+            location: Poso, Central Sulawesi
+            province: ID-ST
+            country: Indonesia
+            coords: [-1.6291912619975253, 120.66199149493573]
+          - name: PLTM Segara 2
+            location: Lombok, West Nusa Tenggara
+            province: ID-NB
+            country: Indonesia
+            coords: [-8.395116808709753, 116.19022397116414]
+          - name: PLTA Asahan-1
+            location: Toba Samosir, North Sumatra
+            province: ID-SU
+            country: Indonesia
+            coords: [2.5124949902174936, 99.26230168298629]
+          - name: PT Lombok Energy Dynamic (PLTU)
+            location: Lombok, West Nusa Tenggara
+            province: ID-NB
+            country: Indonesia
+            coords: [-8.433164660254528, 116.70506059000371]
       - category: High-Rise Buildings
         items:
-          - name: Aston Sentul Lake Resort & Conference Center
-            location: Bogor, West Java
-            province: ID-JB
-            country: Indonesia
-            coords: [-6.586215258784297, 106.88224561184177] 
-          - name: BCA Learning Center
-            location: Bogor, West Java
-            province: ID-JB
-            country: Indonesia
-            coords: [-6.585664174585624, 106.88204081184159]
-          - name: Senopati Suite
-            location: Jakarta
-            province: ID-JK
-            country: Indonesia
-            coords: [-6.228830828913476, 106.80259252718275]
-          - name: Sudirman Residence
-            location: Jakarta
-            province: ID-JK
-            country: Indonesia
-            coords: [-6.209243239479107, 106.82360051369024]
           - name: The Residence at Dharmawangsa II
             location: Jakarta
             province: ID-JK
             country: Indonesia
             coords: [-6.251810968045441, 106.80497509464509]
+          - name: Sudirman Residence
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.209243239479107, 106.82360051369024]
+          - name: Senopati Suite
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.228830828913476, 106.80259252718275]
+          - name: BCA Learning Center
+            location: Bogor, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.585664174585624, 106.88204081184159]
+          - name: Aston Sentul Lake Resort & Conference Center
+            location: Bogor,  West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.586215258784297, 106.88224561184177]
       - category: Manufacturing
         items:
-          - name: PT Petronika Gresik
-            location: Gresik, East Java
-            province: ID-JI
-            country: Indonesia
-            coords: [-7.150010121005961, 112.63354020999478]
-          - name: PT Mitracitra Mandiri Offset
-            location: Sidoarjo, East Java
-            province: ID-JI
-            country: Indonesia
-            coords: [-7.36924738940966, 112.65717479650401]
-          - name: PT Mega Surya Eratama
-            location: Mojokerto, East Java
-            province: ID-JI
-            country: Indonesia
-            coords: [-7.530168512198796, 112.61043195232617]
-          - name: PT Indonesia Chemical Alumina
-            location: Tayan, West Kalimantan
-            province: ID-KB
-            country: Indonesia
-            coords: [-0.046249252090470976, 110.14025228465509]
-          - name: PT Sriboga Flour Mill
-            location: Semarang, Central Java
-            province: ID-JT
-            country: Indonesia
-            coords: [-6.9513593024275, 110.42507561369526]
-          - name: PT Solo Murni
-            location: Surakarta, Central Java
-            province: ID-JT 
-            country: Indonesia
-            coords: [-7.555013576524632, 110.79721309664153]
-          - name: PT San Darma Plastics
+          - name: PT Namasindo Plas
             location: Bandung, West Java
             province: ID-JB
             country: Indonesia
-            coords: [-6.28951098204151, 107.12817833569132]
-          - name: PT Brite Polymer
-            location: Cikarang, West Java
-            province: ID-JB
-            country: Indonesia
-            coords: [-6.290025266335069, 107.14013335416801]
-          - name: PT Timah Tbk
-            location: Kundur, Riau Islands
-            province: ID-KR
-            country: Indonesia
-            coords: [0.8854084399874703, 103.39287883695316]
-          - name: PT Timah Tbk
-            location: Muntok, Bangka Belitung Islands
-            province: ID-BB
-            country: Indonesia
-            coords: [-2.03898483692746, 105.21807253764761]
-          - name: PT Delta Merlin Dunia Textil
-            location: Sukoharjo, Central Java
-            province: ID-JT
-            country: Indonesia
-            coords: [-7.626595328134397, 110.79969862455653]
+            coords: [-6.892768411118315, 107.49496741034764]
           - name: PT Faber Castell Indonesia
             location: Bekasi, West Java
             province: ID-JB
             country: Indonesia
             coords: [-6.318074992477019, 107.09226603964107]
-          - name: PT Namasindo Plas
+          - name: PT Delta Merlin Dunia Textil
+            location: Sukoharjo, Central Java
+            province: ID-JT
+            country: Indonesia
+            coords: [-7.626595328134397, 110.79969862455653]
+          - name: PT Timah Tbk
+            location: Muntok, Bangka Belitung Islands
+            province: ID-BB
+            country: Indonesia
+            coords: [-2.03898483692746, 105.21807253764761]
+          - name: PT Timah Tbk
+            location: Kundur, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [0.8854084399874703, 103.39287883695316]
+          - name: PT Brite Polymer
+            location: Cikarang, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.290025266335069, 107.14013335416801]
+          - name: PT San Darma Plastics
             location: Bandung, West Java
             province: ID-JB
             country: Indonesia
-            coords: [-6.898767013267163, 107.4967002126673]
+            coords: [-6.28951098204151, 107.12817833569132]
+          - name: PT Solo Murni
+            location: Surakarta, Central Java
+            province: ID-JT
+            country: Indonesia
+            coords: [-7.555013576524632, 110.79721309664153]
+          - name: PT Sriboga Flour Mill
+            location: Semarang, Central Java
+            province: ID-JT
+            country: Indonesia
+            coords: [-6.9513593024275, 110.42507561369526]
+          - name: PT Indonesia Chemical Alumina
+            location: Tayan, West Kalimantan
+            province: ID-KB
+            country: Indonesia
+            coords: [-0.046249252090470976, 110.14025228465509]
+          - name: PT Mega Surya Eratama
+            location: Mojokerto, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.530168512198796, 112.61043195232617]
+          - name: PT Mitracitra Mandiri Offset
+            location: Sidoarjo, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.36924738940966, 112.65717479650401]
+          - name: PT Petronika Gresik
+            location: Gresik, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.150010121005961, 112.63354020999478]
 
   - year: 2015
     projects:
-      - category: Petrochemical
+      - category: Mining
         items:
-          - name: PT Pupuk Kalimantan Timur
-            location: Bontang, East Kalimantan
-            province: ID-KI
+          - name: PT Indonesia Chemical Alumina
+            location: Sanggau, West Kalimantan
+            province: ID-KB
             country: Indonesia
-            coords: [0.1859610542238235, 117.48924339159494]
-      - category: Geothermal
-        items:
-          - name: Plumpang Raya Anugrah PRA-07 Rig
-            location: Lampung
-            province: ID-LA
-            country: Indonesia
-            coords: [-5.301992430657679, 104.57733490169878]
-      - category: Insurance
-        items:
-          - name: PT Asuransi Wahana Tata
-            location: Jakarta
-            province: ID-JK
-            country: Indonesia
-            coords: [-6.1327124788414755, 106.81108089151708]
+            coords: [-0.06402999458831433, 110.14078826931318]
       - category: Chemical
         items:
           - name: PT Arjuna Kimia
@@ -370,38 +362,157 @@ years:
             province: ID-JI
             country: Indonesia
             coords: [-7.327004120814031, 112.75773662533952]
+      - category: Insurance
+        items:
+          - name: PT Asuransi Wahana Tata
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.1327124788414755, 106.81108089151708]
+      - category: Geothermal
+        items:
+          - name: Plumpang Raya Anugrah PRA-07 Rig
+            location: Tanggamus, Lampung
+            province: ID-LA
+            country: Indonesia
+            coords: [-5.301992430657679, 104.57733490169878]
+      - category: Agroindustry
+        items:
+          - name: PT Perkebunan Nusantara V
+            location: Pekanbaru, Riau
+            province: ID-RI
+            country: Indonesia
+            coords: [0.4705885542267221, 101.42671417116414]
+          - name: PT Bumi Sarimas Indonesia
+            location: Padang Pariaman, West Sumatra
+            province: ID-SB
+            country: Indonesia
+            coords: [-0.7868752044066275, 100.31638093068682]
+      - category: Petrochemical
+        items:
+          - name: PT Pupuk Kalimantan Timur
+            location: Bontang, East Kalimantan
+            province: ID-KI
+            country: Indonesia
+            coords: [0.1859610542238235, 117.48924339159494]
+          - name: PT Pupuk Sriwidjaja Palembang (PUSRI) - Ammonia Project
+            location: Palembang, South Sumatra
+            province: ID-SS
+            country: Indonesia
+            coords: [-2.9680212811653646, 104.8003200576717]
       - category: Oil & Gas
         items:
-          - name: PT Pertamina (Persero)
-            location: Bandung, West Java
-            province: ID-JB
-            country: Indonesia
-            coords: [-6.936918091754909, 107.69454562883587]
           - name: PT Media Karya Sentosa
             location: Gresik, East Java
             province: ID-JI
             country: Indonesia
             coords: [-7.2335610542215285, 112.56497055602561]
+          - name: PT Pertamina (Persero)
+            location: Bandung, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.936918091754909, 107.69454562883587]
       - category: Maritime Ports
         items:
-          - name: PT Prima Nur Panurjwan
-            location: Jakarta
-            province: ID-JK
-            country: Indonesia
-            coords: [-6.150540682787749, 106.88746693882366]
-          - name: PT Tangguh Samudera Jaya
-            location: Jakarta
-            province: ID-JK
-            country: Indonesia
-            coords: [-6.104210953834667, 106.89019024067439]
           - name: PT Pelabuhan Samudera Palaran
             location: Samarinda, East Kalimantan
             province: ID-KI
             country: Indonesia
             coords: [-0.5737372334653933, 117.206457238804]
+          - name: PT Tangguh Samudera Jaya
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.104210953834667, 106.89019024067439]
+          - name: PT Prima Nur Panurjwan
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.150540682787749, 106.88746693882366]
+      - category: Power Plants
+        items:
+          - name: PLTM Cianten
+            location: Bogor, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.683461126129349, 106.6377932955301]
+          - name: PLTM Karai
+            location: Simalungun, North Sumatra
+            province: ID-SU
+            country: Indonesia
+            coords: [3.102865838352654, 98.80860049682796]
+          - name: PLTG Eramas Persada Energy
+            location: Jambi
+            province: ID-JA
+            country: Indonesia
+            coords: [-1.595205330813448, 103.64615520996918]
+          - name: PLTM Silau 2
+            location: Simalungun, North Sumatra
+            province: ID-SU
+            country: Indonesia
+            coords: [2.719225499413315, 99.13992868483783]
+      - category: Manufacturing
+        items:
+          - name: PT Pelat Timah Nusantara (Latinusa) Tbk
+            location: Cilegon, Banten
+            province: ID-BT
+            country: Indonesia
+            coords: [-5.937432767575766, 106.0102129646518]
+          - name: PT Indorama Synthetics
+            location: Bandung, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.8963909592679284, 107.50248559835144]
+          - name: PT Jindal Stainless Indonesia
+            location: Gresik, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.125935919585439, 112.61340923883043]
+          - name: PT Krakatau Steel Tbk
+            location: Cilegon, Banten
+            province: ID-BT
+            country: Indonesia
+            coords: [-5.920323858059385, 106.01002027921086]
+          - name: PT Gokak Indonesia
+            location: Bogor, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.472299705360642, 106.89480689649751]
+          - name: PT Badjatex
+            location: Bandung, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.974987403243405, 107.6100948965011]
+          - name: PT Embee Plumbon Tekstil
+            location: Cirebon, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.700168893228115, 108.4683844099917]
+          - name: PT Namasindo Plas Abadi
+            location: Pasuruan, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.583753611876984, 112.74060060650595]
+          - name: PT Cemindo Gemilang
+            location: Cilegon, Banten
+            province: ID-BT
+            country: Indonesia
+            coords: [-6.022670475140372, 105.95929725416634]
+          - name: PT Semen Padang
+            location: Padang, West Sumatra
+            province: ID-SB
+            country: Indonesia
+            coords: [-0.953664698319076, 100.46979644414812]
 
   - year: 2014
     projects:
+      - category: Manufacturing
+        items:
+          - name: PT Indorama Polychem Indonesia
+            location: Purwakarta, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.557391468171187, 107.416611363181]
       - category: Warehouse
         items:
           - name: PT Hevea MK I
@@ -414,3 +525,59 @@ years:
             province: ID-SS
             country: Indonesia
             coords: [-3.016623845534428, 104.68949565045006]
+      - category: Mining
+        items:
+          - name: Kaltim Prima Coal (KPC)
+            location: Sangatta, East Kalimantan
+            province: ID-KI
+            country: Indonesia
+            coords: [0.5417036089144667, 117.50828369999998]
+          - name: PT Bukit Asam, Tarahan Coal Terminal
+            location: Tarahan, Lampung
+            province: ID-LA
+            country: Indonesia
+            coords: [-5.509167501026013, 105.34279981349245]
+          - name: PT Arutmin
+            location: Tanah Bumbu, South Kalimantan
+            province: ID-KS
+            country: Indonesia
+            coords: [-3.3438109234059343, 116.02195492506183]
+      - category: Power Plants
+        items:
+          - name: BTG Unit I Semen Tonasa
+            location: Pangkep, South Sulawesi
+            province: ID-SN
+            country: Indonesia
+            coords: [-4.784543165126595, 119.61591488650755]
+          - name: PLN Batam
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.2010989861019772, 104.02373474716356]
+          - name: PT Wijaya Tri Utama - PLTU II
+            location: Banjarmasin, South Kalimantan
+            province: ID-KS
+            country: Indonesia
+            coords: [-3.3348118152962622, 114.56242435230216]
+      - category: Agroindustry
+        items:
+          - name: PT Alam Tri Abadi
+            location: Tanjung, South Kalimantan
+            province: ID-KS
+            country: Indonesia
+            coords: [-2.1479474509155883, 115.45742971445378]
+          - name: PT Wijaya Tri Utama
+            location: Banjarmasin, South Kalimantan
+            province: ID-KS
+            country: Indonesia
+            coords: [-3.334779686646744, 114.56254773749137]
+          - name: PT Basirih
+            location: Banjarmasin, South Kalimantan
+            province: ID-KS
+            country: Indonesia
+            coords: [-3.3371567103041526, 114.56489381450896]
+          - name: PT Lajuperdana Indah
+            location: East Ogan Komering Ulu, South Sumatra
+            province: ID-SS
+            country: Indonesia
+            coords: [-3.8589970549014168, 104.72016829333812]
