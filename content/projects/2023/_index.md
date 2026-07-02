@@ -1,5 +1,6 @@
 ---
 title: "2023"
+is_year: true
 description: "SmartRisk project case studies from 2023."
 pageCSS: "services-projects.css"
 robotsdisallow: true

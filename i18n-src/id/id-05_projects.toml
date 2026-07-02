@@ -59,3 +59,32 @@ other = "Diskusikan Proyek Serupa"
 
 [project_single_back]
 other = "Semua Proyek"
+
+
+
+#====================================#
+#========== PORTFOLIO PAGE ==========#
+#====================================#
+[portfolio_header_section_label]
+other = "Yang Kami Kerjakan"
+
+[portfolio_header_h1]
+other = "<em>Portofolio</em> Kami"
+
+[portfolio_header_p]
+other = "Peta interaktif dengan proyek-proyek yang telah terselesaikan di seluruh Asia Tenggara."
+
+[projects_title]
+other = "Portofolio"
+
+[projects_years_label]
+other = "Tahun proyek"
+
+[map_attribution]
+other = 'Batas wilayah: <a href="https://www.geoboundaries.org" target="_blank" rel="noopener">geoBoundaries</a> (CC BY 4.0)'
+
+[map_load_cta]
+other = "Muat peta interaktif"
+
+[map_loading]
+other = "Memuat peta..."

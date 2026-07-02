@@ -1,0 +1,371 @@
+/* -------------------------------------------------------
+   ---------- SmartRisk - Portfolio Page Styles ----------
+   ------------------------------------------------------- */
+
+/*---------- LAYOUT ----------*/
+.sr-only {
+    position    : absolute; 
+    width       : 1px; 
+    height      : 1px;
+    padding     : 0; 
+    margin      : -1px; 
+    overflow    : hidden;
+    clip        : rect(0,0,0,0); 
+    white-space : nowrap; 
+    border      : 0;
+}
+
+.portfolio-inner {
+    display                 : grid;
+    grid-template-columns   : 70px 300px 1fr;
+    grid-template-rows      : 1fr;
+    min-height              : 85vh;
+    align-items             : start;
+}
+
+
+/*---------- TIMELINE ----------*/
+.timeline {
+    position        : sticky;
+    background-color: var(--mobile-menu-bg);
+    padding         : 0;
+    border-right    : 2px solid var(--rule-dark);
+    align-self      : stretch;
+    /* height          : 100%; */
+}
+.timeline::before {
+    content     : '';
+    position    : absolute;
+    left        : 50%;
+    top         : 2rem;
+    bottom      : 0;
+    width       : 2px;
+    background  : var(--rule-dark);
+    transform   : translateX(-50%);
+}
+.timeline nav {
+    position        : sticky;
+    position        : -webkit-sticky;
+    top             : var(--nav-h, 60px);
+    align-self      : start;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    padding         : 2rem 0;
+    border          : none;
+    background-color: transparent;
+    gap             : 0;
+}
+.timeline nav::before {
+    content     : '';
+    position    : absolute;
+    left        : 50%;
+    top         : 2rem;
+    bottom      : 0;
+    width       : 2px;
+    background  : var(--rule-dark);
+    transform   : translateX(-50%);
+}
+
+.timeline-year {
+    position        : relative;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 3.2rem;
+    height          : 3.2rem;
+    border-radius   : 50%;
+    background      : var(--muted);
+    border          : 2px solid var(--rule-dark);
+    cursor          : pointer;
+    font-size       : 0.75rem;
+    font-weight     : 500;
+    color           : var(--white);
+    margin          : 0.4rem 0;
+    transition      : all 0.2s;
+    font-family     : 'DM Sans', sans-serif;
+}
+.timeline-year:hover,
+.timeline-year.active {
+    background      : var(--accent-hover);
+    border-color    : var(--accent);
+    color           : var(--white);
+    font-weight     : 700;
+}
+
+
+/*---------- PROJECT PANEL ----------*/
+.project-panel-bg {
+    background-color: var(--ink);
+    height          : 100%;
+    max-height      : 85vh;     /* match .portfolio-map-section height */
+    overflow        : hidden;
+}
+.project-panel {
+    position    : static;
+    top         : unset;
+    background  : var(--ink);
+    color       : var(--paper);
+    padding     : 2.5rem 2rem;
+    overflow-y  : auto;
+    max-height  : calc(85vh - var(--nav-h, 60px));
+}
+
+.panel-year {
+    font-family     : 'Cal Sans', sans-serif;
+    font-size       : 2.5rem;
+    color           : var(--accent);
+    margin-bottom   : 0.5rem;
+    line-height     : 1;
+}
+/* Decrease font size of year in pre-load (map placeholder state) */
+.panel-year--compact {
+    font-size       : 1.7rem;
+    margin-top      : 1rem;
+}
+.panel-year--compact:first-child { margin-top: 0; }
+
+.panel-category   { margin-bottom: 0.7rem; }
+.panel-cat-title  {
+    font-family     : 'Cal Sans', sans-serif;
+    font-size       : 0.85rem;
+    color           : var(--accent);
+    margin-bottom   : 0.3rem;
+    text-transform  : uppercase;
+    letter-spacing  : 0.1em;
+}
+.panel-item {
+    font-size       : 0.88rem;
+    color           : rgba(250,250,250,0.75);
+    padding         : 0.4rem 0;
+    cursor          : default;
+    line-height     : 1.45;
+    border-bottom   : 1px solid rgba(255,255,255,0.06);
+    transition      : color 0.2s;
+}
+.panel-item:last-child { 
+    border-bottom: none; 
+    margin-bottom: 1rem;
+}
+.panel-item:hover,
+.panel-item.highlighted { color: var(--accent); }
+.panel-bullet   { color: var(--accent); margin-right: 0.35rem; }
+.panel-location {
+    display         : block;
+    font-size       : 0.75rem;
+    color           : rgba(250,250,250,0.35);
+    margin-top      : 0.1rem;
+    padding-left    : 1rem;
+}
+
+/*---------- MAP ----------*/
+.portfolio-map-section {
+    height: 85vh;
+}
+.portfolio-map-wrap {
+    height      : 100%;
+    position    : relative;
+    overflow    : hidden;
+}
+#portfolio-map    { width: 100%; height: 100%; }
+.map-attribution  {
+    position    : absolute;
+    bottom      : 0.5rem;
+    right       : 0.5rem;
+    font-size   : 0.65rem;
+    color       : var(--muted);
+    background  : rgba(255,255,255);
+    padding     : 0.2rem 0.4rem;
+}
+.map-attribution a { color: var(--muted); text-decoration: underline; }
+
+/*---------- MAP PLACEHOLDER (click-to-load) ----------*/
+.map-placeholder {
+    position        : absolute;
+    inset           : 0;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    cursor          : pointer;
+    transition      : opacity 0.3s ease;
+    z-index         : 5;
+    overflow        : hidden;
+}
+.map-placeholder.is-hidden {
+    opacity         : 0;
+    pointer-events  : none;
+}
+.map-placeholder-art {
+    position        : absolute;
+    inset           : 0;
+    width           : 100%;
+    height          : 100%;
+    object-fit      : cover;
+}
+.map-placeholder::before {
+    content         : '';
+    position        : absolute;
+    inset           : 0;
+    background      : linear-gradient(135deg, rgba(30,47,71,0.55) 0%, rgba(28,53,96,0.7) 100%);
+}
+.map-load-btn {
+    position        : relative;
+    z-index         : 1;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    gap             : 0.6rem;
+    background      : transparent;
+    border          : 1px solid var(--cream);
+    border-radius   : 999px;
+    padding         : 0.9rem 1.8rem;
+    color           : var(--paper);
+    font-family     : 'DM Sans', sans-serif;
+    font-size       : 0.85rem;
+    font-weight     : 500;
+    letter-spacing  : 0.02em;
+    cursor          : pointer;
+    transition      : all 0.2s ease;
+}
+.map-load-btn:hover,
+.map-load-btn:focus-visible {
+    border-color    : var(--accent);
+    color           : var(--accent);
+    background      : rgba(255,255,255,0.05);
+}
+.map-load-icon {
+    font-size       : 1.6rem;
+    line-height     : 1;
+}
+
+/*---------- MAP TOOLTIP ----------*/
+.map-tooltip {
+    display         : none;
+    position        : absolute;
+    z-index         : 10;
+    background      : var(--ink);
+    color           : var(--paper);
+    padding         : 0.6rem 0.9rem;
+    font-size       : 0.82rem;
+    max-width       : 240px;
+    pointer-events  : none;
+    border-left     : 3px solid var(--accent);
+    box-shadow      : 0 4px 12px rgba(0,0,0,0.25);
+}
+.tooltip-province {
+    font-family     : 'Cal Sans', sans-serif;
+    font-size       : 0.9rem;
+    color           : var(--accent);
+    margin-bottom   : 0.35rem;
+}
+.tooltip-project {
+    font-size   : 0.8rem;
+    color       : rgba(250,250,250,0.8);
+    padding     : 0.1rem 0;
+}
+
+/*---------- MARKER ----------*/
+.map-marker { cursor: pointer; }
+.marker-pin {
+    width         : 20px;
+    height        : 20px;
+    border-radius : 50% 50% 50% 0;
+    background    : var(--ink);
+    border        : 1px solid var(--white);
+    transform     : rotate(-45deg);
+    box-shadow    : 0 2px 6px rgba(0,0,0,0.35);
+    position      : relative;
+}
+.marker-pin::after {
+    content       : '';
+    position      : absolute;
+    top           : 50%;
+    left          : 50%;
+    width         : 8px;
+    height        : 8px;
+    background    : var(--white);
+    border-radius : 50%;
+    transform     : translate(-50%, -50%) rotate(45deg);
+}
+.map-marker.active .marker-pin { 
+    background: var(--accent); 
+    transform: rotate(-45deg) scale(1.3); 
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 2px 6px rgba(0,0,0,0.35), 0 0 0 0 rgba(122,194,77,0.5); }
+    50%      { box-shadow: 0 2px 6px rgba(0,0,0,0.35), 0 0 0 8px rgba(122,194,77,0); }
+}
+
+/*---------- MARKER POPUP ----------*/
+.marker-popup .maplibregl-popup-content {
+    background      : var(--ink);
+    color           : var(--paper);
+    padding         : 0.6rem 0.9rem;
+    border-left     : 3px solid var(--accent);
+    border-radius   : 0;
+    font-family     : 'DM Sans', sans-serif;
+    font-size       : 0.82rem;
+    box-shadow      : 0 4px 12px rgba(0,0,0,0.3);
+}
+.marker-popup .maplibregl-popup-tip { border-top-color: var(--ink); }
+
+
+
+/*---------- MOBILE ----------*/
+@media (max-width: 780px) {
+    body.page-portfolio {
+        overflow: auto;
+    }
+    .portfolio-map-section {
+        height  : auto;
+        overflow: visible;
+    }
+    .portfolio-inner      { 
+        grid-template-columns   : 1fr;
+        grid-template-rows      : auto auto auto; /* timeline, panel, map */
+        min-height              : unset;
+        overflow                : visible;
+    }
+    .portfolio-map-wrap {
+        height      : 50vw;
+        min-height  : 280px;
+        overflow    : hidden;
+    }
+    #portfolio-map        { height: 100%; min-height: unset; }
+    .project-panel        { max-height: 30vh; overflow-y: auto; }
+    .timeline nav { 
+        flex-direction  : row; 
+        justify-content : left;
+        align-items     : center;
+        padding         : 0.3rem 0.3rem; 
+        gap: 0.3rem; 
+    }
+    .timeline        { 
+        position        : sticky;
+        position        : -webkit-sticky;
+        top             : calc(var(--nav-h, 60px) + 0rem);
+        z-index         : 10;  
+        border-right    : none; 
+        border-bottom   : 1px solid var(--rule-dark); 
+        overflow-x      : auto; 
+        overflow-y      : visible;
+        height          : auto; 
+    }
+    .timeline nav::before {
+        content    : '';
+        position   : absolute;
+        top        : 50%;
+        left       : 0.75rem;
+        right      : 0.75rem;
+        height     : 2px;
+        width      : auto;
+        background : var(--rule-dark);
+        transform  : translateY(-50%);
+        z-index    : 0;
+    }
+    .timeline-year {
+        margin : 0;
+        flex-shrink : 0;
+    }
+}

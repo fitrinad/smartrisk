@@ -59,3 +59,32 @@ other = "Discuss a Similar Project"
 
 [project_single_back]
 other = "All Projects"
+
+
+
+#====================================#
+#========== PORTFOLIO PAGE ==========#
+#====================================#
+[portfolio_header_section_label]
+other = "What We Do"
+
+[portfolio_header_h1]
+other = "Our <em>Portfolio</em>"
+
+[portfolio_header_p]
+other = "An interactive map of risk management and insurance consulting engagements delivered across Southeast Asia."
+
+[projects_title]
+other = "Portfolio"
+
+[projects_years_label]
+other = "Project years"
+
+[map_attribution]
+other = 'Regional boundaries: <a href="https://www.geoboundaries.org" target="_blank" rel="noopener">geoBoundaries</a> (CC BY 4.0)'
+
+[map_load_cta]
+other = "Load interactive map"
+
+[map_loading]
+other = "Loading map..."
