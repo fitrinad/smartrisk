@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title id="404-title">{{ i18n "404_title" | safeHTML }} | SmartRisk</title>
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="icon" href="{{ "assets/images/logo_square.png" | absURL }}" type="image/png" />
-        <link rel="apple-touch-icon" href="{{ "assets/images/logo_square.png" | absURL }}" />
+        <link rel="icon" href="{{ "assets/images/logo_square.png" | relURL }}" type="image/png" />
+        <link rel="apple-touch-icon" href="{{ "assets/images/logo_square.png" | relURL }}" />
         <!-- css files in static/assets/css 
-        <link rel="stylesheet" href="{{"assets/css/style.css" | absURL }}" />
-        <link rel="stylesheet" href="{{"assets/css/404.css" | absURL }}" />
+        <link rel="stylesheet" href="{{"assets/css/style.css" | relURL }}" />
+        <link rel="stylesheet" href="{{"assets/css/404.css" | relURL }}" />
         -->
         <!-- css files in assets/assets/css -->
         {{ $style := resources.Get "assets/css/style.css" | resources.Minify }}
@@ -30,7 +30,7 @@
             </div>
         </div>
         <!-- js files in static/assets/js/
-        <script src="{{ "assets/js/404.js" | absURL }}"></script>
+        <script src="{{ "assets/js/404.js" | relURL }}"></script>
         -->
         <!-- js files in assets/assets/js/ -->
         {{ $js := resources.Get "assets/js/404.js" | resources.Minify }}
