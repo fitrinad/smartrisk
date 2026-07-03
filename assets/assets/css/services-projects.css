@@ -103,7 +103,7 @@
     grid-template-columns: 1fr 280px;
     gap             : 3rem;
     align-items     : center;
-    padding         : 2rem 0;
+    padding         : 2rem 1rem;
     text-decoration : none;
     color           : inherit;
     transition      : background 0.2s ease;
@@ -272,6 +272,12 @@
     margin-bottom   : 0;
 }
 
+.projects-portfolio-cta {
+    display         : flex;
+    justify-content : flex-end;
+    margin-top      : 1rem;
+}
+
 .projects-year-title {
     font-size       : 0.9rem;
     font-weight     : 600;
@@ -295,7 +301,7 @@
     grid-template-columns   : 1fr 280px;
     gap                     : 3rem;
     align-items             : center;
-    padding                 : 2rem 0;
+    padding                 : 2rem 1rem;
     text-decoration         : none;
     color                   : inherit;
 }

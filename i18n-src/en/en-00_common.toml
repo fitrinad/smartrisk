@@ -11,6 +11,10 @@ other = "Our Team"
 other = "Services"
 [nav_projects]
 other = "Projects"
+[nav_projects_recent]
+other = "Recent Projects"
+[nav_portfolio]
+other = "Portfolio"
 [nav_contact]
 other = "Contact"
 [nav_cta_btn]

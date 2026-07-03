@@ -11,6 +11,10 @@ other = "Tim Kami"
 other = "Layanan"
 [nav_projects]
 other = "Proyek"
+[nav_projects_recent]
+other = "Proyek Terbaru"
+[nav_portfolio]
+other = "Portofolio"
 [nav_contact]
 other = "Kontak"
 [nav_cta_btn]
