@@ -25,33 +25,38 @@
 
 
 /*---------- TIMELINE ----------*/
-.timeline {
-    position        : sticky;
+.timeline-bg {
     background-color: var(--mobile-menu-bg);
-    padding         : 0;
     border-right    : 2px solid var(--rule-dark);
-    align-self      : stretch;
-    /* height          : 100%; */
+    height          : 100%;
+    max-height      : 85vh;      /* match .project-panel-bg height */
 }
-.timeline::before {
-    content     : '';
-    position    : absolute;
-    left        : 50%;
-    top         : 2rem;
-    bottom      : 0;
-    width       : 2px;
-    background  : var(--rule-dark);
-    transform   : translateX(-50%);
-}
-.timeline nav {
+
+.timeline {
     position        : sticky;
     position        : -webkit-sticky;
     top             : var(--nav-h, 60px);
+    padding         : 0;
+    max-height      : calc(85vh - var(--nav-h, 60px));   /* match .project-panel */
+    overflow-x      : hidden;
+    display         : flex;
+    flex-direction  : column;
+}
+
+.timeline-scroll {
+    flex        : 1 1 auto;
+    min-height  : 0;
+    overflow-y  : auto;
+    overflow-x  : hidden;
+}
+
+.timeline nav {
+    position        : relative;
     align-self      : start;
     display         : flex;
     flex-direction  : column;
     align-items     : center;
-    padding         : 2rem 0;
+    padding         : 0;
     border          : none;
     background-color: transparent;
     gap             : 0;
@@ -66,6 +71,24 @@
     background  : var(--rule-dark);
     transform   : translateX(-50%);
 }
+
+/*---------- TIMELINE BACK BUTTON ----------*/
+.timeline-back {
+    position        : sticky;
+    flex-shrink     : 0;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 3.2rem;
+    height          : 3.2rem;
+    margin          : 0.75rem 0.5rem 0.75rem auto;
+    border-radius   : 50%;
+    border          : 2px solid var(--rule-dark);
+    background-color: var(--rule-dark);
+    text-decoration : none;
+}
+.timeline-back::before { margin-right: 0; }
+.timeline-back:hover   { border-color: var(--accent); }
 
 .timeline-year {
     position        : relative;
@@ -99,11 +122,10 @@
     background-color: var(--ink);
     height          : 100%;
     max-height      : 85vh;     /* match .portfolio-map-section height */
-    overflow        : hidden;
 }
 .project-panel {
-    position    : static;
-    top         : unset;
+    position    : sticky;
+    top         : var(--nav-h, 60px);
     background  : var(--ink);
     color       : var(--paper);
     padding     : 2.5rem 2rem;
@@ -174,7 +196,7 @@
     right       : 0.5rem;
     font-size   : 0.65rem;
     color       : var(--muted);
-    background  : rgba(255,255,255);
+    background  : rgba(255,255,255,0.7);
     padding     : 0.2rem 0.4rem;
 }
 .map-attribution a { color: var(--muted); text-decoration: underline; }
@@ -314,9 +336,6 @@
 
 /*---------- MOBILE ----------*/
 @media (max-width: 780px) {
-    body.page-portfolio {
-        overflow: auto;
-    }
     .portfolio-map-section {
         height  : auto;
         overflow: visible;
@@ -334,38 +353,60 @@
     }
     #portfolio-map        { height: 100%; min-height: unset; }
     .project-panel        { max-height: 30vh; overflow-y: auto; }
-    .timeline nav { 
-        flex-direction  : row; 
-        justify-content : left;
-        align-items     : center;
-        padding         : 0.3rem 0.3rem; 
-        gap: 0.3rem; 
+    .timeline-bg {
+        height          : auto;
+        max-height      : none;
+        border-right    : none;
+        overflow-x      :auto;
     }
+    .timeline::before { display: none; }
     .timeline        { 
         position        : sticky;
         position        : -webkit-sticky;
         top             : calc(var(--nav-h, 60px) + 0rem);
         z-index         : 10;  
+        display         : flex;
+        flex-direction  : row;
+        align-items     : center;
         border-right    : none; 
         border-bottom   : 1px solid var(--rule-dark); 
-        overflow-x      : auto; 
-        overflow-y      : visible;
-        height          : auto; 
+        overflow        : auto;
+        height          : auto;
+        max-height      : none;
+    }
+    .timeline-back {
+        position    : static;
+        flex-shrink : 0;
+        margin      : 0 0.5rem;
+    }
+    .timeline-scroll {
+        flex        : 1 1 auto;
+        min-width   : 0;
+        overflow-x  : auto;
+    }
+    .timeline nav { 
+        position        : relative;
+        flex-direction  : row; 
+        justify-content : left;
+        align-items     : center;
+        width           : max-content;
+        padding         : 0.3rem 0.3rem; 
+        gap             : 0.3rem;
     }
     .timeline nav::before {
-        content    : '';
-        position   : absolute;
-        top        : 50%;
-        left       : 0.75rem;
-        right      : 0.75rem;
-        height     : 2px;
-        width      : auto;
-        background : var(--rule-dark);
-        transform  : translateY(-50%);
-        z-index    : 0;
+        content     : '';
+        position    : absolute;
+        top         : 50%;
+        left        : 0.75rem;
+        right       : 0.75rem;
+        height      : 2px;
+        width       : auto;
+        background  : var(--rule-dark);
+        transform   : translateY(-50%);
+        z-index     : 0;
     }
     .timeline-year {
-        margin : 0;
+        margin      : 0;
         flex-shrink : 0;
     }
 }

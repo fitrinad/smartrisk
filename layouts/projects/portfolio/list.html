@@ -32,19 +32,28 @@
         <!---------- PORTFOLIO MAP ---------->
         <div class="portfolio-map-section">
             <div class="portfolio-inner">
-                <aside class="timeline" aria-label="{{ i18n "projects_years_label" | safeHTML }}">
-                    <nav>
-                        {{ range $.Site.Data.projects.years }}
-                        <button class="timeline-year"
-                                data-year="{{ .year }}"
-                                aria-pressed="false"
-                                aria-label="{{ .year }}">
-                            <span>{{ .year }}</span>
-                        </button>
-                        {{ end }}
-                    </nav>
-                </aside>
-
+                <div class="timeline-bg">
+                    <aside class="timeline" aria-label="{{ i18n "projects_years_label" | safeHTML }}">
+                        <a href="{{ "projects/" | relLangURL }}"
+                        class="timeline-back btn-left-arrow-ink"
+                        aria-label="{{ i18n "nav_projects" | safeHTML }}">
+                            <span class="sr-only">{{ i18n "nav_projects" | safeHTML }}</span>
+                        </a>
+                        <div class="timeline-scroll">
+                            <nav>
+                                {{ range $.Site.Data.projects.years }}
+                                <button class="timeline-year"
+                                        data-year="{{ .year }}"
+                                        aria-pressed="false"
+                                        aria-label="{{ .year }}">
+                                    <span>{{ .year }}</span>
+                                </button>
+                                {{ end }}
+                            </nav>
+                        </div>
+                    </aside>
+                </div>
+                
                 <div class="project-panel-bg">
                     <div class="project-panel" id="project-panel" aria-live="polite"></div>
                 </div>
