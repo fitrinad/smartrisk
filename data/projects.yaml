@@ -1,4 +1,715 @@
 years:
+  - year: 2026
+    projects:
+      - category: Information & Communication Technology
+        items:
+          - name: PT Gerbang Sinergi Prima
+            location: Bandung, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.893717275351719, 107.63745944133838]
+      - category: Insurance
+        items:
+          - name: PT Asuransi Tugu Pratama Indonesia Tbk
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.143438866965652, 106.8246807605481]
+      - category: Power Plants
+        items:
+          - name: PT PLN Batam
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.336614282917032, 104.04545437532482]
+      - category: Natural Gas Logistics
+        items:
+          - name: PT PLN Energi Gas
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.240427562284667, 106.84121828315476]
+      - category: Outsourcing Provider
+        items:
+          - name: PT Citacontrac
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.2885358652859304, 106.88050355431878]
+          - name: PT Andika Energindo
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.251858831097346, 106.76309234457865]
+
+  - year: 2025
+    projects:
+      - category: Coal Logistics
+        items:
+          - name: PT Pelayaran Bahtera Adhiguna (BAg)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.135000646117177, 106.8119862408268]
+      - category: Oil & Gas
+        items:
+          - name: Husky-CNOOC Madura Limited (HCML)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.223576312938731, 106.80873872548186]
+      - category: Insurance
+        items:
+          - name: PT Asuransi Tugu Pratama Indonesia Tbk
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.143438866965652, 106.8246807605481]
+      - category: Geothermal
+        items:
+          - name: PT Geo Dipa Energi (Persero)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.274345050429179, 106.82959799664583]
+      - category: Mining Logistics
+        items:
+          - name: PT Adhi Guna Putera
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.152563985005769, 106.83464579664498]
+      - category: Natural Gas Logistics
+        items:
+          - name: PT PLN Energi Gas
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.240427562284667, 106.84121828315476]
+      - category: Transmission & Distribution
+        items:
+          - name: PT PLN (Persero) - GITET Cibatu IBT 1,2,3,&4
+            location: Bekasi, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.37575064177077, 107.16073561017302]
+          - name: PT PLN (Persero) - GITET New Aur Duri IBT 1
+            location: Jambi
+            province: ID-JA
+            country: Indonesia
+            coords: [-1.412813, 103.323343]
+          - name: PT PLN (Persero) - SKTT Suramadu Sirkit 1-4
+            location: Surabaya, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.2083616097090415, 112.77869829206186]
+          - name: PT PLN Batam - GI Batu Besar
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.098634, 104.084657]
+          - name: PT PLN Batam - GI Tanjung Kasam
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.045511, 104.133121]
+      - category: Power Plants
+        items:
+          - name: PT PLN Batam - PLTG MPP Nias
+            location: Gunungsitoli, North Sumatra
+            province: ID-SU
+            country: Indonesia
+            coords: [1.209893, 97.678177]
+          - name: PT PLN Batam - PLTG MPP Parit Baru
+            location: Mempawah, West Kalimantan
+            province: ID-KB
+            country: Indonesia
+            coords: [0.058535822510605275, 109.20364392731607]
+          - name: PT PLN Batam - PLTG MPP Suge Belitung
+            location: Belitung, Bangka Belitung Islands
+            province: ID-BB
+            country: Indonesia
+            coords: [-2.8905936630520053, 107.56514959662948]
+          - name: PT PLN Batam - PLTG MPP Suppa
+            location: Pinrang, South Sulawesi
+            province: ID-SN
+            country: Indonesia
+            coords: [-3.970387, 119.624919]
+          - name: PT Pupuk Kujang
+            location: Karawang, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.4065854527373824, 107.42797819615548]
+          - name: PT PLN (Persero) - PLTU Sulsel Barru 2
+            location: Barru, South Sulawesi
+            province: ID-SN
+            country: Indonesia
+            coords: [-4.29127652181621, 119.62916001198023]
+          - name: PT PLN (Persero) - PLTU Kalselteng 2
+            location: Tanah Laut, South Kalimantan
+            province: ID-KS
+            country: Indonesia
+            coords: [-3.552907, 115.062298]
+          - name: PT PLN Indonesia Power - PLTU Adipala Unit 1-2
+            location: Cilacap, Central Java
+            province: ID-JT
+            country: Indonesia
+            coords: [-7.680681045373273, 109.13682846967431]
+          - name: PT PLN Indonesia Power - PLTP Gunung Salak Unit 1-3
+            location: Bogor, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.741441, 106.646913]
+          - name: PT PLN Indonesia Power - PLTP Kamojang Unit 1-3
+            location: Bogor, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-7.139102, 107.785414]
+          - name: PT PLN Indonesia Power - PLTGU Tambak Lorok Blok 3
+            location: Semarang, Central Java
+            province: ID-JT
+            country: Indonesia
+            coords: [-6.950173, 110.431273]
+          - name: PT PLN Nusantara Power - PLTU Punagaya (Takalar)
+            location: Jeneponto, South Sulawesi
+            province: ID-SN
+            country: Indonesia
+            coords: [-5.623461553889898, 119.54963494789013]
+          - name: PT PLN Nusantara Power - PLTU Gorontalo Unit 1&2
+            location: Gorontalo
+            province: ID-GO
+            country: Indonesia
+            coords: [0.850573, 122.798485]
+          - name: PT PLN Nusantara Power - PLTMG Sumbagut 2 Peaker (Arun)
+            location: Lhokseumawe, Aceh
+            province: ID-AC
+            country: Indonesia
+            coords: [5.216736, 97.089807]
+          - name: PT PLN Batam - PLTG MPP Air Anyir
+            location: Bangka, Bangka Belitung Islands
+            province: ID-BB
+            country: Indonesia
+            coords: [-2.076746, 106.148752]
+          - name: PT PLN Batam - PLTG MPP Tarahan
+            location: Lampung
+            province: ID-LA
+            country: Indonesia
+            coords: [-5.518636, 105.345846]
+          - name: PT PLN Batam - PLTG Punagaya
+            location: Jeneponto, South Sulawesi
+            province: ID-SN
+            country: Indonesia
+            coords: [-5.37265, 119.330554]
+          - name: PT PLN (Persero)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.236872159817317, 106.80365385470564]
+          - name: PT PLN Nusantara Power
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.294460479321962, 106.83183059332346]
+          - name: PT PLN Batam
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.336614282917032, 104.04545437532482]
+
+  - year: 2024
+    projects:
+      - category: Transmission & Distribution
+        items:
+          - name: PT PLN (Persero) - GITET Paiton
+            location: Probolinggo, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.718447, 113.581561]
+      - category: Coal Logistics
+        items:
+          - name: PT Pelayaran Bahtera Adhiguna (BAg)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.135000646117177, 106.8119862408268]
+      - category: Natural Gas Logistics
+        items:
+          - name: PT PLN Energi Gas
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.240427562284667, 106.84121828315476]
+      - category: Geothermal
+        items:
+          - name: PT Geo Dipa Energi (Persero)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.274345050429179, 106.82959799664583]
+      - category: Mining Logistics
+        items:
+          - name: PT Adhi Guna Putera
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.152563985005769, 106.83464579664498]
+      - category: Consultant
+        items:
+          - name: PT Aida Consultant
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.243747729160787, 106.85742499850035]
+      - category: Insurance
+        items:
+          - name: PLN Group (Sponsorship PROTEKSI Batch 1)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.236872159817317, 106.80365385470564]
+      - category: Power Plants
+        items:
+          - name: PT PLN Batam - PLTG MPP Air Anyir
+            location: Bangka, Bangka Belitung Islands
+            province: ID-BB
+            country: Indonesia
+            coords: [-2.076746, 106.148752]
+          - name: PT PLN Batam - PLTG MPP Jeranjang Lombok
+            location: Lombok, West Nusa Tenggara
+            province: ID-NB
+            country: Indonesia
+            coords: [-8.660144, 116.073727]
+          - name: PT PLN Batam - PLTG MPP Tello
+            location: Makassar, South Sulawesi
+            province: ID-SN
+            country: Indonesia
+            coords: [-5.08506, 119.281884]
+          - name: PT PLN Batam - PLTG MPP Suppa
+            location: Pinrang, South Sulawesi
+            province: ID-SN
+            country: Indonesia
+            coords: [-3.970387, 119.624919]
+          - name: PT Bukit Pembangkit Innovative - PLTU Banjarsari
+            location: Lahat, South Sumatra
+            province: ID-SS
+            country: Indonesia
+            coords: [-3.722642503364875, 103.68931913332224]
+          - name: PT PLN Indonesia Power - PLTU Pelabuhan Ratu 1-3
+            location: Sukabumi, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.990662885795465, 106.54625141060635]
+          - name: PT PLN Nusantara Power - PLTU Paiton 1-2
+            location: Probolinggo, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-8.258106, 111.373877]
+          - name: PT PLN Nusantara Power - PLTGU Muara Karang Blok 3
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.111365, 106.783763]
+          - name: PT PLN Indonesia Power - PLTGU Priok Blok 4
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.108239, 106.870146]
+          - name: PT PLN MCTN - PLTG Duri Riau
+            location: Bengkalis, Riau
+            province: ID-RI
+            country: Indonesia
+            coords: [1.071916, 101.282082]
+          - name: PT PLN Batam - PLTG Parit Baru
+            location: Mempawah, West Kalimantan
+            province: ID-KB
+            country: Indonesia
+            coords: [0.058535822510605275, 109.20364392731607]
+          - name: PT PLN Batam - PLTG MPP Tarahan
+            location: Lampung
+            province: ID-LA
+            country: Indonesia
+            coords: [-5.518636, 105.345846]
+          - name: PT PLN Indonesia Power - PLTG Payo Selincah
+            location: Jambi
+            province: ID-JA
+            country: Indonesia
+            coords: [-1.596287, 103.646358]
+          - name: PT PLN Batam - PLTG MPP Suge Belitung
+            location: Belitung, Bangka Belitung Islands
+            province: ID-BB
+            country: Indonesia
+            coords: [-2.8905936630520053, 107.56514959662948]
+          - name: PT PLN (Persero) - PLTA Jatigede
+            location: Sumedang, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.500268, 108.061369]
+          - name: PT PLN (Persero) - PLTMGU Lombok Peaker
+            location: Mataram, West Nusa Tenggara
+            province: ID-NB
+            country: Indonesia
+            coords: [-8.589414, 116.074411]
+          - name: PT PLN (Persero)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.236872159817317, 106.80365385470564]
+          - name: PT PLN Batam
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.336614282917032, 104.04545437532482]
+          - name: PT PLN Indonesia Power - UBP Bali
+            location: Denpasar, Bali
+            province: ID-BA
+            country: Indonesia
+            coords: [-8.716536458642993, 115.2126028101559]
+
+  - year: 2023
+    projects:
+      - category: Petrochemical
+        items:
+          - name: PT Petrokimia Gresik
+            location: Gresik, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.143540886173528, 112.63894108711997]
+      - category: Geothermal
+        items:
+          - name: PT Geo Dipa Energi (Persero)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.274345050429179, 106.82959799664583]
+      - category: Coal Logistics
+        items:
+          - name: PT Pelayaran Bahtera Adhiguna (Bag)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.135000646117177, 106.8119862408268]
+      - category: Information & Communication Technology
+        items:
+          - name: PT Gerbang Sinergi Prima
+            location: Bandung, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.893717275351719, 107.63745944133838]
+      - category: Oil & Gas
+        items:
+          - name: PT Elnusa Tbk
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.289517437096227, 106.80962589664588]
+      - category: Insurance
+        items:
+          - name: PLN Group (Sponsorship PROTEKSI Batch 1)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.236872159817317, 106.80365385470564]
+          - name: PLN Group (Sponsorship PROTEKSI Batch 2)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.236872159817317, 106.80365385470564]
+      - category: Transmission & Distribution
+        items:
+          - name: PT PLN (Persero) - GITET Balaraja
+            location: Tangerang, Banten
+            province: ID-BT
+            country: Indonesia
+            coords: [-6.109975, 106.781392]
+          - name: PT PLN (Persero) - GITET Cilegon Baru
+            location: Cilegon, Banten
+            province: ID-BT
+            country: Indonesia
+            coords: [-6.026151, 106.101626]
+          - name: PT PLN (Persero) - GISTET Cawang
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.343712, 106.787438]
+          - name: PT PLN (Persero) - GITET Ngimbang
+            location: Lamongan, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.286708, 112.189493]
+          - name: PT PLN Batam - GI Sei Baloi
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.1159325421128132, 104.02130871197141]
+      - category: Power Plants
+        items:
+          - name: PT PLN Nusantara Power - PLTGU Sengkang
+            location: Wajo, South Sulawesi
+            province: ID-SN
+            country: Indonesia
+            coords: [-4.176319, 120.072185]
+          - name: PT PLN Indonesia Power - PLTU Asam Asam
+            location: Tanah Laut, South Kalimantan
+            province: ID-KS
+            country: Indonesia
+            coords: [-3.92637, 115.105159]
+          - name: PT PLN Indonesia Power - PLTU Barru
+            location: Barru, South Sulawesi
+            province: ID-SN
+            country: Indonesia
+            coords: [-4.292893, 119.631042]
+          - name: PT PLN Indonesia Power - PLTA Saguling
+            location: Bandung, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.864424, 107.349921]
+          - name: PT PLN Indonesia Power - PLTA PB Soedirman (PLTA Mrica)
+            location: Banjarnegara, Central Java
+            province: ID-JT
+            country: Indonesia
+            coords: [-7.39456, 109.60559]
+          - name: PT PLN Nusantara Power - PLTU Paiton Unit 9
+            location: Probolinggo, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.711173, 113.570611]
+          - name: PT PLN Nusantara Power - PLTU Punagaya (Takalar)
+            location: Jeneponto, South Sulawesi
+            province: ID-SN
+            country: Indonesia
+            coords: [-5.623461553889898, 119.54963494789013]
+          - name: PT PLN Nusantara Power - PLTGU Muara Karang Unit 2
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.111365, 106.783763]
+          - name: PT PLN Batam - PLTG Parit Baru
+            location: Mempawah, West Kalimantan
+            province: ID-KB
+            country: Indonesia
+            coords: [0.058535822510605275, 109.20364392731607]
+          - name: PT PLN Batam - PLTG Balai Pungut
+            location: Bengkalis, Riau
+            province: ID-RI
+            country: Indonesia
+            coords: [1.071916, 101.282082]
+          - name: PT PLN Batam - PLTG MPP Tarahan
+            location: Lampung
+            province: ID-LA
+            country: Indonesia
+            coords: [-5.518636, 105.345846]
+          - name: PT PLN Batam - PLTG MPP Jeranjang Lombok
+            location: Lombok, West Nusa Tenggara
+            province: ID-NB
+            country: Indonesia
+            coords: [-8.660144, 116.073727]
+          - name: PT PLN Batam - PLTG MPP Suge Belitung
+            location: Belitung, Bangka Belitung Islands
+            province: ID-BB
+            country: Indonesia
+            coords: [-2.8906054005142856, 107.56515975986635]
+          - name: PT PLN Batam - PLTG MPP Air Anyir
+            location: Bangka, Bangka Belitung Islands
+            province: ID-BB
+            country: Indonesia
+            coords: [-2.076746, 106.148752]
+          - name: PT PLN Batam - PLTGU Tanjung Uncang
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.089784, 103.901721]
+
+  - year: 2022
+    projects:
+      - category: Mining
+        items:
+          - name: PT Virtue Dragon Nickel Industry
+            location: Konawe, Southeast Sulawesi
+            province: ID-SG
+            country: Indonesia
+            coords: [-3.904403799982634, 122.41501538244727]
+      - category: Information & Communication Technology
+        items:
+          - name: PT Indonesia Comnets Plus
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.23355466968673, 106.82051016251519]
+      - category: Geothermal
+        items:
+          - name: PT Geo Dipa Energi (Persero)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.274345050429179, 106.82959799664583]
+      - category: Power Plants
+        items:
+          - name: PT Bukit Pembangkit Innovative - PLTA Saguling
+            location: Bandung, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.864424, 107.349921]
+          - name: PT Bukit Pembangkit Innovative - PLTGU Grati
+            location: Pasuruan, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.651321, 113.024503]
+          - name: PT PLN Batam - PLTG MPP Jeranjang Lombok
+            location: Lombok, West Nusa Tenggara
+            province: ID-NB
+            country: Indonesia
+            coords: [-8.660144, 116.073727]
+          - name: PT PLN Batam - PLTGU Tanjung Uncang
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.089784, 103.901721]
+          - name: PT PLN Nusantara Power - PLTA Cirata
+            location: Purwakarta, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.68026, 107.344934]
+          - name: PT PLN Indonesia Power - PLTA Saguling
+            location: Bandung, West Java
+            province: ID-JB
+            country: Indonesia
+            coords: [-6.864424, 107.349921]
+          - name: PT PLN Nusantara Power - PLTGU Gresik
+            location: Gresik, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.163083, 112.661575]
+          - name: PT PLN Indonesia Power - PLTGU Grati
+            location: Pasuruan, East Java
+            province: ID-JI
+            country: Indonesia
+            coords: [-7.651321, 113.024503]
+          - name: PT PLN (Persero) - PLTU Tanjung Jati B
+            location: Jepara, Central Java
+            province: ID-JT
+            country: Indonesia
+            coords: [-6.44446406894992, 110.75255738319555]
+          - name: PT PLN Batam - PLTG MPP Tarahan
+            location: Lampung
+            province: ID-LA
+            country: Indonesia
+            coords: [-5.518636, 105.345846]
+          - name: PT PLN Batam - PLTMG Panaran
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.0156358691432237, 104.00832375244366]
+          - name: PT PLN Batam - PLTG MPP Paya Pasir Medan
+            location: Medan, North Sumatra
+            province: ID-SU
+            country: Indonesia
+            coords: [3.7135686982179306, 98.66441319477774]
+          - name: PT PLN Batam - PLTG MPP Air Anyir
+            location: Bangka, Bangka Belitung Islands
+            province: ID-BB
+            country: Indonesia
+            coords: [-2.076746, 106.148752]
+          - name: PT PLN (Persero)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.236872159817317, 106.80365385470564]
+          - name: PT PLN (Persero) - UIP Tanjung Jati B
+            location: Jepara, Central Java
+            province: ID-JT
+            country: Indonesia
+            coords: [-6.445860687567678, 110.74165570917695]
+          - name: PT PLN Batam
+            location: Batam, Riau Islands
+            province: ID-KR
+            country: Indonesia
+            coords: [1.336614282917032, 104.04545437532482]
+
+  - year: 2021
+    projects:
+      - category: Geothermal
+        items:
+          - name: PT Geo Dipa Energi (Persero)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.274345050429179, 106.82959799664583]
+      - category: Natural Gas Logistics
+        items:
+          - name: PT PLN Energi Gas
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.240427562284667, 106.84121828315476]
+      - category: Information & Communication Technology
+        items:
+          - name: PT Indonesia Comnets Plus
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.23355466968673, 106.82051016251519]
+      - category: Engineering
+        items:
+          - name: PT Prima Layanan Nasional Engineering (PLNE)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.1867943024741, 106.8087630812996]
+      - category: Insurance
+        items:
+          - name: PT Asuransi Jasa Indonesia
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.206016624802404, 106.82895573525285]
+      - category: Power Plants
+        items:
+          - name: PT Indonesia Power - PLTGU Tanjung Priok
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.1094342829610015, 106.86723082754733]
+          - name: PT Indonesia Power - PLTU Suralaya
+            location: Cilegon, Banten
+            province: ID-BT
+            country: Indonesia
+            coords: [-5.892388067576588, 106.02971335231453]
+          - name: PT Indonesia Power - PLTGU Tambak Lorok
+            location: Semarang, Central Java
+            province: ID-JT
+            country: Indonesia
+            coords: [-6.950632, 110.434195]
+          - name: PT Indonesia Power - PLTA PB Soedirman (PLTA Mrica)
+            location: Banjarnegara, Central Java
+            province: ID-JT
+            country: Indonesia
+            coords: [-7.39456, 109.60559]
+          - name: PT Indonesia Power - PLTG Gilimanuk
+            location: Jembrana, Bali
+            province: ID-BA
+            country: Indonesia
+            coords: [-8.175442, 114.442757]
+          - name: PT Indonesia Power - PLTG Pesanggaran
+            location: Denpasar, Bali
+            province: ID-BA
+            country: Indonesia
+            coords: [-8.175442, 114.442757]
+          - name: PT PLN (Persero)
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.236872159817317, 106.80365385470564]
+          - name: PT PLN Nusantara Power
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.294460479321962, 106.83183059332346]
+          - name: PT PLN Indonesia Power
+            location: Jakarta
+            province: ID-JK
+            country: Indonesia
+            coords: [-6.228001012829623, 106.82741342857267]
+
   - year: 2020
     projects:
       - category: Oil & Gas
