@@ -2,5 +2,16 @@
 <a href="{{ "about/" | relLangURL }}">{{ i18n "nav_about" | safeHTML }}</a>
 <a href="{{ "team/" | relLangURL }}">{{ i18n "nav_team" | safeHTML }}</a>
 <a href="{{ "services/" | relLangURL }}">{{ i18n "nav_services" | safeHTML }}</a>
-<a href="{{ "projects/" | relLangURL }}">{{ i18n "nav_projects" | safeHTML }}</a>
+<div class="nav-item-dropdown">
+    <a href="{{ "projects/" | relLangURL }}" class="nav-dropdown-toggle">
+        {{ i18n "nav_projects" | safeHTML }}
+        <span class="nav-dropdown-caret" aria-hidden="true"></span>
+    </a>
+    <div class="nav-dropdown-menu">
+        <div class="nav-dropdown-menu-inner">
+            <a href="{{ "projects/" | relLangURL }}">{{ i18n "nav_projects_recent" | safeHTML }}</a>
+            <a href="{{ "projects/portfolio/" | relLangURL }}">{{ i18n "nav_portfolio" | safeHTML }}</a>
+        </div>
+    </div>
+</div>
 <a href="{{ "contact/" | relLangURL }}">{{ i18n "nav_contact" | safeHTML }}</a>
