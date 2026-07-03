@@ -46,7 +46,7 @@
                     <a href="#y{{ .Title }}" class="sidebar-link">{{ .Title }}</a>
                     {{ end }}
                     <a href="{{ "projects/portfolio/" | relLangURL }}" class="sidebar-link">
-                        {{ i18n "projects_title" | safeHTML }}
+                        {{ i18n "portfolio_title" | safeHTML }}
                     </a>
                 </nav>
             </aside>
@@ -113,6 +113,12 @@
                 </div>{{/* /.projects-year-group */}}
 
                 {{ end }}{{/* end range $years */}}
+
+                <div class="projects-portfolio-cta">
+                    <a href="{{ "projects/portfolio/" | relLangURL }}" class="btn btn-outline btn-right-arrow-ink">
+                        {{ i18n "portfolio_title" | safeHTML }}
+                    </a>
+                </div>
 
             </div><!-- /.projects-entries -->
         </div><!-- /.projects-page-inner -->
