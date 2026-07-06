@@ -47,7 +47,7 @@ feat(projects): Add year-based sidebar navigation
 style(services): Adjust card hover transition
 ```
 
-Common scopes: `services`, `projects`, `about`, `team`, `contact`, `nav`, `i18n`, `css`.
+Common scopes: `services`, `projects`, `portfolio`, `about`, `team`, `contact`, `nav`, `i18n`, `css`, `data`, `scripts`.
 
 ### Examples
 
@@ -66,6 +66,16 @@ For a batch of similar additions in one commit:
 content(projects): Add 5 case studies for 2021–2023 projects
 ```
 
+## Known Issues
+
+A few issues that once cost debugging time, check before re-diagnosing from scratch:
+
+- **Don't run vendored third-party JS through `resources.Minify`.** Hugo's built-in JS minifier corrupted `maplibre-gl.js`'s embedded web worker bundle, breaking the map with no build error; it just fails to load at runtime.
+- **`overflow` on `<body>` other than `visible` may break `position: sticky` site-wide.** Setting `overflow-x: hidden` (or `auto`/`scroll`) directly on `<body>` may stop the browser's normal "overflow propagates to the viewport" behavior, so `<body>` becomes its own scroll container instead of the page; possibly breaking every `position: sticky` element on the site. If you need to clip horizontal overflow, put it on `<html>` instead.
+- **Any ancestor with non-`visible` overflow breaks `position: sticky` for its descendants**, even `overflow: hidden` added as a safety-net rule. If a sticky element stops sticking after an unrelated CSS change, check every ancestor between it and the page root for a stray `overflow` value first.
+
+
+
 ## Adding a New Service or Project Page
 
 1. Create the `.md` file (EN version) under `content/services/` or `content/projects/`, and the matching translation (ID version) under `content/id/services/` or `content/id/projects/`.
@@ -73,6 +83,18 @@ content(projects): Add 5 case studies for 2021–2023 projects
 3. Fill in the required front matter fields (see an existing page for the current field list; e.g. `title`, `summary`, `category`/`tag`, `image`).
 4. Run `hugo server` locally and click through to the new page to confirm it renders before committing.
 5. Commit with `content(services): Add <page name>` or `content(projects): Add <page name>`.
+
+
+## Updating Portfolio Map Data
+
+`data/projects.yaml` (used by the interactive portfolio map) is generated from `portfolio.csv`, don't hand-edit the YAML directly, it will be overwritten next time the script runs.
+
+1. Update `portfolio.csv` with the new rows (`Year, Category, Name, Location, Province, Coordinates`).
+2. Regenerate the YAML: `python scripts/csv_to_yaml.py`
+3. Run `hugo server` and check the Portfolio page: confirm the entries appear in the timeline and panel, and pins land in the right province on the map.
+4. Commit both the updated `portfolio.csv` and generated `data/projects.yaml` together.
+5. Commit with `content(portfolio): Update portfolio.csv and regenerate projects.yaml`.
+
 
 ## Before Pushing
 
