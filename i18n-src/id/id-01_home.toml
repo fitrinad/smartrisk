@@ -98,19 +98,19 @@ other = "Valuasi Aset"
 other = "Valuasi teknis independen atas aset industri untuk asuransi, M&amp;A, dan kepatuhan regulasi."
 
 [service_04_title]
-other = "Manajemen Risiko &amp; Perencanaan Asuransi"
+other = "Pelatihan Manajemen Risiko"
 [service_04_desc]
-other = "Desain program asuransi independen, <i lang='EN'>benchmarking</i>, dan <i lang='EN'>advisory</i> penempatan."
+other = "Program pelatihan meliputi manajemen risiko perusahaan berdasarkan ISO 31000 dengan sertifikasi BNSP."
 
 [service_05_title]
-other = "Manajemen K3"
+other = "Pelatihan K3"
 [service_05_desc]
-other = "Konsultasi Keselamatan dan Kesehatan Kerja, termasuk analisis kesenjangan dan program pelatihan bersertifikat BNSP."
+other = "Pelatihan dan uji kompetensi Kesehatan dan Keselamatan Kerja (K3) bersertifikat BNSP, untuk praktisi keselamatan di berbagai sektor industri Indonesia."
 
 [service_06_title]
-other = "Keberlanjutan &amp; Ketahanan Bisnis"
+other = "Pelatihan Asuransi"
 [service_06_desc]
-other = "Analisis dampak bisnis, perencanaan kelangsungan, dan strategi pengurangan risiko bencana."
+other = "Pelatihan asuransi mencakup properti & interupsi bisnis, CAR, <i>liability</i>, <i>personal accident</i>, asuransi kapal, dan asuransi pengangkutan."
 
 
 #=============================#
@@ -169,7 +169,7 @@ other = "Semua Proyek"
 [project_01_tag]
 other = "Risiko &amp; Asuransi"
 [project_01_title]
-other = "Layanan Konsultasi Manajemen Risiko &amp; Asuransi"
+other = "Konsultasi Manajemen Risiko dan Asuransi"
 [project_01_client]
 other = "PT Pelayaran Bahtera Adhiguna (BAg)"
 [project_01_year]
@@ -185,18 +185,18 @@ other = "PT Petrokimia Gresik"
 other = "2023"
 
 [project_03_tag]
-other = "Konsultasi Asuransi"
+other = "Risiko &amp; Asuransi"
 [project_03_title]
-other = "Konsultan Asuransi Aset &amp; Layanan Konsultasi Risiko"
+other = "Layanan Konsultasi Asuransi dan Risiko untuk Asuransi Aset"
 [project_03_client]
-other = "PT Antam Tbk"
+other = "PT PLN (Persero)"
 [project_03_year]
 other = "2023"
 
 [project_04_tag]
-other = "Risiko Operasional"
+other = "Risiko &amp; Asuransi"
 [project_04_title]
-other = "Penilaian Risiko Asuransi &amp; Rekomendasi"
+other = "Penilaian Risiko &amp; Rekomendasi Penutupan Asuransi"
 [project_04_client]
 other = "PT PLN Batam"
 [project_04_year]
@@ -212,7 +212,7 @@ other = "PT Indonesia Power"
 other = "2021"
 
 [project_06_tag]
-other = "Risiko &amp; Asuransi"
+other = "Konsultasi Asuransi"
 [project_06_title]
 other = "Konsultasi Asuransi Aset Operasional"
 [project_06_client]

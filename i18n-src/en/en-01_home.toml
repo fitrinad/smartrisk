@@ -98,19 +98,19 @@ other = "Asset Valuation"
 other = "Independent technical valuation of industrial assets for insurance, M&amp;A, and regulatory compliance."
 
 [service_04_title]
-other = "Risk Management &amp; Insurance Planning"
+other = "Risk Management Training"
 [service_04_desc]
-other = "Independent insurance program design, benchmarking, and placement advisory."
+other = "Training programs include enterprise risk management per ISO 31000 with BNSP certification."
 
 [service_05_title]
-other = "HSE Management"
+other = "HSE Training"
 [service_05_desc]
-other = "Health, Safety, and Environment consulting including gap analysis and BNSP-certified training programs."
+other = "BNSP-certified Health, Safety, and Environment (HSE) training and competency assessment programs, for safety practitioners across Indonesia's industrial sectors."
 
 [service_06_title]
-other = "Business Continuity &amp; Resilience"
+other = "Insurance Training"
 [service_06_desc]
-other = "Business impact analysis, continuity planning, and disaster risk reduction strategies."
+other = "Insurance training covering property & business interruption, CAR, liability, personal accident, marine hull, and marine cargo."
 
 
 #=============================#
@@ -169,7 +169,7 @@ other = "All Projects"
 [project_01_tag]
 other = "Risk &amp; Insurance"
 [project_01_title]
-other = "Risk Management &amp; Insurance Consulting Services"
+other = "Risk Management &amp; Insurance Consulting"
 [project_01_client]
 other = "PT Pelayaran Bahtera Adhiguna (BAg)"
 [project_01_year]
@@ -185,18 +185,18 @@ other = "PT Petrokimia Gresik"
 other = "2023"
 
 [project_03_tag]
-other = "Insurance Advisory"
+other = "Risk &amp; Insurance"
 [project_03_title]
-other = "Asset Insurance Consultant &amp; Risk Advisory Services"
+other = "Insurance and Risk Consulting Services for Asset Insurance"
 [project_03_client]
-other = "PT Antam Tbk"
+other = "PT PLN (Persero)"
 [project_03_year]
 other = "2023"
 
 [project_04_tag]
-other = "Operational Risk"
+other = "Risk &amp; Insurance"
 [project_04_title]
-other = "Insurance Risk Assessment &amp; Recommendations"
+other = "Risk Assessment &amp; Insurance Closure Recommendations"
 [project_04_client]
 other = "PT PLN Batam"
 [project_04_year]
@@ -205,14 +205,14 @@ other = "2022"
 [project_05_tag]
 other = "Risk Survey"
 [project_05_title]
-other = "Risk Survey PGU &amp; POMU - Generation Units"
+other = "PGU &amp; POMU - Generation Units Risk Survey"
 [project_05_client]
 other = "PT Indonesia Power"
 [project_05_year]
 other = "2021"
 
 [project_06_tag]
-other = "Risk &amp; Insurance"
+other = "Insurance Consulting"
 [project_06_title]
 other = "Operational Asset Insurance Consulting"
 [project_06_client]

@@ -98,77 +98,77 @@
             <a href="services/" class="btn btn-outline btn-right-arrow-ink">{{ i18n "services_cta" | safeHTML }}</a>
         </div>
         <div class="services-grid">
-            <div class="service-card">
-                <span class="service-num" aria-hidden="true">01</span>
-                <!-- <div class="service-icon" aria-hidden="true">&#9881;&#65039;</div> -->
+            {{ $svc01 := site.GetPage "services/operational-risk-assessment/" }}
+            <a href="{{ with $svc01 }}{{ .RelPermalink }}{{ else }}{{ "services/" | relLangURL }}{{ end }}" class="service-card">
+                <span class="service-num" aria-hidden="true">{{ i18n "services_cat_consultation" | safeHTML }}</span>
                 <div class="service-title">
                     {{ i18n "service_01_title" | safeHTML }}
                 </div>
                 <div class="service-desc">
                     {{ i18n "service_01_desc" | safeHTML }}
                 </div>
-                <span class="service-arrow" aria-hidden="true">&rarr;</span>
-            </div>
+                <span class="service-arrow" aria-hidden="true"></span>
+            </a>
 
-            <div class="service-card">
-                <span class="service-num" aria-hidden="true">02</span>
-                <!-- <div class="service-icon" aria-hidden="true">&#128208;&#65039;</div> -->
+            {{ $svc02 := site.GetPage "services/project-risk-assessment/" }}
+            <a href="{{ with $svc02 }}{{ .RelPermalink }}{{ else }}{{ "services/" | relLangURL }}{{ end }}" class="service-card">
+                <span class="service-num" aria-hidden="true">{{ i18n "services_cat_consultation" | safeHTML }}</span>
                 <div class="service-title">
                     {{ i18n "service_02_title" | safeHTML }}
                 </div>
                 <div class="service-desc">
                     {{ i18n "service_02_desc" | safeHTML }}
                 </div>
-                <span class="service-arrow" aria-hidden="true">&rarr;</span>
-            </div>
+                <span class="service-arrow" aria-hidden="true"></span>
+            </a>
 
-            <div class="service-card">
-                <span class="service-num" aria-hidden="true">03</span>
-                <!-- <div class="service-icon" aria-hidden="true">&#127959;&#65039;</div> -->
+            {{ $svc03 := site.GetPage "services/asset-valuation/" }}
+            <a href="{{ with $svc03 }}{{ .RelPermalink }}{{ else }}{{ "services/" | relLangURL }}{{ end }}" class="service-card">
+                <span class="service-num" aria-hidden="true">{{ i18n "services_cat_consultation" | safeHTML }}</span>
                 <div class="service-title">
                     {{ i18n "service_03_title" | safeHTML }}
                 </div>
                 <div class="service-desc">
                     {{ i18n "service_03_desc" | safeHTML }}
                 </div>
-                <span class="service-arrow" aria-hidden="true">&rarr;</span>
-            </div>
+                <span class="service-arrow" aria-hidden="true"></span>
+            </a>
 
-            <div class="service-card">
-                <span class="service-num" aria-hidden="true">04</span>
-                <!-- <div class="service-icon" aria-hidden="true">&#128737;&#65039;</div> -->
+            {{ $svc04 := site.GetPage "services/risk-management-training/" }}
+            <a href="{{ with $svc04 }}{{ .RelPermalink }}{{ else }}{{ "services/" | relLangURL }}{{ end }}" class="service-card">
+                <span class="service-num" aria-hidden="true">{{ i18n "services_cat_learning" | safeHTML }}</span>
                 <div class="service-title">
                     {{ i18n "service_04_title" | safeHTML }}
                 </div>
                 <div class="service-desc">
                     {{ i18n "service_04_desc" | safeHTML }}
                 </div>
-                <span class="service-arrow" aria-hidden="true">&rarr;</span>
-            </div>
+                <span class="service-arrow" aria-hidden="true"></span>
+            </a>
 
-            <div class="service-card">
-                <span class="service-num" aria-hidden="true">05</span>
-                <!-- <div class="service-icon" aria-hidden="true">&#9937;&#65039;</div> -->
+           {{ $svc05 := site.GetPage "services/hse-training/" }}
+            <a href="{{ with $svc05 }}{{ .RelPermalink }}{{ else }}{{ "services/" | relLangURL }}{{ end }}" class="service-card">
+                <span class="service-num" aria-hidden="true">{{ i18n "services_cat_learning" | safeHTML }}</span>
                 <div class="service-title">
                     {{ i18n "service_05_title" | safeHTML }}
                 </div>
                 <div class="service-desc">
                     {{ i18n "service_05_desc" | safeHTML }}
                 </div>
-                <span class="service-arrow" aria-hidden="true">&rarr;</span>
-            </div>
+                <span class="service-arrow" aria-hidden="true"></span>
+            </a>
 
-            <div class="service-card">
-                <span class="service-num" aria-hidden="true">06</span>
-                <!-- <div class="service-icon" aria-hidden="true">&#128260;</div> -->
+            {{ $svc06 := site.GetPage "services/insurance-training/" }}
+            <a href="{{ with $svc06 }}{{ .RelPermalink }}{{ else }}{{ "services/" | relLangURL }}{{ end }}" class="service-card">
+                <span class="service-num" aria-hidden="true">{{ i18n "services_cat_learning" | safeHTML }}</span>
                 <div class="service-title">
                     {{ i18n "service_06_title" | safeHTML }}
                 </div>
                 <div class="service-desc">
                     {{ i18n "service_06_desc" | safeHTML }}
                 </div>
-                <span class="service-arrow" aria-hidden="true">&rarr;</span>
-            </div>
+                <span class="service-arrow" aria-hidden="true"></span>
+            </a>
         </div>   
     </section>
 
@@ -222,47 +222,53 @@
         </div>
 
         <div class="projects-grid">
-            <div class="project-card">
+            {{ $proj01 := site.GetPage "projects/2024/pt-bag-risk-management-and-insurance-consulting" }}
+            <a href="{{ with $proj01 }}{{ .RelPermalink }}{{ else }}{{ "projects/" | relLangURL }}{{ end }}" class="project-card">
                 <span class="project-tag">{{ i18n "project_01_tag" | safeHTML }}</span>
                 <div class="project-title">{{ i18n "project_01_title" | safeHTML }}</div>
                 <div class="project-client">{{ i18n "project_01_client" | safeHTML }}</div>
                 <div class="project-year">{{ i18n "project_01_year" | safeHTML }}</div>
-            </div>
+            </a>
 
-            <div class="project-card">
+            {{ $proj02 := site.GetPage "projects/2023/petrokimia-gresik-risk-assessment-and-asset-valuation" }}
+            <a href="{{ with $proj02 }}{{ .RelPermalink }}{{ else }}{{ "projects/" | relLangURL }}{{ end }}" class="project-card">
                 <span class="project-tag">{{ i18n "project_02_tag" | safeHTML }}</span>
                 <div class="project-title">{{ i18n "project_02_title" | safeHTML }}</div>
                 <div class="project-client">{{ i18n "project_02_client" | safeHTML }}</div>
                 <div class="project-year">{{ i18n "project_02_year" | safeHTML }}</div>
-            </div>
+            </a>
 
-            <div class="project-card">
+            {{ $proj03 := site.GetPage "projects/2023/pln-asset-insurance-consulting" }}
+            <a href="{{ with $proj03 }}{{ .RelPermalink }}{{ else }}{{ "projects/" | relLangURL }}{{ end }}" class="project-card">
                 <span class="project-tag">{{ i18n "project_03_tag" | safeHTML }}</span>
                 <div class="project-title">{{ i18n "project_03_title" | safeHTML }}</div>
                 <div class="project-client">{{ i18n "project_03_client" | safeHTML }}</div>
                 <div class="project-year">{{ i18n "project_03_year" | safeHTML }}</div>
-            </div>
+            </a>
             
-            <div class="project-card">
+            {{ $proj04 := site.GetPage "projects/2022/pln-batam-insurance-and-risk-assessment" }}
+            <a href="{{ with $proj04 }}{{ .RelPermalink }}{{ else }}{{ "projects/" | relLangURL }}{{ end }}" class="project-card">
                 <span class="project-tag">{{ i18n "project_04_tag" | safeHTML }}</span>
                 <div class="project-title">{{ i18n "project_04_title" | safeHTML }}</div>
                 <div class="project-client">{{ i18n "project_04_client" | safeHTML }}</div>
                 <div class="project-year">{{ i18n "project_04_year" | safeHTML }}</div>
-            </div>
+            </a>
 
-            <div class="project-card">
+            {{ $proj05 := site.GetPage "projects/2021/indonesia-power-pgu-pomu-risk-survey" }}
+            <a href="{{ with $proj05 }}{{ .RelPermalink }}{{ else }}{{ "projects/" | relLangURL }}{{ end }}" class="project-card">
                 <span class="project-tag">{{ i18n "project_05_tag" | safeHTML }}</span>
                 <div class="project-title">{{ i18n "project_05_title" | safeHTML }}</div>
                 <div class="project-client">{{ i18n "project_05_client" | safeHTML }}</div>
                 <div class="project-year">{{ i18n "project_05_year" | safeHTML }}</div>
-            </div>
+            </a>
 
-            <div class="project-card">
+            {{ $proj06 := site.GetPage "projects/2021/geo-dipa-asset-insurance-consulting" }}
+            <a href="{{ with $proj06 }}{{ .RelPermalink }}{{ else }}{{ "projects/" | relLangURL }}{{ end }}" class="project-card">
                 <span class="project-tag">{{ i18n "project_06_tag" | safeHTML }}</span>
                 <div class="project-title">{{ i18n "project_06_title" | safeHTML }}</div>
                 <div class="project-client">{{ i18n "project_06_client" | safeHTML }}</div>
                 <div class="project-year">{{ i18n "project_06_year" | safeHTML }}</div>
-            </div>
+            </a>
 
         </div>
     </section>
