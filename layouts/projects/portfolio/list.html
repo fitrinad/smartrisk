@@ -80,8 +80,8 @@
 
 <script>
     const PROJECT_DATA = JSON.parse({{ $.Site.Data.projects.years | jsonify }});
-     const GEOJSON_PATH = `{{ "assets/data/sea-provinces.geojson" | relURL }}`;
-     const MAPLIBRE_JS_PATH = `{{ (resources.Get "assets/js/maplibre-gl.js").RelPermalink }}`;
+    const GEOJSON_PATH = `{{ "assets/data/sea-provinces.geojson" | relURL }}`;
+    const MAPLIBRE_JS_PATH = `{{ (resources.Get "assets/js/maplibre-gl.js").RelPermalink }}`;
 </script>
 {{- $portJS := resources.Get "assets/js/portfolio.js" }}
 <script src="{{ $portJS.RelPermalink }}" defer></script>

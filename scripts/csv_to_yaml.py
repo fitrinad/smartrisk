@@ -13,13 +13,15 @@ Coordinates column is a "[lat, lng]" literal, copied through as-is.
 VN- -> Vietnam); extend PROVINCE_COUNTRY_PREFIXES if new countries appear.
 """
 
+from __future__ import annotations
+
 import csv
 import sys
 from ast import literal_eval
 from collections import defaultdict
 
-INPUT_CSV = "portfolio.csv"
-OUTPUT_YAML = "projects.yaml"
+INPUT_CSV = "scripts/portfolio.csv"
+OUTPUT_YAML = "data/projects.yaml"
 
 PROVINCE_COUNTRY_PREFIXES = {
     "BN": "Brunei",
