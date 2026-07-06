@@ -79,6 +79,10 @@
     height      : 100%; 
     object-fit  : cover; 
 }
+.director-avatar picture,
+.engineer-avatar picture {
+    display: contents;
+}
 .director-name {
     font-family     : 'Cal Sans', sans-serif;
     font-size       : 1.15rem;
