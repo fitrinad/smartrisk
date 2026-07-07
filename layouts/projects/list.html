@@ -45,7 +45,7 @@
                     {{ range $years }}
                     <a href="#y{{ .Title }}" class="sidebar-link">{{ .Title }}</a>
                     {{ end }}
-                    <a href="{{ "projects/portfolio/" | relLangURL }}" class="sidebar-link">
+                    <a href="{{ "projects/portfolio/" | relLangURL }}" class="sidebar-link sidebar-link--portfolio">
                         {{ i18n "portfolio_title" | safeHTML }}
                     </a>
                 </nav>

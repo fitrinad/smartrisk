@@ -66,6 +66,26 @@
     font-weight         : 600;
 }
 
+/*---------- PORTFOLIO LINK (pill button, matches .timeline-back colors) ----------*/
+.sidebar-link--portfolio {
+    display         : inline-flex;
+    align-items     : center;
+    justify-content : center;
+    width           : fit-content;
+    margin-top      : 0.75rem;
+    padding         : 0.5rem 1.25rem;
+    border          : 2px solid var(--rule-dark);
+    border-radius   : 999px;
+    background-color: var(--rule-dark);
+    color           : var(--white);
+    font-weight     : 600;
+}
+.sidebar-link--portfolio:hover {
+    border-color    : var(--accent);
+    color           : var(--accent);
+    background-color: var(--rule-dark);
+}
+
 
 /*---------- SERVICE ENTRIES ----------*/
 .services-entries {
@@ -509,6 +529,13 @@
     .sidebar-link.active {
         border-left-color   : transparent;
         border-bottom-color : var(--accent);
+    }
+    .sidebar-link--portfolio {
+        margin-top      : 0;
+        padding         : 0.4rem 1.1rem;
+        border          : 2px solid var(--rule-dark);
+        border-radius   : 999px;
+        border-bottom   : 2px solid var(--rule-dark);
     }
 
     .services-category,
