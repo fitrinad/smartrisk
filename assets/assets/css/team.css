@@ -80,7 +80,8 @@
     object-fit  : cover; 
 }
 .director-avatar picture,
-.engineer-avatar picture {
+.engineer-avatar picture, 
+.expert-avatar picture {
     display: contents;
 }
 .director-name {

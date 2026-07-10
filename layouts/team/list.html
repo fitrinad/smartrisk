@@ -61,20 +61,29 @@
     <section class="team-section">
         <div class="team-group-label">{{ i18n "directors_group_label" | safeHTML }}</div>
             
-        <div class="directors-grid">
-            <div class="director-card reveal">
+        <div class="directors-grid reveal">
+            {{ $base := "00_Adi_Supriono" }}
+            {{ $webpPath := printf "static/assets/images/team/%s.webp" $base }}
+            <div class="director-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="director-avatar">
-                    <img src="{{ "assets/images/team/00_Adi_Supriono.jpg" | relURL }}" 
-                            alt="Adi Supriono"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Adi Supriono"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
                     <div class="avatar-initials" style="display:none">AS</div>
                 </div>
                 <div class="director-name">{{ i18n "director_01_name" | safeHTML }}</div>
                 <div class="director-title">{{ i18n "director_01_title" | safeHTML }}</div>
             </div>
-            {{ $base := "01_Ikhwan_Fahri" }}
-            {{ $webpPath := printf "static/assets/images/team/%s.webp" $base }}
-            <div class="director-card reveal">
+            
+            {{ $base = "01_Ikhwan_Fahri" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="director-card">
                 <!-- with WebP + JPG fallback -->
                 <div class="director-avatar">
                     <picture>
@@ -90,21 +99,39 @@
                 <div class="director-name">{{ i18n "director_02_name" | safeHTML }}</div>
                 <div class="director-title">{{ i18n "director_02_title" | safeHTML }}</div>
             </div>
-            <div class="director-card reveal">
+
+            {{ $base = "02_Rifky_Assamady" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="director-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="director-avatar">
-                    <img src="{{ "assets/images/team/02_Rifky_Assamady.jpg" | relURL }}" 
-                            alt="Rifky Assamady"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Rifky Assamady"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
                     <div class="avatar-initials" style="display:none">RA</div>
                 </div>
                 <div class="director-name">{{ i18n "director_03_name" | safeHTML }}</div>
                 <div class="director-title">{{ i18n "director_03_title" | safeHTML }}</div>
             </div>
-            <div class="director-card reveal">
+
+            {{ $base = "03_Rustamadji" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="director-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="director-avatar">
-                    <img src="{{ "assets/images/team/03_Rustamadji.jpg" | relURL }}" 
-                            alt="Rustamadji"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Rustamadji"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
                     <div class="avatar-initials" style="display:none">R</div>
                 </div>
                 <div class="director-name">{{ i18n "director_04_name" | safeHTML }}</div>
@@ -116,60 +143,105 @@
     <!---------- ENGINEERS ---------->
     <section class="team-section team-section-dark">
         <div class="team-group-label">{{ i18n "engineers_group_label" | safeHTML }}</div>
-        <div class="engineers-grid">
-            <div class="engineer-card reveal">
+        <div class="engineers-grid reveal">
+            {{ $base = "04_Muhammad_Fazriansyah" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="engineer-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="engineer-avatar">
-                    <img src="{{ "assets/images/team/04_Muhammad_Fazriansyah.jpg" | relURL }}"
-                            alt="Muhammad Fazriansyah"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Muhammad Fazriansyah"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
                     <div class="avatar-initials-dark" style="display:none">MF</div>
                 </div>
                 <div class="engineer-name">{{ i18n "engineer_01_name" | safeHTML }}</div>
                 <div class="engineer-title">{{ i18n "engineer_01_title" | safeHTML }}</div>
             </div>
-            <div class="engineer-card reveal">
+
+            {{ $base = "05_Rissa" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="engineer-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="engineer-avatar">
-                    <img src="{{ "assets/images/team/05_Rissa.jpg" | relURL }}"
-                            alt="Rissa"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Rissa"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
                     <div class="avatar-initials-dark" style="display:none">R</div>
                 </div>
                 <div class="engineer-name">{{ i18n "engineer_02_name" | safeHTML }}</div>
                 <div class="engineer-title">{{ i18n "engineer_02_title" | safeHTML }}</div>
             </div>
-            <div class="engineer-card reveal">
+
+            {{ $base = "06_Dwaya_Putranti_Sekarwening" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="engineer-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="engineer-avatar">
-                    <img src="{{ "assets/images/team/06_Dwaya_Putranti_Sekarwening.jpg" | relURL }}"
-                            alt="Dwaya Putranti Sekarwening"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Dwaya Putranti Sekarwening"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
                     <div class="avatar-initials-dark" style="display:none">DS</div>
                 </div>
                 <div class="engineer-name">{{ i18n "engineer_03_name" | safeHTML }}</div>
                 <div class="engineer-title">{{ i18n "engineer_03_title" | safeHTML }}</div>
             </div>
-            <div class="engineer-card reveal">
+
+            {{ $base = "07_Audi_Karina_Choirunisa" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="engineer-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="engineer-avatar">
-                    <img src="{{ "assets/images/team/07_Audi_Karina_Choirunisa.jpg" | relURL }}"
-                            alt="Audi Karina Choirunisa"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Audi Karina Choirunisa"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
                     <div class="avatar-initials-dark" style="display:none">AK</div>
                 </div>
                 <div class="engineer-name">{{ i18n "engineer_04_name" | safeHTML }}</div>
                 <div class="engineer-title">{{ i18n "engineer_04_title" | safeHTML }}</div>
             </div>
-            <div class="engineer-card reveal">
+
+            {{ $base = "08_Ronny_Syahlani" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="engineer-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="engineer-avatar">
-                    <img src="{{ "assets/images/team/08_Ronny_Syahlani.jpg" | relURL }}"
-                            alt="Ronny Syahlani"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Ronny Syahlani"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
                     <div class="avatar-initials-dark" style="display:none">RS</div>
                 </div>
                 <div class="engineer-name">{{ i18n "engineer_05_name" | safeHTML }}</div>
                 <div class="engineer-title">{{ i18n "engineer_05_title" | safeHTML }}</div>
             </div>
-            {{ $base := "09_Maulana_Arba_Aryadi" }}
-            {{ $webpPath := printf "static/assets/images/team/%s.webp" $base }}
-            <div class="engineer-card reveal">
+
+            {{ $base = "09_Maulana_Arba_Aryadi" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="engineer-card">
                 <!-- with WebP + JPG fallback -->
                 <div class="engineer-avatar">
                     <picture>
@@ -185,9 +257,10 @@
                 <div class="engineer-name">{{ i18n "engineer_06_name" | safeHTML }}</div>
                 <div class="engineer-title">{{ i18n "engineer_06_title" | safeHTML }}</div>
             </div>
-            {{ $base := "10_Luthfi_Adhyaksadiputra" }}
-            {{ $webpPath := printf "static/assets/images/team/%s.webp" $base }}
-            <div class="engineer-card reveal">
+
+            {{ $base = "10_Luthfi_Adhyaksadiputra" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="engineer-card">
                 <!-- with WebP + JPG fallback -->
                 <div class="engineer-avatar">
                     <picture>
@@ -203,9 +276,10 @@
                 <div class="engineer-name">{{ i18n "engineer_07_name" | safeHTML }}</div>
                 <div class="engineer-title">{{ i18n "engineer_07_title" | safeHTML }}</div>
             </div>
-            {{ $base := "11_Salsa_Maharani_Hapsari" }}
-            {{ $webpPath := printf "static/assets/images/team/%s.webp" $base }}
-            <div class="engineer-card reveal">
+
+            {{ $base = "11_Salsa_Maharani_Hapsari" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="engineer-card">
                 <!-- with WebP + JPG fallback -->
                 <div class="engineer-avatar">
                     <picture>
@@ -221,9 +295,10 @@
                 <div class="engineer-name">{{ i18n "engineer_08_name" | safeHTML }}</div>
                 <div class="engineer-title">{{ i18n "engineer_08_title" | safeHTML }}</div>
             </div>
-            {{ $base := "12_Silvia_Damayanti" }}
-            {{ $webpPath := printf "static/assets/images/team/%s.webp" $base }}
-            <div class="engineer-card reveal">
+
+            {{ $base = "12_Silvia_Damayanti" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="engineer-card">
                 <!-- with WebP + JPG fallback -->
                 <div class="engineer-avatar">
                     <picture>
@@ -239,9 +314,10 @@
                 <div class="engineer-name">{{ i18n "engineer_09_name" | safeHTML }}</div>
                 <div class="engineer-title">{{ i18n "engineer_09_title" | safeHTML }}</div>
             </div>
-            {{ $base := "13_Delia_Intan_Pratiwi" }}
-            {{ $webpPath := printf "static/assets/images/team/%s.webp" $base }}
-            <div class="engineer-card reveal">
+
+            {{ $base = "13_Delia_Intan_Pratiwi" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="engineer-card">
                 <!-- with WebP + JPG fallback -->
                 <div class="engineer-avatar">
                     <picture>
@@ -264,12 +340,21 @@
     <!---------- EXPERT ADVISORS ---------->
     <section class="team-section team-section-alt">
         <div class="team-group-label">{{ i18n "experts_group_label" | safeHTML }}</div>
-        <div class="experts-grid">
-            <div class="expert-card reveal">
+        <div class="experts-grid reveal">
+            {{ $base = "14_Adrianus_Pangaribuan" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="expert-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="expert-avatar">
-                    <img src="{{ "assets/images/team/14_Adrianus_Pangaribuan.jpg" | relURL }}"
-                            alt="Adrianus Pangaribuan"
-                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>AP</span>'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Adrianus Pangaribuan"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
+                    <div class="avatar-initials" style="display:none">AP</div>
                 </div>
                 <div>
                     <div class="expert-name">{{ i18n "expert_01_name" | safeHTML }}</div>
@@ -277,11 +362,21 @@
                     <div class="expert-bio">{{ i18n "expert_01_bio" | safeHTML }}</div>
                 </div>
             </div>
-            <div class="expert-card reveal">
+
+            {{ $base = "15_Djoko_Mulyadi" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="expert-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="expert-avatar">
-                    <img src="{{ "assets/images/team/15_Djoko_Mulyadi.jpg" | relURL }}"
-                            alt="Djoko Mulyadi"
-                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>DM</span>'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Djoko Mulyadi"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
+                    <div class="avatar-initials" style="display:none">DM</div>
                 </div>
                 <div>
                     <div class="expert-name">{{ i18n "expert_02_name" | safeHTML }}</div>
@@ -289,11 +384,21 @@
                     <div class="expert-bio">{{ i18n "expert_02_bio" | safeHTML }}</div>
                 </div>
             </div>
-            <div class="expert-card reveal">
+
+            {{ $base = "16_Winardi_Sani" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="expert-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="expert-avatar">
-                    <img src="{{ "assets/images/team/16_Winardi_Sani.jpg" | relURL }}"
-                        alt="Winardi Sani"
-                        onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>WS</span>'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Winardi Sani"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
+                    <div class="avatar-initials" style="display:none">WS</div>
                 </div>
                 <div>
                     <div class="expert-name">{{ i18n "expert_03_name" | safeHTML }}</div>
@@ -301,11 +406,21 @@
                     <div class="expert-bio">{{ i18n "expert_03_bio" | safeHTML }}</div>
                 </div>
             </div>
-            <div class="expert-card reveal">
+
+            {{ $base = "17_Joga_Prakasa_Subroto" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="expert-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="expert-avatar">
-                    <img src="{{ "assets/images/team/17_Joga_Prakasa_Subroto.jpg" | relURL }}"
-                            alt="Joga Prakasa Subroto"
-                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>JP</span>'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Joga Prakasa Subroto"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
+                    <div class="avatar-initials" style="display:none">JP</div>
                 </div>
                 <div>
                     <div class="expert-name">{{ i18n "expert_04_name" | safeHTML }}</div>
@@ -313,11 +428,21 @@
                     <div class="expert-bio">{{ i18n "expert_04_bio" | safeHTML }}</div>
                 </div>
             </div>
-            <div class="expert-card reveal">
+
+            {{ $base = "18_Tri_Harso_Harijadi" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="expert-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="expert-avatar">
-                    <img src="{{ "assets/images/team/18_Tri_Harso_Harijadi.jpg" | relURL }}"
-                            alt="Tri Harso Harijadi"
-                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>TH</span>'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Tri Harso Harijadi"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
+                    <div class="avatar-initials" style="display:none">TH</div>
                 </div>
                 <div>
                     <div class="expert-name">{{ i18n "expert_05_name" | safeHTML }}</div>
@@ -325,11 +450,21 @@
                     <div class="expert-bio">{{ i18n "expert_05_bio" | safeHTML }}</div>
                 </div>
             </div>
-            <div class="expert-card reveal">
+
+            {{ $base = "19_Sumyartono" }}
+            {{ $webpPath = printf "static/assets/images/team/%s.webp" $base }}
+            <div class="expert-card">
+                <!-- with WebP + JPG fallback -->
                 <div class="expert-avatar">
-                    <img src="{{ "assets/images/team/19_Sumyartono.jpg" | relURL }}"
-                            alt="Sumyartono"
-                            onerror="this.style.display='none';this.parentElement.innerHTML='<span style=\'color:var(--muted);font-size:1rem;\'>S</span>'" />
+                    <picture>
+                        {{ if fileExists $webpPath }}
+                        <source srcset="{{ printf "assets/images/team/%s.webp" $base | relURL }}" type="image/webp">
+                        {{ end }}
+                        <img src="{{ printf "assets/images/team/%s.jpg" $base | relURL }}"
+                             alt="Sumyartono"
+                             onerror="this.closest('picture').style.display='none'; this.closest('picture').nextElementSibling.style.display='flex'" />
+                    </picture>
+                    <div class="avatar-initials" style="display:none">S</div>
                 </div>
                 <div>
                     <div class="expert-name">{{ i18n "expert_06_name" | safeHTML }}</div>
