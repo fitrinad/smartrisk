@@ -6,8 +6,6 @@ static/sitemap_xml.md
 .hugo_build.lock
 netlify.toml
 
-static/_headers
-
 public/
 resources/_gen/
 

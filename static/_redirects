@@ -1,0 +1,63 @@
+# Redirect pages.dev to canonical domain
+https://smartrisk-pln.pages.dev/* https://smartrisk-pln.com/:splat 301
+
+# Old slug -> new slug redirects (fill in actual old URLs from Search Console)
+/tentang-smartrisk/ /about/ 301
+/tim-smartrisk/ /team/ 301
+/kontak-kami/ /contact/ 301
+/perusahaan/ /about/ 301
+
+# services
+/service/ /services/ 301
+/service/konsultasi/ /services/#consulting 301
+/service/pusat-pembelajaran/ /services/#learning-center 301
+/service/it-solution/ /services/#it-solution 301
+
+# consulting
+/service/penilaian-risiko-operasional/ /services/operational-risk-assessment/ 301
+/service/penilaian-risiko-proyek/ /services/project-risk-assessment/ 301
+/service/valuasi-aset/ /services/asset-valuation/ 301
+/service/layanan-penilaian-teknikal/ /services/technical-valuation/ 301
+/service/manajemen-risiko-dan-perencanaan-asuransi/ /services/risk-management-and-insurance-planning/ 301
+/service/studi-kontinuitas-dan-keberlanjutan-bisnis/ /services/business-continuity-study/ 301
+/service/pengurangan-risiko-bencana/ /services/disaster-risk-reduction/ 301
+/service/bahaya-pihak-ketiga-dan-konsultasi-kontrol-kerugian/ /services/third-party-hazard-consultation/ 301
+/service/konsultansi-hse/ /services/hse-consultation/ 301
+/service/penelitian-bisnis/ /services/business-analysis/ 301
+/penelitian-bisnis/ /services/business-analysis/ 301
+/service/jasa-konsultasi-lainnya/ /services/other-consultation-services/ 301
+/jasa-konsultasi-lainnya/ /services/other-consultation-services/ 301
+
+# learning-center
+/service/ohse/ /services/hse-training/ 301
+/service/manajemen-risiko/ /services/risk-management-training/ 301
+/service/asuransi/ /services/insurance-training/ 301
+/service/pelatihan-lainnya/ /services/other-training-programs/ 301
+
+# it-solution
+/service/it-project-management/ /services/it-project-management/ 301
+/service/production-house/ /services/production-house/ 301
+/service/big-data/ /services/big-data/ 301
+
+# projects
+/project/ /projects/ 301
+/project/proyek-terbaru/ /projects/ 301
+/project/portofolio/ /projects/portofolio/ 301
+/portofolio/ /projects/portofolio/ 301
+/project/jasa-konsultan-penutupan-dan-risiko-asuransi-tahun-2004/ /projects/2024/pt-bag-risk-management-and-insurance-consulting/ 301
+/project/pengadaan-jasa-konsultan-dan-risiko-asuransi-untuk-untuk-asuransi-asset-tahun-2023/ /projects/2023/pln-asset-insurance-consulting/ 301
+/project/risk-assesment-asset-valuation/ /projects/2023/petrokimia-gresik-risk-assessment-and-asset-valuation/ 301
+/project/pengadaan-jasa-konsultasi-asuransi-pekerjaan-risk-assesment-analisa-rekomendasi-pentupan-asuransi-pt-pln-batam-tahun-2022/ /projects/2022/pln-batam-insurance-and-risk-assessment/ 301
+/project/surveyor-risk-survey-pgu-dan-pomu-indonesia-power-tahun-2021/ /projects/2021/indonesia-power-pgu-pomu-risk-survey/ 301
+/project/jasa-konsultasi-penutupan-asuransi-aset-operasional-pt-geo-dipa-energi-tahun-2021/ /projects/2021/geo-dipa-asset-insurance-consulting/ 301
+/project/pengadaan-jasa-penyusunan-buku-busiiess-case-manajemen-risiko/ /projects/2021/pln-risk-management-business-case-book/ 301
+/project/pengadaan-jasa-penyusunan-buku-business-case-manajemen-risiko/ /projects/2021/pln-risk-management-business-case-book/ 301
+/project/roadshow-asuransi-aset-operasional-pt-pln-group-2/ /projects/2021/pln-group-operational-asset-insurance-roadshow/ 301
+/project/roadshow-asuransi-aset-operasional-pt-pln-group/ /projects/2021/pln-group-operational-asset-insurance-roadshow/ 301
+/project/pt-pln-persero-dokumentasi-penyusunan-market-analysis/ /projects/2021/pln-risk-management-business-case-book/ 301
+/project/pt-pln-persero/ /projects/2023/pln-asset-insurance-consulting/ 301
+/project/pt-indonesia-power/ /projects/2021/indonesia-power-pgu-pomu-risk-survey/ 301
+/project/sertifikasi-bnsp-safetyman-migas/ /projects/ 301
+/project/training-dan-sertifikasi-bnsp-ahli-hazops/ /projects/ 301
+/project/pt-mrt-jakarta/ /projects/ 301
+/project/pt-antam-tbk-ubpn-sultra-feni-smelting-plant/ /projects/ 301
