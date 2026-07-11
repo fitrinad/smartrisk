@@ -1,0 +1,50 @@
+# Global security headers (apply to both domains)
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/assets/*
+  # Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400, stale-while-revalidate=3600
+
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Explicit indexing directives per host
+https://smartrisk-pln.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+
+https://smartrisk-pln.com/*
+  X-Robots-Tag: index, follow
+
+https://smartrisk-pln.com/404
+  X-Robots-Tag: noindex
+
+https://smartrisk-pln.com/404.html
+  X-Robots-Tag: noindex
+
+https://smartrisk-pln.com/id/projects/2021/
+  X-Robots-Tag: noindex, nofollow
+
+https://smartrisk-pln.com/projects/2021/
+  X-Robots-Tag: noindex, nofollow
+
+https://smartrisk-pln.com/id/projects/2022/
+  X-Robots-Tag: noindex, nofollow
+
+https://smartrisk-pln.com/projects/2022/
+  X-Robots-Tag: noindex, nofollow
+
+https://smartrisk-pln.com/id/projects/2023/
+  X-Robots-Tag: noindex, nofollow
+
+https://smartrisk-pln.com/projects/2023/
+  X-Robots-Tag: noindex, nofollow
+
+https://smartrisk-pln.com/id/projects/2024/
+  X-Robots-Tag: noindex, nofollow
+
+https://smartrisk-pln.com/projects/2024/
+  X-Robots-Tag: noindex, nofollow
