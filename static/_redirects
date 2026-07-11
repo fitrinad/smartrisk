@@ -8,6 +8,7 @@ https://smartrisk-pln.pages.dev/* https://smartrisk-pln.com/:splat 301
 /perusahaan/ /about/ 301
 
 # services
+/service /services/ 301
 /service/ /services/ 301
 /service/konsultasi/ /services/#consulting 301
 /service/pusat-pembelajaran/ /services/#learning-center 301
@@ -40,6 +41,7 @@ https://smartrisk-pln.pages.dev/* https://smartrisk-pln.com/:splat 301
 /service/big-data/ /services/big-data/ 301
 
 # projects
+/project /projects/ 301
 /project/ /projects/ 301
 /project/proyek-terbaru/ /projects/ 301
 /project/portofolio/ /projects/portofolio/ 301
