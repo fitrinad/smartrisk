@@ -50,6 +50,8 @@ smartrisk/
 │   ├── robots.txt      ← robots.txt with sitemap reference
 │   └── sitemap.xml     ← Custom sitemap template with hreflang alternates
 ├── static/
+│   ├── _redirects  ← Path-based 301 redirects (old slugs, legacy WordPress URLs)
+│   ├── _headers    ← Security headers + per-host X-Robots-Tag (noindex, nofollow on pages.dev; index, follow on .com)
 │   └── assets/     ← Assets not needing processing in static/assets/
 │       ├── data/       ← sea-provinces.geojson (province boundaries for the portfolio map)
 │       ├── fonts/      ← Self-hosted Cal Sans and DM Sans woff2 files
@@ -68,9 +70,9 @@ smartrisk/
 - **English** (default): served at `fitrinad.github.io/smartrisk/`
 - **Indonesian**: served at `fitrinad.github.io/smartrisk/id/`
 
-**Cloudflare Pages**
-- **English** (default): served at `smartrisk-pln.pages.dev/`
-- **Indonesian**: served at `smartrisk-pln.pages.dev/id/`
+**Cloudflare Pages** &rarr; redirected to `smartrisk-pln.com`; see [Domain redirects](#domain-redirects)
+- **English** (default): served at `smartrisk-pln.pages.dev/` &rarr; `smartrisk-pln.com`
+- **Indonesian**: served at `smartrisk-pln.pages.dev/id/` &rarr; `smartrisk-pln.com/id/`
 
 All translatable strings are in `i18n-src/en/*.toml` and `i18n-src/id/*.toml`. All TOML files in each page are merged using `merge-i18n.sh` (Github Actions and Cloudflare Pages build) or `merge-i18n.ps1` (local Windows development) before the page is built. Page structure is shared via single layout files, no duplicate HTML per language.
 
@@ -113,12 +115,22 @@ Preview at `http://localhost:1313/smartrisk/`
 
 ## Cloudflare Pages build command
 
+<!-- Previous settings for .pages.dev site only. 
 In Cloudflare Pages &rarr; Settings &rarr; Build &rarr; Build configuration, set:
 | Field      | Value |
 |-----------|---------|
 | Build command | `chmod +x scripts/merge-i18n.sh && ./scripts/merge-i18n.sh && hugo --gc --minify --baseURL $HUGO_BASEURL` |
 | Build output directory | `public` |
 | Environment variable     | `HUGO_BASEURL = smartrisk-pln.pages.dev` `HUGO_VERSION = 0.161.1` |
+-->
+
+<!-- Overwrite new .com build settings with a wrangler.toml file -->
+Cloudflare Pages build settings are defined in `wrangler.toml` (`pages_build_output_dir = './public'`, `HUGO_VERSION = '0.161.1'`, and `HUGO_BASEURL = 'https://smartrisk-pln.com/'`), not in the dashboard. Build settings defined in `wrangler.toml` overwrite build settings in the dashboard.
+
+In Cloudflare Pages &rarr; Settings &rarr; Build &rarr; Build configuration, the build command is:  
+| Field      | Value |
+|-----------|---------|
+| Build command | `chmod +x scripts/merge-i18n.sh && ./scripts/merge-i18n.sh && hugo --gc --minify --baseURL $HUGO_BASEURL` |
 
 
 ## Deployment
@@ -128,3 +140,16 @@ The `public/` folder is not committed to the repo, it is built on deploy.
 **Github Pages**: Pushing to `main` triggers the GitHub Actions workflow which builds the site with `hugo` and deploys the `public/` folder to GitHub Pages. 
 
 **Cloudflare Pages**: Cloudflare watches the repo directly and triggers its own build pipeline on every push to `main`. Build settings are defined in `wrangler.toml`
+
+<u>**NOTE**</u>:   
+- Adding the custom domain `smartrisk-pln.com` (Cloudflare Pages &rarr; Custom domains) makes the same build serve traffic on both `smartrisk-pln.pages.dev` and `smartrisk-pln.com`.
+- Setting `HUGO_BASEURL = 'https://smartrisk-pln.com'` (in `wrangler.toml`) determines what gets printed into `<head>`. Both domains serve identical HTML with links like `<link rel="alternate" hreflang="id" href="https://smartrisk-pln.com/id/">` pointing to `smartrisk-pln.com`, regardless of which domain the visitor is actually on (`smartrisk-pln.pages.dev` and `smartrisk-pln.com`).  
+- To avoid the `smartrisk-pln.pages.dev` website from getting indexed too: 
+    - `static/_headers` is added for security headers & per-host X-Robots-Tag (`noindex, nofollow` on `smartrisk-pln.pages.dev`; `index, follow` on `smartrisk-pln.com`)
+    - Bulk redirect from `smartrisk-pln.pages.dev` to `smartrisk-pln.com` 
+
+### Domain redirects  
+
+Path-based redirects (old slugs &rarr; new slugs) are defined in `static/_redirects` and are picked up automatically by Cloudflare Pages on build.
+
+The `smartrisk-pln.pages.dev` &rarr; `smartrisk-pln.com` domain-level redirect is **not** handled in `_redirects` since it only matches request paths, not hostnames. That redirect is handled separately as a Cloudflare **Bulk Redirect** (Delivery & performance &rarr; Bulk redirects), which operates at the account level and can intercept traffic to Cloudflare-owned domains like `*.pages.dev`. This is dashboard-only config and is not version-controlled in this repo.

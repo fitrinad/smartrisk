@@ -47,7 +47,7 @@ feat(projects): Add year-based sidebar navigation
 style(services): Adjust card hover transition
 ```
 
-Common scopes: `services`, `projects`, `portfolio`, `about`, `team`, `contact`, `nav`, `i18n`, `css`, `data`, `scripts`.
+Common scopes: `services`, `projects`, `portfolio`, `about`, `team`, `contact`, `nav`, `i18n`, `css`, `data`, `scripts`, `redirects`.
 
 ### Examples
 
@@ -73,6 +73,7 @@ A few issues that once cost debugging time, check before re-diagnosing from scra
 - **Don't run vendored third-party JS through `resources.Minify`.** Hugo's built-in JS minifier corrupted `maplibre-gl.js`'s embedded web worker bundle, breaking the map with no build error; it just fails to load at runtime.
 - **`overflow` on `<body>` other than `visible` may break `position: sticky` site-wide.** Setting `overflow-x: hidden` (or `auto`/`scroll`) directly on `<body>` may stop the browser's normal "overflow propagates to the viewport" behavior, so `<body>` becomes its own scroll container instead of the page; possibly breaking every `position: sticky` element on the site. If you need to clip horizontal overflow, put it on `<html>` instead.
 - **Any ancestor with non-`visible` overflow breaks `position: sticky` for its descendants**, even `overflow: hidden` added as a safety-net rule. If a sticky element stops sticking after an unrelated CSS change, check every ancestor between it and the page root for a stray `overflow` value first.
+- **`static/_redirects` only matches on request path, not hostname.** A rule like `https://smartrisk-pln.pages.dev/* https://smartrisk-pln.com/:splat 301` looks valid but is silently ignored. Cloudflare Pages has no way to match a full source URL with a domain in `_redirects`. Domain-level redirects (e.g. `pages.dev` &rarr; the custom domain) must be configured as a Cloudflare **Bulk Redirect** in the account dashboard (Delivery & performance &rarr; Bulk redirects), not in this repo.
 
 
 
