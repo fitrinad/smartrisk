@@ -1,6 +1,3 @@
-# Redirect pages.dev to canonical domain
-https://smartrisk-pln.pages.dev/* https://smartrisk-pln.com/:splat 301
-
 # Old slug -> new slug redirects (includes links that show up in Google Search)
 /tentang-smartrisk/ /about/ 301
 /perusahaan/ /about/ 301
@@ -154,6 +151,8 @@ https://smartrisk-pln.pages.dev/* https://smartrisk-pln.com/:splat 301
 
 /project/risk-assesment-asset-valuation/ /projects/2023/petrokimia-gresik-risk-assessment-and-asset-valuation/ 301
 /risk-assesment-asset-valuation/ /projects/2023/petrokimia-gresik-risk-assessment-and-asset-valuation/ 301
+/project/risk-assessment-asset-valuation/ /projects/2023/petrokimia-gresik-risk-assessment-and-asset-valuation/ 301
+/risk-assessment-asset-valuation/ /projects/2023/petrokimia-gresik-risk-assessment-and-asset-valuation/ 301
 
 /project/pengadaan-jasa-konsultasi-asuransi-pekerjaan-risk-assesment-analisa-rekomendasi-pentupan-asuransi-pt-pln-batam-tahun-2022/ /projects/2022/pln-batam-insurance-and-risk-assessment/ 301
 /pengadaan-jasa-konsultasi-asuransi-pekerjaan-risk-assesment-analisa-rekomendasi-pentupan-asuransi-pt-pln-batam-tahun-2022/ /projects/2022/pln-batam-insurance-and-risk-assessment/ 301
