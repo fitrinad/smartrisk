@@ -67,6 +67,7 @@
 .contact-item-icon {
     width           : 1.2rem;
     height          : 1.2rem;
+    flex-shrink     : 0;
     background-color: var(--accent);
 
     mask-size       : contain;
@@ -82,8 +83,6 @@
     -webkit-mask-image  : url('../icons/location-pin-icon.svg'); 
 }
 .phone-icon {
-    width               : 1.4rem;
-    height              : 1.4rem;
     mask-image          : url('../icons/phone-icon.svg');    
     -webkit-mask-image  : url('../icons/phone-icon.svg');
 }
